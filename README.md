@@ -1191,7 +1191,9 @@ This section summarizes what each cell corresponds to, what files it generates, 
 
 "Replicates” refers specifically to outputs (PNGs, CSVs, logs) that appear in a TSC run folder and that the standalone cell can reproduce without rerunning the original analysis code. Cells marked as “Replicates: Nothing” provide new visualizations not produced by previously described code.
 
-1. Newman (2006) Community Detection + Coreness (AF + AG)
+---
+
+**1. Newman (2006) Community Detection + Coreness (AF + AG)**
 Replicates: Community‑detection and coreness modules (AF + AG) from the main pipeline.
 
 This standalone cell runs Newman’s (2006) recursive spectral bisection on the τ‑thresholded similarity matrix and optionally computes NetworkX k‑core coreness. It mirrors the AF/AG pipeline behavior exactly, producing community assignments, community‑size plots, bump charts, and (if enabled) coreness bump charts. All outputs are written directly into the selected TSC run folder.
@@ -1213,7 +1215,9 @@ Inputs:
     - optional: `DOIs_with_max_TSC_values_*.csv`
   - Optional: user toggle for coreness computation
 
-2. K‑Core Topographic Maps (Standalone)
+---
+
+**2. K‑Core Topographic Maps (Standalone)**
 Replicates: Nothing; this is a new standalone visualization tool.
 New Products: This cell generates 2‑D contour maps, 3‑D surfaces, and interactive Plotly surfaces showing the k‑core topography of any adjacency matrix. It optionally overlays nodes that appear in the TSC top‑10 for any λ — new functionality not present in the main pipeline.
 
@@ -1230,7 +1234,9 @@ Inputs:
   - User‑selected output folder (default: same folder as CSV)
   - Optional: TSC run folder for top‑10 overlay
 
-3. TSC Histogram Generator (Standalone)
+---
+
+**3. TSC Histogram Generator (Standalone)**
 Replicates: The histogram portion of the AD – TSC Sweep Diagnostics module from the main pipeline.
 
 This cell produces a histogram of TSC values for any chosen (τ, λ) pair. If the corresponding `TSC_Values_*.csv` does not exist, it computes TSC from scratch using the full similarity matrix and combined documents CSV.
@@ -1250,7 +1256,8 @@ Inputs:
     - combined documents CSV
     - optional existing `TSC_Values_*` files
 
-4. Cleaning Summary Table Reproduction (AB Reconstruction)
+--- 
+**4. Cleaning Summary Table Reproduction (AB Reconstruction)**
 Replicates: The AB – Cleaning Summary Table module from the main pipeline.
 
 This cell reconstructs the cleaning summary table from a previous TSC run using the `AB - Pass_data_*.csv` file. It replays the missing‑DOI, language, missing‑abstract, and deduplication filters and prints the full summary table to the notebook.
@@ -1264,7 +1271,9 @@ Inputs:
   - TSC run folder containing `AB - Pass_data_*.csv`
   - Optional supplemental CSV used in the original run
 
-5. TSC vs. Age Plot
+---
+
+**5. TSC vs. Age Plot**
 Replicates: The TSC‑vs‑publication‑year diagnostic plot from the main pipeline.
 
 This cell loads TSC values and publication years from a run folder and produces the scatter/regression plot showing how TSC varies with document age.
@@ -1279,7 +1288,9 @@ Inputs:
     - `TSC_Values_*_tau_*_lambda_*.csv`
     - combined documents CSV with publication years
 
-6. Histogram Grid (FINE/COARSE Sweep)
+---
+
+**6. Histogram Grid (FINE/COARSE Sweep)**
 Replicates: Nothing; this is a new standalone visualization tool.
 New Products: Uses the AD τ–λ grid from the manifest but provides a new visualization. This is a visual alternative that embeds histograms inside each cell.
 
@@ -1299,7 +1310,9 @@ Inputs:
     - all `TSC_Values_* CSVs` referenced in the manifest
     - optional existing histogram PNGs (for the image‑tiled version)
 
-7. Ranking Comparison Heatmaps
+---
+
+**7. Ranking Comparison Heatmaps**
 Replicates: The Top‑20 Overlap and Kendall‑τ heatmap outputs produced by the AE Ranking Comparison module in the main pipeline.
 
 This standalone cell rebuilds the Top‑20 Overlap and Kendall‑τ (top‑20) heatmaps using the matrices stored in a previously generated `AE - Heatmap_data_*.json` file. It does not recompute rankings or correlations; instead, it redraws the heatmaps and applies updated title lines (τ, number of DOIs, API Query Terms, Query Relevance Terms). This is useful when retitling or regenerating AE heatmaps without rerunning the full AE module.
@@ -1314,10 +1327,16 @@ Inputs:
   - A folder containing at least one `AE - Heatmap_data_*.json`
   - Optional overrides for API Query Terms and Query Relevance Terms
 
-8. Replot Everything
+---
+
+**8. Replot Everything**
 Replicates: all plots from the main pipeline; only by re‑reading saved intermediate files.
 It does not rerun any computation.
 
+Saves to: the original simulation run folder
+
+Inputs:
+  - The folder for the original simulation run
 Saves to: the original simulation run folder
 
 Inputs:
