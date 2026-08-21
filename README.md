@@ -38,7 +38,7 @@ The repository is organized into two main components:
 Main
   - TSC Main Driver Notebook  
     The single notebook containing the full AA–AH pipeline code.
-  - Results Folder  
+  - Results folder  
     Contains all run outputs, grouped by dataset and comparison type.
     Each folder contains the full AA–AH output inventory for that run (logs, CSVs, heatmaps, bump charts, community/coreness files, k‑core maps, etc.).
     Each dataset has a focused/broad pair of run folders:
@@ -64,7 +64,7 @@ Main
   - Comparison Files
     - Comparison Tables:
       Excel files showing comparison data across all simulations.
-    - Overall comparison files  
+    - Overall comparison folder  
       Cross‑dataset summary tables, aggregate comparison outputs, and global diagnostics.
     - Per‑dataset comparison folders:
       Each folder contains focused‑vs‑broad comparison outputs for that dataset (Excel workbooks, ranking PDFs, mechanism analysis outputs, logs, etc.).
