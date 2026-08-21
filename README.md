@@ -477,22 +477,22 @@ The tool produces a single Excel workbook in the current working directory:
   - `Comparison_Table_{timestamp}.xlsx`
     Contains two sheets:
       - Sheet 1 - Full Summary Table
-      **Column order (With Worst Rank sheet):**
-| Col | Header |
-|---|---|
-| 1 | Query Terms |
-| 2 | QR Terms |
-| 3 | # DOIs in Query Results |
-| 4 | Chosen τ |
-| 5 | # DOIs Ranked in Top 10 |
-| 6 | # DOIs Stable in Top 10 across all λ |
-| 7 | # DOIs Common to both Top 10 lists |
-| 8 | Worst Rank of any Top 10 DOI in Comparison Query |
-| 9 | % of Focused Query DOIs in Top N of Broad Query |
-| 10 | # of DOIs in Top 10 not in Comparison Query |
-| 11 | TSC vs Pub Date Linear Fit R² Value |
-| 12 | # of Communities Represented in Top 10 |
-| 13 | # of Coreness Values Represented in Top 10 |
+        Column order (With Worst Rank sheet):
+        |Col |Header |
+        |---|---|
+        |1 |Query Terms |
+        |2 |QR Terms |
+        |3 |# DOIs in Query Results |
+        |4 |Chosen τ |
+        |5 |# DOIs Ranked in Top 10 |
+        |6 |# DOIs Stable in Top 10 across all λ |
+        |7 |# DOIs Common to both Top 10 lists |
+        |8 |Worst Rank of any Top 10 DOI in Comparison Query |
+        |9 |% of Focused Query DOIs in Top N of Broad Query |
+        |10 |# of DOIs in Top 10 not in Comparison Query |
+        |11 |TSC vs Pub Date Linear Fit R² Value |
+        |12 |# of Communities Represented in Top 10 |
+        |13 |# of Coreness Values Represented in Top 10 |
       - Sheet 2 - Summary Table (No Worst-Rank Column)
 
 **Color Scheme**
