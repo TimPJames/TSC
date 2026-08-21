@@ -66,15 +66,15 @@ Main
       Cross‑dataset summary tables, aggregate comparison outputs, and global diagnostics.
     - Per‑dataset comparison folders:
       Each folder contains focused‑vs‑broad comparison outputs for that dataset (Excel workbooks, ranking PDFs, mechanism analysis outputs, logs, etc.).
-      - D1/
-      - D2/
-      - D3/
-      - D4/
-      - D5/
-      - D6/
-      - D7/
-      - D8/
-      - D9/
+      - D1
+      - D2
+      - D3
+      - D4
+      - D5
+      - D6
+      - D7
+      - D8
+      - D9
         
 
 ---
