@@ -90,13 +90,13 @@ The rank threshold X equals the size of the focused query corpus.
 
 Every plot function produces multiple file variants. The suffix conventions are:
 
-| Suffix          | Meaning                                               |
-|-----------------|-------------------------------------------------------|
-| *(none)*        | Light background (`white`), with title                |
-| `_dark`         | Dark background (`#1a1a1a`), with title               |
-| `_notitle`      | Light background, no title                            |
-| `_dark_notitle` | Dark background, no title                             |
-| `_panel_{name}` | Individual panel extracted from a multi-panel figure  |
+| Suffix  Meaning |
+|---|---|
+| *(none)* | Light background (`white`), with title |
+| `_dark` | Dark background (`#1a1a1a`), with title |
+| `_notitle` | Light background, no title |
+| `_dark_notitle` | Dark background, no title |
+| `_panel_{name}` | Individual panel extracted from a multi-panel figure |
 
 Panel files are automatically produced for every variant of any multi-panel figure,
 so e.g. `Mechanism1_vocab_20260101_notitle_panel_vocab.png` is a standalone
@@ -478,21 +478,21 @@ The tool produces a single Excel workbook in the current working directory:
     Contains two sheets:
       - Sheet 1 - Full Summary Table
       **Column order (With Worst Rank sheet):**
-      | Col | Header                                            |
-      |-----|---------------------------------------------------|
-      | 1   | Query Terms                                       |
-      | 2   | QR Terms                                          |
-      | 3   | # DOIs in Query Results                           |
-      | 4   | Chosen τ                                          |
-      | 5   | # DOIs Ranked in Top 10                           |
-      | 6   | # DOIs Stable in Top 10 across all λ              |
-      | 7   | # DOIs Common to both Top 10 lists                |
-      | 8   | Worst Rank of any Top 10 DOI in Comparison Query  |
-      | 9   | % of Focused Query DOIs in Top N of Broad Query   |
-      | 10  | # of DOIs in Top 10 not in Comparison Query       |
-      | 11  | TSC vs Pub Date Linear Fit R² Value               |
-      | 12  | # of Communities Represented in Top 10            |
-      | 13  | # of Coreness Values Represented in Top 10        |
+      | Col | Header |
+      |---|---|
+      | 1 | Query Terms |
+      | 2 | QR Terms |
+      | 3 | # DOIs in Query Results |
+      | 4 | Chosen τ |
+      | 5 | # DOIs Ranked in Top 10 |
+      | 6 | # DOIs Stable in Top 10 across all λ |
+      | 7 | # DOIs Common to both Top 10 lists |
+      | 8 | Worst Rank of any Top 10 DOI in Comparison Query |
+      | 9 | % of Focused Query DOIs in Top N of Broad Query |
+      | 10 | # of DOIs in Top 10 not in Comparison Query |
+      | 11 | TSC vs Pub Date Linear Fit R² Value |
+      | 12 | # of Communities Represented in Top 10 |
+      | 13 | # of Coreness Values Represented in Top 10 |
       - Sheet 2 - Summary Table (No Worst-Rank Column)
 
 **Color Scheme**
@@ -530,13 +530,13 @@ For a focused/broad pair of TSC runs, the tool:
   - QR vocabulary density (unigram/bigram match)
 3. Defines all document sets
   Using dissertation notation:
-  |Set   |Meaning                                             |Code Variable|
-  |------|----------------------------------------------------|-------------|
-  |R     |Focused documents retained above rank threshold X	  |set_R        | 
-  |R_Q5  |Top‑quintile QR subset of R	                        |set_R_Q5     |
-  |D	   |Focused documents displaced below rank threshold X	|set_B        |
-  |B	   |Broad‑query documents occupying top X ranks	        |set_C        |
-  |N     |Broad‑query documents below rank threshold X	      |set_N        |
+  |Set |Meaning |Code Variable |
+  |---|---|---|
+  |R |Focused documents retained above rank threshold X	 |set_R | 
+  |R_Q5 |Top‑quintile QR subset of R |set_R_Q5 |
+  |D |Focused documents displaced below rank threshold X |set_B |
+  |B |Broad‑query documents occupying top X ranks |set_C |
+  |N |Broad‑query documents below rank threshold X |set_N |
 Where X = size of the focused corpus, and ranking is based on maximum TSC at chosen τ.
 4. Computes mechanism‑specific diagnostics
   Mechanism 1 — Query‑relevance vocabulary match
