@@ -30,6 +30,53 @@ theoretical properties developed in the dissertation.
 
 ---
 
+## Repository Structure (High‑Level Overview)
+The repository is organized into two main components:
+  (1) the primary TSC code, and
+  (2) the results directory containing all datasets and comparison outputs.
+
+Main
+  - TSC Main Driver Notebook  
+    The single notebook containing the full AA–AH pipeline code.
+  - Results Folder  
+    Contains all run outputs, grouped by dataset and comparison type.
+    Each dataset has a focused/broad pair of run folders:
+    - D1_focused
+    - D1_broad
+    - D2_focused
+    - D2_broad
+    - D3_focused
+    - D3_broad
+    - D4_focused
+    - D4_broad
+    - D5_focused
+    - D5_broad
+    - D6_focused
+    - D6_broad
+    - D7_focused
+    - D7_broad
+    - D8_focused
+    - D8_broad
+    - D9_focused
+    - D9_broad
+    Each folder contains the full AA–AH output inventory for that run (logs, CSVs, heatmaps, bump charts, community/coreness files, k‑core maps, etc.).
+  - Comparison Files
+    - Overall comparison files  
+      Cross‑dataset summary tables, aggregate comparison outputs, and global diagnostics.
+    - Per‑dataset comparison folders:
+      - D1/
+      - D2/
+      - D3/
+      - D4/
+      - D5/
+      - D6/
+      - D7/
+      - D8/
+      - D9/
+        Each folder contains focused‑vs‑broad comparison outputs for that dataset (Excel workbooks, ranking PDFs, mechanism analysis outputs, logs, etc.).
+
+---
+
 ## Dependencies
 
 ```
