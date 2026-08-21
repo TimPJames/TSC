@@ -40,6 +40,7 @@ Main
     The single notebook containing the full AA–AH pipeline code.
   - Results Folder  
     Contains all run outputs, grouped by dataset and comparison type.
+    Each folder contains the full AA–AH output inventory for that run (logs, CSVs, heatmaps, bump charts, community/coreness files, k‑core maps, etc.).
     Each dataset has a focused/broad pair of run folders:
     - D1_focused
     - D1_broad
@@ -59,11 +60,12 @@ Main
     - D8_broad
     - D9_focused
     - D9_broad
-    Each folder contains the full AA–AH output inventory for that run (logs, CSVs, heatmaps, bump charts, community/coreness files, k‑core maps, etc.).
+    
   - Comparison Files
     - Overall comparison files  
       Cross‑dataset summary tables, aggregate comparison outputs, and global diagnostics.
     - Per‑dataset comparison folders:
+      Each folder contains focused‑vs‑broad comparison outputs for that dataset (Excel workbooks, ranking PDFs, mechanism analysis outputs, logs, etc.).
       - D1/
       - D2/
       - D3/
@@ -73,7 +75,7 @@ Main
       - D7/
       - D8/
       - D9/
-        Each folder contains focused‑vs‑broad comparison outputs for that dataset (Excel workbooks, ranking PDFs, mechanism analysis outputs, logs, etc.).
+        
 
 ---
 
