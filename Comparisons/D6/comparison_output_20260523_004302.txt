@@ -1,0 +1,46 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302
+
+  File 1 (150) top-10 DOIs : 10
+  File 2 (1000) top-10 DOIs : 11
+  DOIs in both lists           : 7
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260401_133648.csv): 399
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260522_140818.csv): 3667
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\ranking_chosen_tau_150_SBox_vs_1000_Cryptography.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\ranking_chosen_tau_150_SBox_vs_1000_Cryptography_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\ranking_chosen_tau_150_SBox_vs_1000_Cryptography_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\ranking_chosen_tau_150_SBox_vs_1000_Cryptography_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_S_box_TF-IDF_20260401_132811\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_S_box_TF-IDF_20260401_132811\DOIs_with_max_TSC_values_20260401_133648.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+S_box_TF-IDF_20260522_134838\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+S_box_TF-IDF_20260522_134838\DOIs_with_max_TSC_values_20260522_140818.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 10 top-10 DOIs, 399 total records
+  File 2 (1000) : 11 top-10 DOIs, 3667 total records
+  DOIs in both       : 7
+    10.1109/access.2021.3077194
+    10.3390/e21080790
+    10.3390/e21101004
+    10.3390/sym11030351
+    10.3390/sym12050826
+    10.3390/sym13040671
+    10.48550/arxiv.1809.11057
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\comparison_150_SBox_to_1000_Cryptography.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\comparison_1000_Cryptography_to_150_SBox.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302\comparison_output_20260523_004302.txt
+════════════════════════════════════════════════════════════
+

@@ -1,0 +1,587 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.030, λ=0.010
+  Noisy  : τ=0.030, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.03 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.03_lambda_0.01.csv
+  Focused corpus : 399 DOIs
+  Noisy corpus   : 3667 DOIs
+  Matrix DOIs    : 3667
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 399  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.03) for set membership and scatter
+  Rank threshold X (focused corpus size) : 399
+  Set R_Q5  (focused, retained, top quintile r_q) : 65
+  Set R     (focused, retained above X)           : 196
+  Set D     (focused, displaced below X)          : 203
+  Set B     (broad query, in top X ranks)         : 203
+  Set N     (broad query, below iso-TSC)          : 3065
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.03_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2017.8
+    Set B   mean year : 2017.7
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.0928
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.0928):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 56.9  low-$r_q$: 1841.1
+    Set B mean high-$r_q$ neighbor count : 70.1  low-$r_q$: 3352.1
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 3065
+    Set N : n=3065 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.000470  median=0.000353  n=203
+    Set B : mean=0.000392  median=0.000377  n=203
+    Set N : mean=0.000263  median=0.000265  n=3065
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 1897.92
+    Set B : mean total degree = 3422.24
+    Set R : mean total degree = 3144.44
+    Set N : mean total degree = 2885.45
+  Set D+R quintile sizes (rank-based): {1: 80, 2: 80, 3: 80, 4: 80, 5: 79}
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1114              100.0%
+    Set R              0.0699               84.7%
+    Set D              0.0298               46.3%
+    Set B              0.0078               14.3%
+    Set N              0.0003                0.8%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 399): 203 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=406  TSC=1.1940  year=2024  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.54254/2754-1169/93/20241067
+    The Review of Blind Box Marketing and Problems in Blind Box Markets This paper
+    summarizes the main marketing tools in the blind box market according to the
+    previous literature analysis, and gives appropriate suggestions and
+    countermeasures for the blind box market to be more stable and high-speed growth
+    aspects. Diversified marketing mean can effectively help the blind box economy
+    achieve high-spe
+
+  [D-top2] Overall rank=408  TSC=1.1932  year=2021  vocab_density=1.0000  QR_neighbors=71  source=?
+  DOI: 10.48550/arxiv.2106.07943
+    A Fast-Detection and Fault-Correction Algorithm against Persistent Fault Attack
+    Persistent Fault Attack (PFA) is a recently proposed Fault Attack (FA) method in
+    CHES 2018. It is able to recover full AES secret key in the Single-Byte-Fault
+    scenario. It is demonstrated that classical FA countermeasures, such as Dual
+    Modular Redundancy (DMR) and mask protection, are unable to thwart PFA. In this
+    pape
+
+  [D-top3] Overall rank=410  TSC=1.1888  year=2020  vocab_density=1.0000  QR_neighbors=73  source=?
+  DOI: 10.48550/arxiv.2008.12188
+    CACHE SNIPER : Accurate timing control of cache evictions Microarchitectural
+    side channel attacks have been very prominent in security research over the last
+    few years. Caches have been an outstanding covert channel, as they provide high
+    resolution and generic cross-core leakage even with simple user-mode code
+    execution privileges. To prevent these generic cross-core attacks, all major
+    cryptograph
+
+  [D-top4] Overall rank=411  TSC=1.1884  year=2025  vocab_density=1.0000  QR_neighbors=73  source=?
+  DOI: 10.1093/9780197520932.003.0004
+    The Algorithmic Black Box Chapter 2 introduces basic concepts associated with
+    AI, including machine learning and deep neural networks, and explains why AI
+    tools are often considered "black boxes." It considers why we are seeing a
+    significant escalation in the use of these tools in national security settings,
+    especially by the United States and China, and what advantages they provide over
+    basic aut
+
+  [D-top5] Overall rank=414  TSC=1.1851  year=2025  vocab_density=1.0000  QR_neighbors=69  source=?
+  DOI: 10.48550/arxiv.2508.11817
+    Machine Learning-Based AES Key Recovery via Side-Channel Analysis on the ASCAD
+    Dataset Cryptographic algorithms like AES and RSA are widely used and they are
+    mathematically robust and almost unbreakable but its implementation on physical
+    devices often leak information through side channels, such as electromagnetic
+    (EM) emissions, potentially compromising said theoretically secure algorithms.
+    This
+
+  [D-top6] Overall rank=419  TSC=1.1831  year=2025  vocab_density=0.0000  QR_neighbors=69  source=?
+  DOI: 10.48550/arxiv.2503.06566
+    Resource Constraint Estimation of In-Quantum Implementated Mini-AES The
+    advancement in quantum technology has brought the implementation of Grover's
+    Search attack on cybersecurity algorithms much closer to reality. For such
+    tasks, the Hilbert space has to be designed to make the relation between the
+    input and output of these cryptographic algorithms in quantum circuits. Also,
+    these algorithms are
+
+  [D-top7] Overall rank=422  TSC=1.1811  year=2012  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.23943/princeton/9780691154725.003.0007
+    The Beetle in the Box This chapter looks at how people know many things without
+    having observed their truth firsthand. To illustrate this and related points,
+    the chapter tells the story of the beetle in the box. An individual S comes into
+    a room and sees a small, sealed box on the table. She looks at the outside of
+    the box from all angles but cannot see into it. There is nothing unusual about
+    its
+
+  [D-top8] Overall rank=426  TSC=1.1778  year=2026  vocab_density=1.0000  QR_neighbors=77  source=?
+  DOI: 10.2139/ssrn.6418148
+    Materializing the Eternity Box (E-BOX) : Visualising the Architecture of Token-
+    Native Computers -- A Gateway to the Instinctive Computing Experience Computing
+    systems have evolved through several major technological paradigms, from early
+    stored-program machines to modern personal computers, data centers, and emerging
+    quantum processors. Yet despite their remarkable progress, most contemporary
+    comp
+
+  [D-top9] Overall rank=427  TSC=1.1777  year=2011  vocab_density=1.0000  QR_neighbors=69  source=?
+  DOI: 10.48550/arxiv.1102.3882
+    On weakly APN functions and 4-bit S-Boxes S-Boxes are important security
+    components of block ciphers. We provide theoretical results on necessary or
+    sufficient criteria for an (invertible) 4-bit S-Box to be weakly APN. Thanks to
+    a classification of 4-bit invertible S-Boxes achieved independently by De
+    Canniere and Leander-Poschmann, we can strengthen our results with a computer-
+    aided proof.
+
+  [D-top10] Overall rank=430  TSC=1.1759  year=2020  vocab_density=1.0000  QR_neighbors=70  source=?
+  DOI: 10.48550/arxiv.2002.07041
+    A Lightweight ISA Extension for AES and SM4 We describe a lightweight RISC-V ISA
+    extension for AES and SM4 block ciphers. Sixteen instructions (and a subkey
+    load) is required to implement an AES round with the extension, instead of 80
+    without. An SM4 step (quarter-round) has 6.5 arithmetic instructions, a similar
+    reduction. Perhaps even more importantly the ISA extension helps to eliminate
+    slow, s
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3666  TSC=0.0218  year=2021  vocab_density=0.0000  QR_neighbors=4  source=?
+  DOI: 10.59350/45j9j-0bz86
+    Osler and McGill I gave a presentation on Sir William Osler's presence at McGill
+    in the 21 st century at a symposium organized by McGill's department of Social
+    Studies of Medicine on February 3, 2021. You can find the recording here. In
+    this brief presentation, I address three issues around Osler and his legacy at
+    McGill.
+
+  [D-bot2] Overall rank=3653  TSC=0.0475  year=2025  vocab_density=0.0000  QR_neighbors=4  source=?
+  DOI: 10.54203/scil.2025.wvj20
+    Surgical Correction of Anal Atresia in a 4-Day-Old Brown Swiss Calf A 4-day-old
+    Brown Swiss calf was presented to a veterinary clinic in Huancayo, Peru, with
+    congenital anal atresia. The condition was characterized by an absence of
+    defecation, progressive abdominal distension, and a blind rectal pouch confirmed
+    radiographically. Clinical examination revealed no anal opening, moderate
+    tympany, and
+
+  [D-bot3] Overall rank=3640  TSC=0.0747  year=2021  vocab_density=0.0000  QR_neighbors=11  source=?
+  DOI: 10.59350/snnty-rp718
+    Ars uero longa In 2017, I wrote an essay about a manuscript comment on the
+    Aphorisms of Hippocrates by the 15th-century physcian Ugo Benzi (also known as
+    Hugo of Sienna). This paper, under the direction of Prof. Faith Wallis at McGill
+    University's Department of History and Classical studies, analyzes the incipit
+    of the manuscript and the insights it provides on Ugo's conception of medicine
+    and the
+
+  [D-bot4] Overall rank=3639  TSC=0.0762  year=2025  vocab_density=0.0000  QR_neighbors=6  source=?
+  DOI: 10.59350/aczyr-fme58
+    Saving Digital Pathology Every so often, I stumble upon some variation of the
+    graph displaying American music industry revenues by format: vinyl is replaced
+    by cassettes, which are replaced by CDs, which are (briefly) replaced by digital
+    downloads and ringtones, which are finally replaced by streaming services [1].
+    Today, essentially all casual music listening happens through streaming (and
+    mostly
+
+  [D-bot5] Overall rank=3637  TSC=0.0769  year=2024  vocab_density=0.0000  QR_neighbors=8  source=?
+  DOI: 10.57039/jnd-conf-abt-2024-ohfsa-29
+    Dietary patterns, physical activity and cardiovascular disease biomarkers among
+    female workers of reproductive age at Moi Teaching & Referral Hospital Healthy
+    dietary patterns and physical activity reduces the risk to cardiovascular
+    disease among women of reproductive age. This study aimed at establishing the
+    dietary patterns, physical activity and cardiovascular disease biomarkers among
+    female wo
+
+  [D-bot6] Overall rank=3636  TSC=0.0800  year=2021  vocab_density=0.0000  QR_neighbors=6  source=?
+  DOI: 10.59350/e4tv7-6gp63
+    Calcified ventricular aneurysm The findings in the image above were seen in the
+    anteroseptal left ventricular myocardium of an adult woman who died unexpectedly
+    in non-suspicious circumstances. She was known for coronary artery disease and a
+    remote myocardial infarct.
+
+  [D-bot7] Overall rank=3632  TSC=0.0958  year=2024  vocab_density=0.0000  QR_neighbors=15  source=?
+  DOI: 10.47363/jeesr/2024(6)229
+    Fungal Pathogens Affecting Terminalia Brownii Flowers, Fruits and Seeds in
+    Drylands, Kenya Terminalia brownii Freshen (Combretaceae family) is a
+    multipurpose agroforestry tree species widely grown in Eastern Africa's dry
+    lowlands. However, it needs to be more utilised, which has led to concern about
+    its regeneration, which is hindered by low seed germination percentages. The
+    study was carried out
+
+  [D-bot8] Overall rank=3627  TSC=0.1072  year=2021  vocab_density=0.0000  QR_neighbors=17  source=?
+  DOI: 10.18697/ajfand.99.21095
+    Evaluation of nutrient content in red kidney beans, amaranth leaves, sweet
+    potato roots and carrots cultivated in Rwanda No data exist on the nutrient
+    composition of some important Rwandan staples. The aim of this study was to
+    evaluate the nutrient content of red kidney beans, sweet potato roots, amaranth
+    leaves and carrot roots. About 6 kg of each raw material were cleaned and
+    conditioned prior t
+
+  [D-bot9] Overall rank=3626  TSC=0.1121  year=2021  vocab_density=0.0000  QR_neighbors=11  source=?
+  DOI: 10.59350/a0tbv-96974
+    Adrenal amyloidosis These photomicrographs belong to the adrenal taken at
+    autopsy of an older adult who died in hospital of renal failure and resistant
+    shock. He had been recently diagnosed with AA amyloidosis. The cause of his
+    resistant shock was thought to be due to sepsis, although no organisms were ever
+    detected and he did not respond to antimicrobial therapy.
+
+  [D-bot10] Overall rank=3620  TSC=0.1250  year=2022  vocab_density=0.0000  QR_neighbors=9  source=?
+  DOI: 10.26420/austiniobstetgynecol.2022.1198
+    Clinical Presentation of Intestinal Obstruction in Pregnancy and Management
+    Challenges: Case Series Introduction: Abdominal emergencies during pregnancy
+    (excluding obstetric emergencies) occur on one out of 500-700 pregnancies. Since
+    they are relatively rare patients should be referred and managed in tertiary
+    level centres where surgical, obstetrical and neonatal cares are available. To
+    our unders
+
+  Set B (broad query, above rank 399): 203 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=36  TSC=2.1960  year=2025  vocab_density=1.0000  QR_neighbors=81  source=?
+  DOI: 10.3390/cryptography9020021
+    Compact 8-Bit S-Boxes Based on Multiplication in a Galois Field GF(24)
+    Substitution boxes (S-Boxes) function as essential nonlinear elements in
+    contemporary cryptographic systems, offering robust protection against
+    cryptanalytic attacks. This study presents a novel technique for generating
+    compact 8-bit S-Boxes based on multiplication in the Galois Field GF(24). The
+    goal of this method is to creat
+
+  [B-top2] Overall rank=41  TSC=2.1605  year=2025  vocab_density=1.0000  QR_neighbors=81  source=?
+  DOI: 10.3390/cryptography9040067
+    Constructing 8 x 8 S-Boxes with Optimal Boolean Function Nonlinearity
+    Substitution boxes (S-Boxes) are the core components of modern block ciphers,
+    responsible for introducing the essential nonlinearity that protects against
+    attacks like linear and differential cryptanalysis. For an 8-bit S-Box, the
+    highest possible nonlinearity for a balanced Boolean function is 116. The best
+    results previously r
+
+  [B-top3] Overall rank=55  TSC=2.0402  year=2014  vocab_density=1.0000  QR_neighbors=78  source=?
+  DOI: 10.1109/tit.2014.2360880
+    Highly Nonlinear Balanced S-Boxes With Good Differential Properties Substitution
+    boxes (S-boxes) play a central role in the modern design of iterative block
+    ciphers. While in substitution-permutation networks the S-boxes are bijective,
+    thus ensuring the invertibility of the encryption algorithm, the property of
+    being bijective is not mandatory for Feistel kind of networks. In this paper,
+    two metho
+
+  [B-top4] Overall rank=57  TSC=2.0245  year=2020  vocab_density=1.0000  QR_neighbors=78  source=?
+  DOI: 10.1038/s41598-020-58636-w
+    Quantum-inspired cascaded discrete-time quantum walks with induced chaotic
+    dynamics and cryptographic applications Designing efficient and secure
+    cryptosystems has been a preoccupation for many scientists and engineers for a
+    long time wherein they use chaotic systems to design new cryptosystems. While
+    one dimensional (1-D) chaotic maps possess powerful properties compared to
+    higher dimension ones,
+
+  [B-top5] Overall rank=61  TSC=2.0110  year=2015  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.1145/2810103.2813699
+    White-Box Cryptography Revisited The need for software security in untrusted
+    environments is ever increasing. White-box cryptography aims to ensure the
+    security of cryptographic algorithms when the attacker has full access to their
+    implementations. However, there is no secure white-box implementation of
+    standard block ciphers such as DES and AES known to date: All published
+    techniques have been pr
+
+  [B-top6] Overall rank=68  TSC=1.9618  year=2019  vocab_density=0.0000  QR_neighbors=68  source=?
+  DOI: 10.3390/cryptography3010006
+    A Novel Algorithm of Constructing Highly Nonlinear S-p-boxes The role of
+    substitution boxes is very important in block ciphers. Substitution boxes are
+    utilized to create confusion in the cryptosystem. However, to create both
+    confusion and diffusion in any cryptosystem p-boxes and chaos base substitution
+    boxes are designed. In this work, a simple method is presented that serves both
+    ways. This meth
+
+  [B-top7] Overall rank=99  TSC=1.7742  year=2022  vocab_density=0.0000  QR_neighbors=72  source=?
+  DOI: 10.3390/en15196864
+    A Sponge-Based Key Expansion Scheme for Modern Block Ciphers Many systems in use
+    today require strong cryptographic primitives to ensure confidentiality and
+    integrity of data. This is especially true for energy systems, such as smart
+    grids, as their proper operation is crucial for the existence of a functioning
+    society. Because of this, we observe new developments in the field of
+    cryptography ever
+
+  [B-top8] Overall rank=111  TSC=1.6935  year=2025  vocab_density=1.0000  QR_neighbors=78  source=?
+  DOI: 10.3390/cryptography9020045
+    Generation of Affine-Shifted S-Boxes with Constant Confusion Coefficient
+    Variance and Application in the Partitioning of the S-Box Space Among the
+    multiple important properties that characterize strong S-boxes for symmetric
+    cryptography and are used in their designs, this study focuses on two: the non-
+    linearity property, a classical security metric, and the confusion coefficient
+    variance property,
+
+  [B-top9] Overall rank=113  TSC=1.6809  year=2018  vocab_density=1.0000  QR_neighbors=79  source=?
+  DOI: 10.1007/978-3-030-11012-3_23
+    Bridging machine learning and cryptography in defence against adversarial
+    attacks In the last decade, deep learning algorithms have become very popular
+    thanks to the achieved performance in many machine learning and computer vision
+    tasks. However, most of the deep learning architectures are vulnerable to so
+    called adversarial examples. This questions the security of deep neural networks
+    (DNN) for
+
+  [B-top10] Overall rank=128  TSC=1.6324  year=2005  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.1137/s0097539704443276
+    Bounds on the Efficiency of Generic Cryptographic Constructions A central focus
+    of modern cryptography is the construction of efficient, high-level
+    cryptographic tools (e.g., encryption schemes) from weaker, low-level
+    cryptographic primitives (e.g., one-way functions). Of interest are both the
+    existence of such constructions and their efficiency. Here, we show essentially
+    tight lower bounds on the
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=399  TSC=1.1960  year=2017  vocab_density=0.0000  QR_neighbors=68  source=?
+  DOI: 10.1016/j.jksuci.2016.01.004
+    Comparative analysis of different AES implementation techniques for efficient
+    resource usage and better performance of an FPGA Over the past few years,
+    cryptographic algorithms have become increasingly important. Advanced Encryption
+    Standard (AES) algorithm was introduced in early 2000. It is widely adopted
+    because of its easy implementation and robust security. In this work, AES is
+    implemented on
+
+  [B-bot2] Overall rank=397  TSC=1.1971  year=2021  vocab_density=0.0000  QR_neighbors=71  source=?
+  DOI: 10.4018/978-1-7998-6677-0.ch006
+    Post-Quantum Lattice-Based Cryptography Quantum cryptography is a branch of
+    cryptography that is a mixture of quantum mechanics and classical cryptography.
+    The study of quantum cryptography is to design cryptographic algorithms and
+    protocols that are against quantum computing attacks. In this chapter, the
+    authors focus on analyzing characteristics of the quantum-proof cryptosystem and
+    its applicat
+
+  [B-bot3] Overall rank=396  TSC=1.1996  year=2016  vocab_density=0.0000  QR_neighbors=72  source=?
+  DOI: 10.21122/2227-1031-2016-15-4-345-352
+    REGULIaRNYI METOD SINTEZA BAZOVYKh BENT-KVADRATOV PROIZVOL'NOGO PORIaDKA The
+    paper is devoted to the class construction of the most non-linear Boolean bent-
+    functions of any length N = 2 k ( k = 2, 4, 6...), on the basis of their
+    spectral representation - Agievich bent squares. These perfect algebraic
+    constructions are used as a basis to build many new cryptographic primitives,
+    such as generators o
+
+  [B-bot4] Overall rank=395  TSC=1.1996  year=2020  vocab_density=0.0000  QR_neighbors=71  source=?
+  DOI: 10.4018/978-1-7998-1763-5.ch012
+    A Novel Approach of Symmetric Key Cryptography using Genetic Algorithm
+    Implemented on GPGPU The world of digital communication consists of various
+    applications which uses internet as the backbone for communication. These
+    applications consist of data related to the users of the application, which is
+    confidential and integrity needs to be maintained to protect against
+    unauthorized access and use. In
+
+  [B-bot5] Overall rank=394  TSC=1.2015  year=2023  vocab_density=0.0000  QR_neighbors=66  source=?
+  DOI: 10.48550/arxiv.2305.15772
+    Security Impact Analysis of Degree of Field Extension in Lattice Attacks on
+    Ring-LWE Problem Modern information communications use cryptography to keep the
+    contents of communications confidential. RSA (Rivest-Shamir-Adleman)
+    cryptography and elliptic curve cryptography, which are public-key
+    cryptosystems, are widely used cryptographic schemes. However, it is known that
+    these cryptographic schemes
+
+  [B-bot6] Overall rank=393  TSC=1.2019  year=2013  vocab_density=0.0000  QR_neighbors=69  source=?
+  DOI: 10.48550/arxiv.1305.2391
+    Cryptography and Algorithmic Randomness The secure instantiation of the random
+    oracle is one of the major open problems in modern cryptography. We investigate
+    this problem using concepts and methods of algorithmic randomness. In modern
+    cryptography, the random oracle model is widely used as an imaginary framework
+    in which the security of a cryptographic scheme is discussed. In the random
+    oracle mo
+
+  [B-bot7] Overall rank=391  TSC=1.2022  year=2025  vocab_density=0.0000  QR_neighbors=74  source=?
+  DOI: 10.1007/s12095-025-00839-x
+    Bounds for the average degree-k monomial density of Boolean functions In
+    cryptographic applications, Boolean functions are typically represented in
+    algebraic normal form, i.e. as multivariate polynomial functions over the finite
+    field . For such a function , we consider, for each degree , the density of
+    monomials of degree in , i.e. the number of monomials of degree that appear in ,
+    normalized by
+
+  [B-bot8] Overall rank=390  TSC=1.2023  year=2020  vocab_density=1.0000  QR_neighbors=71  source=?
+  DOI: 10.3390/cryptography4040030
+    Electromagnetic and Power Side-Channel Analysis: Advanced Attacks and Low-
+    Overhead Generic Countermeasures through White-Box Approach Electromagnetic and
+    power side-channel analysis (SCA) provides attackers a prominent tool to extract
+    the secret key from the cryptographic engine. In this article, we present our
+    cross-device deep learning (DL)-based side-channel attack (X-DeepSCA) which
+    reduces the
+
+  [B-bot9] Overall rank=388  TSC=1.2029  year=2018  vocab_density=0.0000  QR_neighbors=69  source=?
+  DOI: 10.29322/ijsrp.8.7.2018.p7978
+    A Survey on Cryptography Algorithms - With the major advancements in the field
+    of technology and electronics, one persistent obstacle has proven to be one of
+    the major challenges, namely : Data Security. To get connected securely and
+    quickly through the electronic data transfer through the web, the data should be
+    encrypted. Encryption is the process of transforming plain text into ciphered-
+    text, w
+
+  [B-bot10] Overall rank=387  TSC=1.2042  year=2020  vocab_density=0.0000  QR_neighbors=68  source=?
+  DOI: 10.31221/osf.io/puj5v
+    Data Security in Cloud Computing Using Elliptic Curve Cryptography Encryption
+    helps in transmitting sensitive data over an insecure channel without any danger
+    of data being lost or being manipulated by some unauthorized entity. Different
+    Encryption schemes have been applied for Data security in a different
+    environment. Many cryptosystems worked during different eras and evolved
+    accordingly with ti
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  66 displaced,  14 remaining
+    Q2 :  55 displaced,  25 remaining
+    Q3 :  40 displaced,  40 remaining
+    Q4 :  27 displaced,  53 remaining
+    Q5 :  15 displaced,  64 remaining
+  [SetD_Quintile_Displaced] Q1:66;Q2:55;Q3:40;Q4:27;Q5:15
+  [SetD_Quintile_Remaining] Q1:14;Q2:25;Q3:40;Q4:53;Q5:64
+  ✓ Quintile histogram → Mechanism_setD_quintile_20260618_232736.png
+  ✓ Quintile histogram → Mechanism_setD_quintile_20260618_232736_dark.png
+
+  Combined top-X quintile bounds : ['0.0000', '0.0000', '0.0481', '0.0870']
+  Broad query document counts    : [80, 80, 26, 15, 2]
+  Focused document counts        : [0, 0, 54, 65, 77]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260618_232736.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260618_232736_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0078             0.0298
+  Mean vocab density (n-gram %)                  14.3%              46.3%
+  Mean $r_q$-neighbor count                        70.1               56.9
+  Mean publication year                          2017.7             2017.8
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260618_232736.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260618_232736_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260618_232736.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260618_232736_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_cryptography+S_box_TF-IDF_20260522_134838]: AB - Pass_data_to_other_query_20260522_135115.csv  (3667 DOIs)
+  ✓  All 3667 DOIs resolved to a known API source
+  Source info [TSC_150_S_box_TF-IDF_20260401_132811]: AB - Pass_data_to_other_query_20260401_132937.csv  (399 DOIs)
+  Source info [TSC_150_S_box_TF-IDF_20260401_132811]: combined_results_20260401_132845.csv  (+168 DOIs resolved)
+  ✓  All 567 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_S_box_TF-IDF_20260401_132811]: 10 unique DOIs
+  Top 10 xlsx [TSC_1000_cryptography+S_box_TF-IDF_20260522_134838]: 11 unique DOIs
+  Top 10 at chosen τ=0.03 (from xlsx): focused=10, broad=11
+  [SourceCounts_focused_top10] OpenAlex:5;SemanticScholar:3;arXiv:2
+  [SourceCounts_broad_top10] OpenAlex:8;SemanticScholar:2;arXiv:1
+  [SourceCounts_broad_top399] CrossRef:90;OpenAlex:95;SemanticScholar:99;arXiv:113;zbMath:2
+  [SourceCounts_setB] CrossRef:71;OpenAlex:54;SemanticScholar:43;arXiv:33;zbMath:2
+  [SourceCounts_setD] CrossRef:114;OpenAlex:5;SemanticScholar:6;arXiv:54;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260618_232736.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260618_232736_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260618_232736.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260618_232736_dark.png
+  ✓ Source pie → Mechanism_source_broad_top399_20260618_232736.png
+  ✓ Source pie → Mechanism_source_broad_top399_20260618_232736_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260618_232736.png
+  ✓ Source pie → Mechanism_source_setB_20260618_232736_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260618_232736.png
+  ✓ Source pie → Mechanism_source_setD_20260618_232736_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260618_232736.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260618_232736_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260618_232736.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260618_232736_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260618_232736.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260618_232736_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260618_232736.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260618_232736_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260618_232736.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260618_232736_dark.png
+  TSC boundary value at rank 399: 1.196028
+  ✓ Scatter plot → Mechanism3_scatter_20260618_232736.png
+  ✓ Scatter plot → Mechanism3_scatter_20260618_232736_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260618_232736_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260618_232736_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260618_232736.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260618_232736_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260618_232736_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260618_232736_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260618_232736.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260618_232736_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260618_232736_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260618_232736_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260618_232736.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260618_232736_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260618_232736_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260618_232736_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260618_232736.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260618_232736_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260618_232736_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260618_232736_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260618_232736.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260618_232736_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260618_232736_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260618_232736_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260618_232736_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260618_232736.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260618_232736_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260618_232736.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260618_232736_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260618_232736_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260618_232736_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260618_232736.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260618_232736_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260618_232736_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260618_232736_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260618_232736.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260618_232736_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260618_232736.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260618_232736_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260618_232736.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260618_232736_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260618_232736.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260618_232736_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260618_232736_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260618_232736_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260618_232736.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260618_232736_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260618_232736_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260618_232736_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260618_232736.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260618_232736_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260618_232736.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260618_232736_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260618_232736_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260618_232736_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260618_232736_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260618_232736_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260618_232736_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260618_232736_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260618_232736.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260618_232736_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260618_232736_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260618_232736_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260618_232736_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260618_232736_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260618_232736_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260618_232736_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=65, D=203, B=203, total=471
+  Edges: 84387
+  ✓ Gephi network → Mechanism_network_20260618_232736.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=65, R=131, D=203, B=203, N=3065, total=3667
+  Edges: 5270109
+  ✓ Gephi full network → Mechanism_network_full_20260618_232736.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_SBox_1000_Cryptography_20260523_004302
+════════════════════════════════════════════════════════════
+

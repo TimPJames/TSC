@@ -1,0 +1,571 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.050, λ=0.010
+  Noisy  : τ=0.030, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.03 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.03_lambda_0.01.csv
+  Focused corpus : 429 DOIs
+  Noisy corpus   : 3237 DOIs
+  Matrix DOIs    : 3237
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 429  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.03) for set membership and scatter
+  Rank threshold X (focused corpus size) : 429
+  Set R_Q5  (focused, retained, top quintile r_q) : 80
+  Set R     (focused, retained above X)           : 265
+  Set D     (focused, displaced below X)          : 164
+  Set B     (broad query, in top X ranks)         : 164
+  Set N     (broad query, below iso-TSC)          : 2644
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.05_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2014.7
+    Set B   mean year : 2016.9
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.0929
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.0929):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 86.1  low-$r_q$: 2206.9
+    Set B mean high-$r_q$ neighbor count : 95.1  low-$r_q$: 2703.9
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 2644
+    Set N : n=2644 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.001513  median=0.001461  n=164
+    Set B : mean=0.001849  median=0.001805  n=164
+    Set N : mean=0.001014  median=0.000990  n=2644
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 2293.09
+    Set B : mean total degree = 2798.99
+    Set R : mean total degree = 2724.10
+    Set N : mean total degree = 2365.06
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1213               56.4%
+    Set R              0.0833               45.9%
+    Set D              0.0376               25.3%
+    Set B              0.0477               29.3%
+    Set N              0.0042                3.5%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 429): 164 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=430  TSC=4.4872  year=2021  vocab_density=0.3333  QR_neighbors=98  source=?
+  DOI: 10.1007/jhep03(2021)151
+    Elliptic modular graph forms. Part I. Identities and generating series Elliptic
+    modular graph functions and forms (eMGFs) are defined for arbitrary graphs as
+    natural generalizations of modular graph functions and forms obtained by
+    including the character of an Abelian group in their Kronecker-Eisenstein
+    series. The simplest examples of eMGFs are given by the Green function for a
+    massless scalar fi
+
+  [D-top2] Overall rank=431  TSC=4.4817  year=2025  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.62571/gujf5t1klb25lbkl
+    Ramanujan-Nagell Equation and Elliptic Curves The Ramanujan-Nagell equation x^2
+    + 7 = 2n is a classic Diophantine equation with integer solutions. In this
+    paper, we explore this equation using the theory of elliptic curves and
+    computational techniques. We transform the Ramanujan-Nagell equation into
+    elliptic curves of the forms y^2 = x^3 - 7, y^2 = 2x^3 - 7, and y^2 = 4x^3 - 7,
+    and use the Nagell-
+
+  [D-top3] Overall rank=434  TSC=4.4718  year=2025  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.1016/j.geomphys.2025.105687
+    Modular differential equations of minimal orders of the elliptic genus of
+    Calabi-Yau varieties We study modular differential equations (MDEs) of high
+    orders for weak Jacobi forms and find necessary conditions for weak Jacobi forms
+    to satisfy MDEs of order 3 with respect to the heat operator. We investigate all
+    possible MDEs for the elliptic genus of six-dimensional manifolds with a trivial
+    first C
+
+  [D-top4] Overall rank=437  TSC=4.4657  year=2019  vocab_density=0.3333  QR_neighbors=95  source=?
+  DOI: 10.1093/imrn/rnz070
+    Reflective Modular Forms: A Jacobi Forms Approach We give an explicit formula to
+    express the weight of -reflective modular forms. We prove that there is no
+    -reflective lattice of signature when and except the even unimodular lattices of
+    signature and . As applications, we give a simple proof of Looijenga's theorem
+    that the lattice is not -reflective if . We also classify reflective modular
+    forms o
+
+  [D-top5] Overall rank=441  TSC=4.4611  year=2015  vocab_density=0.3333  QR_neighbors=88  source=?
+  DOI: 10.48550/arxiv.1508.01598
+    Big image of Galois representations associated with finite slope -adic families
+    of modular forms We consider the Galois representation associated with a finite
+    slope -adic family of modular forms. We prove that the Lie algebra of its image
+    contains a congruence Lie subalgebra of a non-trivial level. We describe the
+    largest such level in terms of the congruences of the family with -adic CM
+    forms.
+
+  [D-top6] Overall rank=442  TSC=4.4562  year=2010  vocab_density=0.3333  QR_neighbors=98  source=?
+  DOI: 10.4007/annals.2010.172.2135
+    Heegner divisors,L-functions and harmonic weak Maass forms Recent works, mostly
+    related to Ramanujan's mock theta functions, make use of the fact that harmonic
+    weak Maass forms can be combinatorial generating functions. Generalizing works
+    of Waldspurger, Kohnen and Zagier, we prove that such forms also serve as
+    "generating functions" for central values and derivatives of quadratic twists of
+    weight
+
+  [D-top7] Overall rank=444  TSC=4.4452  year=2019  vocab_density=0.2222  QR_neighbors=98  source=?
+  DOI: 10.1090/conm/732/14782
+    Rational points on twisted modular curves In this survey we summarize some
+    results about the rational points of twisted modular curves. We also raise some
+    open questions and conjectures.
+
+  [D-top8] Overall rank=445  TSC=4.4416  year=2007  vocab_density=0.3333  QR_neighbors=95  source=?
+  DOI: 10.1093/imrn/rnm063
+    Dyson's Rank, Overpartitions, and Weak Maass Forms In a series of papers the
+    first author and Ono connected the rank, a partition statistic introduced by
+    Dyson, to weak Maass forms, a new class of functions related to modular forms.
+    Naturally it is of wide interest to find other explicit examples of Maass forms.
+    Here we construct a new infinite family of such forms, arising from
+    overpartitions. As
+
+  [D-top9] Overall rank=446  TSC=4.4394  year=2026  vocab_density=0.3333  QR_neighbors=90  source=?
+  DOI: 10.12988/ija.2026.92005
+    Comparing ranks of elliptic equations y2=x3+-Ax Assign E_(p(p-2)) as an elliptic
+    curve y^2=x^3+p(p-2)x with twin primes then, we shall treat the rank of this
+    curve and if E_(-2p) is gotten as an elliptic curve y^2=x^3-2px then, we will
+    calculate the rank and compare the results with previous curves.
+
+  [D-top10] Overall rank=451  TSC=4.4161  year=2011  vocab_density=0.3333  QR_neighbors=89  source=?
+  DOI: 10.23943/princeton/9780691142012.003.0006
+    Computations with modular forms and Galois representations This chapter
+    discusses several aspects of the practical side of computing with modular forms
+    and Galois representations. It starts by discussing computations with modular
+    forms, and from there work towards the computation of polynomials that give the
+    Galois representations associated with modular forms. Throughout, the chapter
+    denotes the
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3225  TSC=0.2094  year=2007  vocab_density=0.0000  QR_neighbors=6  source=?
+  DOI: 10.1007/978-3-540-33981-6
+    Elements of the history of mathematics Unchanged reprint, enlarged for better
+    readability. See the reviews of earlier editions in Zbl 0932.01005 (1999) and
+    Zbl 0552.01002 (1984) a.o.
+
+  [D-bot2] Overall rank=3207  TSC=0.3822  year=2007  vocab_density=0.0000  QR_neighbors=13  source=?
+  DOI: 10.1007/978-3-540-34038-6
+    Elements of mathematics. Functions of a real variable. Elementary theory Reprint
+    of the 1976 edition (Zbl 0346.26003).
+
+  [D-bot3] Overall rank=3105  TSC=0.8404  year=2000  vocab_density=0.0000  QR_neighbors=39  source=?
+  DOI: 10.1137/s0036144500371907
+    The mathematics of infectious diseases Many models for the spread of infectious
+    diseases in populations have been analyzed mathematically and applied to
+    specific diseases. Threshold theorems involving the basic reproduction number
+    \(R_{0}\), the contact number \(\sigma\), and the replacement number \(R\) are
+    reviewed for the classic SIR epidemic and endemic models. Similar results with
+    new express
+
+  [D-bot4] Overall rank=3102  TSC=0.8414  year=2002  vocab_density=0.0000  QR_neighbors=25  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot5] Overall rank=3027  TSC=1.0321  year=2001  vocab_density=0.0000  QR_neighbors=38  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot6] Overall rank=3002  TSC=1.0891  year=2008  vocab_density=0.1111  QR_neighbors=53  source=?
+  DOI: 10.4310/cdm.2008.v2008.n1.a5
+    Unearthing the Visions of a Master: Harmonic Maass Forms and Number Theory
+    Together with his collaborators, most
+
+  [D-bot7] Overall rank=2871  TSC=1.3549  year=2008  vocab_density=0.0000  QR_neighbors=45  source=?
+  DOI: 10.1090/s0273-0979-08-01207-x
+    Finding meaning in error terms Four decades ago, Mikio Sato and John Tate
+    predicted the shape of probability distributions to which certain "error terms"
+    in number theory conform. Their prediction--known as the Sato-Tate Conjecture--
+    has been verified for an important class of cases, thanks to the recent work of
+    Laurent Clozel, Michael Harris, and Richard Taylor [3], and of Michael Harris,
+    Nicholas
+
+  [D-bot8] Overall rank=2868  TSC=1.3622  year=2006  vocab_density=0.0000  QR_neighbors=45  source=?
+  DOI: 10.1002/047174882x
+    Elements of information theory The second edition of the book contains the
+    following 17 chapters: Introduction and preview; Entropy, Relative entropy, and
+    Mutual information; Asymptotic equipartition property; Entropy rates of a
+    stochastic process; Data compression; Gambling and data compression; Channel
+    capacity; Differential entropy; Gaussian channel; Rate distortion theory;
+    Information theory a
+
+  [D-bot9] Overall rank=2750  TSC=1.5478  year=2003  vocab_density=0.0000  QR_neighbors=61  source=?
+  DOI: 10.1137/s003614450342480
+    The structure and function of complex networks Inspired by empirical studies of
+    networked systems such as the Internet, social networks, and biological
+    networks, researchers have in recent years developed a variety of techniques and
+    models to help us understand or predict the behavior of these systems. Here we
+    review developments in this field, including such concepts as the small-world
+    effect, de
+
+  [D-bot10] Overall rank=2708  TSC=1.6087  year=2013  vocab_density=0.0000  QR_neighbors=58  source=?
+  DOI: 10.1007/978-3-540-69444-1
+    David Hilbert's lectures on the foundations of arithmetic and logic, 1917--1933.
+    In collaboration with Ulrich Majer and Dirk Schlimm Here we encounter
+    mathematical logic and proof theory \textit{in statu nascendi} in the lectures
+    Hilbert held between 1917 and 1933, containing insights into the history of the
+    subject that cannot be read from any published source during the first half of
+    the 20th ce
+
+  Set B (broad query, above rank 429): 164 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=6  TSC=7.1050  year=2021  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.48550/arxiv.2111.03723
+    On the Selmer group and rank of a family of elliptic curves and curves of genus
+    one violating the Hasse principle We study an infinite family of -invariant zero
+    elliptic curves and their -isogenous curves , where and are fundamental
+    discriminants of a specific form, and is an isogeny of degree . A result of
+    Honda guarantees that for our discriminants , the quadratic number field always
+    has non-tri
+
+  [B-top2] Overall rank=25  TSC=6.6681  year=2025  vocab_density=0.1111  QR_neighbors=97  source=?
+  DOI: 10.48550/arxiv.2503.09207
+    Increasing the p-Selmer rank by twisting In this paper, we study the -Selmer
+    groups in the family of -twists of an elliptic curve over a number field . We
+    prove that if is an elliptic curve over a number field , and if is congruent to
+    the dimension of the Selmer group of modulo and is greater than that dimension,
+    then there exist infinitely many characters such that under certain conditions.
+
+  [B-top3] Overall rank=40  TSC=6.4999  year=2024  vocab_density=0.3333  QR_neighbors=93  source=?
+  DOI: 10.1142/s1793042124501264
+    Non-cyclic torsion of elliptic curves over imaginary quadratic fields of class
+    number 1 Let K be a non-cyclotomic imaginary quadratic field with class number 1
+    and [Formula: see text] an elliptic curve with [Formula: see text]. In this
+    paper, we determine the torsion groups that can arise as [Formula: see text]
+    where L is any quadratic extension of K.
+
+  [B-top4] Overall rank=43  TSC=6.4758  year=2009  vocab_density=0.3333  QR_neighbors=96  source=?
+  DOI: 10.1142/s1793042109002304
+    ELLIPTIC CURVES RELATED TO CYCLIC CUBIC EXTENSIONS The aim of this paper is to
+    study certain family of elliptic curves [Formula: see text] defined over a
+    number field F arising from hyperplane sections of some cubic surface [Formula:
+    see text] associated to a cyclic cubic extension K/F. We show that each
+    [Formula: see text] admits a 3-isogeny ph over F and the dual Selmer group
+    [Formula: see text]
+
+  [B-top5] Overall rank=44  TSC=6.4732  year=2020  vocab_density=0.3333  QR_neighbors=97  source=?
+  DOI: 10.48550/arxiv.2004.10054
+    -curves over odd degree number fields By reformulating and extending results of
+    Elkies, we prove some results on -curves over number fields of odd degree. We
+    show that, over such fields, the only prime isogeny degrees~ which an elliptic
+    curve without CM may have are those degrees which are already possible over~
+    itself (in particular, ), and we show the existence of a bound on the degrees of
+    cycli
+
+  [B-top6] Overall rank=59  TSC=6.3286  year=2012  vocab_density=0.3333  QR_neighbors=94  source=?
+  DOI: 10.48550/arxiv.1201.2124
+    Integral Tate modules and splitting of primes in torsion fields of elliptic
+    curves Let be an elliptic curve over a finite field , and a prime number
+    different from the characteristic of . In this paper we consider the problem of
+    finding the structure of the Tate module as an integral Galois representations
+    of . We indicate an explicit procedure to solve this problem starting from the
+    characteristi
+
+  [B-top7] Overall rank=64  TSC=6.2937  year=2012  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.1142/s1793042112500418
+    MODULI INTERPRETATION OF EISENSTEIN SERIES Let l >= 3. Using the moduli
+    interpretation, we define certain elliptic modular forms of level G(l) over any
+    field k where 6l is invertible and k contains the lth roots of unity. These
+    forms generate a graded algebra [Formula: see text], which, over C, is generated
+    by the Eisenstein series of weight 1 on G(l). The main result of this article is
+    that, when
+
+  [B-top8] Overall rank=71  TSC=6.2265  year=2011  vocab_density=0.3333  QR_neighbors=95  source=?
+  DOI: 10.48550/arxiv.1108.3709
+    Torsion of elliptic curves over cubic fields Although it is not known which
+    groups can appear as torsion groups of elliptic curves over cubic number fields,
+    it is known which groups can appear for infinitely many non-isomorphic curves.
+    We denote the set of these groups as . In this paper we deal with three problems
+    concerning the torsion of elliptic curves over cubic fields. First, we study the
+    po
+
+  [B-top9] Overall rank=74  TSC=6.1951  year=2019  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.48550/arxiv.1910.07335
+    Kolyvagin Derivatives of Modular Points on Elliptic Curves Let and be elliptic
+    curves. We can construct modular points derived from via the modular
+    parametrisation of . With certain assumptions we can show that these points are
+    of infinite order and are not divisible by a prime . In particular, using
+    Kolyvagin's construction of derivative classes, we can find elements in certain
+    Shafarevich-Tate g
+
+  [B-top10] Overall rank=80  TSC=6.1121  year=2020  vocab_density=0.4444  QR_neighbors=98  source=?
+  DOI: 10.48550/arxiv.2011.00590
+    Quadratic Points on Non-Split Cartan Modular Curves In this paper we study
+    quadratic points on the non-split Cartan modular curves , for and . Recently,
+    Siksek proved that all quadratic points on arise as pullbacks of rational points
+    on . Using similar techniques for , and employing a version of Chabauty for
+    symmetric powers of curves for , we show that the same holds for and . As a
+    consequence, w
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=429  TSC=4.4921  year=2022  vocab_density=0.1111  QR_neighbors=94  source=?
+  DOI: 10.48550/arxiv.2211.10367
+    Some Obstructions to Solvable Points on Higher Genus Curves It is known that for
+    a curve defined over of genus , there exists a point on the curve defined over a
+    solvable extension of . We relate points on curves of genus over solvable
+    extensions to the Bombieri-Lang conjecture. Specifically, we show that varieties
+    parametrising points defined over extensions with a fixed solvable Galois group
+    are
+
+  [B-bot2] Overall rank=428  TSC=4.4926  year=2009  vocab_density=0.2222  QR_neighbors=91  source=?
+  DOI: 10.1142/s1793042109002730
+    ON BINARY QUADRATIC FORMS AND THE HECKE GROUPS We present a reduction theory for
+    certain binary quadratic forms with coefficients in Z[l], where l is the minimal
+    translation in a Hecke group. We generalize from the modular group G(1) =
+    PSL(2,Z) to the Hecke groups and make extensive use of modified negative
+    continued fractions. We also define and characterize "reduced" and "simple"
+    hyperbolic fixe
+
+  [B-bot3] Overall rank=427  TSC=4.4952  year=2014  vocab_density=0.3333  QR_neighbors=95  source=?
+  DOI: 10.1142/s1793042114500407
+    Congruence properties of Taylor coefficients of modular forms In their work,
+    Serre and Swinnerton-Dyer study the congruence properties of the Fourier
+    coefficients of modular forms. We examine similar congruence properties, but for
+    the coefficients of a modified Taylor expansion about a CM point t. These
+    coefficients can be shown to be the product of a power of a constant
+    transcendental factor and
+
+  [B-bot4] Overall rank=424  TSC=4.5110  year=2015  vocab_density=0.0000  QR_neighbors=96  source=?
+  DOI: 10.48550/arxiv.1511.08784
+    On the number of distinct prime factors of a sum of super-powers Given , let be,
+    for and , some fixed integers, and define, for every , . We prove that the
+    following are equivalent: (a) There are a real and infinitely many indices for
+    which the number of distinct prime factors of is greater than the super-
+    logarithm of to base . (b) There do not exist non-zero integers such that and
+    for all . We wi
+
+  [B-bot5] Overall rank=423  TSC=4.5147  year=2023  vocab_density=0.0000  QR_neighbors=93  source=?
+  DOI: 10.1142/s1793042124500167
+    Primes in denominators of algebraic numbers Denote the set of algebraic numbers
+    as [Formula: see text] and the set of algebraic integers as [Formula: see text].
+    For [Formula: see text], consider its irreducible polynomial in [Formula: see
+    text], [Formula: see text]. Denote [Formula: see text]. Drungilas, Dubickas and
+    Jankauskas show in a recent paper that [Formula: see text]. Given a number field
+
+  [B-bot6] Overall rank=422  TSC=4.5155  year=2004  vocab_density=0.1111  QR_neighbors=97  source=?
+  DOI: 10.48550/arxiv.math/0402284
+    Small Zeros of Quadratic Forms with Linear Conditions Given a quadratic form and
+    linear forms in variables with coefficients in a number field , suppose that
+    there exists a point in at which the quadratic form vanishes and all the linear
+    forms do not. Then we show that there exists a point like this of relatively
+    small height. This generalizes a result of D.W. Masser (1998). As a corollary of
+    this
+
+  [B-bot7] Overall rank=419  TSC=4.5343  year=2014  vocab_density=0.3333  QR_neighbors=96  source=?
+  DOI: 10.48550/arxiv.1407.3515
+    Automorphic forms for triangle groups: Integrality properties We classify all
+    primes appearing in the denominators of the Hauptmodul and modular forms for
+    non-arithmetic triangle groups with a cusp. These primes have a congruence
+    condition in terms of the order of the generators of the group. As a corollary
+    we show that for the Hecke group of type , the prime does not appear in the
+    denominator of
+
+  [B-bot8] Overall rank=418  TSC=4.5477  year=2024  vocab_density=0.3333  QR_neighbors=97  source=?
+  DOI: 10.48550/arxiv.2401.15881
+    Signed -adic -functions of Bianchi modular forms Let be a prime number and be a
+    quadratic imaginary field in which splits as . Let be a cuspidal Bianchi
+    eigenform over of weight , where is an integer, level coprime to , and non-
+    ordinary at both of the primes above . We assume has trivial nebentypus. For ,
+    let be the Hecke eigenvalue of and let be the roots of polynomial . Then we have
+    four -stabil
+
+  [B-bot9] Overall rank=417  TSC=4.5505  year=2019  vocab_density=0.1111  QR_neighbors=97  source=?
+  DOI: 10.48550/arxiv.1902.06878
+    Patching and Multiplicity for Shimura Curves We use the Taylor-Wiles-Kisin
+    patching method to investigate the multiplicities with which Galois
+    representations occur in the mod cohomology of Shimura curves over totally real
+    number fields. Our method relies on explicit computations of local deformation
+    rings done by Shotton, which we use to compute the Weil class group of various
+    deformation rings.
+
+  [B-bot10] Overall rank=416  TSC=4.5511  year=2012  vocab_density=0.1111  QR_neighbors=95  source=?
+  DOI: 10.1142/s1793042112500807
+    ON NUMBER FIELDS WITH EQUIVALENT INTEGRAL TRACE FORMS Let K be a number field.
+    The integral trace form is the integral quadratic form given by tr k/Q(x2)|OK.
+    In this article we study the existence of non-conjugated number fields with
+    equivalent integral trace forms. As a corollary of one of the main results of
+    this paper, we show that any two non-totally real number fields with the same
+    signature
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  73 displaced,  13 remaining
+    Q2 :  47 displaced,  39 remaining
+    Q3 :  26 displaced,  59 remaining
+    Q4 :  12 displaced,  74 remaining
+    Q5 :   6 displaced,  80 remaining
+  [SetD_Quintile_Displaced] Q1:73;Q2:47;Q3:26;Q4:12;Q5:6
+  [SetD_Quintile_Remaining] Q1:13;Q2:39;Q3:59;Q4:74;Q5:80
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_162742.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_162742_dark.png
+
+  Combined top-X quintile bounds : ['0.0421', '0.0602', '0.0773', '0.0955']
+  Broad query document counts    : [66, 47, 29, 13, 9]
+  Focused document counts        : [20, 39, 57, 73, 76]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_162742.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_162742_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0477             0.0376
+  Mean vocab density (n-gram %)                  29.3%              25.3%
+  Mean $r_q$-neighbor count                        95.1               86.1
+  Mean publication year                          2016.9             2014.7
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_162742.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_162742_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_162742.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_162742_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551]: AB - Pass_data_to_other_query_20260525_135826.csv  (3237 DOIs)
+  ✓  All 3237 DOIs resolved to a known API source
+  Source info [TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841]: AB - Pass_data_to_other_query_20260403_115151.csv  (429 DOIs)
+  Source info [TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841]: combined_results_20260403_114941.csv  (+84 DOIs resolved)
+  ✓  All 513 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841]: 11 unique DOIs
+  Top 10 xlsx [TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551]: 12 unique DOIs
+  Top 10 at chosen τ=0.03 (from xlsx): focused=11, broad=12
+  [SourceCounts_focused_top10] CrossRef:2;OpenAlex:2;SemanticScholar:3;arXiv:4
+  [SourceCounts_broad_top10] CrossRef:2;OpenAlex:2;arXiv:8
+  [SourceCounts_broad_top429] CrossRef:156;OpenAlex:59;SemanticScholar:14;arXiv:200
+  [SourceCounts_setB] CrossRef:81;OpenAlex:2;SemanticScholar:1;arXiv:80
+  [SourceCounts_setD] CrossRef:64;OpenAlex:57;SemanticScholar:5;arXiv:14;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_162742.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_162742_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_162742.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_162742_dark.png
+  ✓ Source pie → Mechanism_source_broad_top429_20260617_162742.png
+  ✓ Source pie → Mechanism_source_broad_top429_20260617_162742_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_162742.png
+  ✓ Source pie → Mechanism_source_setB_20260617_162742_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_162742.png
+  ✓ Source pie → Mechanism_source_setD_20260617_162742_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_162742.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_162742_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_162742.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_162742_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_162742.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_162742_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_162742.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_162742_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_162742.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_162742_dark.png
+  TSC boundary value at rank 429: 4.492124
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162742.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162742_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162742_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162742_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162742.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162742_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162742_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162742_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162742.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162742_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162742_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162742_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162742.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162742_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162742_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162742_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162742.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162742_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162742_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162742_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162742.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162742_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162742_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162742_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162742_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_162742.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_162742_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162742.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162742_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162742_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162742_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162742.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162742_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162742_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162742_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_162742.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_162742_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_162742.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_162742_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_162742.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_162742_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162742.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162742_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162742_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162742_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162742.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162742_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162742_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162742_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_162742.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_162742_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162742.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162742_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162742_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162742_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162742_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162742_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162742_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162742_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162742.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162742_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162742_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162742_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162742_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162742_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162742_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162742_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=80, D=164, B=164, total=408
+  Edges: 75964
+  ✓ Gephi network → Mechanism_network_20260617_162742.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=80, R=185, D=164, B=164, N=2644, total=3237
+  Edges: 3905103
+  ✓ Gephi full network → Mechanism_network_full_20260617_162742.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500
+════════════════════════════════════════════════════════════
+

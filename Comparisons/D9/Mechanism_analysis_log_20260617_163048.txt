@@ -1,0 +1,566 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.040, λ=0.010
+  Noisy  : τ=0.020, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.02 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.02_lambda_0.01.csv
+  Focused corpus : 378 DOIs
+  Noisy corpus   : 3189 DOIs
+  Matrix DOIs    : 3189
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 378  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.02) for set membership and scatter
+  Rank threshold X (focused corpus size) : 378
+  Set R_Q5  (focused, retained, top quintile r_q) : 67
+  Set R     (focused, retained above X)           : 259
+  Set D     (focused, displaced below X)          : 119
+  Set B     (broad query, in top X ranks)         : 119
+  Set N     (broad query, below iso-TSC)          : 2692
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.04_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2015.1
+    Set B   mean year : 2016.6
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.0766
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.0766):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 73.8  low-$r_q$: 2736.8
+    Set B mean high-$r_q$ neighbor count : 77.9  low-$r_q$: 3041.6
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 2692
+    Set N : n=2692 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.000528  median=0.000526  n=119
+    Set B : mean=0.000680  median=0.000655  n=119
+    Set N : mean=0.000426  median=0.000425  n=2692
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 2810.64
+    Set B : mean total degree = 3119.51
+    Set R : mean total degree = 2984.05
+    Set N : mean total degree = 2863.86
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.0981               43.8%
+    Set R              0.0619               36.8%
+    Set D              0.0279               17.6%
+    Set B              0.0154               13.3%
+    Set N              0.0034                3.4%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 378): 119 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=379  TSC=1.9434  year=2000  vocab_density=0.4444  QR_neighbors=79  source=?
+  DOI: 10.48550/arxiv.math/0010135
+    Integrable Lattices: Random Matrices and Random Permutations These lectures
+    present a survey of recent developments in the area of random matrices (finite
+    and infinite) and random permutations. These probabilistic problems suggest
+    matrix integrals (or Fredholm determinants), which arise very naturally as
+    integrals over the tangent space to symmetric spaces, as integrals over groups
+    and finally as
+
+  [D-top2] Overall rank=388  TSC=1.9260  year=2024  vocab_density=0.4444  QR_neighbors=79  source=?
+  DOI: 10.1007/s00220-025-05417-z
+    Cusp Universality for Correlated Random Matrices For correlated real symmetric
+    or complex Hermitian random matrices, we prove that the local eigenvalue
+    statistics at any cusp singularity are universal. Since the density of states
+    typically exhibits only square root edge or cubic root cusp singularities, our
+    result completes the proof of the Wigner-Dyson-Mehta universality conjecture in
+    all spectra
+
+  [D-top3] Overall rank=400  TSC=1.9065  year=2024  vocab_density=0.1111  QR_neighbors=77  source=?
+  DOI: 10.1142/s2010326324500035
+    Asymptotics of the determinant of the modified Bessel functions and the second
+    Painleve equation In the paper, we consider the extended Gross-Witten-Wadia
+    unitary matrix model by introducing a logarithmic term in the potential. The
+    partition function of the model can be expressed equivalently in terms of the
+    Toeplitz determinant with the [Formula: see text]-entry being the modified
+    Bessel function
+
+  [D-top4] Overall rank=404  TSC=1.9037  year=2018  vocab_density=0.1111  QR_neighbors=79  source=?
+  DOI: 10.48550/arxiv.1808.05749
+    On the value-distribution of symmetric power L-functions We first briefly survey
+    the value-distribution theory of L-functions of the Bohr-Jessen flavor (or the
+    theory of "M-functions"). Limit formulas for the Riemann zeta-function,
+    Dirichlet L-functions, automorphic L-functions etc. are discussed. Then we prove
+    new results on the value-distribution of symmetric power L-functions, which are
+    limit f
+
+  [D-top5] Overall rank=411  TSC=1.8977  year=2005  vocab_density=0.3333  QR_neighbors=77  source=?
+  DOI: 10.48550/arxiv.math/0507336
+    Rectangular random matrices. Related convolution We characterize asymptotic
+    collective behaviour of rectangular random matrices, the sizes of which tend to
+    infinity at different rates: when embedded in a space of larger square matrices,
+    independent rectangular random matrices are asymtotically free with amalgamation
+    over a subalgebra. Therefore we can define a "rectangular free convolution",
+    linea
+
+  [D-top6] Overall rank=419  TSC=1.8856  year=2005  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.48550/arxiv.math/0502042
+    Lower bounds for moments of L-functions The moments of central values of
+    families of L-functions have recently attracted much attention and, with the
+    work of Keating and Snaith, there are now precise conjectures for their limiting
+    values. We develop a simple method to establish lower bounds of the conjectured
+    order of magnitude for several such families of L-functions. As an example we
+    work out th
+
+  [D-top7] Overall rank=421  TSC=1.8846  year=2012  vocab_density=0.4444  QR_neighbors=74  source=?
+  DOI: 10.1515/rose-2012-0008
+    Canonical equation for normalized spectral functions of a pencil of random
+    nonsymmetric matrices Under conditions which are weaker than those used many
+    years ago, the limit theorems for the n.s.f. of a pencil of nonsymmetric random
+    matrices under Lindeberg condition are proved.
+
+  [D-top8] Overall rank=436  TSC=1.8715  year=2005  vocab_density=0.2222  QR_neighbors=78  source=?
+  DOI: 10.48550/arxiv.math/0509480
+    Applications of the L-functions ratios conjectures In upcoming papers by Conrey,
+    Farmer and Zirnbauer there appear conjectural formulas for averages, over a
+    family, of ratios of products of shifted L-functions. In this paper we will
+    present various applications of these ratios conjectures to a wide variety of
+    problems that are of interest in number theory, such as lower order terms in the
+    zero sta
+
+  [D-top9] Overall rank=438  TSC=1.8704  year=2023  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.48550/arxiv.2306.16487
+    Moments of Artin-Schreier L-functions We compute moments of -functions
+    associated to the polynomial family of Artin--Schreier covers over , where is a
+    power of a prime , when the size of the finite field is fixed and the genus of
+    the family goes to infinity. More specifically, we compute the moment for a
+    large range of values of , depending on the sizes of and . We also compute the
+    second moment i
+
+  [D-top10] Overall rank=443  TSC=1.8671  year=2005  vocab_density=0.4444  QR_neighbors=78  source=?
+  DOI: 10.48550/arxiv.cond-mat/0502322
+    Random Matrices and Supersymmetry in Disordered Systems It is described how one
+    comes to the Wigner-Dyson random matrix theory (RMT) starting from a model of a
+    disordered metal. The lectures start with a historical introduction where basic
+    ideas of the RMT and theory of disordered metals are reviewed. This part is
+    followed by an introduction into supermathematics (mathematics operating with
+    both c
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3174  TSC=0.2376  year=2007  vocab_density=0.0000  QR_neighbors=16  source=?
+  DOI: 10.1007/978-3-540-33981-6
+    Elements of the history of mathematics Unchanged reprint, enlarged for better
+    readability. See the reviews of earlier editions in Zbl 0932.01005 (1999) and
+    Zbl 0552.01002 (1984) a.o.
+
+  [D-bot2] Overall rank=3122  TSC=0.5106  year=2007  vocab_density=0.1111  QR_neighbors=35  source=?
+  DOI: 10.1007/978-3-540-34038-6
+    Elements of mathematics. Functions of a real variable. Elementary theory Reprint
+    of the 1976 edition (Zbl 0346.26003).
+
+  [D-bot3] Overall rank=3089  TSC=0.5900  year=2002  vocab_density=0.0000  QR_neighbors=40  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot4] Overall rank=2974  TSC=0.7344  year=2000  vocab_density=0.0000  QR_neighbors=61  source=?
+  DOI: 10.1137/s0036144500371907
+    The mathematics of infectious diseases Many models for the spread of infectious
+    diseases in populations have been analyzed mathematically and applied to
+    specific diseases. Threshold theorems involving the basic reproduction number
+    \(R_{0}\), the contact number \(\sigma\), and the replacement number \(R\) are
+    reviewed for the classic SIR epidemic and endemic models. Similar results with
+    new express
+
+  [D-bot5] Overall rank=2849  TSC=0.8424  year=2001  vocab_density=0.0000  QR_neighbors=65  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot6] Overall rank=2706  TSC=0.9378  year=2008  vocab_density=0.1111  QR_neighbors=51  source=?
+  DOI: 10.48550/arxiv.0809.1752
+    Convexity bounds for L-functions We give a sharp convexity estimate for
+    L-functions which have a functional equation and an Euler product.
+
+  [D-bot7] Overall rank=2683  TSC=0.9516  year=2025  vocab_density=0.1111  QR_neighbors=50  source=?
+  DOI: 10.48550/arxiv.2509.06175
+    Hyperelliptic Shimura curves and -functions of central vanishing order at least
+    3 We use hyperelliptic Shimura curves to find triple product -functions of
+    Hilbert newforms with central vanishing orders proved to be at least 3.
+
+  [D-bot8] Overall rank=2674  TSC=0.9548  year=2019  vocab_density=0.1111  QR_neighbors=60  source=?
+  DOI: 10.48550/arxiv.1903.09881
+    Holomorphy of Adjoint L-functions for We show entireness of complete adjoint
+    L-functions associated to \textbf{any} cuspidal representations of or over an
+    arbitrary global field. Twisted cases are also investigated.
+
+  [D-bot9] Overall rank=2643  TSC=0.9767  year=2015  vocab_density=0.0000  QR_neighbors=69  source=?
+  DOI: 10.1007/978-3-662-45569-2
+    Foundations of geometry (Festschrift 1899). Edited and commented by Klaus
+    Volkert There are many editions and translations of \textit{David Hilbert}'s
+    [Grundlagen der Geometrie. Leipzig: B. G. Teubner (1899; JFM 30.0424.01)] first
+    published in 1899 as a Festschrift on the occasion of the unveiling of the
+    Gauss-Weber monument in Gottingen. However, the author's idea is new, he wants
+    to present Hilb
+
+  [D-bot10] Overall rank=2612  TSC=0.9900  year=2013  vocab_density=0.1111  QR_neighbors=66  source=?
+  DOI: 10.1007/978-3-540-69444-1
+    David Hilbert's lectures on the foundations of arithmetic and logic, 1917--1933.
+    In collaboration with Ulrich Majer and Dirk Schlimm Here we encounter
+    mathematical logic and proof theory \textit{in statu nascendi} in the lectures
+    Hilbert held between 1917 and 1933, containing insights into the history of the
+    subject that cannot be read from any published source during the first half of
+    the 20th ce
+
+  Set B (broad query, above rank 378): 119 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=6  TSC=3.2256  year=2021  vocab_density=0.4444  QR_neighbors=79  source=?
+  DOI: 10.3384/lic.diva-175751
+    Large deviations of condition numbers of random matrices Random matrix theory
+    has found many applications in various fields such as physics, statistics,
+    number theory and so on. One important approach of studying random matrices is
+    based on their spectral properties. In this thesis, we investigate the limiting
+    behaviors of condition numbers of suitable random matrices in terms of large
+    deviations.
+
+  [B-top2] Overall rank=8  TSC=3.1638  year=2010  vocab_density=0.3333  QR_neighbors=79  source=?
+  DOI: 10.1017/cbo9780511801334
+    An introduction to random matrices Properties of random matrices and especially
+    properties of their eigenvalues are important in many fields of science and also
+    in pure mathematics. The goal of the given book is to present a rigorous
+    introduction to the basic theory of random matrices, including free probability,
+    to be accessible to graduate students in mathematics or related sciences who
+    have mas
+
+  [B-top3] Overall rank=10  TSC=3.1599  year=2000  vocab_density=0.3333  QR_neighbors=77  source=?
+  DOI: 10.1007/s002200050027
+    Shape fluctuations and random matrices In a series of important problems in
+    probability theory and combinatorics the variables of interest can be expressed
+    in terms of Fredholm determinants. Asymptotic properties of the expressions of
+    this type are deeply studied in the spectral theory of large random matrices. It
+    is shown that certain characteristics of the random growth model asymptotically
+    coin
+
+  [B-top4] Overall rank=87  TSC=2.7198  year=2004  vocab_density=0.4444  QR_neighbors=79  source=?
+  DOI: 5.14#info
+    Random matrices. The author's famous book \textit{Random Matrices } was first
+    published in 1967. The second edition appeared in 1990 (see Zbl 0780.60014). And
+    the one under review is the third edition, which adopts recent developments in
+    this field. It is to be noted that the previous editions have contributed to the
+    developments as standard references. The consistent feature of the book through
+    t
+
+  [B-top5] Overall rank=93  TSC=2.7003  year=2006  vocab_density=0.4444  QR_neighbors=79  source=?
+  DOI: 10.1119/1.2198883
+    Random numbers and random matrices: Quantum chaos meets number theory The
+    statistical analysis of the eigenvalues of quantum systems has become an
+    important tool in understanding the connections between classical and quantum
+    physics. The statistical properties of the eigenvalues of a quantum system whose
+    classical counterpart is integrable match those of random numbers. The
+    eigenvalues of a chaoti
+
+  [B-top6] Overall rank=105  TSC=2.6516  year=2017  vocab_density=0.6667  QR_neighbors=78  source=?
+  DOI: 10.1093/oso/9780198797319.003.0008
+    Random matrices and number theory: some recent themes The aim of this chapter is
+    to motivate and describe some recent developments concerning the applications of
+    random matrix theory to problems in number theory. The first section provides a
+    brief and rather selective introduction to the theory of the Riemann zeta
+    function, in particular to those parts needed to understand the connections with
+    ran
+
+  [B-top7] Overall rank=125  TSC=2.5648  year=2015  vocab_density=0.2222  QR_neighbors=79  source=?
+  DOI: 10.1080/07362994.2016.1191994
+    Local limit theorems in some random models from number theory We study the local
+    limit theorem for weighted sums of Bernoulli variables. We show on examples that
+    this is an important question in the general theory of the local limit theorem,
+    and which turns up to be not well explored. The examples we consider arise from
+    standard random models used in arithmetical number theory. We next use the cha
+
+  [B-top8] Overall rank=131  TSC=2.5499  year=2015  vocab_density=0.5556  QR_neighbors=79  source=?
+  DOI: 10.1093/oxfordhb/9780198744191.013.24
+    Number theory This article examines some of the connections between random
+    matrix theory (RMT) and number theory, including the modelling of the value
+    distributions of the Riemann zeta function and other L-functions as well as the
+    statistical distribution of their zeros. Number theory has been used in RMT to
+    address seemingly disparate questions, such as modelling mean and extreme values
+    of the Ri
+
+  [B-top9] Overall rank=151  TSC=2.4426  year=2020  vocab_density=0.3333  QR_neighbors=79  source=?
+  DOI: 10.48550/arxiv.2006.04503
+    On the moments of the moments of Taking at random, uniformly from , we consider
+    the th moment, with respect to , of the random variable corresponding to the th
+    moment of over the interval , where is the Riemann zeta function. We call these
+    the `moments of moments' of the Riemann zeta function, and present a conjecture
+    for their asymptotics, when , for integer . This is motivated by comparisons wit
+
+  [B-top10] Overall rank=158  TSC=2.4316  year=2017  vocab_density=0.2222  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042117500713
+    Periods of iterated rational functions If [Formula: see text] is a polynomial of
+    degree [Formula: see text] in [Formula: see text], let [Formula: see text] be
+    the number of cycles of length [Formula: see text] in the directed graph on
+    [Formula: see text] with edges [Formula: see text] For random polynomials, the
+    numbers [Formula: see text] have asymptotic behavior resembling that for the
+    cycle len
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=378  TSC=1.9441  year=2016  vocab_density=0.1111  QR_neighbors=79  source=?
+  DOI: 10.1142/s1793042116500548
+    Arithmetic properties of l-regular overpartitions Recently, Andrews introduced
+    the partition function [Formula: see text] as the number of overpartitions of
+    [Formula: see text] in which no part is divisible by [Formula: see text] and
+    only parts [Formula: see text] may be overlined. He proved that [Formula: see
+    text] and [Formula: see text] are divisible by [Formula: see text]. Let
+    [Formula: see te
+
+  [B-bot2] Overall rank=377  TSC=1.9446  year=2019  vocab_density=0.0000  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042119500167
+    The discriminant of compositum of algebraic number fields For an algebraic
+    number field [Formula: see text], let [Formula: see text] denote the
+    discriminant of an algebraic number field [Formula: see text]. It is well known
+    that if [Formula: see text] are algebraic number fields with coprime
+    discriminants, then [Formula: see text] are linearly disjoint over the field
+    [Formula: see text] of rationa
+
+  [B-bot3] Overall rank=376  TSC=1.9465  year=2019  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042120500359
+    The spectral properties of a continuous family of zeta functions We study a
+    family of zeta functions [Formula: see text] parametrized by a continuous
+    variable [Formula: see text]. When [Formula: see text], [Formula: see text]
+    corresponds to the zeta function of a conformal Laplacian on the [Formula: see
+    text]-sphere. We prove that [Formula: see text] is holomorphic at the origin,
+    for [Formula: see
+
+  [B-bot4] Overall rank=375  TSC=1.9472  year=2016  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042116500317
+    On integers not of the form Fn +- pa In this paper, we prove a conjecture of Sun
+    concerning the arithmetic progression of integers which contains no integers of
+    the form [Formula: see text]. In fact, we show that [Formula: see text] has at
+    least two distinct prime factors whenever [Formula: see text], where [Formula:
+    see text] is a Fibonacci number and [Formula: see text] and [Formula: see text]
+    a
+
+  [B-bot5] Overall rank=373  TSC=1.9511  year=2005  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042105000224
+    ON A CERTAIN GENERAL EXPONENTIAL SUM In this paper we study the general
+    exponential sum related to multiplicative functions f(n) with |f(n)| <= 1,
+    namely we study the sum [Formula: see text] and obtain a non-trivial upper bound
+    when a is a certain type of rational number.
+
+  [B-bot6] Overall rank=370  TSC=1.9547  year=2016  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042116500743
+    On the degree of irrationality in Noether's problem Noether's problem asks
+    whether, for a given field [Formula: see text] and finite group [Formula: see
+    text], the fixed field [Formula: see text] is a purely transcendental extension
+    of [Formula: see text], where [Formula: see text] acts on the [Formula: see
+    text] by [Formula: see text]. The field [Formula: see text] is naturally the
+    function field
+
+  [B-bot7] Overall rank=369  TSC=1.9547  year=2025  vocab_density=0.0000  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042125500964
+    On monogenity of number fields and Galois group Let [Formula: see text] denote
+    the ring of algebraic integers of an algebraic number field [Formula: see text],
+    where [Formula: see text] is a root of an irreducible polynomial [Formula: see
+    text], [Formula: see text]. We say [Formula: see text] is monogenic if [Formula:
+    see text] is a basis for [Formula: see text]. In this paper, we explicitly compu
+
+  [B-bot8] Overall rank=368  TSC=1.9550  year=2021  vocab_density=0.1111  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042122500245
+    Integer dynamics Let [Formula: see text] be an integer, and write the base
+    [Formula: see text] expansion of any non-negative integer [Formula: see text] as
+    [Formula: see text], with [Formula: see text] and [Formula: see text] for
+    [Formula: see text]. Let [Formula: see text] denote an integer polynomial such
+    that [Formula: see text] for all [Formula: see text]. Consider the map [Formula:
+    see text],
+
+  [B-bot9] Overall rank=366  TSC=1.9580  year=2022  vocab_density=0.0000  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042122501184
+    Inhomogeneous additive equations In this paper, we study the function [Formula:
+    see text], which we define as the smallest number [Formula: see text] of
+    variables needed to guarantee that the equation [Formula: see text] has
+    nontrivial solutions in each of the [Formula: see text]-adic fields [Formula:
+    see text], regardless of the rational integer coefficients. This generalizes the
+    [Formula: see te
+
+  [B-bot10] Overall rank=365  TSC=1.9581  year=2019  vocab_density=0.0000  QR_neighbors=78  source=?
+  DOI: 10.1142/s1793042119500155
+    Exceptional set for sums of unlike powers of primes Let [Formula: see text]
+    denote the number of representations of an even integer [Formula: see text],
+    [Formula: see text] as the sum of two squares, one cube and three fourth powers
+    of primes, and by [Formula: see text] we denote the number of even integers
+    [Formula: see text], [Formula: see text] such that the expected asymptotic
+    formula for [For
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  70 displaced,   6 remaining
+    Q2 :  23 displaced,  52 remaining
+    Q3 :  12 displaced,  64 remaining
+    Q4 :   5 displaced,  70 remaining
+    Q5 :   9 displaced,  67 remaining
+  [SetD_Quintile_Displaced] Q1:70;Q2:23;Q3:12;Q4:5;Q5:9
+  [SetD_Quintile_Remaining] Q1:6;Q2:52;Q3:64;Q4:70;Q5:67
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_163048.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_163048_dark.png
+
+  Combined top-X quintile bounds : ['0.0148', '0.0365', '0.0536', '0.0749']
+  Broad query document counts    : [73, 33, 8, 2, 3]
+  Focused document counts        : [3, 43, 68, 73, 72]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_163048.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_163048_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0154             0.0279
+  Mean vocab density (n-gram %)                  13.3%              17.6%
+  Mean $r_q$-neighbor count                        77.9               73.8
+  Mean publication year                          2016.6             2015.1
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_163048.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_163048_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_163048.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_163048_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139]: AB - Pass_data_to_other_query_20260525_142437.csv  (3189 DOIs)
+  ✓  All 3189 DOIs resolved to a known API source
+  Source info [TSC_150_arithmetic_statistics_random_matrices_L__TF-IDF_20260403_120941]: AB - Pass_data_to_other_query_20260403_121202.csv  (378 DOIs)
+  Source info [TSC_150_arithmetic_statistics_random_matrices_L__TF-IDF_20260403_120941]: combined_results_20260403_121035.csv  (+46 DOIs resolved)
+  ✓  All 424 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_arithmetic_statistics_random_matrices_L__TF-IDF_20260403_120941]: 10 unique DOIs
+  Top 10 xlsx [TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139]: 12 unique DOIs
+  Top 10 at chosen τ=0.02 (from xlsx): focused=10, broad=12
+  [SourceCounts_focused_top10] CrossRef:8;SemanticScholar:2
+  [SourceCounts_broad_top10] CrossRef:6;SemanticScholar:3;arXiv:1;zbMath:2
+  [SourceCounts_broad_top378] CrossRef:200;OpenAlex:13;SemanticScholar:57;arXiv:101;zbMath:7
+  [SourceCounts_setB] CrossRef:70;OpenAlex:12;SemanticScholar:5;arXiv:25;zbMath:7
+  [SourceCounts_setD] CrossRef:16;OpenAlex:12;SemanticScholar:11;arXiv:56;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_163048.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_163048_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_163048.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_163048_dark.png
+  ✓ Source pie → Mechanism_source_broad_top378_20260617_163048.png
+  ✓ Source pie → Mechanism_source_broad_top378_20260617_163048_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_163048.png
+  ✓ Source pie → Mechanism_source_setB_20260617_163048_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_163048.png
+  ✓ Source pie → Mechanism_source_setD_20260617_163048_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_163048.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_163048_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_163048.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_163048_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_163048.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_163048_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_163048.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_163048_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_163048.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_163048_dark.png
+  TSC boundary value at rank 378: 1.944059
+  ✓ Scatter plot → Mechanism3_scatter_20260617_163048.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_163048_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_163048_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_163048_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_163048.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_163048_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_163048_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_163048_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_163048.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_163048_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_163048_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_163048_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_163048.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_163048_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_163048_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_163048_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_163048.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_163048_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_163048_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_163048_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_163048.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_163048_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_163048_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_163048_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_163048_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_163048.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_163048_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_163048.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_163048_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_163048_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_163048_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_163048.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_163048_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_163048_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_163048_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_163048.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_163048_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_163048.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_163048_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_163048.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_163048_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_163048.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_163048_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_163048_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_163048_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_163048.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_163048_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_163048_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_163048_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_163048.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_163048_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_163048.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_163048_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_163048_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_163048_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_163048_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_163048_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_163048_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_163048_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_163048.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_163048_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_163048_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_163048_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_163048_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_163048_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_163048_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_163048_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=67, D=119, B=119, total=305
+  Edges: 44930
+  ✓ Gephi network → Mechanism_network_20260617_163048.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=67, R=192, D=119, B=119, N=2692, total=3189
+  Edges: 4594038
+  ✓ Gephi full network → Mechanism_network_full_20260617_163048.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ArithmeticStatisticsRandomMatricesL_1000_NumberTheory_20260525_145735
+════════════════════════════════════════════════════════════
+

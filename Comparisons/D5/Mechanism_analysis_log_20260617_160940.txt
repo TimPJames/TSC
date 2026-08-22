@@ -1,0 +1,588 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.050, λ=0.010
+  Noisy  : τ=0.040, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.04 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.04_lambda_0.01.csv
+  Focused corpus : 458 DOIs
+  Noisy corpus   : 3723 DOIs
+  Matrix DOIs    : 3723
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 458  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.04) for set membership and scatter
+  Rank threshold X (focused corpus size) : 458
+  Set R_Q5  (focused, retained, top quintile r_q) : 78
+  Set R     (focused, retained above X)           : 350
+  Set D     (focused, displaced below X)          : 108
+  Set B     (broad query, in top X ranks)         : 108
+  Set N     (broad query, below iso-TSC)          : 3157
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.05_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2018.6
+    Set B   mean year : 2020.5
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.1262
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.1262):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 80.1  low-$r_q$: 1840.6
+    Set B mean high-$r_q$ neighbor count : 89.1  low-$r_q$: 3078.8
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 3157
+    Set N : n=3157 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.001931  median=0.001911  n=108
+    Set B : mean=0.001608  median=0.001564  n=108
+    Set N : mean=0.001001  median=0.001000  n=3157
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 1920.74
+    Set B : mean total degree = 3167.94
+    Set R : mean total degree = 2738.43
+    Set N : mean total degree = 2282.68
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1538              100.0%
+    Set R              0.1071               99.9%
+    Set D              0.0764               77.8%
+    Set B              0.0337               51.2%
+    Set N              0.0035                7.4%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 458): 108 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=459  TSC=4.6264  year=2022  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.46586/tches.v2022.i4.661-692
+    SoK: Fully Homomorphic Encryption over the [Discretized] Torus First posed as a
+    challenge in 1978 by Rivest et al., fully homomorphic encryption--the ability to
+    evaluate any function over encrypted data--was only solved in 2009 in a
+    breakthrough result by Gentry (Commun. ACM, 2010). After a decade of intense
+    research, practical solutions have emerged and are being pushed for
+    standardization.This p
+
+  [D-top2] Overall rank=461  TSC=4.6158  year=2023  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.21203/rs.3.rs-3460853/v1
+    Efficient and Secure Optimized Homomorphic Encryption (OHE) Securing Sensitive
+    Images Data in the Age of Cloud Computing The goal of the project is to create a
+    cutting-edge picture encryption technique that can be used to significantly
+    boost the security of encrypted photographs. Since visible electromagnetic
+    spectrum pictures are a difficulty, we provide an ideal homomorphic image
+    encryption meth
+
+  [D-top3] Overall rank=464  TSC=4.5980  year=2022  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.48550/arxiv.2205.03511
+    Lattices, Homomorphic Encryption, and CKKS This is a survey on some topics in
+    Lattice based cryptography and Homomorphic Encryption. In particular, we define
+    some lattice problems, LWE and RLWE, and state the reductions given by Regev and
+    Peikert. We also give a full treatment of the recent CKKS homomorphic encryption
+    scheme and give some worked out examples.
+
+  [D-top4] Overall rank=468  TSC=4.5869  year=2018  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.48550/arxiv.1812.02428
+    A Review of Homomorphic Encryption Libraries for Secure Computation In this
+    paper we provide a survey of various libraries for homomorphic encryption. We
+    describe key features and trade-offs that should be considered while choosing
+    the right approach for secure computation. We then present a comparison of six
+    commonly available Homomorphic Encryption libraries - SEAL, HElib, TFHE,
+    Paillier, ELGama
+
+  [D-top5] Overall rank=469  TSC=4.5863  year=2025  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.20944/preprints202506.2372.v1
+    Secure Tourist Tracking Using Fully Homomorphic Encryption in a Robotics
+    Information System Tourists often face challenges such as language barriers and
+    limited access to reliable information. To address this, a Robotics Information
+    System (RIS) was developed using a humanoid robot named Arslan to assist
+    visitors in real-time. The system manages sensitive data, including travel
+    history, requiring
+
+  [D-top6] Overall rank=470  TSC=4.5815  year=2020  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.48550/arxiv.2007.01648
+    Fast Arithmetic Hardware Library For RLWE-Based Homomorphic Encryption In this
+    work, we propose an open-source, first-of-its-kind, arithmetic hardware library
+    with a focus on accelerating the arithmetic operations involved in Ring Learning
+    with Error (RLWE)-based somewhat homomorphic encryption (SHE). We design and
+    implement a hardware accelerator consisting of submodules like Residue Number
+    Syste
+
+  [D-top7] Overall rank=475  TSC=4.5638  year=2020  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.1101/2020.05.29.124412
+    Privacy-preserving genotype imputation with fully homomorphic encryption
+    Genotype imputation is the statistical inference of unknown genotypes using
+    known population haplotype structures observed in large genomic datasets, such
+    as HapMap and 1000 genomes project. Genotype imputation can help further our
+    understanding of the relationships between genotypes and traits, and is
+    extremely useful for an
+
+  [D-top8] Overall rank=476  TSC=4.5629  year=2025  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.59573/emsj.9(4).2025.82
+    Privacy Preserving Analytics with Homomorphic Encryption in Finance: A Zero
+    Trust Approach Homomorphic encryption revolutionizes financial analytics by
+    enabling calculations on encrypted data without decryption, establishing a zero-
+    trust framework where sensitive information is preserved in analytical
+    processes. This cryptographic approach addresses the fundamental stress between
+    customer data ext
+
+  [D-top9] Overall rank=478  TSC=4.5561  year=2026  vocab_density=1.0000  QR_neighbors=89  source=?
+  DOI: 10.20944/preprints202601.0513.v1
+    Edge Reinforced Learning Platform with Homomorphic Encryption and Swarm
+    Intelligence for Ultra-Low Latency IoT Sensing and Cross-Device Communication
+    This paper presents an edge-reinforced learning platform that combines
+    reinforcement learning, homomorphic encryption, and swarm intelligence to
+    support ultra-low latency IoT sensing and cross-device communication. In
+    conventional IoT architectures,
+
+  [D-top10] Overall rank=481  TSC=4.5528  year=2014  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.4028/www.scientific.net/amr.989-994.4780
+    The Analysis of Constructing Fully Homomorphic Encryption over Integers Fully
+    homomorphic encryption has long been regarded as cryptography's prized "holy
+    grail"-extremely useful yet rather elusive. At 2010 van Dijk et al. described a
+    fully homomorphic encryption scheme over theintegers. The main appeal of this
+    scheme is its conceptual simplicity. This simplicity comes at the expense of a
+    public k
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3692  TSC=0.1439  year=2002  vocab_density=0.0000  QR_neighbors=5  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot2] Overall rank=3654  TSC=0.2817  year=2000  vocab_density=0.0000  QR_neighbors=11  source=?
+  DOI: 10.1137/s0036144500371907
+    The mathematics of infectious diseases Many models for the spread of infectious
+    diseases in populations have been analyzed mathematically and applied to
+    specific diseases. Threshold theorems involving the basic reproduction number
+    \(R_{0}\), the contact number \(\sigma\), and the replacement number \(R\) are
+    reviewed for the classic SIR epidemic and endemic models. Similar results with
+    new express
+
+  [D-bot3] Overall rank=3579  TSC=0.5380  year=2013  vocab_density=0.0000  QR_neighbors=26  source=?
+  DOI: ami.ektf.hu/uploads/papers/finalpdf/ami_41_from219to234.pdf
+    The On-Line Encyclopedia of Integer Sequences We all recognize
+    \(0,1,1,2,3,5,8,13,\dots\) but what about \(1,2,4,6,3,9,12,8, 10,5,15,\dots~\) ?
+    If you come across a number sequence and want to know if it has been studied
+    before, there is only one place to look, the On-Line Encyclopedia of Integer
+    Sequences (or OEIS). Now in its 49th year, the OEIS contains over 220,000
+    sequences and 20,000 new ent
+
+  [D-bot4] Overall rank=3475  TSC=0.7592  year=2015  vocab_density=0.0000  QR_neighbors=23  source=?
+  DOI: 10.1007/978-3-662-45569-2
+    Foundations of geometry (Festschrift 1899). Edited and commented by Klaus
+    Volkert There are many editions and translations of \textit{David Hilbert}'s
+    [Grundlagen der Geometrie. Leipzig: B. G. Teubner (1899; JFM 30.0424.01)] first
+    published in 1899 as a Festschrift on the occasion of the unveiling of the
+    Gauss-Weber monument in Gottingen. However, the author's idea is new, he wants
+    to present Hilb
+
+  [D-bot5] Overall rank=3473  TSC=0.7602  year=2013  vocab_density=0.0000  QR_neighbors=29  source=?
+  DOI: 10.1007/978-3-540-69444-1
+    David Hilbert's lectures on the foundations of arithmetic and logic, 1917--1933.
+    In collaboration with Ulrich Majer and Dirk Schlimm Here we encounter
+    mathematical logic and proof theory \textit{in statu nascendi} in the lectures
+    Hilbert held between 1917 and 1933, containing insights into the history of the
+    subject that cannot be read from any published source during the first half of
+    the 20th ce
+
+  [D-bot6] Overall rank=3430  TSC=0.8408  year=2001  vocab_density=0.0000  QR_neighbors=25  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot7] Overall rank=3344  TSC=0.9798  year=2002  vocab_density=0.0000  QR_neighbors=40  source=?
+  DOI: a120614
+    Algebraic combinatorics on words This book is a continuation of Lothaire's first
+    book entitled ``Combinatorics on words'' (1983; Zbl 0514.20045), but it is
+    independent. Compared to the previous one, this book both gives new topics and
+    goes deeper into topics already present before. The first chapter serves as an
+    introduction. The second one is devoted to Sturmian words and Sturmian
+    morphisms, and
+
+  [D-bot8] Overall rank=3269  TSC=1.1324  year=2003  vocab_density=0.0000  QR_neighbors=35  source=?
+  DOI: 10.1007/b98869
+    Mathematical biology. Vol. 2: Spatial models and biomedical applications. In
+    this second volume, for Vol. 1 see the preceding review, Zbl 1006.92001, one
+    starts with the last chapters of the first edition but the development towards
+    specific biological configurations and towards a mechanism for understanding
+    morphogenesis represents an important portion of the work. The main mathematical
+    tools are
+
+  [D-bot9] Overall rank=3243  TSC=1.1660  year=2005  vocab_density=0.0000  QR_neighbors=40  source=?
+  DOI: 10.1111/j.1467-9868.2005.00503.x
+    Regularization and variable selection via the elastic net We propose the elastic
+    net, a new regularization and variable selection method. Real world data and a
+    simulation study show that the elastic net often outperforms the lasso, while
+    enjoying a similar sparsity of representation. In addition, the elastic net
+    encourages a grouping effect, where strongly correlated predictors tend to be in
+    or ou
+
+  [D-bot10] Overall rank=3177  TSC=1.2591  year=2009  vocab_density=0.0000  QR_neighbors=39  source=?
+  DOI: 10.1007/978-3-540-71050-9
+    Optimal transport. Old and new As the title suggests, the book is aimed to old
+    and new problems of optimal transport. After the publication of his [Topics in
+    optimal transportation. Providence, RI: American Mathematical Society (AMS)
+    (2003; Zbl 1106.90001)], the present book offered to the author a good
+    opportunity to approach differently the whole theory, with alternative proofs
+    and a more probab
+
+  Set B (broad query, above rank 458): 108 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=14  TSC=6.9865  year=2023  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.3390/math11081784
+    Cloud-Assisted Private Set Intersection via Multi-Key Fully Homomorphic
+    Encryption With the development of cloud computing and big data, secure multi-
+    party computation, which can collaborate with multiple parties to deal with a
+    large number of transactions, plays an important role in protecting privacy.
+    Private set intersection (PSI), a form of multi-party secure computation, is a
+    formidable crypt
+
+  [B-top2] Overall rank=24  TSC=6.7353  year=2022  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.3390/cryptography6030034
+    BFV-Based Homomorphic Encryption for Privacy-Preserving CNN Models Medical data
+    is frequently quite sensitive in terms of data privacy and security. Federated
+    learning has been used to increase the privacy and security of medical data,
+    which is a sort of machine learning technique. The training data is disseminated
+    across numerous machines in federated learning, and the learning process is
+    collabo
+
+  [B-top3] Overall rank=87  TSC=6.1376  year=2024  vocab_density=0.6667  QR_neighbors=92  source=?
+  DOI: 10.5540/tcam.2024.025.e01772
+    The application of homomorphism in cryptography The use of new technologies and
+    the internet has been growing, so the privacy and security of users have be
+    guaranteed when browsing the web. For this purpose, the encryption scheme
+    depends on the sharing of a key between the peers involved in the exchange of a
+    message. The concept of homomorphism was used as a possible solution for
+    computing without
+
+  [B-top4] Overall rank=101  TSC=6.0580  year=2024  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.1016/j.jisa.2024.103893
+    Secure outsourced decryption for FHE-based privacy-preserving cloud computing
+    The demand for processing vast volumes of data has surged dramatically due to
+    the advancement of machine learning technology. Large-scale data processing
+    necessitates substantial computational resources, prompting individuals and
+    enterprises to turn to cloud services. Accompanying this trend is a growing
+    concern regardin
+
+  [B-top5] Overall rank=106  TSC=5.9813  year=2025  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.3390/cryptography9040066
+    On the Homomorphic Properties of Kyber and McEliece with Application to Post-
+    Quantum Private Set Intersection Crystals-Kyber and Classic-McEliece are two
+    prominent post-quantum key encapsulation mechanisms (KEMs) designed to address
+    the challenges posed by quantum computing to classical cryptographic schemes.
+    While the former has been standardized by the National Institute of Standards
+    and Technol
+
+  [B-top6] Overall rank=126  TSC=5.8402  year=2024  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.4018/979-8-3693-1642-9.ch006
+    A Survey of Machine Learning and Cryptography Algorithms The intersection of
+    machine learning and encryption has emerged as a key area in technology. A model
+    shift in technology and data security has brought the combination of machine
+    learning and encryption. In order to provide insight on the underlying
+    algorithms and techniques, this survey was taken between the domains. It
+    presents an overview
+
+  [B-top7] Overall rank=138  TSC=5.7457  year=2025  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.30574/wjarr.2025.25.1.0068
+    Cloud-native encryption for healthcare: Ensuring data privacy in multi-cloud
+    environments The healthcare industry in the current generation has embraced the
+    use of cloud technologies in delivering services with improved efficiency,
+    scalability, and flexibility. However, the increasing adoption of multi-cloud
+    architectures is not without several challenges, primarily concerning data
+    privacy within
+
+  [B-top8] Overall rank=160  TSC=5.6673  year=2026  vocab_density=1.0000  QR_neighbors=92  source=?
+  DOI: 10.3390/cryptography10020021
+    Homomorphic ReLU with Full-Domain Bootstrapping Fully homomorphic encryption
+    (FHE) offers a promising solution for privacy-preserving machine learning by
+    enabling arbitrary computations on encrypted data. However, the efficient
+    evaluation of non-linear functions--such as the ReLU activation function over
+    large integers--remains a major obstacle in practical deployments, primarily due
+    to high boots
+
+  [B-top9] Overall rank=164  TSC=5.6498  year=2024  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.36676/irt.v10.i3.1433
+    Algebraic Structures and Their Applications in Modern Cryptography Modern
+    cryptography relies heavily on the principles of algebraic structures to ensure
+    the security and integrity of data. This paper explores the fundamental
+    algebraic structures that underpin contemporary cryptographic systems, including
+    groups, rings, fields, and lattices. We provide a detailed examination of how
+    these structure
+
+  [B-top10] Overall rank=166  TSC=5.6461  year=2023  vocab_density=0.3333  QR_neighbors=90  source=?
+  DOI: 10.21203/rs.3.rs-3126782/v1
+    A Reliable Cloud Communication System Using Attribute-Based Cryptography Cloud
+    communication systems are increasingly being used to store and exchange
+    sensitive information. However, ensuring the confidentiality and integrity of
+    data in the cloud remains a significant challenge. Attribute-based cryptography
+    (ABC) has emerged as a promising solution for secure cloud communication. It
+    allows data to
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=458  TSC=4.6265  year=2026  vocab_density=0.3333  QR_neighbors=89  source=?
+  DOI: 10.3390/cryptography10010013
+    Secure and Efficient Block Cipher Mode Design for Parallel Processing and
+    Reliable Security Communication is defined as the process of transferring data
+    and exchanging information between interconnected systems. Due to the increasing
+    reliance on digital infrastructures by the military, financial, and healthcare
+    sectors, it is important to ensure the confidential, authentication, and tamper-
+    proof n
+
+  [B-bot2] Overall rank=456  TSC=4.6323  year=2000  vocab_density=0.3333  QR_neighbors=91  source=?
+  DOI: 10.1051/bioconf/20249700044
+    Survey Study Image Cryptography System Encryption is vital for data security,
+    converting information into an unreadable format to ensure privacy in online
+    communication and sensitive sectors. Advanced encryption balances innovation and
+    security in user-friendly applications. Image encryption employs techniques to
+    protect image data from unauthorized access during transmission or storage,
+    particula
+
+  [B-bot3] Overall rank=455  TSC=4.6393  year=2013  vocab_density=0.3333  QR_neighbors=91  source=?
+  DOI: 10.48550/arxiv.1302.6424
+    Generation of Biometric key for use in DES Cryptography is an important field in
+    the area of data encryption. There are different cryptographic techniques
+    available varying from the simplest to complex. One of the complex symmetric key
+    cryptography techniques is using Data Encryption Standard Algorithm. This paper
+    explores a unique approach to generation of key using fingerprint. The generated
+    key
+
+  [B-bot4] Overall rank=454  TSC=4.6417  year=2017  vocab_density=0.0000  QR_neighbors=82  source=?
+  DOI: 10.1109/icmdcs.2017.8211728
+    A hybrid cryptography algorithm for cloud computing security In the present
+    scenario, the Cloud Computing is very famous and flexible technology. It
+    facilitates customers with effortlessness, quickness, competence etc in their
+    work area through the services. Cloud provides huge data centre to handle the
+    large amount of information. The Cloud Computing benefits the organizations to
+    handle their lar
+
+  [B-bot5] Overall rank=453  TSC=4.6434  year=2020  vocab_density=0.0000  QR_neighbors=83  source=?
+  DOI: 10.30534/ijatcse/2020/115942020
+    Data Security in Cloud Environment Based on Comparative Performance Evaluation
+    of Cryptographic Algorithms With the extensive use of cloud environment to store
+    sensitive data, the need for data security has been on the rise. The data being
+    stored in multiple location servers, in fragments, makes it cumbersome to manage
+    in terms of ease of access and privacy. Data security, being a crucial factor i
+
+  [B-bot6] Overall rank=452  TSC=4.6454  year=2023  vocab_density=0.3333  QR_neighbors=92  source=?
+  DOI: 10.48550/arxiv.2302.03290
+    Homomorphic Hashing Based on Elliptic Curve Cryptography For avoiding the
+    exposure of plaintexts in cloud environments, some homomorphic hashing
+    algorithms have been proposed to generate the hash value of each plaintext, and
+    cloud environments only store the hash values and calculate the hash values for
+    future needs. However, longer hash value generation time and longer hash value
+    summary time may
+
+  [B-bot7] Overall rank=451  TSC=4.6469  year=2002  vocab_density=1.0000  QR_neighbors=91  source=?
+  DOI: 10.1109/secpri.1998.674837
+    Towards mobile cryptography Mobile code technology has become a driving force
+    for recent advances in distributed systems. The concept of the mobility of
+    executable code raises major security problems. In this paper, we deal with the
+    protection of mobile code from possibly malicious hosts. We conceptualize the
+    specific cryptographic problems posed by mobile code, and we are able to provide
+    a soluti
+
+  [B-bot8] Overall rank=449  TSC=4.6513  year=2015  vocab_density=0.3333  QR_neighbors=88  source=?
+  DOI: 10.5120/20621-3342
+    Data Security using Compression and Cryptography Techniques Data is any type of
+    stored digital information. Security is about the protection of assets. Data
+    security refers to protective digital privacy measures that are applied to
+    prevent unauthorized access to computers, databases and websites. Cryptography
+    is evergreen and developments. Cryptography protects users by providing
+    functionality for
+
+  [B-bot9] Overall rank=448  TSC=4.6516  year=2024  vocab_density=0.3333  QR_neighbors=88  source=?
+  DOI: 10.1007/s10462-024-10719-0
+    A chaotic based image encryption scheme using elliptic curve cryptography and
+    genetic algorithm In the era of digital communication and data security, image
+    encryption plays a crucial role in safeguarding sensitive information.
+    Protecting sensitive visual data from unauthorized access drives the pursuit of
+    advanced image encryption methods. This paper proposes a novel approach to
+    enhance image enc
+
+  [B-bot10] Overall rank=447  TSC=4.6641  year=2024  vocab_density=0.3333  QR_neighbors=83  source=?
+  DOI: 10.3390/cryptography8030039
+    A Novel Method of Secured Data Distribution Using Sharding Zkp and Zero Trust
+    Architecture in Blockchain Multi Cloud Environment In the era of cloud
+    computing, guaranteeing the safety and effectiveness of data management is of
+    utmost importance. This investigation presents a novel approach that amalgamates
+    the sharding concept, encryption, zero-knowledge proofs (zkp), and blockchain
+    technology for
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  44 displaced,  48 remaining
+    Q2 :  22 displaced,  69 remaining
+    Q3 :  13 displaced,  79 remaining
+    Q4 :  15 displaced,  76 remaining
+    Q5 :  14 displaced,  78 remaining
+  [SetD_Quintile_Displaced] Q1:44;Q2:22;Q3:13;Q4:15;Q5:14
+  [SetD_Quintile_Remaining] Q1:48;Q2:69;Q3:79;Q4:76;Q5:78
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_160940.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_160940_dark.png
+
+  Combined top-X quintile bounds : ['0.0513', '0.0839', '0.1028', '0.1217']
+  Broad query document counts    : [81, 20, 6, 1, 0]
+  Focused document counts        : [11, 72, 86, 90, 91]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_160940.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_160940_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0337             0.0764
+  Mean vocab density (n-gram %)                  51.2%              77.8%
+  Mean $r_q$-neighbor count                        89.1               80.1
+  Mean publication year                          2020.5             2018.6
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_160940.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_160940_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_160940.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_160940_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_cryptography+homomorphic_encryption_TF-IDF_20260522_131509]: AB - Pass_data_to_other_query_20260522_131856.csv  (3723 DOIs)
+  ✓  All 3723 DOIs resolved to a known API source
+  Source info [TSC_150_homomorphic_encryption_TF-IDF_20260331_135149]: AB - Pass_data_to_other_query_20260331_135359.csv  (458 DOIs)
+  Source info [TSC_150_homomorphic_encryption_TF-IDF_20260331_135149]: combined_results_20260331_135231.csv  (+128 DOIs resolved)
+  ✓  All 586 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_homomorphic_encryption_TF-IDF_20260331_135149]: 11 unique DOIs
+  Top 10 xlsx [TSC_1000_cryptography+homomorphic_encryption_TF-IDF_20260522_131509]: 11 unique DOIs
+  Top 10 at chosen τ=0.04 (from xlsx): focused=11, broad=11
+  [SourceCounts_focused_top10] CrossRef:2;OpenAlex:2;SemanticScholar:3;arXiv:4
+  [SourceCounts_broad_top10] CrossRef:3;OpenAlex:2;SemanticScholar:2;arXiv:4
+  [SourceCounts_broad_top458] CrossRef:160;OpenAlex:68;SemanticScholar:100;arXiv:130
+  [SourceCounts_setB] CrossRef:55;OpenAlex:15;SemanticScholar:25;arXiv:13
+  [SourceCounts_setD] CrossRef:31;OpenAlex:7;SemanticScholar:23;arXiv:23;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_160940.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_160940_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_160940.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_160940_dark.png
+  ✓ Source pie → Mechanism_source_broad_top458_20260617_160940.png
+  ✓ Source pie → Mechanism_source_broad_top458_20260617_160940_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_160940.png
+  ✓ Source pie → Mechanism_source_setB_20260617_160940_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_160940.png
+  ✓ Source pie → Mechanism_source_setD_20260617_160940_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_160940.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_160940_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_160940.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_160940_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_160940.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_160940_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_160940.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_160940_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_160940.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_160940_dark.png
+  TSC boundary value at rank 458: 4.626457
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160940.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160940_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160940_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160940_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160940.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160940_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160940_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160940_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160940.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160940_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160940_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160940_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160940.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160940_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160940_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160940_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160940.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160940_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160940_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160940_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160940.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160940_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160940_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160940_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160940_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_160940.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_160940_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160940.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160940_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160940_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160940_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160940.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160940_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160940_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160940_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_160940.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_160940_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_160940.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_160940_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_160940.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_160940_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160940.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160940_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160940_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160940_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160940.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160940_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160940_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160940_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_160940.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_160940_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160940.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160940_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160940_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160940_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160940_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160940_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160940_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160940_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160940.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160940_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160940_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160940_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160940_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160940_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160940_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160940_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=78, D=108, B=108, total=294
+  Edges: 38770
+  ✓ Gephi network → Mechanism_network_20260617_160940.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=78, R=272, D=108, B=108, N=3157, total=3723
+  Edges: 4357219
+  ✓ Gephi full network → Mechanism_network_full_20260617_160940.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148
+════════════════════════════════════════════════════════════
+

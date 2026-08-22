@@ -1,0 +1,588 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.050, λ=0.010
+  Noisy  : τ=0.040, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.04 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.04_lambda_0.01.csv
+  Focused corpus : 413 DOIs
+  Noisy corpus   : 3678 DOIs
+  Matrix DOIs    : 3678
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 413  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.04) for set membership and scatter
+  Rank threshold X (focused corpus size) : 413
+  Set R_Q5  (focused, retained, top quintile r_q) : 78
+  Set R     (focused, retained above X)           : 325
+  Set D     (focused, displaced below X)          : 88
+  Set B     (broad query, in top X ranks)         : 88
+  Set N     (broad query, below iso-TSC)          : 3177
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.05_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2017.0
+    Set B   mean year : 2018.6
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.1332
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.1332):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 62.2  low-$r_q$: 1471.0
+    Set B mean high-$r_q$ neighbor count : 77.1  low-$r_q$: 2980.8
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 3177
+    Set N : n=3177 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.001503  median=0.001406  n=88
+    Set B : mean=0.001145  median=0.001095  n=88
+    Set N : mean=0.000689  median=0.000685  n=3177
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 1533.20
+    Set B : mean total degree = 3057.89
+    Set R : mean total degree = 2366.56
+    Set N : mean total degree = 2237.90
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1707               98.5%
+    Set R              0.1138               90.7%
+    Set D              0.0504               51.6%
+    Set B              0.0336               37.0%
+    Set N              0.0014                2.1%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 413): 88 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=425  TSC=3.0785  year=2018  vocab_density=0.6000  QR_neighbors=77  source=?
+  DOI: 10.48550/arxiv.1802.07023
+    BAN-GZKP: Optimal Zero Knowledge Proof based Scheme for Wireless Body Area
+    Networks BANZKP is the best to date Zero Knowledge Proof (ZKP) based secure
+    lightweight and energy efficient authentication scheme designed for Wireless
+    Area Network (WBAN). It is vulnerable to several security attacks such as the
+    replay attack, Distributed Denial-of-Service (DDoS) attacks at sink and
+    redundancy information
+
+  [D-top2] Overall rank=427  TSC=3.0770  year=2024  vocab_density=1.0000  QR_neighbors=81  source=?
+  DOI: 10.1080/13600869.2024.2398915
+    Regulatory options for integrating zero-knowledge proofs into the European
+    Digital Identity Wallet On 30 April, Regulation (EU) 2024/1183 amending
+    Regulation (EU) 910/2014 as regards establishing the European Digital Identity
+    Framework, known as eIDAS 2.0, was published in the Official Journal of the
+    European Union. This amendment introduces zero-knowledge proof (ZKP) privacy-
+    enhancing technologie
+
+  [D-top3] Overall rank=429  TSC=3.0726  year=2023  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.48550/arxiv.2310.04055
+    Kick Bad Guys Out! Conditionally Activated Anomaly Detection in Federated
+    Learning with Zero-Knowledge Proof Verification Federated Learning (FL) systems
+    are susceptible to adversarial attacks, such as model poisoning attacks and
+    backdoor attacks. Existing defense mechanisms face critical limitations in real-
+    world deployments, such as relying on impractical assumptions (e.g., adversaries
+    acknowled
+
+  [D-top4] Overall rank=433  TSC=3.0656  year=2024  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.48550/arxiv.2409.14308
+    NP-Completeness and Physical Zero-Knowledge Proofs for Zeiger Zeiger is a pencil
+    puzzle consisting of a rectangular grid, with each cell having an arrow pointing
+    in horizontal or vertical direction. Some cells also contain a positive integer.
+    The objective of this puzzle is to fill a positive integer into every unnumbered
+    cell such that the integer in each cell is equal to the number of different
+
+  [D-top5] Overall rank=438  TSC=3.0515  year=2021  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.48550/arxiv.2109.00775
+    A logic of interactive proofs We introduce the probabilistic two-agent
+    justification logic IPJ, a logic in which we can reason about agents that
+    perform interactive proofs. In order to study the growth rate of the
+    probabilities in IPJ, we present a new method of parametrising IPJ over certain
+    negligible functions. Further, our approach leads to a new notion of zero-
+    knowledge proofs.
+
+  [D-top6] Overall rank=443  TSC=3.0346  year=2023  vocab_density=1.0000  QR_neighbors=83  source=?
+  DOI: 10.5753/etc.2023.230017
+    The Hidden Subgroup Problem and Non-interactive Perfect Zero-Knowledge Proofs
+    The Hidden Subgroup Problem (HSP) generalises many problems that are candidates
+    to be NP-intermediate. It was shown that the decision version of HSP belongs to
+    the zero-knowledge complexity class HVPZK and that, if the size of the group is
+    known, it also belongs to NISZK. We show that whenever we can sample uniformly
+    at
+
+  [D-top7] Overall rank=444  TSC=3.0312  year=2004  vocab_density=0.6000  QR_neighbors=80  source=?
+  DOI: 10.5858/2004-128-344-zazpfr
+    Zero-Check: A Zero-Knowledge Protocol for Reconciling Patient Identities Across
+    Institutions Context. --Large, multi-institutional studies often involve merging
+    data records that have been de-identified to protect patient privacy. Unless
+    patient identities can be reconciled across institutions, individuals with
+    records held in different institutions will be falsely "counted" as multiple
+    persons wh
+
+  [D-top8] Overall rank=457  TSC=3.0092  year=2024  vocab_density=1.0000  QR_neighbors=83  source=?
+  DOI: 10.1007/s00354-024-00267-0
+    NP-Completeness and Physical Zero-Knowledge Proofs for Sumplete, a Puzzle
+    Generated by ChatGPT Sumplete is a logic puzzle generated by ChatGPT in March
+    2023. The puzzle consists of a rectangular grid, with each cell containing an
+    integer. Each row and column also has an integer called target value assigned to
+    it. The objective of this puzzle is to cross out some numbers in the grid such
+    that the s
+
+  [D-top9] Overall rank=503  TSC=2.9062  year=2025  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.48550/arxiv.2505.12144
+    Proof-of-Social-Capital: A Consensus Protocol Replacing Stake for Social Capital
+    Consensus protocols used today in blockchains often rely on computational power
+    or financial stakes - scarce resources. We propose a novel protocol using social
+    capital - trust and influence from social interactions - as a non-transferable
+    staking mechanism to ensure fairness and decentralization. The methodology inte
+
+  [D-top10] Overall rank=514  TSC=2.8918  year=2024  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.1145/3653478
+    Zero-Knowledge Proofs and Their Role within the Blockchain In each issue of
+    Communications , we publish selected posts or excerpts from the many blogs on
+    our website. The views expressed by bloggers are their own and not necessarily
+    held by Communications or the Association for Computing Machinery. Read more
+    blogs and join the discussion at https://cacm.acm.org/blog.
+    https://cacm.acm.org/blog An e
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3634  TSC=0.1395  year=2002  vocab_density=0.0000  QR_neighbors=3  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot2] Overall rank=3620  TSC=0.1826  year=2000  vocab_density=0.0000  QR_neighbors=8  source=?
+  DOI: 10.1137/s0036144500371907
+    The mathematics of infectious diseases Many models for the spread of infectious
+    diseases in populations have been analyzed mathematically and applied to
+    specific diseases. Threshold theorems involving the basic reproduction number
+    \(R_{0}\), the contact number \(\sigma\), and the replacement number \(R\) are
+    reviewed for the classic SIR epidemic and endemic models. Similar results with
+    new express
+
+  [D-bot3] Overall rank=3545  TSC=0.3147  year=2015  vocab_density=0.2000  QR_neighbors=14  source=?
+  DOI: 10.3366/edinburgh/9780748682492.003.0005
+    Spark's Proofs This chapter talks about how Muriel Spark was keen to draw
+    attention to 'anything so trivial as evidence and documents'. By the time she
+    published the story of her first thirty nine years and sold her papers, Spark's
+    archive had provided the raw materials out of which she could create an
+    autobiography, and her autobiography -- Spark's need to assert the lines of her
+    own life against
+
+  [D-bot4] Overall rank=3522  TSC=0.3768  year=2013  vocab_density=0.0000  QR_neighbors=17  source=?
+  DOI: ami.ektf.hu/uploads/papers/finalpdf/ami_41_from219to234.pdf
+    The On-Line Encyclopedia of Integer Sequences We all recognize
+    \(0,1,1,2,3,5,8,13,\dots\) but what about \(1,2,4,6,3,9,12,8, 10,5,15,\dots~\) ?
+    If you come across a number sequence and want to know if it has been studied
+    before, there is only one place to look, the On-Line Encyclopedia of Integer
+    Sequences (or OEIS). Now in its 49th year, the OEIS contains over 220,000
+    sequences and 20,000 new ent
+
+  [D-bot5] Overall rank=3515  TSC=0.3888  year=2015  vocab_density=0.0000  QR_neighbors=14  source=?
+  DOI: 10.1007/978-3-662-45569-2
+    Foundations of geometry (Festschrift 1899). Edited and commented by Klaus
+    Volkert There are many editions and translations of \textit{David Hilbert}'s
+    [Grundlagen der Geometrie. Leipzig: B. G. Teubner (1899; JFM 30.0424.01)] first
+    published in 1899 as a Festschrift on the occasion of the unveiling of the
+    Gauss-Weber monument in Gottingen. However, the author's idea is new, he wants
+    to present Hilb
+
+  [D-bot6] Overall rank=3472  TSC=0.4666  year=2016  vocab_density=0.6000  QR_neighbors=27  source=?
+  DOI: 10.59350/9tsgq-6ek50
+    Zero-Knowledge: Definitions and Theory The next Monday, when the fathers were
+    all back at work, we kids were playing in a field. One kid says to me, "See that
+    bird? What kind of bird is that?" I said, "I haven't the slightest idea what
+    kind of a bird it is." He says, "It's a brown-throated thrush. Your father
+    doesn't teach you anything!" But it was the opposite. He had already taught me:
+    "See that
+
+  [D-bot7] Overall rank=3451  TSC=0.4884  year=2005  vocab_density=0.0000  QR_neighbors=15  source=?
+  DOI: 10.1111/j.1467-9868.2005.00503.x
+    Regularization and variable selection via the elastic net We propose the elastic
+    net, a new regularization and variable selection method. Real world data and a
+    simulation study show that the elastic net often outperforms the lasso, while
+    enjoying a similar sparsity of representation. In addition, the elastic net
+    encourages a grouping effect, where strongly correlated predictors tend to be in
+    or ou
+
+  [D-bot8] Overall rank=3266  TSC=0.6871  year=2002  vocab_density=0.0000  QR_neighbors=22  source=?
+  DOI: a120614
+    Algebraic combinatorics on words This book is a continuation of Lothaire's first
+    book entitled ``Combinatorics on words'' (1983; Zbl 0514.20045), but it is
+    independent. Compared to the previous one, this book both gives new topics and
+    goes deeper into topics already present before. The first chapter serves as an
+    introduction. The second one is devoted to Sturmian words and Sturmian
+    morphisms, and
+
+  [D-bot9] Overall rank=3211  TSC=0.7383  year=2001  vocab_density=0.0000  QR_neighbors=27  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot10] Overall rank=3197  TSC=0.7597  year=2024  vocab_density=0.2000  QR_neighbors=36  source=?
+  DOI: 10.61838/iki.2.3.18
+    The Realm of Barzakh from the Perspective of Transmitted Proofs In linguistic
+    terms, Barzakh means a separator, barrier, hidden divider, and an intermediate
+    boundary between two things. Lexicographers have two views regarding the root of
+    this word. Some believe that it is derived from the word baraz with an open ba`,
+    which means a vast land that separates two seas or two large rivers.
+    Subsequently
+
+  Set B (broad query, above rank 413): 88 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=14  TSC=5.1662  year=2024  vocab_density=1.0000  QR_neighbors=83  source=?
+  DOI: 10.3390/cryptography8030028
+    Efficient and Universal Merkle Tree Inclusion Proofs via OR Aggregation Zero-
+    knowledge proofs have emerged as a powerful tool for enhancing privacy and
+    security in blockchain applications. However, the efficiency and scalability of
+    proof systems remain a significant challenge, particularly in the context of
+    Merkle tree inclusion proofs. Traditional proof aggregation techniques based on
+    AND logic s
+
+  [B-top2] Overall rank=83  TSC=4.5464  year=2001  vocab_density=0.6000  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.cs/0111056
+    Some Facets of Complexity Theory and Cryptography: A Five-Lectures Tutorial In
+    this tutorial, selected topics of cryptology and of computational complexity
+    theory are presented. We give a brief overview of the history and the
+    foundations of classical cryptography, and then move on to modern public-key
+    cryptography. Particular attention is paid to cryptographic protocols and the
+    problem of construc
+
+  [B-top3] Overall rank=89  TSC=4.5082  year=2024  vocab_density=1.0000  QR_neighbors=83  source=?
+  DOI: 10.36676/irt.v10.i3.1433
+    Algebraic Structures and Their Applications in Modern Cryptography Modern
+    cryptography relies heavily on the principles of algebraic structures to ensure
+    the security and integrity of data. This paper explores the fundamental
+    algebraic structures that underpin contemporary cryptographic systems, including
+    groups, rings, fields, and lattices. We provide a detailed examination of how
+    these structure
+
+  [B-top4] Overall rank=102  TSC=4.4302  year=2024  vocab_density=1.0000  QR_neighbors=81  source=?
+  DOI: 10.3390/cryptography8030039
+    A Novel Method of Secured Data Distribution Using Sharding Zkp and Zero Trust
+    Architecture in Blockchain Multi Cloud Environment In the era of cloud
+    computing, guaranteeing the safety and effectiveness of data management is of
+    utmost importance. This investigation presents a novel approach that amalgamates
+    the sharding concept, encryption, zero-knowledge proofs (zkp), and blockchain
+    technology for
+
+  [B-top5] Overall rank=103  TSC=4.4233  year=2024  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.3390/cryptography8040057
+    On the Proof of Ownership of Digital Wallets With the widespread adoption and
+    increasing application of blockchain technology, cryptocurrency wallets used in
+    Bitcoin and Ethereum play a crucial role in facilitating decentralized asset
+    management and secure transactions. However, wallet security relies heavily on
+    private keys, with insufficient attention to the risks of theft and exposure. To
+    addre
+
+  [B-top6] Overall rank=136  TSC=4.2964  year=2019  vocab_density=0.6000  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.1911.08101
+    Non-interactive classical verification of quantum computation In a recent
+    breakthrough, Mahadev constructed an interactive protocol that enables a purely
+    classical party to delegate any quantum computation to an untrusted quantum
+    prover. In this work, we show that this same task can in fact be performed non-
+    interactively and in zero-knowledge. Our protocols result from a sequence of
+    significant im
+
+  [B-top7] Overall rank=137  TSC=4.2818  year=2017  vocab_density=1.0000  QR_neighbors=83  source=?
+  DOI: 10.3390/cryptography1030025
+    Cryptographically Secure Multiparty Computation and Distributed Auctions Using
+    Homomorphic Encryption We introduce a robust framework that allows for
+    cryptographically secure multiparty computations, such as distributed private
+    value auctions. The security is guaranteed by two-sided authentication of all
+    network connections, homomorphically encrypted bids, and the publication of
+    zero-knowledge pro
+
+  [B-top8] Overall rank=187  TSC=3.9834  year=2023  vocab_density=0.6000  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.2308.16666
+    Study of Zero-Knowledge protocols and Elliptic Curve Cryptography and their
+    implementation in Smart Card environments using Java Card This paper studies the
+    problem of Zero-Knowledge Protocol (ZKP) and elliptic curve cryptographic
+    implementation in a computationally limited environment, such as, the smart
+    cards, using Java Card. Besides that, it is explained how the zero-knowledge
+    protocol was sel
+
+  [B-top9] Overall rank=194  TSC=3.9567  year=2025  vocab_density=1.0000  QR_neighbors=82  source=?
+  DOI: 10.47974/jdmsc-2368
+    An enterprise blockchain model : A reliable cryptography-based cyber-physical
+    systems for securing user data This paper introduces a Cyber-Physical System
+    (CPS) that can be used to improve privacy protection in enterprise Blockchain
+    (BC) systems, particularly in Hyperledger Fabric (HF). The proposed CPS employs
+    advanced methods to facilitate a privacy-preserving authorization mechanism.
+    Using data
+
+  [B-top10] Overall rank=198  TSC=3.9456  year=2021  vocab_density=0.6000  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.2112.01386
+    Relativistic zero-knowledge protocol for NP over the internet unconditionally
+    secure against quantum adversaries Relativistic cryptography is a proposal for
+    achieving unconditional security that exploits the fact that no information
+    carrier can travel faster than the speed of light. It is based on space-time
+    constraints but doesn't require quantum hardware. Nevertheless, it was unclear
+    whether thi
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=413  TSC=3.1066  year=2012  vocab_density=0.2000  QR_neighbors=76  source=?
+  DOI: 10.48550/arxiv.1208.6198
+    Implementation of Secure Quantum Protocol using Multiple Photons for
+    Communication The paper presents the implementation of a quantum cryptography
+    protocol for secure communication between servers in the cloud. As computing
+    power increases, classical cryptography and key management schemes based on
+    computational complexity become increasingly susceptible to brute force and
+    cryptanalytic attacks. C
+
+  [B-bot2] Overall rank=412  TSC=3.1071  year=2001  vocab_density=0.6000  QR_neighbors=79  source=?
+  DOI: 10.1109/sfcs.2001.959888
+    Universally composable security: a new paradigm for cryptographic protocols We
+    propose a novel paradigm for defining security of cryptographic protocols,
+    called universally composable security. The salient property of universally
+    composable definitions of security is that they guarantee security even when a
+    secure protocol is composed of an arbitrary set of protocols, or more generally
+    when the pr
+
+  [B-bot3] Overall rank=411  TSC=3.1083  year=2024  vocab_density=1.0000  QR_neighbors=80  source=?
+  DOI: 10.3390/cryptography8010010
+    E-Coin-Based Priced Oblivious Transfer with a Fast Item Retrieval Priced
+    oblivious transfer (POT) is a cryptographic protocol designed for privacy-
+    preserving e-commerce of digital content. It involves two parties: the merchant,
+    who provides a set of priced items as input, and a customer, who acquires one of
+    them. After the protocol has run, the customer obtains the item they chose,
+    while the merch
+
+  [B-bot4] Overall rank=410  TSC=3.1169  year=2014  vocab_density=0.2000  QR_neighbors=81  source=?
+  DOI: 10.48550/arxiv.1410.3735
+    The Foundational Cryptography Framework We present the Foundational Cryptography
+    Framework (FCF) for developing and checking complete proofs of security for
+    cryptographic schemes within a proof assistant. This is a general-purpose
+    framework that is capable of modeling and reasoning about a wide range of
+    cryptographic schemes, security definitions, and assumptions. Security is proven
+    in the computa
+
+  [B-bot5] Overall rank=408  TSC=3.1233  year=2020  vocab_density=0.2000  QR_neighbors=73  source=?
+  DOI: 10.3390/cryptography4010010
+    On Quantum Chosen-Ciphertext Attacks and Learning with Errors Large-scale
+    quantum computing poses a major threat to classical public-key cryptography.
+    Recently, strong "quantum access" security models have shown that numerous
+    symmetric-key cryptosystems are also vulnerable. In this paper, we consider
+    classical encryption in a model that grants the adversary quantum oracle access
+    to encryption and
+
+  [B-bot6] Overall rank=407  TSC=3.1258  year=2025  vocab_density=0.0000  QR_neighbors=74  source=?
+  DOI: 10.3390/cryptography9040066
+    On the Homomorphic Properties of Kyber and McEliece with Application to Post-
+    Quantum Private Set Intersection Crystals-Kyber and Classic-McEliece are two
+    prominent post-quantum key encapsulation mechanisms (KEMs) designed to address
+    the challenges posed by quantum computing to classical cryptographic schemes.
+    While the former has been standardized by the National Institute of Standards
+    and Technol
+
+  [B-bot7] Overall rank=406  TSC=3.1261  year=2014  vocab_density=0.0000  QR_neighbors=72  source=?
+  DOI: 10.48550/arxiv.1407.2357
+    Cryptography from Quantum mechanical viewpoint Cryptography is an art and
+    science of secure communication. Here the sender and receiver are guaranteed the
+    security through encryption of their data, with the help of a common key. Both
+    the parties should agree on this key prior to communication. The cryptographic
+    systems which perform these tasks are designed to keep the key secret while
+    assuming th
+
+  [B-bot8] Overall rank=403  TSC=3.1317  year=2023  vocab_density=0.2000  QR_neighbors=72  source=?
+  DOI: 10.48550/arxiv.2306.09248
+    Quantum Cryptography for Enhanced Network Security: A Comprehensive Survey of
+    Research, Developments, and Future Directions With the ever-growing concern for
+    internet security, the field of quantum cryptography emerges as a promising
+    solution for enhancing the security of networking systems. In this paper, 20
+    notable papers from leading conferences and journals are reviewed and
+    categorized based o
+
+  [B-bot9] Overall rank=402  TSC=3.1335  year=2022  vocab_density=0.0000  QR_neighbors=72  source=?
+  DOI: 10.30837/rt.2022.3.210.05
+    Status report on the third round of the NIST post-quantum cryptography
+    standardization process In recent years, there has been steady progress in the
+    creation of quantum computers. If large-scale quantum computers are implemented,
+    they will threaten the security of many widely used public-key cryptosystems.
+    Key-establishment schemes and digital signatures based on factorization,
+    discrete logarithm
+
+  [B-bot10] Overall rank=400  TSC=3.1356  year=2018  vocab_density=0.2000  QR_neighbors=76  source=?
+  DOI: 10.1109/access.2018.2881444
+    Elliptic Curve Lightweight Cryptography: A Survey Since it was invented in 1986,
+    elliptic curve cryptography (ECC) has been studied widely in industry and
+    academy from different perspectives. Some of these aspects include mathematical
+    foundations, protocol design, curve generation, security proofs, point
+    representation, algorithms for inherent arithmetic in the underlying algebraic
+    structures, imp
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  56 displaced,  27 remaining
+    Q2 :  19 displaced,  63 remaining
+    Q3 :   4 displaced,  79 remaining
+    Q4 :   4 displaced,  78 remaining
+    Q5 :   5 displaced,  78 remaining
+  [SetD_Quintile_Displaced] Q1:56;Q2:19;Q3:4;Q4:4;Q5:5
+  [SetD_Quintile_Remaining] Q1:27;Q2:63;Q3:79;Q4:78;Q5:78
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_160545.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_160545_dark.png
+
+  Combined top-X quintile bounds : ['0.0625', '0.0877', '0.1085', '0.1297']
+  Broad query document counts    : [63, 16, 6, 3, 0]
+  Focused document counts        : [20, 67, 77, 79, 82]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_160545.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_160545_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0336             0.0504
+  Mean vocab density (n-gram %)                  37.0%              51.6%
+  Mean $r_q$-neighbor count                        77.1               62.2
+  Mean publication year                          2018.6             2017.0
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_160545.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_160545_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_160545.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_160545_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_cryptography+zero_knowledge_proofs_TF-IDF_20260522_124843]: AB - Pass_data_to_other_query_20260522_125153.csv  (3678 DOIs)
+  ✓  All 3678 DOIs resolved to a known API source
+  Source info [TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555]: AB - Pass_data_to_other_query_20260330_223846.csv  (413 DOIs)
+  Source info [TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555]: combined_results_20260330_223649.csv  (+149 DOIs resolved)
+  ✓  All 562 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555]: 12 unique DOIs
+  Top 10 xlsx [TSC_1000_cryptography+zero_knowledge_proofs_TF-IDF_20260522_124843]: 14 unique DOIs
+  Top 10 at chosen τ=0.04 (from xlsx): focused=12, broad=14
+  [SourceCounts_focused_top10] CrossRef:7;OpenAlex:1;arXiv:4
+  [SourceCounts_broad_top10] CrossRef:8;OpenAlex:2;arXiv:4
+  [SourceCounts_broad_top413] CrossRef:141;OpenAlex:70;SemanticScholar:61;arXiv:141
+  [SourceCounts_setB] CrossRef:34;OpenAlex:12;SemanticScholar:15;arXiv:27
+  [SourceCounts_setD] CrossRef:30;OpenAlex:2;SemanticScholar:10;arXiv:22;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_160545.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_160545_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_160545.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_160545_dark.png
+  ✓ Source pie → Mechanism_source_broad_top413_20260617_160545.png
+  ✓ Source pie → Mechanism_source_broad_top413_20260617_160545_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_160545.png
+  ✓ Source pie → Mechanism_source_setB_20260617_160545_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_160545.png
+  ✓ Source pie → Mechanism_source_setD_20260617_160545_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_160545.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_160545_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_160545.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_160545_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_160545.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_160545_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_160545.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_160545_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_160545.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_160545_dark.png
+  TSC boundary value at rank 413: 3.106563
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160545.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160545_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160545_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_160545_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160545.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160545_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160545_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_160545_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160545.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160545_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160545_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_160545_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160545.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160545_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160545_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_160545_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160545.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160545_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160545_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_160545_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160545.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160545_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160545_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_160545_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_160545_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_160545.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_160545_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160545.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160545_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160545_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_160545_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160545.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160545_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160545_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_160545_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_160545.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_160545_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_160545.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_160545_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_160545.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_160545_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160545.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160545_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160545_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_160545_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160545.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160545_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160545_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_160545_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_160545.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_160545_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160545.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160545_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160545_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160545_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160545_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_160545_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160545_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_160545_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160545.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160545_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160545_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160545_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160545_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_160545_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160545_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_160545_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=78, D=88, B=88, total=254
+  Edges: 25892
+  ✓ Gephi network → Mechanism_network_20260617_160545.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=78, R=247, D=88, B=88, N=3177, total=3678
+  Edges: 4141483
+  ✓ Gephi full network → Mechanism_network_full_20260617_160545.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010
+════════════════════════════════════════════════════════════
+

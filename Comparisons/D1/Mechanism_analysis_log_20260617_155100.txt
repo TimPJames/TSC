@@ -1,0 +1,586 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.050, λ=0.010
+  Noisy  : τ=0.030, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.03 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.03_lambda_0.01.csv
+  Focused corpus : 424 DOIs
+  Noisy corpus   : 3307 DOIs
+  Matrix DOIs    : 3307
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 424  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.03) for set membership and scatter
+  Rank threshold X (focused corpus size) : 424
+  Set R_Q5  (focused, retained, top quintile r_q) : 85
+  Set R     (focused, retained above X)           : 341
+  Set D     (focused, displaced below X)          : 83
+  Set B     (broad query, in top X ranks)         : 83
+  Set N     (broad query, below iso-TSC)          : 2800
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.05_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2013.5
+    Set B   mean year : 2014.4
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.1013
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.1013):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 74.5  low-$r_q$: 2268.6
+    Set B mean high-$r_q$ neighbor count : 83.8  low-$r_q$: 3021.3
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 2800
+    Set N : n=2800 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.000917  median=0.000701  n=83
+    Set B : mean=0.000902  median=0.000843  n=83
+    Set N : mean=0.000559  median=0.000556  n=2800
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 2343.12
+    Set B : mean total degree = 3105.17
+    Set R : mean total degree = 2548.59
+    Set N : mean total degree = 2690.21
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1339               62.0%
+    Set R              0.0871               48.5%
+    Set D              0.0175               16.7%
+    Set B              0.0162               25.1%
+    Set N              0.0035               10.9%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 424): 83 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=430  TSC=2.4848  year=2012  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.1210.4732
+    Niho Bent Functions and Subiaco/Adelaide Hyperovals In this paper, the relation
+    between binomial Niho bent functions discovered by Dobbertin et al. and
+    o-polynomials that give rise to the Subiaco and Adelaide classes of hyperovals
+    is found. This allows to expand the class of bent functions that corresponds to
+    Subiaco hyperovals, in the case when .
+
+  [D-top2] Overall rank=445  TSC=2.4609  year=2024  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.3233/com-230462
+    Complemented subsets and Boolean-valued, partial functions We study the two
+    algebras of complemented subsets that were introduced in the constructive
+    development of the Daniell approach to measure and integration within Bishop-
+    style constructive mathematics. We present their main properties both for the
+    so-called here categorical complemented subsets and for the extensional
+    complemented subsets. W
+
+  [D-top3] Overall rank=450  TSC=2.4352  year=2001  vocab_density=0.1429  QR_neighbors=83  source=?
+  DOI: 10.1198/016214501753382273
+    Variable selection is fundamental to high-dimensional statistical modeling,
+    including nonparametric regression. Many approaches in use are stepwise
+    selection procedures, which can be computationally expensive and ignore
+    stochastic errors in the variable selection process. In this article, penalized
+    likelihood approaches are proposed to handle these kinds of problems. The
+    proposed methods select va
+
+  [D-top4] Overall rank=453  TSC=2.4305  year=2025  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.2501.12080
+    Balance-Based Cryptography: Physically Computing Any Boolean Function Secure
+    multi-party computation is an area in cryptography which studies how multiple
+    parties can compare their private information without revealing it. Besides
+    digital protocols, many unconventional protocols for secure multi-party
+    computation using physical objects have also been developed. The vast majority
+    of them use playin
+
+  [D-top5] Overall rank=458  TSC=2.4201  year=2014  vocab_density=0.1429  QR_neighbors=79  source=?
+  DOI: 10.48550/arxiv.1407.2357
+    Cryptography from Quantum mechanical viewpoint Cryptography is an art and
+    science of secure communication. Here the sender and receiver are guaranteed the
+    security through encryption of their data, with the help of a common key. Both
+    the parties should agree on this key prior to communication. The cryptographic
+    systems which perform these tasks are designed to keep the key secret while
+    assuming th
+
+  [D-top6] Overall rank=482  TSC=2.3831  year=2021  vocab_density=0.4286  QR_neighbors=85  source=?
+  DOI: 10.31315/telematika.v18i1.3195
+    Development of Applications for Simplification of Boolean Functions using Quine-
+    McCluskey Method Purpose: This research makes an application to simplify the
+    Boolean function using Quine-McCluskey, because length of the Boolean function
+    complicates the digital circuit, so that it can be simplified by finding other
+    functions that are equivalent and more efficient, making digital circuits
+    easier, and
+
+  [D-top7] Overall rank=486  TSC=2.3792  year=2020  vocab_density=0.4286  QR_neighbors=85  source=?
+  DOI: 10.1017/s0963548320000541
+    Lipschitz bijections between boolean functions We answer four questions from a
+    recent paper of Rao and Shinkar [17] on Lipschitz bijections between functions
+    from {0, 1}n to {0, 1}. (1) We show that there is no O(1)-bi-Lipschitz bijection
+    from Dictator to XOR such that each output bit depends on O(1) input bits. (2)
+    We give a construction for a mapping from XOR to Majority which has average
+    stretc
+
+  [D-top8] Overall rank=489  TSC=2.3741  year=2001  vocab_density=0.1429  QR_neighbors=84  source=?
+  DOI: 10.48550/arxiv.math/0110335
+    Introductory Topics in Distributions over Binary Test Functions We note with B2
+    the Boole algebra with two elements. We define for the R->B2 functions the
+    limits, the derivatives, the differentiability, the test functions, the
+    integrals. We also define the distributions over the space of these test
+    functions, the regular and the singular distributions, the support sets of the
+    distributions. We als
+
+  [D-top9] Overall rank=491  TSC=2.3692  year=2011  vocab_density=0.1429  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.1112.2313
+    QBF-Based Boolean Function Bi-Decomposition Boolean function bi-decomposition is
+    ubiquitous in logic synthesis. It entails the decomposition of a Boolean
+    function using two-input simple logic gates. Existing solutions for bi-
+    decomposition are often based on BDDs and, more recently, on Boolean
+    Satisfiability. In addition, the partition of the input set of variables is
+    either assumed, or heuristic s
+
+  [D-top10] Overall rank=506  TSC=2.3406  year=2019  vocab_density=0.1429  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.1911.04516
+    Boolean lattices in finite alternating and symmetric groups Given a group and a
+    subgroup , we let denote the lattice of subgroups of containing . This paper
+    provides a classification of the subgroups of such that is Boolean of rank at
+    least , when is a finite alternating or symmetric group. Besides some sporadic
+    examples and some twisted versions, there are two different types of such
+    lattices. On
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3279  TSC=0.2339  year=2002  vocab_density=0.0000  QR_neighbors=7  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot2] Overall rank=3132  TSC=0.7347  year=2013  vocab_density=0.0000  QR_neighbors=35  source=?
+  DOI: 10.48550/arxiv.1303.7405
+    How Planners Deal with Uncomfortable Knowledge: The Dubious Ethics of the
+    American Planning Association With a point of departure in the concept
+    "uncomfortable knowledge," this article presents a case study of how the
+    American Planning Association (APA) deals with such knowledge. APA was found to
+    actively suppress publicity of malpractice concerns and bad planning in order to
+    sustain a boosterish
+
+  [D-bot3] Overall rank=3127  TSC=0.7374  year=2015  vocab_density=0.1429  QR_neighbors=33  source=?
+  DOI: 10.48550/arxiv.1511.03894
+    The Game of Phishing The current implementation of TLS involves your browser
+    displaying a padlock, and a green bar, after successfully verifying the digital
+    signature on the TLS certificate. Proposed is a solution where your browser's
+    response to successful verification of a TLS certificate is to display a login
+    window. That login window displays the identity credentials from the TLS
+    certificate,
+
+  [D-bot4] Overall rank=3080  TSC=0.8158  year=2013  vocab_density=0.0000  QR_neighbors=45  source=?
+  DOI: 10.48550/arxiv.1302.3642
+    From Nobel Prize to Project Management: Getting Risks Right A major source of
+    risk in project management is inaccurate forecasts of project costs, demand, and
+    other impacts. The paper presents a promising new approach to mitigating such
+    risk, based on theories of decision making under uncertainty which won the 2002
+    Nobel prize in economics. First, the paper documents inaccuracy and risk in
+    project
+
+  [D-bot5] Overall rank=3023  TSC=0.8840  year=2015  vocab_density=0.0000  QR_neighbors=46  source=?
+  DOI: 10.1007/978-3-662-45569-2
+    Foundations of geometry (Festschrift 1899). Edited and commented by Klaus
+    Volkert There are many editions and translations of \textit{David Hilbert}'s
+    [Grundlagen der Geometrie. Leipzig: B. G. Teubner (1899; JFM 30.0424.01)] first
+    published in 1899 as a Festschrift on the occasion of the unveiling of the
+    Gauss-Weber monument in Gottingen. However, the author's idea is new, he wants
+    to present Hilb
+
+  [D-bot6] Overall rank=2911  TSC=1.0110  year=2001  vocab_density=0.0000  QR_neighbors=43  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot7] Overall rank=2867  TSC=1.0464  year=2005  vocab_density=0.0000  QR_neighbors=53  source=?
+  DOI: 10.1111/j.1467-9868.2005.00503.x
+    Regularization and variable selection via the elastic net We propose the elastic
+    net, a new regularization and variable selection method. Real world data and a
+    simulation study show that the elastic net often outperforms the lasso, while
+    enjoying a similar sparsity of representation. In addition, the elastic net
+    encourages a grouping effect, where strongly correlated predictors tend to be in
+    or ou
+
+  [D-bot8] Overall rank=2782  TSC=1.1058  year=2018  vocab_density=0.1429  QR_neighbors=35  source=?
+  DOI: 10.48550/arxiv.1802.05517
+    Quantum cryptography: key distribution and beyond Uniquely among the sciences,
+    quantum cryptography has driven both foundational research as well as practical
+    real-life applications. We review the progress of quantum cryptography in the
+    last decade, covering quantum key distribution and other applications.
+
+  [D-bot9] Overall rank=2762  TSC=1.1160  year=2013  vocab_density=0.0000  QR_neighbors=57  source=?
+  DOI: 10.1007/978-3-540-69444-1
+    David Hilbert's lectures on the foundations of arithmetic and logic, 1917--1933.
+    In collaboration with Ulrich Majer and Dirk Schlimm Here we encounter
+    mathematical logic and proof theory \textit{in statu nascendi} in the lectures
+    Hilbert held between 1917 and 1933, containing insights into the history of the
+    subject that cannot be read from any published source during the first half of
+    the 20th ce
+
+  [D-bot10] Overall rank=2583  TSC=1.2377  year=2006  vocab_density=0.0000  QR_neighbors=48  source=?
+  DOI: 10.1002/047174882x
+    Elements of information theory The second edition of the book contains the
+    following 17 chapters: Introduction and preview; Entropy, Relative entropy, and
+    Mutual information; Asymptotic equipartition property; Entropy rates of a
+    stochastic process; Data compression; Gambling and data compression; Channel
+    capacity; Differential entropy; Gaussian channel; Rate distortion theory;
+    Information theory a
+
+  Set B (broad query, above rank 424): 83 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=63  TSC=4.5750  year=2006  vocab_density=0.4286  QR_neighbors=85  source=?
+  DOI: 10.1109/tit.2006.876253
+    Algebraic immunity for cryptographically significant Boolean functions: analysis
+    and construction Recently, algebraic attacks have received a lot of attention in
+    the cryptographic literature. It has been observed that a Boolean function f
+    used as a cryptographic primitive, and interpreted as a multivariate polynomial
+    over F/sub 2/, should not have low degree multiples obtained by multiplication
+    wi
+
+  [B-top2] Overall rank=91  TSC=4.3789  year=2010  vocab_density=0.4286  QR_neighbors=85  source=?
+  DOI: 10.1109/tit.2010.2046195
+    Constructions of Cryptographically Significant Boolean Functions Using Primitive
+    Polynomials It is known that Boolean functions used in stream and block ciphers
+    should have good cryptographic properties to resist algebraic attacks. Up until
+    now, there have been several constructions of Boolean functions achieving
+    optimum algebraic immunity. However, most of their nonlinearities are very low.
+    Carle
+
+  [B-top3] Overall rank=259  TSC=3.3085  year=2017  vocab_density=0.5714  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.1703.08362
+    A new class of three-weight linear codes from weakly regular plateaued functions
+    Linear codes with few weights have many applications in secret sharing schemes,
+    authentication codes, communication and strongly regular graphs. In this paper,
+    we consider linear codes with three weights in arbitrary characteristic. To do
+    this, we generalize the recent contribution of Mesnager given in [Cryptography a
+
+  [B-top4] Overall rank=260  TSC=3.3070  year=2000  vocab_density=0.4286  QR_neighbors=85  source=?
+  DOI: 10.2991/cnct-16.2017.79
+    A New Method for Construction of Orthomorphic Permutations with the Highest
+    Degree . Orthomorphic permutation is proposed in 1942, which is a special
+    permutation with many good cryptographic properties. Orthomorphic permutation
+    has similar structure with a one-way function used in hash functions called
+    Davies-Meyer construction. However, the algebraic degrees of previous
+    constructions of orthomorp
+
+  [B-top5] Overall rank=262  TSC=3.3012  year=2005  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.quant-ph/0511266
+    Statistical Zero Knowledge and quantum one-way functions One-way functions are a
+    very important notion in the field of classical cryptography. Most examples of
+    such functions, including factoring, discrete log or the RSA function, can be,
+    however, inverted with the help of a quantum computer. In this paper, we study
+    one-way functions that are hard to invert even by a quantum adversary and
+    describe
+
+  [B-top6] Overall rank=269  TSC=3.2351  year=2024  vocab_density=0.1429  QR_neighbors=85  source=?
+  DOI: 10.3390/computers13010026
+    Development of a New Post-Quantum Digital Signature Algorithm: Syrga-1 The
+    distinguishing feature of hash-based algorithms is their high confidence in
+    security. When designing electronic signature schemes, proofs of security
+    reduction to certain properties of cryptographic hash functions are used. This
+    means that if the scheme is compromised, then one of these properties will be
+    violated. It is im
+
+  [B-top7] Overall rank=287  TSC=3.1123  year=2001  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.1017/cbo9780511546891
+    Foundations of cryptography. Vol. 1. Basic tools This book is the first volume
+    of a three-volume book presenting the basic concepts, techniques and results in
+    cryptography. It contains an introductory chapter to discuss the goals of
+    cryptography and to present the computational models and some elementary
+    background from probability theory, as well as basic tools: one-way functions,
+    pseudorandomnes
+
+  [B-top8] Overall rank=288  TSC=3.0833  year=2005  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.1137/s0097539704443276
+    Bounds on the Efficiency of Generic Cryptographic Constructions A central focus
+    of modern cryptography is the construction of efficient, high-level
+    cryptographic tools (e.g., encryption schemes) from weaker, low-level
+    cryptographic primitives (e.g., one-way functions). Of interest are both the
+    existence of such constructions and their efficiency. Here, we show essentially
+    tight lower bounds on the
+
+  [B-top9] Overall rank=291  TSC=3.0750  year=2001  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.cs/0111056
+    Some Facets of Complexity Theory and Cryptography: A Five-Lectures Tutorial In
+    this tutorial, selected topics of cryptology and of computational complexity
+    theory are presented. We give a brief overview of the history and the
+    foundations of classical cryptography, and then move on to modern public-key
+    cryptography. Particular attention is paid to cryptographic protocols and the
+    problem of construc
+
+  [B-top10] Overall rank=292  TSC=3.0605  year=2018  vocab_density=0.5714  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.1806.02059
+    Problems and solutions of the Fourth International Students' Olympiad in
+    Cryptography NSUCRYPTO Mathematical problems and their solutions of the Fourth
+    International Students' Olympiad in cryptography NSUCRYPTO'2017 are presented.
+    We consider problems related to attacks on ciphers and hash functions,
+    cryptographic Boolean functions, the linear branch number, addition chains,
+    error correction codes
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=424  TSC=2.5000  year=2010  vocab_density=0.1429  QR_neighbors=82  source=?
+  DOI: 10.48550/arxiv.1008.0253
+    Long distance two-party quantum cryptography made simple Any two-party
+    cryptographic primitive can be implemented using quantum communication under the
+    assumption that it is difficult to store a large number of quantum states
+    perfectly. However, achieving reliable quantum communication over long distances
+    remains a difficult problem. Here, we consider a large network of nodes with
+    only neighboring
+
+  [B-bot2] Overall rank=423  TSC=2.5034  year=2021  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.48550/arxiv.2103.16357
+    Geometry of Banach spaces: a new route towards Position Based Cryptography In
+    this work we initiate the study of Position Based Quantum Cryptography (PBQC)
+    from the perspective of geometric functional analysis and its connections with
+    quantum games. The main question we are interested in asks for the optimal
+    amount of entanglement that a coalition of attackers have to share in order to
+    compromise
+
+  [B-bot3] Overall rank=422  TSC=2.5046  year=2024  vocab_density=0.1429  QR_neighbors=80  source=?
+  DOI: 10.1109/i2ct61223.2024.10543755
+    Advanced Caesar Cipher Encryption Algorithm Using Random Key Generation
+    Cryptography is used to protect data from adversaries who are unauthorized to
+    access it, Cryptograph is used to changes the form of the data using a specific
+    algorithm which can be reversed using a particular key. We already have many
+    Cryptographic algorithms but there is always a need for new algorithms because
+    old techniques
+
+  [B-bot4] Overall rank=421  TSC=2.5079  year=2017  vocab_density=0.1429  QR_neighbors=82  source=?
+  DOI: 10.48550/arxiv.1710.02036
+    Computational Differential Privacy from Lattice-based Cryptography The emerging
+    technologies for large scale data analysis raise new challenges to the security
+    and privacy of sensitive user data. In this work we investigate the problem of
+    private statistical analysis of time-series data in the distributed and semi-
+    honest setting. In particular, we study some properties of Private Stream
+    Aggregatio
+
+  [B-bot5] Overall rank=419  TSC=2.5173  year=2012  vocab_density=0.2857  QR_neighbors=82  source=?
+  DOI: 10.7148/2012-0386-0391
+    Cryptography Based On Neural Network The goal of cryptography is to make it
+    impossible to take a cipher and reproduce the original plain text without the
+    corresponding key. With good cryptography, your messages are encrypted in such a
+    way that brute force attacks against the algorithm or the key are all but
+    impossible. Good cryptography gets its security by using incredibly long keys
+    and using enc
+
+  [B-bot6] Overall rank=418  TSC=2.5218  year=2018  vocab_density=0.2857  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.1810.08983
+    PQC: Triple Decomposition Problem Applied To GL(d, Fp) - A Secure Framework For
+    Canonical Non-Commutative Cryptography Post-Quantum Cryptography (PQC) attempts
+    to find cryptographic protocols resistant to attacks using Shor polynomial time
+    algorithm for numerical field problems or Grover search algorithm. A mostly
+    overlooked but valuable line of solutions is provided by non-commutative
+    algebraic s
+
+  [B-bot7] Overall rank=416  TSC=2.5279  year=2023  vocab_density=0.2857  QR_neighbors=84  source=?
+  DOI: 10.48550/arxiv.2311.11890
+    A Modular Approach to Unclonable Cryptography We explore a new pathway to
+    designing unclonable cryptographic primitives. We propose a new notion called
+    unclonable puncturable obfuscation (UPO) and study its implications for
+    unclonable cryptography. Using UPO, we present modular (and arguably, simple)
+    constructions of many primitives in unclonable cryptography, including public-
+    key quantum money, q
+
+  [B-bot8] Overall rank=412  TSC=2.5407  year=2015  vocab_density=0.1429  QR_neighbors=81  source=?
+  DOI: 10.1137/15m1054766
+    Deciding Orthogonality in Construction-A Lattices Lattices are discrete
+    mathematical objects with widespread applications to integer programs as well as
+    modern cryptography. A fundamental problem in both domains is the Closest Vector
+    Problem (popularly known as CVP). It is well-known that CVP can be easily solved
+    in lattices that have an orthogonal basis \emph{if} the orthogonal basis is
+    specified
+
+  [B-bot9] Overall rank=411  TSC=2.5438  year=2022  vocab_density=0.2857  QR_neighbors=85  source=?
+  DOI: 10.1109/dcis55711.2022.9970032
+    True Random Number Generator based on RO-PUF The implementation of true random
+    number generators is of vital importance to preserve the reliability of
+    cryptographic systems. The lack of entropy can compromise their integrity,
+    affecting the security of the entire chain of applications. Ensuring the
+    effectiveness of a random number generator can be understood as reducing the
+    risk of information loss
+
+  [B-bot10] Overall rank=410  TSC=2.5439  year=2025  vocab_density=0.2857  QR_neighbors=83  source=?
+  DOI: 10.48550/arxiv.2505.08115
+    Invariant-Based Cryptography: Toward a General Framework We develop a
+    generalized framework for invariant-based cryptography by extending the use of
+    structural identities as core cryptographic mechanisms. Starting from a
+    previously introduced scheme where a secret is encoded via a four-point
+    algebraic invariant over masked functional values, we broaden the approach to
+    include multiple classes of i
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  72 displaced,  13 remaining
+    Q2 :   8 displaced,  77 remaining
+    Q3 :   3 displaced,  81 remaining
+    Q4 :   0 displaced,  85 remaining
+    Q5 :   0 displaced,  85 remaining
+  [SetD_Quintile_Displaced] Q1:72;Q2:8;Q3:3;Q4:0;Q5:0
+  [SetD_Quintile_Remaining] Q1:13;Q2:77;Q3:81;Q4:85;Q5:85
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_155100.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_155100_dark.png
+
+  Combined top-X quintile bounds : ['0.0352', '0.0655', '0.0825', '0.1013']
+  Broad query document counts    : [74, 7, 1, 1, 0]
+  Focused document counts        : [11, 78, 84, 84, 84]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_155100.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_155100_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0162             0.0175
+  Mean vocab density (n-gram %)                  25.1%              16.7%
+  Mean $r_q$-neighbor count                        83.8               74.5
+  Mean publication year                          2014.4             2013.5
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_155100.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_155100_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_155100.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_155100_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_cryptography+bent_Boolean_functions_cryptography_TF-IDF_20260521_220708]: AB - Pass_data_to_other_query_20260521_221536.csv  (3307 DOIs)
+  ✓  All 3307 DOIs resolved to a known API source
+  Source info [TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838]: AB - Pass_data_to_other_query_20260325_124636.csv  (424 DOIs)
+  Source info [TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838]: combined_results_20260325_124251.csv  (+181 DOIs resolved)
+  ✓  All 605 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838]: 13 unique DOIs
+  Top 10 xlsx [TSC_1000_cryptography+bent_Boolean_functions_cryptography_TF-IDF_20260521_220708]: 12 unique DOIs
+  Top 10 at chosen τ=0.03 (from xlsx): focused=13, broad=12
+  [SourceCounts_focused_top10] CrossRef:1;OpenAlex:2;SemanticScholar:5;arXiv:5
+  [SourceCounts_broad_top10] CrossRef:2;OpenAlex:3;SemanticScholar:5;arXiv:2
+  [SourceCounts_broad_top424] CrossRef:160;OpenAlex:66;SemanticScholar:56;arXiv:135;zbMath:7
+  [SourceCounts_setB] CrossRef:10;OpenAlex:19;SemanticScholar:13;arXiv:35;zbMath:6
+  [SourceCounts_setD] CrossRef:22;SemanticScholar:1;arXiv:34;zbMath:26
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_155100.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_155100_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_155100.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_155100_dark.png
+  ✓ Source pie → Mechanism_source_broad_top424_20260617_155100.png
+  ✓ Source pie → Mechanism_source_broad_top424_20260617_155100_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_155100.png
+  ✓ Source pie → Mechanism_source_setB_20260617_155100_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_155100.png
+  ✓ Source pie → Mechanism_source_setD_20260617_155100_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_155100.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_155100_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_155100.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_155100_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_155100.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_155100_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_155100.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_155100_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_155100.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_155100_dark.png
+  TSC boundary value at rank 424: 2.499988
+  ✓ Scatter plot → Mechanism3_scatter_20260617_155100.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_155100_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_155100_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_155100_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_155100.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_155100_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_155100_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_155100_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_155100.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_155100_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_155100_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_155100_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_155100.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_155100_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_155100_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_155100_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_155100.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_155100_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_155100_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_155100_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_155100.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_155100_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_155100_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_155100_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_155100_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_155100.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_155100_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_155100.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_155100_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_155100_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_155100_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_155100.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_155100_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_155100_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_155100_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_155100.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_155100_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_155100.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_155100_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_155100.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_155100_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_155100.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_155100_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_155100_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_155100_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_155100.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_155100_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_155100_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_155100_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_155100.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_155100_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_155100.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_155100_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_155100_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_155100_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_155100_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_155100_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_155100_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_155100_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_155100.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_155100_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_155100_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_155100_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_155100_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_155100_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_155100_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_155100_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=85, D=83, B=83, total=251
+  Edges: 28792
+  ✓ Gephi network → Mechanism_network_20260617_155100.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=85, R=256, D=83, B=83, N=2800, total=3307
+  Edges: 4426932
+  ✓ Gephi full network → Mechanism_network_full_20260617_155100.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815
+════════════════════════════════════════════════════════════
+

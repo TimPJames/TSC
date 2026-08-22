@@ -1,0 +1,47 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010
+
+  File 1 (150) top-10 DOIs : 12
+  File 2 (1000) top-10 DOIs : 14
+  DOIs in both lists           : 8
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260330_225410.csv): 413
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260522_130834.csv): 3678
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\ranking_chosen_tau_150_ZeroKnowledgeProofs_vs_1000_Cryptography.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\ranking_chosen_tau_150_ZeroKnowledgeProofs_vs_1000_Cryptography_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\ranking_chosen_tau_150_ZeroKnowledgeProofs_vs_1000_Cryptography_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\ranking_chosen_tau_150_ZeroKnowledgeProofs_vs_1000_Cryptography_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555\DOIs_with_max_TSC_values_20260330_225410.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+zero_knowledge_proofs_TF-IDF_20260522_124843\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+zero_knowledge_proofs_TF-IDF_20260522_124843\DOIs_with_max_TSC_values_20260522_130834.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 12 top-10 DOIs, 413 total records
+  File 2 (1000) : 14 top-10 DOIs, 3678 total records
+  DOIs in both       : 8
+    10.1002/spy2.461
+    10.1108/ijwis-01-2025-0024
+    10.21467/preprints.384
+    10.4018/978-1-59904-168-1.ch008
+    10.48550/arxiv.2407.03511
+    10.48550/arxiv.2510.09715
+    10.56155/978-81-975670-5-6-1
+    10.71465/ajcns890
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\comparison_150_ZeroKnowledgeProofs_to_1000_Cryptography.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\comparison_1000_Cryptography_to_150_ZeroKnowledgeProofs.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_ZeroKnowledgeProofs_1000_Cryptography_20260523_004010\comparison_output_20260523_004010.txt
+════════════════════════════════════════════════════════════
+

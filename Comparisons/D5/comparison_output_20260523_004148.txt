@@ -1,0 +1,46 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148
+
+  File 1 (150) top-10 DOIs : 11
+  File 2 (1000) top-10 DOIs : 11
+  DOIs in both lists           : 7
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260331_140109.csv): 458
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260522_133401.csv): 3723
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\ranking_chosen_tau_150_HomomorphicEncryption_vs_1000_Cryptography.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\ranking_chosen_tau_150_HomomorphicEncryption_vs_1000_Cryptography_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\ranking_chosen_tau_150_HomomorphicEncryption_vs_1000_Cryptography_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\ranking_chosen_tau_150_HomomorphicEncryption_vs_1000_Cryptography_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_homomorphic_encryption_TF-IDF_20260331_135149\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_homomorphic_encryption_TF-IDF_20260331_135149\DOIs_with_max_TSC_values_20260331_140109.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+homomorphic_encryption_TF-IDF_20260522_131509\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+homomorphic_encryption_TF-IDF_20260522_131509\DOIs_with_max_TSC_values_20260522_133401.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 11 top-10 DOIs, 458 total records
+  File 2 (1000) : 11 top-10 DOIs, 3723 total records
+  DOIs in both       : 7
+    10.1109/aicis.2018.00043
+    10.1145/3528580.3532845
+    10.3390/electronics13224478
+    10.48550/arxiv.2205.13265
+    10.48550/arxiv.2305.05904
+    10.5120/15902-5081
+    10.54660/.ijfmr.2025.6.1.48-56
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\comparison_150_HomomorphicEncryption_to_1000_Cryptography.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\comparison_1000_Cryptography_to_150_HomomorphicEncryption.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_HomomorphicEncryption_1000_Cryptography_20260523_004148\comparison_output_20260523_004148.txt
+════════════════════════════════════════════════════════════
+

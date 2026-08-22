@@ -1,0 +1,588 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.060, λ=0.010
+  Noisy  : τ=0.040, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.04 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.04_lambda_0.01.csv
+  Focused corpus : 467 DOIs
+  Noisy corpus   : 3547 DOIs
+  Matrix DOIs    : 3547
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 467  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.04) for set membership and scatter
+  Rank threshold X (focused corpus size) : 467
+  Set R_Q5  (focused, retained, top quintile r_q) : 76
+  Set R     (focused, retained above X)           : 278
+  Set D     (focused, displaced below X)          : 189
+  Set B     (broad query, in top X ranks)         : 189
+  Set N     (broad query, below iso-TSC)          : 2891
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.06_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2020.8
+    Set B   mean year : 2020.0
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.1221
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.1221):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 91.8  low-$r_q$: 1998.9
+    Set B mean high-$r_q$ neighbor count : 100.7  low-$r_q$: 2876.0
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 2891
+    Set N : n=2891 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.002458  median=0.002398  n=189
+    Set B : mean=0.002546  median=0.002504  n=189
+    Set N : mean=0.001668  median=0.001668  n=2891
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 2090.69
+    Set B : mean total degree = 2976.63
+    Set R : mean total degree = 2840.35
+    Set N : mean total degree = 2141.71
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1585              100.0%
+    Set R              0.1125               97.8%
+    Set D              0.0764               82.2%
+    Set B              0.0613               63.1%
+    Set N              0.0119               18.8%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 467): 189 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=468  TSC=6.6594  year=2025  vocab_density=0.8000  QR_neighbors=102  source=?
+  DOI: 10.20944/preprints202512.2449.v1
+    Impact of Quantum Computing on Asymmetric Cryptography Infrastructures:
+    Prospective Study and Post-Quantum Transition Roadmap The evolution of quantum
+    computing represents one of the most significant technological transformations
+    of this century, with direct implications for cryptographic systems currently in
+    use, especially in the field of asymmetric cryptography. This article develops a
+    prospect
+
+  [D-top2] Overall rank=470  TSC=6.6414  year=2011  vocab_density=0.6000  QR_neighbors=101  source=?
+  DOI: 10.48550/arxiv.1109.3235
+    A new spin on quantum cryptography: Avoiding trapdoors and embracing public keys
+    We give new arguments in support of \emph{signed quantum key establishment},
+    where quantum cryptography is used in a public-key infrastructure that provides
+    the required authentication. We also analyze more thoroughly than previous works
+    the benefits that quantum key establishment protocols have over certain
+    classical
+
+  [D-top3] Overall rank=473  TSC=6.6387  year=2024  vocab_density=1.0000  QR_neighbors=101  source=?
+  DOI: 10.1109/access.2024.3360412
+    A Framework for Migrating to Post-Quantum Cryptography: Security Dependency
+    Analysis and Case Studies Quantum computing is emerging as a significant threat
+    to information protected by widely used cryptographic systems. Cryptographic
+    methods, once deemed secure for decades, are now at risk of being compromised,
+    posing a massive threat to the security of sensitive data and communications
+    across ente
+
+  [D-top4] Overall rank=493  TSC=6.5644  year=2023  vocab_density=1.0000  QR_neighbors=101  source=?
+  DOI: 10.48550/arxiv.2304.13413
+    Secure Communication Model For Quantum Federated Learning: A Post Quantum
+    Cryptography (PQC) Framework We design a model of Post Quantum Cryptography
+    (PQC) Quantum Federated Learning (QFL). We develop a framework with a dynamic
+    server selection and study convergence and security conditions. The
+    implementation and results are publicly available1.
+
+  [D-top5] Overall rank=494  TSC=6.5622  year=2022  vocab_density=1.0000  QR_neighbors=101  source=?
+  DOI: 10.1515/comp-2022-0235
+    Post-quantum cryptography-driven security framework for cloud computing Data
+    security in the cloud has been a major issue since the inception and adoption of
+    cloud computing. Various frameworks have been proposed, and yet data breach
+    prevails. With encryption being the dominant method of cloud data security, the
+    advent of quantum computing implies an urgent need to proffer a model that will
+    provid
+
+  [D-top6] Overall rank=496  TSC=6.5610  year=2023  vocab_density=0.6000  QR_neighbors=100  source=?
+  DOI: 10.3390/electronics12183824
+    A Comparative Study of Post-Quantum Cryptographic Algorithm Implementations for
+    Secure and Efficient Energy Systems Monitoring The Internet of Things (IoT) has
+    assumed a pivotal role in the advancement of communication technology and in our
+    daily lives. However, an IoT system such as a smart grid with poorly designed
+    topology and weak security protocols might be vulnerable to cybercrimes.
+    Exploits
+
+  [D-top7] Overall rank=500  TSC=6.5529  year=2024  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.48550/arxiv.2403.09352
+    REPQC: Reverse Engineering and Backdooring Hardware Accelerators for Post-
+    quantum Cryptography Significant research efforts have been dedicated to
+    designing cryptographic algorithms that are quantum-resistant. The motivation is
+    clear: robust quantum computers, once available, will render current
+    cryptographic standards vulnerable. Thus, we need new Post-Quantum Cryptography
+    (PQC) algorithms, and,
+
+  [D-top8] Overall rank=502  TSC=6.5410  year=2024  vocab_density=1.0000  QR_neighbors=101  source=?
+  DOI: 10.48550/arxiv.2501.10394
+    The Continuous Logarithm in the Complex Circle for Post-Quantum Cryptographic
+    Algorithms This paper introduces a novel cryptographic approach based on the
+    continuous logarithm in the complex circle, designed to address the challenges
+    posed by quantum computing. By leveraging its multi-valued and spectral
+    properties, this framework enables the reintroduction of classical algorithms
+    (DH, ECDSA, ElGa
+
+  [D-top9] Overall rank=503  TSC=6.5353  year=2025  vocab_density=0.2000  QR_neighbors=101  source=?
+  DOI: 10.4018/979-8-3373-3166-9.ch009
+    Quantum Algorithms Quantum algorithms have emerged as powerful computational
+    tools that leverage the principles of quantum mechanics to address complex
+    problems beyond the scope of classical computing. This chapter explores the
+    foundational concepts, classifications, implementation challenges, and future
+    prospects of quantum algorithms. Key breakthroughs such as Grover's and Shor's
+    algorithms are
+
+  [D-top10] Overall rank=507  TSC=6.5145  year=2018  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.48550/arxiv.1805.04880
+    Lighting the Way to a Smart World: Lattice-Based Cryptography for Internet of
+    Things The Ukraine power grid cyberattacks remind us that the smart Internet of
+    Things (IoT) can help us control our light-bulbs, but if under attacks it might
+    also take us into darkness. Nowadays, many literatures have tried to address the
+    concerns on IoT security, but few of them take into consideration the sever
+    threa
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3503  TSC=0.3878  year=2002  vocab_density=0.0000  QR_neighbors=12  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot2] Overall rank=3495  TSC=0.4142  year=2000  vocab_density=0.0000  QR_neighbors=6  source=?
+  DOI: 10.1137/s0036144500371907
+    The mathematics of infectious diseases Many models for the spread of infectious
+    diseases in populations have been analyzed mathematically and applied to
+    specific diseases. Threshold theorems involving the basic reproduction number
+    \(R_{0}\), the contact number \(\sigma\), and the replacement number \(R\) are
+    reviewed for the classic SIR epidemic and endemic models. Similar results with
+    new express
+
+  [D-bot3] Overall rank=3407  TSC=0.8983  year=2013  vocab_density=0.0000  QR_neighbors=18  source=?
+  DOI: ami.ektf.hu/uploads/papers/finalpdf/ami_41_from219to234.pdf
+    The On-Line Encyclopedia of Integer Sequences We all recognize
+    \(0,1,1,2,3,5,8,13,\dots\) but what about \(1,2,4,6,3,9,12,8, 10,5,15,\dots~\) ?
+    If you come across a number sequence and want to know if it has been studied
+    before, there is only one place to look, the On-Line Encyclopedia of Integer
+    Sequences (or OEIS). Now in its 49th year, the OEIS contains over 220,000
+    sequences and 20,000 new ent
+
+  [D-bot4] Overall rank=3375  TSC=1.0534  year=2015  vocab_density=0.0000  QR_neighbors=30  source=?
+  DOI: 10.1007/978-3-662-45569-2
+    Foundations of geometry (Festschrift 1899). Edited and commented by Klaus
+    Volkert There are many editions and translations of \textit{David Hilbert}'s
+    [Grundlagen der Geometrie. Leipzig: B. G. Teubner (1899; JFM 30.0424.01)] first
+    published in 1899 as a Festschrift on the occasion of the unveiling of the
+    Gauss-Weber monument in Gottingen. However, the author's idea is new, he wants
+    to present Hilb
+
+  [D-bot5] Overall rank=3335  TSC=1.1956  year=2005  vocab_density=0.0000  QR_neighbors=21  source=?
+  DOI: 10.1111/j.1467-9868.2005.00503.x
+    Regularization and variable selection via the elastic net We propose the elastic
+    net, a new regularization and variable selection method. Real world data and a
+    simulation study show that the elastic net often outperforms the lasso, while
+    enjoying a similar sparsity of representation. In addition, the elastic net
+    encourages a grouping effect, where strongly correlated predictors tend to be in
+    or ou
+
+  [D-bot6] Overall rank=3313  TSC=1.2718  year=2013  vocab_density=0.2000  QR_neighbors=32  source=?
+  DOI: 10.1007/978-3-540-69444-1
+    David Hilbert's lectures on the foundations of arithmetic and logic, 1917--1933.
+    In collaboration with Ulrich Majer and Dirk Schlimm Here we encounter
+    mathematical logic and proof theory \textit{in statu nascendi} in the lectures
+    Hilbert held between 1917 and 1933, containing insights into the history of the
+    subject that cannot be read from any published source during the first half of
+    the 20th ce
+
+  [D-bot7] Overall rank=3245  TSC=1.4486  year=2003  vocab_density=0.0000  QR_neighbors=40  source=?
+  DOI: 10.1007/b98869
+    Mathematical biology. Vol. 2: Spatial models and biomedical applications. In
+    this second volume, for Vol. 1 see the preceding review, Zbl 1006.92001, one
+    starts with the last chapters of the first edition but the development towards
+    specific biological configurations and towards a mechanism for understanding
+    morphogenesis represents an important portion of the work. The main mathematical
+    tools are
+
+  [D-bot8] Overall rank=3150  TSC=1.7443  year=2001  vocab_density=0.0000  QR_neighbors=40  source=?
+  DOI: 10.1038/35065725
+    Exploring complex networks The study of networks pervades all of science, from
+    neurobiology to statistical physics. The most basic issues are structural: how
+    does one characterize the wiring diagram of a food web or the Internet or the
+    metabolic network of the bacterium Escherichia coli? Are there any unifying
+    principles underlying their topology? From the perspective of nonlinear
+    dynamics, we wou
+
+  [D-bot9] Overall rank=3098  TSC=1.8711  year=2002  vocab_density=0.0000  QR_neighbors=43  source=?
+  DOI: a120614
+    Algebraic combinatorics on words This book is a continuation of Lothaire's first
+    book entitled ``Combinatorics on words'' (1983; Zbl 0514.20045), but it is
+    independent. Compared to the previous one, this book both gives new topics and
+    goes deeper into topics already present before. The first chapter serves as an
+    introduction. The second one is devoted to Sturmian words and Sturmian
+    morphisms, and
+
+  [D-bot10] Overall rank=3061  TSC=1.9537  year=2023  vocab_density=0.0000  QR_neighbors=45  source=?
+  DOI: 10.1007/978-3-031-19505-1
+    Elements of mathematics. Spectral theories. Chapters 3--5 It seems that the
+    Bourbaki collective has resurrected; in the last few years they have produced a
+    number of new or substantially revised volumes [\textit{N.~Bourbaki}, Elements
+    de mathematique. Algebre. Chapitre~8. Modules et anneaux semi-simples. 2nd
+    revised ed. of the 1958 original. Berlin: Springer (2012; Zbl 1245.16001);
+    Elements de mat
+
+  Set B (broad query, above rank 467): 189 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=24  TSC=9.7877  year=2024  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.4018/979-8-3693-9220-1.ch004
+    Code-Based Cryptography and Its Place in Quantum-Safe Strategies Quantum
+    computation has progressed to the point where it is now a significant threat to
+    traditional cryptographic algorithms such as RSA and ECC. In this chapter, we
+    focus on the topic of code-based cryptography, which represents another
+    important piece in the post-quantum cryptography puzzle. Codes-based
+    cryptography relies on error
+
+  [B-top2] Overall rank=36  TSC=9.6043  year=2025  vocab_density=0.8000  QR_neighbors=102  source=?
+  DOI: 10.54254/2755-2721/2025.21190
+    A Survey of Lattice Cryptography Lattice cryptography has become one of the
+    focal points in the era of quantum computing development. RSA and ECC,
+    traditional public key cryptosystems, may become insecure in the face of quantum
+    computers. In contrast, lattice cryptography is considered a potential solution
+    for cryptographic security in the quantum computing age due to its inherent
+    mathematical pro
+
+  [B-top3] Overall rank=42  TSC=9.5183  year=2009  vocab_density=0.4000  QR_neighbors=102  source=?
+  DOI: 10.1145/1527017.1527028
+    Quantum resistant public key cryptography Public key cryptography is widely used
+    to secure transactions over the Internet. However, advances in quantum computers
+    threaten to undermine the security assumptions upon which currently used public
+    key cryptographic algorithms are based. In this paper, we provide a survey of
+    some of the public key cryptographic algorithms that have been developed that, w
+
+  [B-top4] Overall rank=43  TSC=9.5079  year=2024  vocab_density=1.0000  QR_neighbors=101  source=?
+  DOI: 10.4018/978-1-7998-9522-0.ch005
+    The Potential of Quantum Cryptography in Securing Future Communication Channels
+    This chapter discusses the significance of quantum cryptography in securing
+    communication channels for the future. It highlights the challenges posed by
+    quantum computing to traditional cryptographic systems and the potential
+    solutions offered by quantum-resistant protocols. The chapter emphasizes the
+    transition from c
+
+  [B-top5] Overall rank=45  TSC=9.4945  year=2024  vocab_density=0.4000  QR_neighbors=102  source=?
+  DOI: 10.4018/979-8-3693-5330-1.ch005
+    Quantum-Resistant Cryptography Quantum-resistant cryptography develops
+    cryptographic protocols and algorithms that can withstand attacks from quantum
+    computers. Quantum computers can solve certain mathematical problems much faster
+    than classical computers, making current encryption techniques like RSA and ECC
+    vulnerable to quantum algorithms such as Shor's algorithm. To address this,
+    quantum-resis
+
+  [B-top6] Overall rank=46  TSC=9.4944  year=2023  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.3390/cryptography7040053
+    On the Security of Quantum Key Distribution Networks The main purpose of a
+    quantum key distribution network is to provide secret keys to any users or
+    applications requiring a high level of security, ideally such as to offer the
+    best protection against any computational attack, even of a quantum nature. The
+    keys shared through a point-to-point link between a source and a detector using
+    a quantum ke
+
+  [B-top7] Overall rank=64  TSC=9.2044  year=2023  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.1109/comst.2023.3309051
+    Quantum Cryptography in 5G Networks: A Comprehensive Overview Every attempt to
+    access to the Internet through a Web browser, email sent, VPN connection, VoIP
+    call, instant message or other use of telecommunications systems involves
+    cryptographic techniques. The most commonly applied technique is asymmetric
+    cryptography, which is generally executed in the background without the user
+    even being awar
+
+  [B-top8] Overall rank=65  TSC=9.2017  year=2025  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.61453/joit.v2025no22
+    Quantum-Resistant Cryptography in Cyber Security The emergence of quantum
+    computing presents both significant opportunities and critical challenges for
+    modern cybersecurity. While quantum systems promise advances in science,
+    engineering, and artificial intelligence, they also pose a substantial threat to
+    classical cryptographic techniques such as RSA, ECC, and other widely deployed
+    public-key mech
+
+  [B-top9] Overall rank=68  TSC=9.1633  year=2024  vocab_density=0.8000  QR_neighbors=102  source=?
+  DOI: 10.36676/irt.v10.i3.1433
+    Algebraic Structures and Their Applications in Modern Cryptography Modern
+    cryptography relies heavily on the principles of algebraic structures to ensure
+    the security and integrity of data. This paper explores the fundamental
+    algebraic structures that underpin contemporary cryptographic systems, including
+    groups, rings, fields, and lattices. We provide a detailed examination of how
+    these structure
+
+  [B-top10] Overall rank=70  TSC=9.1518  year=2024  vocab_density=0.8000  QR_neighbors=101  source=?
+  DOI: 10.48550/arxiv.2402.00922
+    Towards post-quantum blockchain: A review on blockchain cryptography resistant
+    to quantum computing attacks Blockchain and other Distributed Ledger
+    Technologies (DLTs) have evolved significantly in the last years and their use
+    has been suggested for numerous applications due to their ability to provide
+    transparency, redundancy and accountability. In the case of blockchain, such
+    characteristics are
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=467  TSC=6.6641  year=2003  vocab_density=0.6000  QR_neighbors=102  source=?
+  DOI: 10.48550/arxiv.quant-ph/0311061
+    KCQ: A New Approach to Quantum Cryptography I. General Principles and Key
+    Generation A new approach to quantum cryptography to be called KCQ, keyed
+    communication in quantum noise, is developed on the basis of quantum detection
+    and communication theory for classical information transmission. By the use of a
+    shared secret key that determines the quantum states generated for different
+    data bit sequen
+
+  [B-bot2] Overall rank=461  TSC=6.6829  year=2024  vocab_density=1.0000  QR_neighbors=102  source=?
+  DOI: 10.48550/arxiv.2409.16107
+    Ciphertext Malleability in Lattice-Based KEMs as a Countermeasure to Side
+    Channel Analysis Due to developments in quantum computing, classical asymmetric
+    cryptography is at risk of being breached. Consequently, new Post-Quantum
+    Cryptography (PQC) primitives using lattices are studied. Another point of
+    scrutiny is the resilience of these new primitives to Side Channel Analysis
+    (SCA), where an attac
+
+  [B-bot3] Overall rank=460  TSC=6.6933  year=2009  vocab_density=0.6000  QR_neighbors=99  source=?
+  DOI: 10.48550/arxiv.0906.4547
+    The black paper of quantum cryptography: real implementation problems The laws
+    of physics play a crucial role in the security of quantum key distribution
+    (QKD). This fact has often been misunderstood as if the security of QKD would be
+    based only on the laws of physics. As the experts know well, things are more
+    subtle. We review the progresses in practical QKD focusing on (I) the elements
+    of trust
+
+  [B-bot4] Overall rank=458  TSC=6.7021  year=2024  vocab_density=0.2000  QR_neighbors=98  source=?
+  DOI: 10.3390/cryptography8040056
+    A Matrix Multiplication Approach to Quantum-Safe Cryptographic Systems This
+    paper introduces a novel approach based on matrix multiplication in Fpnxn, which
+    enables methods for public key exchange, user authentication, digital
+    signatures, blockchain integration, and homomorphic encryption. Unlike
+    traditional algorithms that rely on integer factorization or discrete
+    logarithms, our approach utilize
+
+  [B-bot5] Overall rank=457  TSC=6.7204  year=2015  vocab_density=0.2000  QR_neighbors=95  source=?
+  DOI: 10.48550/arxiv.1512.02006
+    Security Algorithms for Cloud Computing Environment In symmetric key
+    cryptography the sender as well as the receiver possess a common key. Asymmetric
+    key cryptography involves generation of two distinct keys which are used for
+    encryption and decryption correspondingly. The sender converts the original
+    message to cipher text using the public key while the receiver can decipher this
+    using his privat
+
+  [B-bot6] Overall rank=456  TSC=6.7217  year=2015  vocab_density=0.2000  QR_neighbors=96  source=?
+  DOI: 10.48550/arxiv.1510.01234
+    Hardware Random number Generator for cryptography One of the key requirement of
+    many schemes is that of random numbers. Sequence of random numbers are used at
+    several stages of a standard cryptographic protocol. A simple example is of a
+    Vernam cipher, where a string of random numbers is added to massage string to
+    generate the encrypted code. It is represented as where is the message, is the
+    key an
+
+  [B-bot7] Overall rank=455  TSC=6.7230  year=2021  vocab_density=0.6000  QR_neighbors=101  source=?
+  DOI: 10.1109/nrsc52299.2021.9509818
+    A Symmetric Key Dynamic Gates Encryption Algorithm Based on Quantum Computing
+    Quantum cryptography utilizes the quantum properties of photons to construct an
+    unbreakable crypto-algorithm in real-time. In this paper, based on quantum and
+    classical computation principles, a new quantum encryption algorithm using the
+    symmetric key is presented. It is a block-cipher algorithm which means that each
+    mes
+
+  [B-bot8] Overall rank=454  TSC=6.7230  year=2017  vocab_density=0.8000  QR_neighbors=98  source=?
+  DOI: 10.48550/arxiv.1710.02036
+    Computational Differential Privacy from Lattice-based Cryptography The emerging
+    technologies for large scale data analysis raise new challenges to the security
+    and privacy of sensitive user data. In this work we investigate the problem of
+    private statistical analysis of time-series data in the distributed and semi-
+    honest setting. In particular, we study some properties of Private Stream
+    Aggregatio
+
+  [B-bot9] Overall rank=453  TSC=6.7240  year=2023  vocab_density=0.2000  QR_neighbors=101  source=?
+  DOI: 10.3390/cryptography7040050
+    XOR Chain and Perfect Secrecy at the Dawn of the Quantum Era In this article, we
+    present a new method that achieves Shannon's perfect secrecy. To achieve this
+    property, we will introduce the triple XOR cancellation rule. The approach has
+    two execution modes: digital signature and data encryption. We provide perfect
+    secrecy proof of the encryption method. Furthermore, based on our fundamental
+    algor
+
+  [B-bot10] Overall rank=451  TSC=6.7316  year=2023  vocab_density=0.2000  QR_neighbors=93  source=?
+  DOI: 10.1109/ainit59027.2023.10212517
+    A new ciphertext based OT protocol in cloud computing Cloud computing is the on-
+    demand availability of computer system resources, especially computing power.
+    Cloud computing relies on sharing resources to achieve coherence, and it needs
+    to communicate frequently with the user. In addition, the user's information
+    must be kept secret from the cloud, and additional computing information in the
+    cloud
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  75 displaced,  19 remaining
+    Q2 :  49 displaced,  44 remaining
+    Q3 :  33 displaced,  60 remaining
+    Q4 :  14 displaced,  79 remaining
+    Q5 :  18 displaced,  76 remaining
+  [SetD_Quintile_Displaced] Q1:75;Q2:49;Q3:33;Q4:14;Q5:18
+  [SetD_Quintile_Remaining] Q1:19;Q2:44;Q3:60;Q4:79;Q5:76
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_161519.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_161519_dark.png
+
+  Combined top-X quintile bounds : ['0.0601', '0.0847', '0.0994', '0.1192']
+  Broad query document counts    : [88, 53, 26, 15, 7]
+  Focused document counts        : [6, 41, 67, 78, 86]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_161519.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_161519_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0613             0.0764
+  Mean vocab density (n-gram %)                  63.1%              82.2%
+  Mean $r_q$-neighbor count                       100.7               91.8
+  Mean publication year                          2020.0             2020.8
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_161519.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_161519_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_161519.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_161519_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250]: AB - Pass_data_to_other_query_20260521_003819.csv  (3547 DOIs)
+  ✓  All 3547 DOIs resolved to a known API source
+  Source info [TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948]: AB - Pass_data_to_other_query_20260330_194214.csv  (467 DOIs)
+  Source info [TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948]: combined_results_20260330_194034.csv  (+81 DOIs resolved)
+  ✓  All 548 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948]: 11 unique DOIs
+  Top 10 xlsx [TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250]: 12 unique DOIs
+  Top 10 at chosen τ=0.04 (from xlsx): focused=11, broad=12
+  [SourceCounts_focused_top10] CrossRef:8;OpenAlex:2;SemanticScholar:1
+  [SourceCounts_broad_top10] CrossRef:6;OpenAlex:3;SemanticScholar:1;arXiv:2
+  [SourceCounts_broad_top467] CrossRef:161;OpenAlex:84;SemanticScholar:70;arXiv:152
+  [SourceCounts_setB] CrossRef:70;OpenAlex:25;SemanticScholar:14;arXiv:80
+  [SourceCounts_setD] CrossRef:50;OpenAlex:25;SemanticScholar:26;arXiv:64;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_161519.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_161519_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_161519.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_161519_dark.png
+  ✓ Source pie → Mechanism_source_broad_top467_20260617_161519.png
+  ✓ Source pie → Mechanism_source_broad_top467_20260617_161519_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_161519.png
+  ✓ Source pie → Mechanism_source_setB_20260617_161519_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_161519.png
+  ✓ Source pie → Mechanism_source_setD_20260617_161519_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_161519.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_161519_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_161519.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_161519_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_161519.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_161519_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_161519.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_161519_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_161519.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_161519_dark.png
+  TSC boundary value at rank 467: 6.664056
+  ✓ Scatter plot → Mechanism3_scatter_20260617_161519.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_161519_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_161519_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_161519_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_161519.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_161519_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_161519_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_161519_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_161519.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_161519_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_161519_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_161519_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_161519.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_161519_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_161519_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_161519_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_161519.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_161519_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_161519_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_161519_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_161519.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_161519_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_161519_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_161519_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_161519_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_161519.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_161519_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_161519.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_161519_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_161519_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_161519_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_161519.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_161519_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_161519_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_161519_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_161519.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_161519_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_161519.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_161519_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_161519.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_161519_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_161519.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_161519_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_161519_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_161519_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_161519.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_161519_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_161519_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_161519_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_161519.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_161519_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_161519.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_161519_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_161519_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_161519_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_161519_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_161519_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_161519_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_161519_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_161519.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_161519_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_161519_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_161519_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_161519_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_161519_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_161519_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_161519_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=76, D=189, B=189, total=454
+  Edges: 93682
+  ✓ Gephi network → Mechanism_network_20260617_161519.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=76, R=202, D=189, B=189, N=2891, total=3547
+  Edges: 3969509
+  ✓ Gephi full network → Mechanism_network_full_20260617_161519.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PostQuantumCryptography_1000_Cryptography_20260521_011020
+════════════════════════════════════════════════════════════
+

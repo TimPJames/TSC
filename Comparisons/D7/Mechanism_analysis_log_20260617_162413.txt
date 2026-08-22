@@ -1,0 +1,560 @@
+
+── Loading data ─────────────────────────────────────────────────
+  Focused: τ=0.040, λ=0.010
+  Noisy  : τ=0.030, λ=0.010
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.00.csv (threshold τ=0.03 applied in memory)
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.03_lambda_0.01.csv
+  Focused corpus : 337 DOIs
+  Noisy corpus   : 3152 DOIs
+  Matrix DOIs    : 3152
+
+── Computing query relevance scores ─────────────────────────────
+
+── Defining sets ────────────────────────────────────────────
+  Focused DOIs in matrix : 337  |  Missing: 0
+  Using max TSC values (best λ at chosen τ=0.03) for set membership and scatter
+  Rank threshold X (focused corpus size) : 337
+  Set R_Q5  (focused, retained, top quintile r_q) : 62
+  Set R     (focused, retained above X)           : 213
+  Set D     (focused, displaced below X)          : 124
+  Set B     (broad query, in top X ranks)         : 124
+  Set N     (broad query, below iso-TSC)          : 2691
+  ✓ TSC CSV: TSC_Values_FINE_tau_0.04_lambda_0.01.csv
+
+  Mechanism 2 — Publication year:
+    Set D mean year : 2016.1
+    Set B   mean year : 2017.1
+
+  $r_q$ neighbor threshold (min QR of Set R_Q5) : 0.0988
+
+  Mechanism 3 — $r_q$-neighbor counts (threshold = min QR of Set R_Q5 = 0.0988):
+
+  Computing neighbor counts (this may take a moment)...
+    Set D mean high-$r_q$ neighbor count : 54.2  low-$r_q$: 1705.8
+    Set B mean high-$r_q$ neighbor count : 66.1  low-$r_q$: 2738.6
+  Computing per-document tri-factor products...
+  Set N     (broad query, below iso-TSC)          : 2691
+    Set N : n=2691 docs with computable products
+
+  Per-document mean products:
+    Set D : mean=0.000749  median=0.000695  n=124
+    Set B : mean=0.000818  median=0.000795  n=124
+    Set N : mean=0.000480  median=0.000466  n=2691
+
+  Mean total degree (all neighbours above τ):
+    Set D : mean total degree = 1760.06
+    Set B : mean total degree = 2804.74
+    Set R : mean total degree = 2564.96
+    Set N : mean total degree = 2278.51
+
+  Mechanism 1 — QR score and vocabulary density:
+    Set      Mean $r_q$ score   Mean vocab density
+    ----------------------------------------------
+    Set R_Q5           0.1308               40.7%
+    Set R              0.0821               33.1%
+    Set D              0.0296               16.3%
+    Set B              0.0160               10.3%
+    Set N              0.0020                1.9%
+
+── Abstract inspection: Set B (broad, displacing) vs Set D (focused, displaced) ─
+
+  Set D (focused, displaced below rank 337): 124 documents
+
+  ── Top 10 Set D documents (highest TSC — closest to displacing threshold) ──
+
+  [D-top1] Overall rank=338  TSC=2.0373  year=2025  vocab_density=0.3333  QR_neighbors=67  source=?
+  DOI: 10.5772/intechopen.1011959
+    Perspective Chapter: Experimental Insights on Prime Gaps Advanced sieving
+    techniques can be used to generate extensive datasets of prime gaps, leading to
+    novel insights and conjectures concerning their distribution. By leveraging the
+    efficiency of refined sieving algorithms, we have systematically analyzed the
+    distribution patterns of prime gaps within large intervals. Our findings include
+    signifi
+
+  [D-top2] Overall rank=339  TSC=2.0349  year=2010  vocab_density=0.3333  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.1008.2381
+    Note On Prime Gaps And Very Short Intervals Assuming the Riemann hypothesis,
+    this article discusses a new elementary argument that seems to prove that the
+    maximal prime gap of a finite sequence of primes p_1, p_2, ..., p_n 0 constant.
+    Equivalently, it shows that the very short intervals (x, x + y] contain prime
+    numbers for all y > c2((logx)^2)/loglogx, c2 > 0 constant, and sufficiently
+    large x > 0
+
+  [D-top3] Overall rank=342  TSC=2.0284  year=2025  vocab_density=0.4444  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.2502.04311
+    Ramsey-Theoretic Characterizations of Classically Non-Ramseyian Problems In this
+    paper, we will develop a significantly more general notion of classical Ramsey
+    numbers (extending most other graph-theoretic generalizations) and make some
+    preliminary characterizations of these new Ramsey numbers using simple algebraic
+    tools. Throughout, we make a case arguing that, while our access to specific
+    value
+
+  [D-top4] Overall rank=346  TSC=2.0125  year=2001  vocab_density=0.3333  QR_neighbors=64  source=?
+  DOI: 10.3390/mca6020153
+    A Relation between Prime Numbers and Twin Prime Numbers Every mathematician has
+    been concerned with prime numbers, and has metwith mysterious surprises about
+    them. Besides intuition, using empirical methods has an important role to
+    findrelations between prime numbers. A relation between any prime numberand any
+    twin prime number has been obtained.
+
+  [D-top5] Overall rank=347  TSC=2.0104  year=2021  vocab_density=0.2222  QR_neighbors=68  source=?
+  DOI: 10.2140/ant.2023.17.1789
+    Differences between perfect powers: prime power gaps We develop machinery to
+    explicitly determine, in many instances, when the difference is divisible only
+    by powers of a given fixed prime. This combines a wide variety of techniques
+    from Diophantine approximation (bounds for linear forms in logarithms, both
+    archimedean and non-archimedean, lattice basis reduction, methods for solving
+    Thue-Mahler a
+
+  [D-top6] Overall rank=354  TSC=2.0040  year=2017  vocab_density=0.4444  QR_neighbors=67  source=?
+  DOI: 10.48550/arxiv.1705.08034
+    Bounded gaps between primes and the length spectra of arithmetic hyperbolic
+    3-orbifolds In 1992, Reid asked whether hyperbolic 3-manifolds with the same
+    geodesic length spectra are necessarily commensurable. While this is known to be
+    true for arithmetic hyperbolic 3-manifolds, the non-arithmetic case is still
+    open. Building towards a negative answer to this question, Futer and Millichap
+    recently c
+
+  [D-top7] Overall rank=367  TSC=1.9852  year=2025  vocab_density=0.3333  QR_neighbors=65  source=?
+  DOI: 10.33774/coe-2025-2j9k3
+    Twin Prime Conjecture (TP) 2nd Way Twin Prime Conjecture (TP) 2nd Way Author:
+    Taha M. Muhammad/ USA Kurd Iraq TP: There are infinitely many pairs of prime
+    numbers that differ by 2 Taha's Lemma of Twin Primes (TLTP): For every odd
+    composite number (n), there exists an even step (2t), tN_+ such that p = n + 2t,
+    q = n +2t + 2 , (p, q) TP. Since odd composites are unbounded and TLTP asserts a
+    twin-pri
+
+  [D-top8] Overall rank=377  TSC=1.9714  year=2024  vocab_density=0.4444  QR_neighbors=68  source=?
+  DOI: 10.22271/math.2024.v5.i2b.160
+    Modern developments in number theory: Insights into prime distribution The
+    distribution of prime numbers has long intrigued mathematicians, shaping the
+    evolution of number theory. From 2010 to 2024, significant breakthroughs have
+    expanded our understanding of prime distribution through analytic, algebraic,
+    and computational innovations. This review examines advances in the Riemann
+    Hypothesis, boun
+
+  [D-top9] Overall rank=381  TSC=1.9622  year=2021  vocab_density=0.3333  QR_neighbors=67  source=?
+  DOI: 10.48550/arxiv.2110.15271
+    An information-theoretic upper bound on prime gaps Within the setting of rare
+    event modelling, the method of level sets allows us to define an equivalence
+    relation over rare events with distinct rates of entropy production. This method
+    allows us to clarify the relation between the empirical density of primes and
+    their source distribution which then allows us to address Cramer's conjecture,
+    an open
+
+  [D-top10] Overall rank=382  TSC=1.9612  year=2016  vocab_density=0.1111  QR_neighbors=55  source=?
+  DOI: 10.48550/arxiv.1610.03385
+    Constellations of primes generated by twin primes We study a special set of
+    constellations of primes generated by twin primes.
+
+  ── Bottom 10 Set D documents (lowest TSC — most deeply displaced) ──
+
+  [D-bot1] Overall rank=3152  TSC=0.0122  year=2022  vocab_density=0.0000  QR_neighbors=1  source=?
+  DOI: 10.14233/ajomc.2022.ajomc-p356
+    Microwave Assisted a Highly Atom Economic, Chemo-, Regio- and Stereoselective
+    Synthesis and Evaluation of
+    Dispiro[1H-indene-2,3'-pyrrolidine-2',3''-[3H]indole]-1,2''(1''H)diones as
+    Antibacterial and Antifungal Agents 1,3-Dipolar cycloaddition of in situ
+    generated non-stabilized azomethine ylides through the decarboxylative
+    condensation of sarcosine and substituted isatins with 2-(arylmethylene)-2,
+
+  [D-bot2] Overall rank=3138  TSC=0.0875  year=2011  vocab_density=0.0000  QR_neighbors=3  source=?
+  DOI: 10.1093/owc/9780199587193.003.0021
+    Chapter 19 vulgarity The Duke and Duchess with their children and personal
+    servants reached Gatherum Castle the day before the first crowd of visitors was
+    expected. It was on a lovely autumn afternoon, and the Duke, who had endeavoured
+    to make himself pleasant during the journey, had...
+
+  [D-bot3] Overall rank=3132  TSC=0.1095  year=2007  vocab_density=0.0000  QR_neighbors=4  source=?
+  DOI: 10.1007/978-3-540-34038-6
+    Elements of mathematics. Functions of a real variable. Elementary theory Reprint
+    of the 1976 edition (Zbl 0346.26003).
+
+  [D-bot4] Overall rank=3131  TSC=0.1118  year=2007  vocab_density=0.0000  QR_neighbors=5  source=?
+  DOI: 10.1007/978-3-540-33981-6
+    Elements of the history of mathematics Unchanged reprint, enlarged for better
+    readability. See the reviews of earlier editions in Zbl 0932.01005 (1999) and
+    Zbl 0552.01002 (1984) a.o.
+
+  [D-bot5] Overall rank=3121  TSC=0.1585  year=2022  vocab_density=0.1111  QR_neighbors=15  source=?
+  DOI: 10.17504/protocols.io.b7czrix6
+    [RETRACTED] Keto Prime Diet - Losing Weight Now Not Challenging Process Try Keto
+    Prime Pills v1 [RETRACTED]Keto Prime Diet - Losing Weight Now Not Challenging
+    Process Try Keto Prime Pills
+
+  [D-bot6] Overall rank=3110  TSC=0.1879  year=2011  vocab_density=0.0000  QR_neighbors=14  source=?
+  DOI: 10.1093/owc/9780199587193.003.0058
+    Chapter 54 lizzie It cannot be supposed that Ferdinand Lopez at this time was a
+    very happy man. He had, at any rate, once loved his wife, and would have loved
+    her still could he have trained her to think as he thought, to share his
+    wishes,...
+
+  [D-bot7] Overall rank=3101  TSC=0.2332  year=2011  vocab_density=0.0000  QR_neighbors=16  source=?
+  DOI: 10.1093/owc/9780199587193.003.0017
+    Chapter 15 arthur fletcher It may, I think, be a question whether the two old
+    men acted wisely in having Arthur Fletcher at Wharton Hall when Emily arrived
+    there. The story of his love for Miss Wharton, as far as it had as yet gone,
+    must be shortly...
+
+  [D-bot8] Overall rank=3090  TSC=0.2545  year=2011  vocab_density=0.0000  QR_neighbors=17  source=?
+  DOI: 10.1093/owc/9780199587193.003.0046
+    Chapter 42 retribution The Duchess had been at work with her husband for the
+    last two months in the hope of renewing her autumnal festivities, but had been
+    lamentably unsuccessful. The Duke had declared that there should be no more
+    rural crowds, no repetition of what he...
+
+  [D-bot9] Overall rank=3087  TSC=0.2608  year=2002  vocab_density=0.0000  QR_neighbors=13  source=?
+  DOI: a104599
+    Elements of mathematics. Lie groups and Lie algebras. Chapters 4--6. Transl.
+    from the French by Andrew Pressley This book is an English translation of the
+    classical volume initially published in French (1968; Zbl 0186.33001) and
+    reviewed by E. Abe. A translation into Russian has also been published.
+    Contents: Chapter 4: Coxeter groups and Tits systems. Chapter 5: Groups
+    generated by reflections. C
+
+  [D-bot10] Overall rank=3086  TSC=0.2612  year=2022  vocab_density=0.1111  QR_neighbors=23  source=?
+  DOI: 10.17504/protocols.io.b7csriwe
+    [RETRACTED] Keto Prime : You're Ready To Finally Lose Weight And Feel More
+    Confident Order Keto Prime Diet Now((Work Or Hoax) v1 [RETRACTED]Keto Prime :
+    You're Ready To Finally Lose Weight And Feel More Confident Order Keto Prime
+    Diet Now((Work Or Hoax)
+
+  Set B (broad query, above rank 337): 124 documents
+
+  ── Top 10 Set B documents (highest TSC — leading displacers) ──
+
+  [B-top1] Overall rank=34  TSC=3.0904  year=2014  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.1402.6641
+    Problems on combinatorial properties of primes For let be the number of primes
+    not exceeding . The asymptotic behaviors of the prime-counting function and the
+    -th prime have been studied intensively in analytic number theory. Surprisingly,
+    we find that and have many combinatorial properties which should not be ignored.
+    In this paper we pose 60 open problems on combinatorial properties of primes (i
+
+  [B-top2] Overall rank=40  TSC=3.0315  year=2003  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.math/0304272
+    On the prime power factorization of n! In this paper we prove two results. The
+    first theorem uses a paper of Kim \cite{K} to show that for fixed primes , and
+    for fixed integers , with , the numbers are uniformly distributed modulo , where
+    is the order of the prime in the factorization of . That implies one of Sander's
+    conjecture from \cite{S}, for any set of odd primes. Berend \cite{B} asks to fin
+
+  [B-top3] Overall rank=50  TSC=2.9555  year=2015  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.1142/s1793042115500426
+    On the Riemann hypothesis and the difference between primes We prove some
+    results concerning the distribution of primes assuming the Riemann hypothesis.
+    First, we prove the explicit result that there exists a prime in the interval
+    [Formula: see text] for all x >= 2; this improves a result of Ramare and
+    Saouter. We then show that the constant 4/p may be reduced to (1 + ) provided
+    that x is taken to
+
+  [B-top4] Overall rank=53  TSC=2.9354  year=2015  vocab_density=0.2222  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.1511.08784
+    On the number of distinct prime factors of a sum of super-powers Given , let be,
+    for and , some fixed integers, and define, for every , . We prove that the
+    following are equivalent: (a) There are a real and infinitely many indices for
+    which the number of distinct prime factors of is greater than the super-
+    logarithm of to base . (b) There do not exist non-zero integers such that and
+    for all . We wi
+
+  [B-top5] Overall rank=59  TSC=2.9097  year=2017  vocab_density=0.2222  QR_neighbors=67  source=?
+  DOI: 10.1142/s1793042117500956
+    Patterns of primes in Chebotarev sets The work of Green and Tao shows that there
+    are infinitely many arbitrarily long arithmetic progressions of primes.
+    Recently, Maynard and Tao independently proved that for any [Formula: see text],
+    there exists [Formula: see text] (depending on [Formula: see text]) so that for
+    any admissible set [Formula: see text], there are infinitely many [Formula: see
+    text]
+
+  [B-top6] Overall rank=69  TSC=2.8471  year=2010  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.1142/s1793042110003848
+    ON A CONJECTURE ON RAMANUJAN PRIMES For n >= 1, the nth Ramanujan prime is
+    defined to be the smallest positive integer Rn with the property that if x >=
+    Rn, then [Formula: see text] where p(n) is the number of primes not exceeding n
+    for any n > 0 and n R. In this paper, we prove a conjecture of Sondow on upper
+    bound for Ramanujan primes. An explicit bound of Ramanujan primes is also given.
+    The pro
+
+  [B-top7] Overall rank=71  TSC=2.8300  year=2021  vocab_density=0.3333  QR_neighbors=68  source=?
+  DOI: 10.1112/mtk.12069
+    CYCLOTOMIC POLYNOMIALS WITH PRESCRIBED HEIGHT AND PRIME NUMBER THEORY Given any
+    positive integer n, let A(n) denote the height of the nth cyclotomic polynomial,
+    that is its maximum coefficient in absolute value. It is well known that A(n) is
+    unbounded. We conjecture that every natural number can arise as value of A(n)
+    and prove this assuming that for every pair of consecutive primes p and p with p
+
+  [B-top8] Overall rank=74  TSC=2.8157  year=2018  vocab_density=0.3333  QR_neighbors=68  source=?
+  DOI: 10.1142/s179304211850166x
+    Additively unique sets of prime numbers Spiro proved that the identity function
+    is the only multiplicative function with [Formula: see text] for some prime
+    [Formula: see text] and [Formula: see text] for all prime [Formula: see text]
+    and [Formula: see text]. We determine the sets [Formula: see text] of primes for
+    which restricting our condition to [Formula: see text] for all [Formula: see
+    text] st
+
+  [B-top9] Overall rank=76  TSC=2.8019  year=2018  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.1142/s1793042118501130
+    Diophantine approximation with mixed powers of primes Let [Formula: see text] be
+    an integer with [Formula: see text], and [Formula: see text] be any real number.
+    Suppose that [Formula: see text] are nonzero real numbers, not all the same sign
+    and [Formula: see text] is irrational. It is proved that the inequality
+    [Formula: see text] has infinitely many solutions in primes [Formula: see text],
+    wher
+
+  [B-top10] Overall rank=78  TSC=2.7966  year=2016  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.1605.05568
+    On a Diophantine inequality involving a prime and an almost-prime We prove that
+    there are infinitely many solutions of where , and is an arbitrary real number
+    and with and not in . This improves a result by Harman. Moreover, we show that
+    one can require the prime to be of the form for some positive integer , i.e. is
+    a Piatetski-Shapiro prime, with and a constant explicitly determined by
+    supported
+
+  ── Bottom 10 Set B documents (lowest TSC — marginal displacers) ──
+
+  [B-bot1] Overall rank=336  TSC=2.0385  year=2015  vocab_density=0.1111  QR_neighbors=67  source=?
+  DOI: 10.48550/arxiv.1512.05032
+    Generalized Heegner cycles at Eisenstein primes and the Katz -adic -function In
+    this paper, we consider normalized newforms whose non-constant term Fourier
+    coefficients are congruent to those of an Eisenstein series modulo some prime
+    ideal above a rational prime . In this situation, we establish a congruence
+    between the anticyclotomic -adic -function of Bertolini-Darmon-Prasanna and the
+    Katz two-v
+
+  [B-bot2] Overall rank=333  TSC=2.0418  year=2020  vocab_density=0.0000  QR_neighbors=63  source=?
+  DOI: 10.48550/arxiv.2005.04481
+    On Hecke eigenvalues of cusp forms in almost all short intervals Let be a
+    function such that as Let be the -th Hecke eigenvalue of a fixed holomorphic
+    cusp form for We show that for any real valued function such that for all but
+    many integers in which is the average value of over primes. We generalize this
+    for for
+
+  [B-bot3] Overall rank=332  TSC=2.0419  year=2018  vocab_density=0.0000  QR_neighbors=65  source=?
+  DOI: 10.48550/arxiv.1812.08702
+    On Andrews' integer partitions with even parts below odd parts Recently, Andrews
+    defined a partition function which counts the number of partitions of in which
+    every even part is less than each odd part. He also defined a partition function
+    which counts the number of partitions of enumerated by in which only the largest
+    even part appears an odd number of times. Andrews proposed to undertake a more
+
+  [B-bot4] Overall rank=331  TSC=2.0427  year=2020  vocab_density=0.0000  QR_neighbors=58  source=?
+  DOI: 10.1142/s179304212050075x
+    An improvement of Prouhet's 1851 result on multigrade chains In 1851, Prouhet
+    showed that when [Formula: see text] where [Formula: see text] and [Formula: see
+    text] are positive integers, [Formula: see text], the first [Formula: see text]
+    consecutive positive integers can be separated into [Formula: see text] sets,
+    each set containing [Formula: see text] integers, such that the sum of the
+    [Formula
+
+  [B-bot5] Overall rank=329  TSC=2.0459  year=2023  vocab_density=0.1111  QR_neighbors=68  source=?
+  DOI: 10.48550/arxiv.2309.13070
+    Sum of Distinct Biquadratic Residues Modulo Primes Two conjectures, posed by
+    Finch-Smith, Harrington, and Wong in a paper published in Integers in , are
+    proven. Given a monic biquadratic polynomial , we prove a formula for the sum of
+    its distinct outputs modulo any prime . Here, is an integer not divisible by and
+    is any integer. The formula splits into eight cases, depending on the remainder
+    of mo
+
+  [B-bot6] Overall rank=328  TSC=2.0493  year=2022  vocab_density=0.1111  QR_neighbors=66  source=?
+  DOI: 10.1142/s1793042122500889
+    Chebyshev polynomials and Galois groups of De Moivre polynomials Let [Formula:
+    see text] be an odd natural number. In 1738, Abraham de Moivre introduced a
+    family of polynomials of degree n with rational coefficients, all of which are
+    solvable. So far, the Galois groups of these polynomials have been investigated
+    only for prime numbers [Formula: see text] and under special assumptions. We
+    describe
+
+  [B-bot7] Overall rank=325  TSC=2.0528  year=2021  vocab_density=0.0000  QR_neighbors=61  source=?
+  DOI: 10.1142/s1793042122500245
+    Integer dynamics Let [Formula: see text] be an integer, and write the base
+    [Formula: see text] expansion of any non-negative integer [Formula: see text] as
+    [Formula: see text], with [Formula: see text] and [Formula: see text] for
+    [Formula: see text]. Let [Formula: see text] denote an integer polynomial such
+    that [Formula: see text] for all [Formula: see text]. Consider the map [Formula:
+    see text],
+
+  [B-bot8] Overall rank=324  TSC=2.0559  year=2023  vocab_density=0.3333  QR_neighbors=65  source=?
+  DOI: 10.48550/arxiv.2308.06839
+    Generalized divisor functions in arithmetic progressions: I We prove some
+    distribution results for the -fold divisor function in arithmetic progressions
+    to moduli that exceed the square-root of length of the sum, with appropriate
+    constrains and averaging on the moduli, saving a power of from the trivial
+    bound. On assuming the Generalized Riemann Hypothesis, we obtain uniform power
+    saving error ter
+
+  [B-bot9] Overall rank=323  TSC=2.0562  year=2019  vocab_density=0.0000  QR_neighbors=56  source=?
+  DOI: 10.1142/s179304211950057x
+    On the number of fully weighted zero-sum subsequences Let [Formula: see text] be
+    a finite additive abelian group with exponent [Formula: see text] and [Formula:
+    see text] be a sequence of elements in [Formula: see text]. For any element
+    [Formula: see text] of [Formula: see text] and [Formula: see text], let
+    [Formula: see text] denote the number of subsequences [Formula: see text] of
+    [Formula: see
+
+  [B-bot10] Overall rank=322  TSC=2.0581  year=2021  vocab_density=0.1111  QR_neighbors=66  source=?
+  DOI: 10.1142/s1793042122500555
+    Supersingular j-invariants and the class number of Q(-p) Let [Formula: see text]
+    be a prime. Let [Formula: see text] be the discriminant of an imaginary
+    quadratic order. Assume that [Formula: see text] and [Formula: see text]. We
+    compute the number of [Formula: see text]-roots of the class polynomials
+    [Formula: see text]. Suppose [Formula: see text], we prove that two class
+    polynomials [Formula: s
+
+  ── Quintile distribution of displaced Set D documents ──────────
+    Q1 :  61 displaced,   7 remaining
+    Q2 :  33 displaced,  34 remaining
+    Q3 :  16 displaced,  51 remaining
+    Q4 :   8 displaced,  59 remaining
+    Q5 :   6 displaced,  62 remaining
+  [SetD_Quintile_Displaced] Q1:61;Q2:33;Q3:16;Q4:8;Q5:6
+  [SetD_Quintile_Remaining] Q1:7;Q2:34;Q3:51;Q4:59;Q5:62
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_162413.png
+  ✓ Quintile histogram → Mechanism_setB_quintile_20260617_162413_dark.png
+
+  Combined top-X quintile bounds : ['0.0142', '0.0340', '0.0690', '0.0947']
+  Broad query document counts    : [65, 48, 9, 2, 0]
+  Focused document counts        : [3, 20, 58, 65, 67]
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_162413.png
+  ✓ Ranking state chart → Mechanism_ranking_state_20260617_162413_dark.png
+
+  ── Comparison summary: all Set B vs all Set D ───────────────
+  Metric                                Set B (above X)    Set D (below X)
+  ----------------------------------------------------------------------
+  Mean $r_q$ score (TF-IDF cosine)               0.0160             0.0296
+  Mean vocab density (n-gram %)                  10.3%              16.3%
+  Mean $r_q$-neighbor count                        66.1               54.2
+  Mean publication year                          2017.1             2016.1
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_162413.png
+  ✓ TSC distributions → Mechanism_TSC_distributions_20260617_162413_dark.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_162413.png
+  ✓ Vocab density + $r_q$ score → Mechanism1_vocab_density_20260617_162413_dark.png
+  Reading manifest for pie charts: fine_pass1_manifest.csv
+  Source info [TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414]: AB - Pass_data_to_other_query_20260525_132639.csv  (3152 DOIs)
+  ✓  All 3152 DOIs resolved to a known API source
+  Source info [TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421]: AB - Pass_data_to_other_query_20260403_113733.csv  (337 DOIs)
+  Source info [TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421]: combined_results_20260403_113516.csv  (+112 DOIs resolved)
+  ✓  All 449 DOIs resolved to a known API source
+  ✓  All DOIs resolved to a known API source
+  Top 10 xlsx [TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421]: 11 unique DOIs
+  Top 10 xlsx [TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414]: 11 unique DOIs
+  Top 10 at chosen τ=0.03 (from xlsx): focused=11, broad=11
+  [SourceCounts_focused_top10] CrossRef:6;OpenAlex:3;arXiv:2
+  [SourceCounts_broad_top10] CrossRef:7;arXiv:4
+  [SourceCounts_broad_top337] CrossRef:148;OpenAlex:35;SemanticScholar:10;arXiv:144
+  [SourceCounts_setB] CrossRef:87;OpenAlex:4;SemanticScholar:1;arXiv:32
+  [SourceCounts_setD] CrossRef:53;OpenAlex:15;SemanticScholar:8;arXiv:24;zbMath:24
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_162413.png
+  ✓ Source pie → Mechanism_source_focused_top10_20260617_162413_dark.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_162413.png
+  ✓ Source pie → Mechanism_source_broad_top10_20260617_162413_dark.png
+  ✓ Source pie → Mechanism_source_broad_top337_20260617_162413.png
+  ✓ Source pie → Mechanism_source_broad_top337_20260617_162413_dark.png
+  ✓ Source pie → Mechanism_source_setB_20260617_162413.png
+  ✓ Source pie → Mechanism_source_setB_20260617_162413_dark.png
+  ✓ Source pie → Mechanism_source_setD_20260617_162413.png
+  ✓ Source pie → Mechanism_source_setD_20260617_162413_dark.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_162413.png
+  ✓ Source stacked bar → Mechanism_source_stacked_bar_20260617_162413_dark.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_162413.png
+  ✓ Year distributions → Mechanism2_year_distributions_20260617_162413_dark.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_162413.png
+  ✓ Neighbor counts → Mechanism3_neighbor_counts_20260617_162413_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_162413.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_20260617_162413_dark.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_162413.png
+  ✓ Mean tri-factor products → Mechanism3_mean_products_capped_20260617_162413_dark.png
+  TSC boundary value at rank 337: 2.038271
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162413.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162413_dark.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162413_clean.png
+  ✓ Scatter plot → Mechanism3_scatter_20260617_162413_clean_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162413.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162413_dark.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162413_clean.png
+  ✓ Scatter (plain) → Mechanism3_scatter_plain_20260617_162413_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162413.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162413_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162413_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_20260617_162413_clean_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162413.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162413_dark.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162413_clean.png
+  ✓ Scatter (no iso) → Mechanism3_scatter_no_iso_no_means_20260617_162413_clean_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162413.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162413_dark.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162413_clean.png
+  ✓ Scatter (membership) → Mechanism3_scatter_membership_20260617_162413_clean_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162413.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162413_dark.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162413_clean.png
+  ✓ Scatter (all rq) → Mechanism3_scatter_all_rq_20260617_162413_clean_dark.png
+  ✓ Build-up series (steps 1-7+7b × 2 themes × 2 label variants = 32 files)
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_clean.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_clean_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_no_rq_dark.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_clean_no_rq.png
+  ✓ Scatter (all rq + noise) → Mechanism3_scatter_all_rq_noise_20260617_162413_clean_no_rq_dark.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_162413.png
+  ✓ Scatter small multiples → Mechanism3_scatter_small_multiples_20260617_162413_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162413.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162413_dark.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162413_no_rq.png
+  ✓ Scatter small multiples (noise) → Mechanism3_scatter_small_multiples_noise_20260617_162413_no_rq_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162413.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162413_dark.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162413_clean.png
+  ✓ Scatter (both rq + degree) → Mechanism3_scatter_both_rq_degree_20260617_162413_clean_dark.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_162413.png
+  ✓ Scatter D+B multi degree → Mechanism3_scatter_DB_multi_degree_20260617_162413_dark.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_162413.png
+  ✓ Scatter D+B small multiples (legB) → Mechanism3_scatter_DB_sm_legB_20260617_162413_dark.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_162413.png
+  ✓ Scatter D+B small multiples (legPanel) → Mechanism3_scatter_DB_sm_legPanel_20260617_162413_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162413.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162413_dark.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162413_clean.png
+  ✓ Scatter (both rq) → Mechanism3_scatter_both_rq_20260617_162413_clean_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162413.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162413_dark.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162413_clean.png
+  ✓ Scatter multi (both rq) → Mechanism3_scatter_multi_both_rq_20260617_162413_clean_dark.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_162413.png
+  ✓ Scatter (TSC colour) → Mechanism3_scatter_tsc_20260617_162413_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162413.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162413_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162413_rq.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162413_rq_dark.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162413_clean.png
+  ✓ Scatter (with top no_rq) → Mechanism3_scatter_with_top_20260617_162413_clean_dark.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162413_rq_clean.png
+  ✓ Scatter (with top rq) → Mechanism3_scatter_with_top_20260617_162413_rq_clean_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162413.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162413_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162413_rq.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162413_rq_dark.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162413_clean.png
+  ✓ Scatter multiplot (with top no_rq) → Mechanism3_scatter_with_top_multi_20260617_162413_clean_dark.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162413_rq_clean.png
+  ✓ Scatter multiplot (with top rq) → Mechanism3_scatter_with_top_multi_20260617_162413_rq_clean_dark.png
+
+── Building network for Gephi export ────────────────────────────
+  Nodes: R_Q5=62, D=124, B=124, total=310
+  Edges: 40260
+  ✓ Gephi network → Mechanism_network_20260617_162413.gexf
+    Open in Gephi — nodes pre-coloured and sized by TSC score.
+    Colour key: orange=Set R_Q5, blue=Set D, purple=Set B
+
+  Building full network (all sets, scatter plot colours)…
+  Nodes: R_Q5=62, R=151, D=124, B=124, N=2691, total=3152
+  Edges: 3621924
+  ✓ Gephi full network → Mechanism_network_full_20260617_162413.gexf
+    Colour key: orange=Set R_Q5, cyan=Set R, blue=Set D, purple=Set B, grey=Set N
+
+════════════════════════════════════════════════════════════
+  Analysis complete. Outputs saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201
+════════════════════════════════════════════════════════════
+

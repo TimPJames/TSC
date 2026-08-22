@@ -1,0 +1,44 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500
+
+  File 1 (150) top-10 DOIs : 11
+  File 2 (1000) top-10 DOIs : 12
+  DOIs in both lists           : 5
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260403_115541.csv): 429
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260525_141449.csv): 3237
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\ranking_chosen_tau_150_EllipticCurvesModularFormsRanks_vs_1000_NumberTheory.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\ranking_chosen_tau_150_EllipticCurvesModularFormsRanks_vs_1000_NumberTheory_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\ranking_chosen_tau_150_EllipticCurvesModularFormsRanks_vs_1000_NumberTheory_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\ranking_chosen_tau_150_EllipticCurvesModularFormsRanks_vs_1000_NumberTheory_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841\DOIs_with_max_TSC_values_20260403_115541.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\DOIs_with_max_TSC_values_20260525_141449.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 11 top-10 DOIs, 429 total records
+  File 2 (1000) : 12 top-10 DOIs, 3237 total records
+  DOIs in both       : 5
+    10.1017/fms.2024.127
+    10.1093/imrn/rnt013
+    10.1112/s1461157015000157
+    10.48550/arxiv.1404.4964
+    10.48550/arxiv.1511.07512
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\comparison_150_EllipticCurvesModularFormsRanks_to_1000_NumberTheory.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\comparison_1000_NumberTheory_to_150_EllipticCurvesModularFormsRanks.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_EllipticCurvesModularFormsRanks_1000_NumberTheory_20260525_145500\comparison_output_20260525_145500.txt
+════════════════════════════════════════════════════════════
+

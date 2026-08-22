@@ -1,0 +1,45 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201
+
+  File 1 (150) top-10 DOIs : 11
+  File 2 (1000) top-10 DOIs : 11
+  DOIs in both lists           : 6
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260403_114141.csv): 337
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260525_134008.csv): 3152
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\ranking_chosen_tau_150_PrimeGapsBoundedGapsTwinPrime_vs_1000_NumberTheory.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\ranking_chosen_tau_150_PrimeGapsBoundedGapsTwinPrime_vs_1000_NumberTheory_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\ranking_chosen_tau_150_PrimeGapsBoundedGapsTwinPrime_vs_1000_NumberTheory_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\ranking_chosen_tau_150_PrimeGapsBoundedGapsTwinPrime_vs_1000_NumberTheory_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\DOIs_with_max_TSC_values_20260403_114141.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\DOIs_with_max_TSC_values_20260525_134008.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 11 top-10 DOIs, 337 total records
+  File 2 (1000) : 11 top-10 DOIs, 3152 total records
+  DOIs in both       : 6
+    10.20944/preprints202503.0585.v1
+    10.21203/rs.3.rs-4058806/v3
+    10.31219/osf.io/njax6
+    10.33774/coe-2024-w23p2
+    10.36227/techrxiv.23902383
+    10.48550/arxiv.1909.02205
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\comparison_150_PrimeGapsBoundedGapsTwinPrime_to_1000_NumberTheory.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\comparison_1000_NumberTheory_to_150_PrimeGapsBoundedGapsTwinPrime.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_PrimeGapsBoundedGapsTwinPrime_1000_NumberTheory_20260525_145201\comparison_output_20260525_145201.txt
+════════════════════════════════════════════════════════════
+

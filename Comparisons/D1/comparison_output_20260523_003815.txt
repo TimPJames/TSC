@@ -1,0 +1,45 @@
+  Output folder → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815
+
+  File 1 (150) top-10 DOIs : 13
+  File 2 (1000) top-10 DOIs : 12
+  DOIs in both lists           : 6
+
+  Records in file 1 CSV (DOIs_with_max_TSC_values_20260417_143224.csv): 424
+  Records in file 2 CSV (DOIs_with_max_TSC_values_20260521_223343.csv): 3307
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\ranking_chosen_tau_150_BentBooleanFunctionsCryptography_vs_1000_Cryptography.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\ranking_chosen_tau_150_BentBooleanFunctionsCryptography_vs_1000_Cryptography_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau Ranking Distribution' sheet
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\ranking_chosen_tau_150_BentBooleanFunctionsCryptography_vs_1000_Cryptography_4colour.pdf'
+  Plot PDF saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\ranking_chosen_tau_150_BentBooleanFunctionsCryptography_vs_1000_Cryptography_4colour_dark.pdf'
+  Plot added to '150' workbook as 'Chosen Tau (4-colour)' sheet
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_dark.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour.pdf'
+  Short-slug copy → 'ranking_chosen_tau_150_vs_1000_4colour_dark.pdf'
+
+════════════════════════════════════════════════════════════
+  Comparison Summary
+════════════════════════════════════════════════════════════
+  File 1 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\top10_ranking_by_lambda_FINE.xlsx
+  File 1 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\DOIs_with_max_TSC_values_20260417_143224.csv
+  File 2 ranking xlsx : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+bent_Boolean_functions_cryptography_TF-IDF_20260521_220708\top10_ranking_by_lambda_FINE.xlsx
+  File 2 max TSC csv  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+bent_Boolean_functions_cryptography_TF-IDF_20260521_220708\DOIs_with_max_TSC_values_20260521_223343.csv
+  ────────────────────────────────────────────────────────
+  File 1 (150) : 13 top-10 DOIs, 424 total records
+  File 2 (1000) : 12 top-10 DOIs, 3307 total records
+  DOIs in both       : 6
+    10.1016/j.disc.2019.111711
+    10.1090/conm/625/12496
+    10.1109/apcase.2015.61
+    10.3934/amc.2020003
+    10.3934/amc.2022050
+    10.48550/arxiv.1308.2798
+  ────────────────────────────────────────────────────────
+  Output folder    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\comparison_150_to_1000.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\comparison_1000_to_150.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\comparison_150_BentBooleanFunctionsCryptography_to_1000_Cryptography.xlsx
+    C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\comparison_1000_Cryptography_to_150_BentBooleanFunctionsCryptography.xlsx
+  Log file         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\Compare\150_BentBooleanFunctionsCryptography_1000_Cryptography_20260523_003815\comparison_output_20260523_003815.txt
+════════════════════════════════════════════════════════════
+
