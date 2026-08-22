@@ -1,0 +1,453 @@
+
+  [Step 3 – Pass 2] 11 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 11)):
+
+  [1]
+       DOI       : 10.1007/978-3-031-90727-2_14
+       Published : 2025-12-02
+       Title     : Post-Quantum Cryptography
+       Authors   : Steven Galbraith
+       Abstract  : Large-scale and error-tolerant quantum computers will break the currently used tools for enabling confidentiality and integrity on the internet and elsewhere. It has been recognized for the last 10 years that there is an urgent need to develop cryptosystems that can withstand an attacker in the futu…
+
+  [2]
+       DOI       : 10.4018/979-8-3373-2240-7.ch003
+       Published : 2025-11-21
+       Title     : Post-Quantum Cryptography
+       Authors   : Tatyana Peleshenko; Diana Fedash; Alexandr Gish
+       Abstract  : Quantum computers are a revolutionary technology based on the principles of quantum mechanics. Unlike conventional computers that work with binary bits (0 or 1), quantum devices use qubits that can exist in multiple states ("superpositions") and interact with each other through the phenomenon of "qu…
+
+  [3]
+       DOI       : 10.1093/actrade/9780192882233.003.0007
+       Published : 2025-02-27
+       Title     : Post-quantum cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The need for developing post-quantum cryptography, that is to say cryptographic schemes that are believed to remain secure if large-scale quantum computers are developed, is demonstrated by a discussion of the classical and the quantum algorithms for solving the factorization problem. The ongoing pr…
+
+  [4]
+       DOI       : 10.48550/arXiv.2402.10576
+       Published : 2024-02-16
+       Title     : Post-Quantum Cryptography
+       Authors   : Pranveer Singh; A. Chaturvedi
+       Abstract  : In this survey we propose to cover the prose of post-quantum cryptography over classical cryptography. We talk about the various cryptographic methods that are being practiced to safeguard our information. The future of secure communication is expected to be the implementation of quantum-safe crypto…
+
+  [5]
+       DOI       : 10.1145/3575664
+       Published : 2023-01-20
+       Title     : Post-Quantum Cryptography
+       Authors   : Don Monroe
+       Abstract  : Cryptographers seek algorithms quantum computers cannot break.
+
+  [6]
+       DOI       : 10.1007/978-3-031-33386-6_10
+       Published : 2023-01-01
+       Title     : Post-quantum Cryptography
+       Authors   : Linus Gasser
+       Abstract  : Post-quantum Cryptography discusses the need for a new generation of cryptography to protect against future quantum computers. The underlying mathematical concept is a one-way function that makes it easy to encrypt but challenging to decrypt without a secret. However, future quantum computers will l…
+
+  [7]
+       DOI       : 10.56394/aris2.v2i2.17
+       Published : 2022-12-30
+       Title     : Post-Quantum Cryptography
+       Authors   : Jose Pinto
+       Abstract  : Cryptography is used broadly in the digital age, making our communications secure, ensuring our data is safe, and enabling secure transactions on which we rely daily. Our reality is connected, we send an email without thinking about all the underlying protocols, we buy online, and we check the weath…
+
+  [8]
+       DOI       : 10.1007/978-1-4842-6056-2_14
+       Published : 2020-01-01
+       Title     : Post-Quantum Cryptography
+       Authors   : Robert Ciesla
+       Abstract  : For the last few chapters, we have kept a focus on quantum key distribution, or QKD. This maturing technology is still going to be relevant for a long time. What's going to come with it is known as post-quantum cryptography, which will be the main topic for this chapter. We'll explore an overview of…
+
+  [9]
+       DOI       : 10.1201/9781351021708-9
+       Published : 2019-05-20
+       Title     : Post-Quantum Cryptography
+       Authors   : Amandeep Singh Bhatia; Ajay Kumar
+       Abstract  : The goal of post-quantum cryptography is to develop cryptographic systems that are secure against both quantum and classical computers, and compatible with existing communication protocols and networks. Quantum computing is a winsome field that deals with theoretical computational systems combining …
+
+  [10]
+       DOI       : 10.1201/9781315282497-9
+       Published : 2018-08-14
+       Title     : Post-Quantum Cryptography
+       Authors   : Douglas R. Stinson; M. Paterson
+       Abstract  : This work presents a new code-based key encapsulation mechanism (KEM) called LEDAkem. It is built on the Niederreiter cryptosystem and relies on quasi-cyclic low-density parity-check codes as secret codes, providing high decoding speeds and compact keypairs. LEDAkem uses ephemeral keys to foil known…
+
+  [11]
+       DOI       : 10.1007/978-3-319-29360-8
+       Published : 2015-12-15
+       Title     : Post-Quantum Cryptography
+       Authors   : M. Grassl; Brandon Langenberg; Martin Rötteler; R. Steinwandt
+       Abstract  : We present quantum circuits to implement an exhaustive key search for the Advanced Encryption Standard AES and analyze the quantum resources required to carry out such an attack. We consider the overall circuit size, the number of qubits, and the circuit depth as measures for the cost of the present…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 11))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1201/9781351021708-9
+       Published : 2019-05-20
+       Title     : Post-Quantum Cryptography
+       Authors   : Amandeep Singh Bhatia; Ajay Kumar
+       Abstract  : The goal of post-quantum cryptography is to develop cryptographic systems that are secure against both quantum and classical computers, and compatible with existing communication protocols and networks. Quantum computing is a winsome field that deals with theoretical computational systems combining …
+
+  [2]
+       DOI       : 10.1145/3575664
+       Published : 2023-01-20
+       Title     : Post-Quantum Cryptography
+       Authors   : Don Monroe
+       Abstract  : Cryptographers seek algorithms quantum computers cannot break.
+
+  [3]
+       DOI       : 10.1201/9781315282497-9
+       Published : 2018-08-14
+       Title     : Post-Quantum Cryptography
+       Authors   : Douglas R. Stinson; M. Paterson
+       Abstract  : This work presents a new code-based key encapsulation mechanism (KEM) called LEDAkem. It is built on the Niederreiter cryptosystem and relies on quasi-cyclic low-density parity-check codes as secret codes, providing high decoding speeds and compact keypairs. LEDAkem uses ephemeral keys to foil known…
+
+  [4]
+       DOI       : 10.56394/aris2.v2i2.17
+       Published : 2022-12-30
+       Title     : Post-Quantum Cryptography
+       Authors   : Jose Pinto
+       Abstract  : Cryptography is used broadly in the digital age, making our communications secure, ensuring our data is safe, and enabling secure transactions on which we rely daily. Our reality is connected, we send an email without thinking about all the underlying protocols, we buy online, and we check the weath…
+
+  [5]
+       DOI       : 10.1007/978-3-031-33386-6_10
+       Published : 2023-01-01
+       Title     : Post-quantum Cryptography
+       Authors   : Linus Gasser
+       Abstract  : Post-quantum Cryptography discusses the need for a new generation of cryptography to protect against future quantum computers. The underlying mathematical concept is a one-way function that makes it easy to encrypt but challenging to decrypt without a secret. However, future quantum computers will l…
+
+  [6]
+       DOI       : 10.1007/978-3-319-29360-8
+       Published : 2015-12-15
+       Title     : Post-Quantum Cryptography
+       Authors   : M. Grassl; Brandon Langenberg; Martin Rötteler; R. Steinwandt
+       Abstract  : We present quantum circuits to implement an exhaustive key search for the Advanced Encryption Standard AES and analyze the quantum resources required to carry out such an attack. We consider the overall circuit size, the number of qubits, and the circuit depth as measures for the cost of the present…
+
+  [7]
+       DOI       : 10.48550/arXiv.2402.10576
+       Published : 2024-02-16
+       Title     : Post-Quantum Cryptography
+       Authors   : Pranveer Singh; A. Chaturvedi
+       Abstract  : In this survey we propose to cover the prose of post-quantum cryptography over classical cryptography. We talk about the various cryptographic methods that are being practiced to safeguard our information. The future of secure communication is expected to be the implementation of quantum-safe crypto…
+
+  [8]
+       DOI       : 10.1007/978-1-4842-6056-2_14
+       Published : 2020-01-01
+       Title     : Post-Quantum Cryptography
+       Authors   : Robert Ciesla
+       Abstract  : For the last few chapters, we have kept a focus on quantum key distribution, or QKD. This maturing technology is still going to be relevant for a long time. What's going to come with it is known as post-quantum cryptography, which will be the main topic for this chapter. We'll explore an overview of…
+
+  [9]
+       DOI       : 10.1093/actrade/9780192882233.003.0007
+       Published : 2025-02-27
+       Title     : Post-quantum cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The need for developing post-quantum cryptography, that is to say cryptographic schemes that are believed to remain secure if large-scale quantum computers are developed, is demonstrated by a discussion of the classical and the quantum algorithms for solving the factorization problem. The ongoing pr…
+
+  [10]
+       DOI       : 10.1007/978-3-031-90727-2_14
+       Published : 2025-12-02
+       Title     : Post-Quantum Cryptography
+       Authors   : Steven Galbraith
+       Abstract  : Large-scale and error-tolerant quantum computers will break the currently used tools for enabling confidentiality and integrity on the internet and elsewhere. It has been recognized for the last 10 years that there is an urgent need to develop cryptosystems that can withstand an attacker in the futu…
+
+  [11]
+       DOI       : 10.4018/979-8-3373-2240-7.ch003
+       Published : 2025-11-21
+       Title     : Post-Quantum Cryptography
+       Authors   : Tatyana Peleshenko; Diana Fedash; Alexandr Gish
+       Abstract  : Quantum computers are a revolutionary technology based on the principles of quantum mechanics. Unlike conventional computers that work with binary bits (0 or 1), quantum devices use qubits that can exist in multiple states ("superpositions") and interact with each other through the phenomenon of "qu…
+
+  ────────────────────────────────────────────────────────────
+
+  11 records found — compact reference (sorted by author, then date):
+    [1]  10.1201/9781351021708-9  |  Amandeep Singh Bhatia; Ajay Kumar  |  2019-05-20
+    [2]  10.1145/3575664  |  Don Monroe  |  2023-01-20
+    [3]  10.1201/9781315282497-9  |  Douglas R. Stinson; M. Paterson  |  2018-08-14
+    [4]  10.56394/aris2.v2i2.17  |  Jose Pinto  |  2022-12-30
+    [5]  10.1007/978-3-031-33386-6_10  |  Linus Gasser  |  2023-01-01
+    [6]  10.1007/978-3-319-29360-8  |  M. Grassl; Brandon Langenberg; Martin Rötteler; R.  |  2015-12-15
+    [7]  10.48550/arXiv.2402.10576  |  Pranveer Singh; A. Chaturvedi  |  2024-02-16
+    [8]  10.1007/978-1-4842-6056-2_14  |  Robert Ciesla  |  2020-01-01
+    [9]  10.1093/actrade/9780192882233.003.0007  |  Sean Murphy; Rachel Player  |  2025-02-27
+    [10]  10.1007/978-3-031-90727-2_14  |  Steven Galbraith  |  2025-12-02
+    [11]  10.4018/979-8-3373-2240-7.ch003  |  Tatyana Peleshenko; Diana Fedash; Alexandr Gish  |  2025-11-21
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+
+
+  [1/11]
+       DOI       : 10.1201/9781351021708-9
+       Published : 2019-05-20
+       Authors   : Amandeep Singh Bhatia; Ajay Kumar
+       Title     : Post-Quantum Cryptography
+  → Keeping [1]: 10.1201/9781351021708-9
+  → Keeping [2]: 10.1145/3575664
+  → Keeping [3]: 10.1201/9781315282497-9
+  → Keeping [4]: 10.56394/aris2.v2i2.17
+  → Keeping [5]: 10.1007/978-3-031-33386-6_10
+  → Keeping [6]: 10.1007/978-3-319-29360-8
+  → Keeping [7]: 10.48550/arXiv.2402.10576
+  → Keeping [8]: 10.1007/978-1-4842-6056-2_14
+  → Keeping [9]: 10.1093/actrade/9780192882233.003.0007
+  → Keeping [10]: 10.1007/978-3-031-90727-2_14
+  → Keeping [11]: 10.4018/979-8-3373-2240-7.ch003
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 11)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2508.16078
+       Published : 2025-08-22
+       Title     : A Survey of Post-Quantum Cryptography Support in Cryptographic Libraries
+       Authors   : Nadeem Ahmed; Lei Zhang; Aryya Gangopadhyay
+       Abstract  : The rapid advancement of quantum computing poses a significant threat to modern cryptographic systems, necessitating the transition to Post-Quantum Cryptography (PQC). This study evaluates the support for PQC algorithms within nine widely used open-source cryptographic libraries -- OpenSSL, wolfSSL,…
+
+  [2]
+       DOI       : 10.1109/QCE65121.2025.00102
+       Published : 2025-08-22
+       Title     : A Survey of Post-Quantum Cryptography Support in Cryptographic Libraries
+       Authors   : Nadeem Ahmed; Lei Zhang; A. Gangopadhyay
+       Abstract  : The rapid advancement of quantum computing poses a significant threat to modern cryptographic systems, necessitating the transition to Post-Quantum Cryptography (PQC). This study evaluates the support for PQC algorithms within nine widely used open-source cryptographic librariesOpenSSL, wolfSSL, Bor…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1109/QCE65121.2025.00102  |  A Survey of Post-Quantum Cryptography Support in Cryptograph
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 11)):
+
+  [1]
+       DOI       : 10.64206/fb5h0h74
+       Published : 2024-09-30
+       Title     : Post-Quantum Cryptography Preparing for the Quantum Threat to Digital Security
+       Authors   : Olatunji Olusola Ogundipe
+       Abstract  : The impressively fast development of quantum computing is a serious threat to classical public-key cryptography, and algorithms such as Shor's and Grover's will render RSA and elliptic curve systems essentially useless as soon as a cryptanalytically relevant quantum computer becomes available. Altho…
+
+  [2]
+       DOI       : 10.64206/v2mphb52
+       Published : 2024-09-30
+       Title     : Post-Quantum Cryptography Preparing for the Quantum Threat to Digital Security
+       Authors   : Olatunji Olusola Ogundipe
+       Abstract  : The impressively fast development of quantum computing is a serious threat to classical public-key cryptography, and algorithms such as Shor's and Grover's will render RSA and elliptic curve systems essentially useless as soon as a cryptanalytically relevant quantum computer becomes available. Altho…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.64206/fb5h0h74  |  Post-Quantum Cryptography Preparing for the Quantum Threat t
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 11)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2409.04637
+       Published : 2024-09-06
+       Title     : Enhancing Quantum Security over Federated Learning via Post-Quantum Cryptography
+       Authors   : Pingzhi Li; Tianlong Chen; Junyu Liu
+       Abstract  : Federated learning (FL) has become one of the standard approaches for deploying machine learning models on edge devices, where private training data are distributed across clients, and a shared model is learned by aggregating locally computed updates from each client. While this paradigm enhances co…
+
+  [2]
+       DOI       : 10.1109/TPS-ISA62245.2024.00067
+       Published : 2024-09-06
+       Title     : Enhancing Quantum Security over Federated Learning via Post-Quantum Cryptography
+       Authors   : Pingzhi Li; Tianlong Chen; Junyu Liu
+       Abstract  : Federated learning (FL) has become one of the standard approaches for deploying machine learning models on edge devices, where private training data are distributed across clients, and a shared model is learned by aggregating locally computed updates from each client. While this paradigm enhances co…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1109/TPS-ISA62245.2024.00067  |  Enhancing Quantum Security over Federated Learning via Post-
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 11)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2408.00054
+       Published : 2024-07-31
+       Title     : Post-Quantum Cryptography (PQC) Network Instrument: Measuring PQC Adoption Rates and Identifying Migration Pathways
+       Authors   : Jakub Sowa; Bach Hoang; Advaith Yeluru; Steven Qie; Anita Nikolich; Ravishankar Iyer; Phuong Cao
+       Abstract  : The problem of adopting quantum-resistant cryptographic network protocols or post-quantum cryptography (PQC) is critically important to democratizing quantum computing. The problem is urgent because practical quantum computers will break classical encryption in the next few decades. Past encrypted d…
+
+  [2]
+       DOI       : 10.1109/QCE60285.2024.00213
+       Published : 2024-07-31
+       Title     : Post-Quantum Cryptography (PQC) Network Instrument: Measuring PQC Adoption Rates and Identifying Migration Pathways
+       Authors   : Jakub Sowa; B. Hoang; Advaith Yeluru; Steven Qie; Anita Nikolich; Ravishankar K. Iyer; Phuong Cao
+       Abstract  : The problem of adopting quantum-resistant crypto-graphic network protocols or post-quantum cryptography (PQC) is critically important to democratizing quantum computing. The problem is urgent because practical quantum computers will break classical encryption in the next few decades. Past encrypted …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1109/QCE60285.2024.00213  |  Post-Quantum Cryptography (PQC) Network Instrument: Measurin
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 11)):
+
+  [1]
+       DOI       : 10.34190/eccws.23.1.2247
+       Published : 2024-06-19
+       Title     : Applications of Post-quantum Cryptography
+       Authors   : Emils Bagirovs; Grigory Provodin; T. Sipola; Jari Hautamäki
+       Abstract  : With the constantly advancing capabilities of quantum computers, conventional cryptographic systems relying on complex math problems may encounter unforeseen vulnerabilities. Unlike regular computers, which are often deemed cost-ineffective in cryptographic attacks, quantum computers have a signific…
+
+  [2]
+       DOI       : 10.48550/arxiv.2406.13258
+       Published : 2024-06-19
+       Title     : Applications of Post-quantum Cryptography
+       Authors   : Emils Bagirovs; Grigory Provodin; Tuomo Sipola; Jari Hautamäki
+       Abstract  : With the constantly advancing capabilities of quantum computers, conventional cryptographic systems relying on complex math problems may encounter unforeseen vulnerabilities. Unlike regular computers, which are often deemed cost-ineffective in cryptographic attacks, quantum computers have a signific…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.34190/eccws.23.1.2247  |  Applications of Post-quantum Cryptography
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 11)):
+
+  [1]
+       DOI       : 10.1109/jiot.2024.3410702
+       Published : 2024-06-06
+       Title     : Cybersecurity in Critical Infrastructures: A Post-Quantum Cryptography Perspective
+       Authors   : Javier Oliva del Moral; Antonio deMarti iOlius; Gerard Vidal; Pedro M. Crespo; Josu Etxezarreta Mart
+       Abstract  : The machinery of industrial environments was connected to the Internet years ago with the scope of increasing their performance. However, this change made such environments vulnerable against cyber-attacks that can compromise their correct functioning resulting in economic or social problems. Moreov…
+
+  [2]
+       DOI       : 10.48550/arxiv.2401.03780
+       Published : 2024-01-08
+       Title     : Cybersecurity in Critical Infrastructures: A Post-Quantum Cryptography Perspective
+       Authors   : Javier Oliva del Moral; Antonio deMarti iOlius; Gerard Vidal; Pedro M. Crespo; Josu Etxezarreta Mart
+       Abstract  : The machinery of industrial environments was connected to the Internet years ago with the scope of increasing their performance. However, this change made such environments vulnerable against cyber-attacks that can compromise their correct functioning resulting in economic or social problems. Moreov…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1109/jiot.2024.3410702  |  Cybersecurity in Critical Infrastructures: A Post-Quantum Cr
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (8 of 11)):
+
+  [1]
+       DOI       : 10.1145/3659997.3660033
+       Published : 2024-04-16
+       Title     : Exploring Post Quantum Cryptography with Quantum Key Distribution for Sustainable Mobile Network Architecture Design
+       Authors   : Sanzida Hoque; Abdullah Aydeger; Engin Zeydan
+       Abstract  : The proliferation of mobile networks and their increasing importance to modern life, combined with the emerging threat of quantum computing, present new challenges and opportunities for cyber-security. This paper addresses the complexity of protecting these critical infrastructures against future qu…
+
+  [2]
+       DOI       : 10.48550/arxiv.2404.10602
+       Published : 2024-04-16
+       Title     : Exploring Post Quantum Cryptography with Quantum Key Distribution for Sustainable Mobile Network Architecture Design
+       Authors   : Sanzida Hoque; Abdullah Aydeger; Engin Zeydan
+       Abstract  : The proliferation of mobile networks and their increasing importance to modern life, combined with the emerging threat of quantum computing, present new challenges and opportunities for cybersecurity. This paper addresses the complexity of protecting these critical infrastructures against future qua…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1145/3659997.3660033  |  Exploring Post Quantum Cryptography with Quantum Key Distrib
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 11)):
+
+  [1]
+       DOI       : 10.4018/979-8-3693-1168-4.ch019
+       Published : 2024-01-31
+       Title     : Quantum Cryptography
+       Authors   : Sonam Chauhan; Shipra Srivastava; Ramveer Singh; Ajay Sharma; Deo Brat Ojha
+       Abstract  : The world in which we live is heavily reliant on digital communications. Traditional communication methodologies have been replaced with digital communications methods such as e-mail, instant messages, social media, and many more. Every day, terabytes of data are generated and shared around the worl…
+
+  [2]
+       DOI       : 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+       Published : 2020-11-24
+       Title     : Quantum Cryptography
+       Authors   : BENITAMARTINA S
+       Abstract  : Nowadays, information is exchanged among the computer network. These data and information are involved in the business, military, academic education, research and etc. which are shared around the world in both private and public networks. Since, many categories of data are required restriction on th…
+
+  [3]
+       DOI       : 10.1093/oso/9780198527626.003.0006
+       Published : 2009-05-28
+       Title     : Quantum cryptography
+       Authors   : Stephen Barnett
+       Abstract  : The practical implementation of quantum information technologies requires, for the most part, highly advanced and currently experimental procedures. One exception is quantum cryptography, or quantum key distribution, which has been successfully demonstrated in many laboratories and has reached an ad…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 11))  —  sorted by author:
+
+  [1]
+       DOI       : 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+       Published : 2020-11-24
+       Title     : Quantum Cryptography
+       Authors   : BENITAMARTINA S
+       Abstract  : Nowadays, information is exchanged among the computer network. These data and information are involved in the business, military, academic education, research and etc. which are shared around the world in both private and public networks. Since, many categories of data are required restriction on th…
+
+  [2]
+       DOI       : 10.4018/979-8-3693-1168-4.ch019
+       Published : 2024-01-31
+       Title     : Quantum Cryptography
+       Authors   : Sonam Chauhan; Shipra Srivastava; Ramveer Singh; Ajay Sharma; Deo Brat Ojha
+       Abstract  : The world in which we live is heavily reliant on digital communications. Traditional communication methodologies have been replaced with digital communications methods such as e-mail, instant messages, social media, and many more. Every day, terabytes of data are generated and shared around the worl…
+
+  [3]
+       DOI       : 10.1093/oso/9780198527626.003.0006
+       Published : 2009-05-28
+       Title     : Quantum cryptography
+       Authors   : Stephen Barnett
+       Abstract  : The practical implementation of quantum information technologies requires, for the most part, highly advanced and currently experimental procedures. One exception is quantum cryptography, or quantum key distribution, which has been successfully demonstrated in many laboratories and has reached an ad…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.14293/s2199-1006.1.sor-.ppsdx4a.v1  |  BENITAMARTINA S  |  2020-11-24
+    [2]  10.4018/979-8-3693-1168-4.ch019  |  Sonam Chauhan; Shipra Srivastava; Ramveer Singh; A  |  2024-01-31
+    [3]  10.1093/oso/9780198527626.003.0006  |  Stephen Barnett  |  2009-05-28
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+
+
+  [1/3]
+       DOI       : 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+       Published : 2020-11-24
+       Authors   : BENITAMARTINA S
+       Title     : Quantum Cryptography
+  → Keeping [1]: 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+  → Keeping [2]: 10.4018/979-8-3693-1168-4.ch019
+  → Keeping [3]: 10.1093/oso/9780198527626.003.0006
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 11)):
+
+  [1]
+       DOI       : 10.30837/rt.2022.3.210.05
+       Published : 2022-09-28
+       Title     : Status report on the third round of the NIST post-quantum cryptography standardization process
+       Authors   : M.V. Yesina; Ye.V. Ostrianska; I. Gorbenko
+       Abstract  : In recent years, there has been steady progress in the creation of quantum computers. If large-scale quantum computers are implemented, they will threaten the security of many widely used public-key cryptosystems. Key-establishment schemes and digital signatures based on factorization, discrete loga…
+
+  [2]
+       DOI       : 10.6028/nist.ir.8413-upd1
+       Published : 2022-09-23
+       Title     : Status report on the third round of the NIST Post-Quantum Cryptography Standardization process
+       Authors   : Gorjan Alagic; Daniel Apon; David A. Cooper; Quynh Dang; Thinh Dang; John Kelsey; Jacob Lichtinger; 
+       Abstract  : The National Institute of Standards and Technology is in the process of selecting public-key cryptographic algorithms through a public, competition-like process. The new public-key cryptography standards will specify additional digital signature, public-key encryption, and key-establishment algorith…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (11 of 11)):
+
+  [1]
+       DOI       : 10.1038/s41534-021-00400-7
+       Published : 2021-05-06
+       Title     : Experimental authentication of quantum key distribution with post-quantum cryptography
+       Authors   : Liujun Wang; Kaiyi Zhang; Jiayong Wang; Jie Cheng; Yonghua Yang; Shi-Biao Tang; Di Yan; Yan-Lin Tang
+       Abstract  : Quantum key distribution (QKD) can provide information theoretically secure key exchange even in the era of quantum computers. However, QKD requires the classical channel to be authenticated, the current method for which is pre-sharing symmetric keys. For a QKD network of n users, this method requir…
+
+  [2]
+       DOI       : 10.48550/arxiv.2009.04662
+       Published : 2020-09-10
+       Title     : Experimental Authentication of Quantum Key Distribution with Post-quantum Cryptography
+       Authors   : Wang Liu-Jun; Zhang Kai-Yi; Wang Jia-Yong; Cheng Jie; Yang Yong-Hua; Tang Shi-Biao; Yan Di; Tang Yan
+       Abstract  : Quantum key distribution (QKD) can provide information theoretically secure key exchange even in the era of quantum computer. However, QKD requires the classical channel to be authenticated, and the current method is pre-sharing symmetric keys. For a QKD network of users, this method requires pairs …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1038/s41534-021-00400-7  |  Experimental authentication of quantum key distribution with
+
+  [Step 3 – Pass 4] 2 record(s) have blank authors — review required.
+

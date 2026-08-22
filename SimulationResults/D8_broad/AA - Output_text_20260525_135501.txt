@@ -1,0 +1,758 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260401_184519.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\clean_results_with_combined_title_abstract_20260401_184519.csv
+  ℹ️   API Query Terms from folder  : "Number Theory"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   Query Relevance Terms from log: ""Number Theory""
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "elliptic curves" "modular forms" "ranks"
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\AB - Pass_data_to_other_query_20260401_184519.csv
+  Records    : 1000 rows in file
+  Prev folder: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837  → reusing combined CSV (skip Stages 1, 2 & 2.5)
+  Supp. CSV  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841\AB - Pass_data_to_other_query_20260403_115151.csv
+  Skip dedup : No
+  API Query Terms    : Number Theory
+  Query Relevance Terms : "elliptic curves" "modular forms" "ranks"
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551
+  Output     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\combined_results_20260525_135551.csv
+────────────────────────────────────────────────────────────
+
+  [Stage 1 skipped] Using uploaded file: 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260401_184519.csv'
+  [Supplemental] Added 399 of 429 rows from 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_elliptic_curves_modular_forms_ranks_TF-IDF_20260403_114841\AB - Pass_data_to_other_query_20260403_115151.csv'.
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260401_184519.csv'
+  Log → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 3241 rows
+
+  [Step 0] Missing DOI      : 0 rows removed
+  [Step 0] Missing Abstract : 0 rows removed  (3241 remaining)
+  [Step 1] Language filter  : 0 non-English rows removed (3241 remaining)
+  [Step 2] Text cleaning    : 0 titles cleaned, 20 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 2] 15 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 4 record(s) removed.
+
+  [Step 3 – Pass 3] 2 abstract duplicate group(s) require review.
+  [Step 3 – Pass 3] 0 record(s) removed.
+
+  [Step 3 – Pass 4] 41 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 4 duplicate rows removed (3237 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  Source                        Added    Supp    API      No       No       Not      Dup           
+                       Fetched   Supp    Dup     Dup     DOI    Abstract  English  Content   Kept  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  CrossRef               974     139      -1                                                 1112  
+  arXiv                  899     134      -2                                          -1     1030  
+  OpenAlex               433     114      -4                                          -3     540   
+  zbMath                 299      24     -23                                                 300   
+  SemanticScholar        237      18                                                         255   
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL                  2842    429     -30                                          -4     3237  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AD - Summary_table_20260525_135826.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AC - Duplicate_user_choices_20260525_135552.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260525_135826.csv'  (3237 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\combined_results_clean_20260525_135552.csv'  (3237 rows)
+  [Log] 4 dropped + 0 rescued entries saved to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 2m 33s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\clean_results_with_combined_title_abstract_20260525_135826.csv'
+  [Log] Saving output to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AA - Output_text_20260525_135501.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\clean_results_with_combined_title_abstract_20260525_135826.csv
+  Output dir   : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551
+────────────────────────────────────────────────────────────
+  [TSC reuse] Could not read optimization_summary.csv: [Errno 2] No such file or directory: 'optimization_summary.csv'
+  [TSC reuse] Failed — running Stage 3 from scratch.
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "elliptic curves" "modular forms" "ranks"  (custom)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 12s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (3237 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 1.0000
+  [tau auto-range] τ grid (11 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000, 1.0000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 3237 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.00  (spread = 7.3028)
+  [Ranking vs λ] 18 of 3237 DOIs in the Top 10  (τ = 0.00, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 4 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 65 of 3237 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\top10_all_pairs_COARSE.xlsx'
+  [COARSE] grid: 11 tau x 11 lambda = 121 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\histogram_grid_COARSE.png'
+  [COARSE] image grid: 11x11 = 121 matched (0 missing, 0 dark PNGs found, 121 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 4m 52s
+
+  Coarse peak : TSC Spread = 7.3028 at λ = 0.0100, τ = 0.0000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (3237 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 3237 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.03  (spread = 7.6173)
+  [Ranking vs λ] 12 of 3237 DOIs in the Top 10  (τ = 0.03, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 8 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 22 of 3237 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\top10_all_pairs_FINE.xlsx'
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\histogram_grid_FINE_plain.png'
+
+── Per-paper convexity check (TSC in λ) [FINE] ──────────
+  Loading TSC CSVs (21 τ values × 11 λ values) …
+  ✓ 3237 DOIs across all τ/λ combinations
+
+  Overall fraction of (τ, λ, DOI) triples that are convex: 100.0%
+
+  Per-τ mean fraction of documents convex:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document convexity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully convex (100%) : 3237 / 3237 documents
+
+  ✓ Per-paper results saved → AD - TSC_convexity_per_paper_FINE_20260525_141330.csv
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_141330_heatmap.png
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_141330_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_141330_hist.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_141330_hist_dark.png
+
+── Per-paper monotonicity check (TSC in λ) [FINE] ─────────
+  Loading TSC CSVs (21 τ × 11 λ) …
+  ✓ 3237 DOIs, 10 λ steps per τ
+
+  Overall fraction of (τ, λ-step, DOI) triples monotone: 100.0%
+
+  Per-τ mean fraction of documents monotone decreasing:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document monotonicity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully monotone (100%) : 3237 / 3237 documents
+
+  ✓ Per-paper results saved → AD - TSC_monotonicity_per_paper_FINE_20260525_141344.csv
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_141344_heatmap.png
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_141344_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_141344_hist.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_141344_hist_dark.png
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 9m 53s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 7.6173
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.03
+  [similarity matrix] Saved thresholded matrix (τ=0.03) → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\tfidf_cosine_matrix_by_doi_tau_0.03.csv'
+  [TSC vs Year] Breusch-Pagan: LM=3.8640, p=0.0493 -> heteroscedastic (alpha=0.05)
+  [TSC vs Year] BP results -> TSC_vs_Year_breusch_pagan_tau_0.03_lambda_0.01_20260525_141401.csv
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.03_lambda_0.01_20260525_141401.png
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.03_lambda_0.01_20260525_141401_dark.png
+  [TSC vs Year] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\TSC_vs_PublicationYear_tau_0.03_lambda_0.01.png'  (3237 data points, R² = 0.039)
+  [Max TSC CSV] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\DOIs_with_max_TSC_values_20260525_141449.csv'  (3237 DOIs)
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.03
+  Matrix : 'tfidf_cosine_matrix_by_doi_tau_0.03.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260525_141449.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0300 applied: 0 edge(s) zeroed out (7810206 retained).
+✓ 3237 DOIs loaded. Sparsity: 25.5%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=477713.7830 | row-sum max=1.22e-12 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.1083  (>0.3 indicates strong structure)
+
+  Community 1: 1453 DOIs
+  Community 2: 1015 DOIs
+  Community 3: 769 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 72 – 1838
+  Median coreness   : 1838.0
+
+  Coreness 72: 1 DOIs
+  Coreness 165: 1 DOIs
+  Coreness 207: 1 DOIs
+  Coreness 216: 1 DOIs
+  Coreness 278: 1 DOIs
+  Coreness 329: 1 DOIs
+  Coreness 337: 1 DOIs
+  Coreness 350: 1 DOIs
+  Coreness 356: 1 DOIs
+  Coreness 366: 1 DOIs
+  Coreness 392: 1 DOIs
+  Coreness 429: 1 DOIs
+  Coreness 434: 1 DOIs
+  Coreness 438: 1 DOIs
+  Coreness 444: 1 DOIs
+  Coreness 456: 1 DOIs
+  Coreness 461: 1 DOIs
+  Coreness 464: 1 DOIs
+  Coreness 489: 1 DOIs
+  Coreness 505: 1 DOIs
+  Coreness 509: 1 DOIs
+  Coreness 531: 1 DOIs
+  Coreness 537: 1 DOIs
+  Coreness 540: 1 DOIs
+  Coreness 549: 1 DOIs
+  Coreness 557: 1 DOIs
+  Coreness 565: 1 DOIs
+  Coreness 571: 1 DOIs
+  Coreness 573: 1 DOIs
+  Coreness 576: 1 DOIs
+  Coreness 577: 1 DOIs
+  Coreness 585: 1 DOIs
+  Coreness 590: 1 DOIs
+  Coreness 596: 1 DOIs
+  Coreness 625: 1 DOIs
+  Coreness 666: 2 DOIs
+  Coreness 677: 1 DOIs
+  Coreness 683: 1 DOIs
+  Coreness 695: 1 DOIs
+  Coreness 722: 1 DOIs
+  Coreness 727: 1 DOIs
+  Coreness 729: 1 DOIs
+  Coreness 733: 1 DOIs
+  Coreness 750: 1 DOIs
+  Coreness 780: 1 DOIs
+  Coreness 782: 1 DOIs
+  Coreness 783: 1 DOIs
+  Coreness 784: 1 DOIs
+  Coreness 786: 1 DOIs
+  Coreness 787: 1 DOIs
+  Coreness 796: 2 DOIs
+  Coreness 798: 1 DOIs
+  Coreness 802: 1 DOIs
+  Coreness 811: 1 DOIs
+  Coreness 813: 1 DOIs
+  Coreness 819: 1 DOIs
+  Coreness 827: 1 DOIs
+  Coreness 833: 1 DOIs
+  Coreness 856: 1 DOIs
+  Coreness 866: 1 DOIs
+  Coreness 869: 1 DOIs
+  Coreness 872: 1 DOIs
+  Coreness 874: 1 DOIs
+  Coreness 878: 1 DOIs
+  Coreness 887: 1 DOIs
+  Coreness 889: 1 DOIs
+  Coreness 891: 1 DOIs
+  Coreness 895: 2 DOIs
+  Coreness 897: 1 DOIs
+  Coreness 898: 1 DOIs
+  Coreness 901: 1 DOIs
+  Coreness 902: 1 DOIs
+  Coreness 906: 1 DOIs
+  Coreness 913: 2 DOIs
+  Coreness 915: 1 DOIs
+  Coreness 918: 1 DOIs
+  Coreness 923: 1 DOIs
+  Coreness 924: 1 DOIs
+  Coreness 935: 1 DOIs
+  Coreness 936: 1 DOIs
+  Coreness 938: 1 DOIs
+  Coreness 949: 1 DOIs
+  Coreness 979: 1 DOIs
+  Coreness 981: 1 DOIs
+  Coreness 982: 1 DOIs
+  Coreness 983: 1 DOIs
+  Coreness 986: 1 DOIs
+  Coreness 992: 1 DOIs
+  Coreness 1009: 1 DOIs
+  Coreness 1016: 1 DOIs
+  Coreness 1019: 1 DOIs
+  Coreness 1029: 2 DOIs
+  Coreness 1032: 1 DOIs
+  Coreness 1046: 1 DOIs
+  Coreness 1048: 1 DOIs
+  Coreness 1051: 2 DOIs
+  Coreness 1068: 1 DOIs
+  Coreness 1072: 2 DOIs
+  Coreness 1074: 1 DOIs
+  Coreness 1076: 1 DOIs
+  Coreness 1077: 1 DOIs
+  Coreness 1085: 1 DOIs
+  Coreness 1088: 1 DOIs
+  Coreness 1092: 1 DOIs
+  Coreness 1102: 2 DOIs
+  Coreness 1104: 1 DOIs
+  Coreness 1106: 1 DOIs
+  Coreness 1111: 1 DOIs
+  Coreness 1124: 1 DOIs
+  Coreness 1129: 3 DOIs
+  Coreness 1134: 3 DOIs
+  Coreness 1135: 1 DOIs
+  Coreness 1136: 2 DOIs
+  Coreness 1154: 1 DOIs
+  Coreness 1155: 1 DOIs
+  Coreness 1157: 1 DOIs
+  Coreness 1158: 1 DOIs
+  Coreness 1160: 1 DOIs
+  Coreness 1164: 1 DOIs
+  Coreness 1167: 1 DOIs
+  Coreness 1173: 1 DOIs
+  Coreness 1177: 1 DOIs
+  Coreness 1186: 2 DOIs
+  Coreness 1187: 1 DOIs
+  Coreness 1191: 1 DOIs
+  Coreness 1194: 1 DOIs
+  Coreness 1198: 1 DOIs
+  Coreness 1199: 1 DOIs
+  Coreness 1203: 1 DOIs
+  Coreness 1206: 1 DOIs
+  Coreness 1216: 1 DOIs
+  Coreness 1223: 2 DOIs
+  Coreness 1227: 1 DOIs
+  Coreness 1228: 1 DOIs
+  Coreness 1229: 1 DOIs
+  Coreness 1230: 1 DOIs
+  Coreness 1234: 1 DOIs
+  Coreness 1238: 1 DOIs
+  Coreness 1241: 1 DOIs
+  Coreness 1244: 1 DOIs
+  Coreness 1246: 1 DOIs
+  Coreness 1252: 3 DOIs
+  Coreness 1253: 1 DOIs
+  Coreness 1255: 1 DOIs
+  Coreness 1258: 1 DOIs
+  Coreness 1259: 1 DOIs
+  Coreness 1260: 1 DOIs
+  Coreness 1262: 1 DOIs
+  Coreness 1265: 1 DOIs
+  Coreness 1266: 1 DOIs
+  Coreness 1272: 2 DOIs
+  Coreness 1274: 1 DOIs
+  Coreness 1278: 4 DOIs
+  Coreness 1280: 1 DOIs
+  Coreness 1286: 1 DOIs
+  Coreness 1289: 1 DOIs
+  Coreness 1290: 2 DOIs
+  Coreness 1299: 1 DOIs
+  Coreness 1303: 2 DOIs
+  Coreness 1304: 1 DOIs
+  Coreness 1305: 2 DOIs
+  Coreness 1306: 2 DOIs
+  Coreness 1313: 1 DOIs
+  Coreness 1317: 2 DOIs
+  Coreness 1320: 1 DOIs
+  Coreness 1322: 1 DOIs
+  Coreness 1324: 1 DOIs
+  Coreness 1328: 3 DOIs
+  Coreness 1330: 1 DOIs
+  Coreness 1333: 1 DOIs
+  Coreness 1336: 1 DOIs
+  Coreness 1337: 4 DOIs
+  Coreness 1339: 1 DOIs
+  Coreness 1341: 1 DOIs
+  Coreness 1343: 1 DOIs
+  Coreness 1350: 1 DOIs
+  Coreness 1352: 3 DOIs
+  Coreness 1355: 2 DOIs
+  Coreness 1359: 1 DOIs
+  Coreness 1360: 2 DOIs
+  Coreness 1362: 1 DOIs
+  Coreness 1363: 2 DOIs
+  Coreness 1365: 2 DOIs
+  Coreness 1371: 1 DOIs
+  Coreness 1373: 1 DOIs
+  Coreness 1377: 1 DOIs
+  Coreness 1378: 1 DOIs
+  Coreness 1385: 2 DOIs
+  Coreness 1390: 1 DOIs
+  Coreness 1391: 1 DOIs
+  Coreness 1392: 1 DOIs
+  Coreness 1396: 2 DOIs
+  Coreness 1401: 1 DOIs
+  Coreness 1403: 3 DOIs
+  Coreness 1408: 1 DOIs
+  Coreness 1411: 3 DOIs
+  Coreness 1414: 1 DOIs
+  Coreness 1415: 1 DOIs
+  Coreness 1416: 3 DOIs
+  Coreness 1419: 1 DOIs
+  Coreness 1422: 2 DOIs
+  Coreness 1424: 1 DOIs
+  Coreness 1426: 2 DOIs
+  Coreness 1428: 2 DOIs
+  Coreness 1432: 1 DOIs
+  Coreness 1435: 1 DOIs
+  Coreness 1443: 1 DOIs
+  Coreness 1445: 3 DOIs
+  Coreness 1448: 1 DOIs
+  Coreness 1456: 1 DOIs
+  Coreness 1461: 1 DOIs
+  Coreness 1465: 1 DOIs
+  Coreness 1466: 3 DOIs
+  Coreness 1467: 1 DOIs
+  Coreness 1469: 1 DOIs
+  Coreness 1474: 1 DOIs
+  Coreness 1477: 2 DOIs
+  Coreness 1481: 1 DOIs
+  Coreness 1489: 2 DOIs
+  Coreness 1490: 1 DOIs
+  Coreness 1497: 2 DOIs
+  Coreness 1498: 1 DOIs
+  Coreness 1499: 2 DOIs
+  Coreness 1503: 4 DOIs
+  Coreness 1504: 3 DOIs
+  Coreness 1507: 2 DOIs
+  Coreness 1508: 1 DOIs
+  Coreness 1510: 1 DOIs
+  Coreness 1513: 1 DOIs
+  Coreness 1514: 2 DOIs
+  Coreness 1516: 1 DOIs
+  Coreness 1517: 1 DOIs
+  Coreness 1518: 1 DOIs
+  Coreness 1519: 1 DOIs
+  Coreness 1520: 1 DOIs
+  Coreness 1521: 1 DOIs
+  Coreness 1522: 1 DOIs
+  Coreness 1526: 2 DOIs
+  Coreness 1527: 1 DOIs
+  Coreness 1536: 2 DOIs
+  Coreness 1539: 1 DOIs
+  Coreness 1541: 3 DOIs
+  Coreness 1543: 1 DOIs
+  Coreness 1545: 1 DOIs
+  Coreness 1547: 2 DOIs
+  Coreness 1548: 2 DOIs
+  Coreness 1549: 1 DOIs
+  Coreness 1551: 1 DOIs
+  Coreness 1552: 1 DOIs
+  Coreness 1554: 1 DOIs
+  Coreness 1556: 2 DOIs
+  Coreness 1558: 1 DOIs
+  Coreness 1559: 1 DOIs
+  Coreness 1560: 1 DOIs
+  Coreness 1564: 3 DOIs
+  Coreness 1565: 1 DOIs
+  Coreness 1566: 1 DOIs
+  Coreness 1567: 4 DOIs
+  Coreness 1570: 1 DOIs
+  Coreness 1573: 1 DOIs
+  Coreness 1576: 4 DOIs
+  Coreness 1582: 1 DOIs
+  Coreness 1583: 1 DOIs
+  Coreness 1587: 1 DOIs
+  Coreness 1590: 2 DOIs
+  Coreness 1591: 3 DOIs
+  Coreness 1592: 1 DOIs
+  Coreness 1593: 1 DOIs
+  Coreness 1598: 1 DOIs
+  Coreness 1599: 1 DOIs
+  Coreness 1600: 1 DOIs
+  Coreness 1601: 2 DOIs
+  Coreness 1602: 1 DOIs
+  Coreness 1607: 1 DOIs
+  Coreness 1608: 1 DOIs
+  Coreness 1610: 1 DOIs
+  Coreness 1611: 1 DOIs
+  Coreness 1612: 10 DOIs
+  Coreness 1614: 1 DOIs
+  Coreness 1615: 1 DOIs
+  Coreness 1616: 1 DOIs
+  Coreness 1617: 1 DOIs
+  Coreness 1618: 1 DOIs
+  Coreness 1619: 1 DOIs
+  Coreness 1620: 2 DOIs
+  Coreness 1622: 2 DOIs
+  Coreness 1626: 2 DOIs
+  Coreness 1628: 1 DOIs
+  Coreness 1629: 1 DOIs
+  Coreness 1630: 3 DOIs
+  Coreness 1636: 1 DOIs
+  Coreness 1637: 1 DOIs
+  Coreness 1638: 1 DOIs
+  Coreness 1639: 1 DOIs
+  Coreness 1640: 2 DOIs
+  Coreness 1642: 2 DOIs
+  Coreness 1643: 2 DOIs
+  Coreness 1645: 1 DOIs
+  Coreness 1646: 1 DOIs
+  Coreness 1649: 1 DOIs
+  Coreness 1650: 1 DOIs
+  Coreness 1651: 1 DOIs
+  Coreness 1652: 1 DOIs
+  Coreness 1653: 2 DOIs
+  Coreness 1655: 2 DOIs
+  Coreness 1657: 3 DOIs
+  Coreness 1659: 3 DOIs
+  Coreness 1660: 2 DOIs
+  Coreness 1661: 1 DOIs
+  Coreness 1662: 2 DOIs
+  Coreness 1663: 1 DOIs
+  Coreness 1664: 2 DOIs
+  Coreness 1668: 3 DOIs
+  Coreness 1669: 3 DOIs
+  Coreness 1671: 1 DOIs
+  Coreness 1672: 6 DOIs
+  Coreness 1673: 4 DOIs
+  Coreness 1675: 1 DOIs
+  Coreness 1676: 2 DOIs
+  Coreness 1678: 1 DOIs
+  Coreness 1679: 7 DOIs
+  Coreness 1682: 3 DOIs
+  Coreness 1683: 1 DOIs
+  Coreness 1686: 1 DOIs
+  Coreness 1688: 2 DOIs
+  Coreness 1691: 1 DOIs
+  Coreness 1693: 1 DOIs
+  Coreness 1694: 1 DOIs
+  Coreness 1696: 3 DOIs
+  Coreness 1697: 2 DOIs
+  Coreness 1700: 4 DOIs
+  Coreness 1702: 1 DOIs
+  Coreness 1704: 6 DOIs
+  Coreness 1709: 4 DOIs
+  Coreness 1712: 1 DOIs
+  Coreness 1713: 1 DOIs
+  Coreness 1717: 1 DOIs
+  Coreness 1718: 1 DOIs
+  Coreness 1719: 1 DOIs
+  Coreness 1720: 1 DOIs
+  Coreness 1722: 3 DOIs
+  Coreness 1725: 2 DOIs
+  Coreness 1728: 2 DOIs
+  Coreness 1733: 3 DOIs
+  Coreness 1736: 1 DOIs
+  Coreness 1737: 9 DOIs
+  Coreness 1739: 4 DOIs
+  Coreness 1740: 5 DOIs
+  Coreness 1741: 3 DOIs
+  Coreness 1742: 2 DOIs
+  Coreness 1743: 3 DOIs
+  Coreness 1744: 1 DOIs
+  Coreness 1748: 1 DOIs
+  Coreness 1749: 1 DOIs
+  Coreness 1751: 2 DOIs
+  Coreness 1753: 3 DOIs
+  Coreness 1755: 4 DOIs
+  Coreness 1757: 3 DOIs
+  Coreness 1758: 1 DOIs
+  Coreness 1759: 3 DOIs
+  Coreness 1760: 7 DOIs
+  Coreness 1761: 1 DOIs
+  Coreness 1764: 1 DOIs
+  Coreness 1768: 4 DOIs
+  Coreness 1769: 1 DOIs
+  Coreness 1773: 1 DOIs
+  Coreness 1774: 1 DOIs
+  Coreness 1775: 8 DOIs
+  Coreness 1777: 1 DOIs
+  Coreness 1778: 2 DOIs
+  Coreness 1780: 7 DOIs
+  Coreness 1781: 1 DOIs
+  Coreness 1784: 2 DOIs
+  Coreness 1790: 4 DOIs
+  Coreness 1791: 1 DOIs
+  Coreness 1792: 5 DOIs
+  Coreness 1795: 3 DOIs
+  Coreness 1796: 3 DOIs
+  Coreness 1797: 10 DOIs
+  Coreness 1798: 4 DOIs
+  Coreness 1799: 3 DOIs
+  Coreness 1800: 8 DOIs
+  Coreness 1802: 6 DOIs
+  Coreness 1803: 1 DOIs
+  Coreness 1804: 7 DOIs
+  Coreness 1807: 6 DOIs
+  Coreness 1808: 9 DOIs
+  Coreness 1809: 2 DOIs
+  Coreness 1810: 1 DOIs
+  Coreness 1812: 2 DOIs
+  Coreness 1813: 3 DOIs
+  Coreness 1814: 1 DOIs
+  Coreness 1815: 9 DOIs
+  Coreness 1816: 9 DOIs
+  Coreness 1817: 1 DOIs
+  Coreness 1818: 3 DOIs
+  Coreness 1819: 6 DOIs
+  Coreness 1820: 12 DOIs
+  Coreness 1821: 10 DOIs
+  Coreness 1823: 3 DOIs
+  Coreness 1826: 1 DOIs
+  Coreness 1828: 2 DOIs
+  Coreness 1830: 11 DOIs
+  Coreness 1831: 2 DOIs
+  Coreness 1832: 7 DOIs
+  Coreness 1833: 6 DOIs
+  Coreness 1834: 7 DOIs
+  Coreness 1835: 10 DOIs
+  Coreness 1837: 11 DOIs
+  Coreness 1838: 2471 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260525_141449.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AF - DOIs_Communities_20260525_141620.csv
+  Plot saved → 'AF - Community_sizes_20260525_141620.png'
+  Plot saved → 'AF - Community_sizes_20260525_141620_dark.png'
+  Bump chart → 'AF - Community_bump_20260525_141621.png'
+  Bump chart → 'AF - Community_bump_20260525_141621_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260525_141621.png'
+  Bump chart → 'AG - Coreness_bump_20260525_141621_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.03.csv
+  ✓ 3237 DOIs loaded.
+  ✓ 12 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 12 DOIs to highlight
+  ✓ Coreness range: 72 – 1838
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260525_141832.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_141832_dark.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_141832.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_141832_dark.png
+  ✓ Community data: 3 communities
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832_dark.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832_dark.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_141832_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_141832.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_141832_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_141832.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_141832_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551
+  ⏱  Community detection completed in 4m 26s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AB - Pass_data_to_other_query_20260401_184519.csv
+  Clean CSV         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\combined_results_clean_20260525_135552.csv
+  Combined CSV      : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\clean_results_with_combined_title_abstract_20260525_135826.csv
+  TSC output        : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551
+  Community CSV     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AF - DOIs_Communities_20260525_141620.csv
+  Maximum TSC Spread: 7.6173
+  Selected λ        : 0.01
+  Selected τ        : 0.03
+  Log file          : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AA - Output_text_20260525_135501.txt
+
+  ⏱  Total time     : 24m 14s
+  ──────────────────────────────────────
+    User review (wait)    : 2m 48s
+    Data cleaning         : 0m 04s
+    Combine title+abstract: 177 ms
+    Similarity matrix     : 0m 12s
+    Coarse sweep & plots  : 4m 52s
+    Fine sweep & plots    : 9m 53s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+elliptic_curves_modular_forms_ranks_TF-IDF_20260525_135551\AE - Timing_summary_20260525_141915.txt'

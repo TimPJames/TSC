@@ -1,0 +1,614 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260401_184519.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\clean_results_with_combined_title_abstract_20260401_184519.csv
+  ℹ️   API Query Terms from folder  : "Number Theory"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   Query Relevance Terms from log: ""Number Theory""
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "arithmetic statistics", "random matrices", "L-functions"
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\AB - Pass_data_to_other_query_20260401_184519.csv
+  Records    : 1000 rows in file
+  Prev folder: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837  → reusing combined CSV (skip Stages 1, 2 & 2.5)
+  Supp. CSV  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_arithmetic_statistics_random_matrices_L__TF-IDF_20260403_120941\AB - Pass_data_to_other_query_20260403_121202.csv
+  Skip dedup : No
+  API Query Terms    : Number Theory
+  Query Relevance Terms : "arithmetic statistics", "random matrices", "L-functions"
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139
+  Output     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\combined_results_20260525_142139.csv
+────────────────────────────────────────────────────────────
+
+  [Stage 1 skipped] Using uploaded file: 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260401_184519.csv'
+  [Supplemental] Added 351 of 378 rows from 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_arithmetic_statistics_random_matrices_L__TF-IDF_20260403_120941\AB - Pass_data_to_other_query_20260403_121202.csv'.
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260401_184519.csv'
+  Log → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 3193 rows
+
+  [Step 0] Missing DOI      : 0 rows removed
+  [Step 0] Missing Abstract : 0 rows removed  (3193 remaining)
+  [Step 1] Language filter  : 0 non-English rows removed (3193 remaining)
+  [Step 2] Text cleaning    : 0 titles cleaned, 23 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 2] 13 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 3 record(s) removed.
+
+  [Step 3 – Pass 3] 3 abstract duplicate group(s) require review.
+  [Step 3 – Pass 3] 1 record(s) removed.
+
+  [Step 3 – Pass 4] 39 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 4 duplicate rows removed (3189 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  Source                        Added    Supp    API      No       No       Not      Dup           
+                       Fetched   Supp    Dup     Dup     DOI    Abstract  English  Content   Kept  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  CrossRef               974     146                                                         1120  
+  arXiv                  899     132      -2                                          -1     1028  
+  OpenAlex               433      13      -2                                          -3     441   
+  zbMath                 299      24     -23                                                 300   
+  SemanticScholar        237      63                                                         300   
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL                  2842    378     -27                                          -4     3189  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AD - Summary_table_20260525_142437.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AC - Duplicate_user_choices_20260525_142140.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260525_142437.csv'  (3189 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\combined_results_clean_20260525_142140.csv'  (3189 rows)
+  [Log] 4 dropped + 0 rescued entries saved to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 2m 56s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\clean_results_with_combined_title_abstract_20260525_142437.csv'
+  [Log] Saving output to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AA - Output_text_20260525_142045.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\clean_results_with_combined_title_abstract_20260525_142437.csv
+  Output dir   : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139
+────────────────────────────────────────────────────────────
+  [TSC reuse] Could not read optimization_summary.csv: [Errno 2] No such file or directory: 'optimization_summary.csv'
+  [TSC reuse] Failed — running Stage 3 from scratch.
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "arithmetic statistics", "random matrices", "L-functions"  (custom)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 10s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (3189 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 1.0000
+  [tau auto-range] τ grid (11 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000, 1.0000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 3189 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.00  (spread = 3.4092)
+  [Ranking vs λ] 16 of 3189 DOIs in the Top 10  (τ = 0.00, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 6 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 79 of 3189 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\top10_all_pairs_COARSE.xlsx'
+  [COARSE] grid: 11 tau x 11 lambda = 121 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\histogram_grid_COARSE.png'
+  [COARSE] image grid: 11x11 = 121 matched (0 missing, 0 dark PNGs found, 121 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 6m 13s
+
+  Coarse peak : TSC Spread = 3.4092 at λ = 0.0100, τ = 0.0000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (3189 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 3189 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.02  (spread = 3.5438)
+  [Ranking vs λ] 12 of 3189 DOIs in the Top 10  (τ = 0.02, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 8 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 23 of 3189 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\top10_all_pairs_FINE.xlsx'
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\histogram_grid_FINE_plain.png'
+
+── Per-paper convexity check (TSC in λ) [FINE] ──────────
+  Loading TSC CSVs (21 τ values × 11 λ values) …
+  ✓ 3189 DOIs across all τ/λ combinations
+
+  Overall fraction of (τ, λ, DOI) triples that are convex: 100.0%
+
+  Per-τ mean fraction of documents convex:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document convexity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully convex (100%) : 3189 / 3189 documents
+
+  ✓ Per-paper results saved → AD - TSC_convexity_per_paper_FINE_20260525_144109.csv
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_144109_heatmap.png
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_144109_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_144109_hist.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_144109_hist_dark.png
+
+── Per-paper monotonicity check (TSC in λ) [FINE] ─────────
+  Loading TSC CSVs (21 τ × 11 λ) …
+  ✓ 3189 DOIs, 10 λ steps per τ
+
+  Overall fraction of (τ, λ-step, DOI) triples monotone: 100.0%
+
+  Per-τ mean fraction of documents monotone decreasing:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document monotonicity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully monotone (100%) : 3189 / 3189 documents
+
+  ✓ Per-paper results saved → AD - TSC_monotonicity_per_paper_FINE_20260525_144123.csv
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_144123_heatmap.png
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_144123_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_144123_hist.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_144123_hist_dark.png
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 10m 15s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 3.5438
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.02
+  [similarity matrix] Saved thresholded matrix (τ=0.02) → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\tfidf_cosine_matrix_by_doi_tau_0.02.csv'
+  [TSC vs Year] Breusch-Pagan: LM=14.1987, p=0.0002 -> heteroscedastic (alpha=0.05)
+  [TSC vs Year] BP results -> TSC_vs_Year_breusch_pagan_tau_0.02_lambda_0.01_20260525_144140.csv
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.02_lambda_0.01_20260525_144140.png
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.02_lambda_0.01_20260525_144140_dark.png
+  [TSC vs Year] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\TSC_vs_PublicationYear_tau_0.02_lambda_0.01.png'  (3189 data points, R² = 0.036)
+  [Max TSC CSV] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\DOIs_with_max_TSC_values_20260525_144232.csv'  (3189 DOIs)
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.02
+  Matrix : 'tfidf_cosine_matrix_by_doi_tau_0.02.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260525_144232.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0200 applied: 0 edge(s) zeroed out (9188076 retained).
+✓ 3189 DOIs loaded. Sparsity: 9.7%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=492201.0397 | row-sum max=1.09e-12 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0857  (>0.3 indicates strong structure)
+
+  Community 1: 1351 DOIs
+  Community 2: 1071 DOIs
+  Community 3: 767 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 224 – 2413
+  Median coreness   : 2413.0
+
+  Coreness 224: 1 DOIs
+  Coreness 411: 1 DOIs
+  Coreness 519: 1 DOIs
+  Coreness 568: 1 DOIs
+  Coreness 650: 1 DOIs
+  Coreness 723: 1 DOIs
+  Coreness 771: 1 DOIs
+  Coreness 782: 1 DOIs
+  Coreness 799: 1 DOIs
+  Coreness 805: 1 DOIs
+  Coreness 836: 1 DOIs
+  Coreness 857: 1 DOIs
+  Coreness 900: 1 DOIs
+  Coreness 943: 1 DOIs
+  Coreness 949: 1 DOIs
+  Coreness 959: 1 DOIs
+  Coreness 960: 2 DOIs
+  Coreness 972: 1 DOIs
+  Coreness 1004: 1 DOIs
+  Coreness 1037: 1 DOIs
+  Coreness 1051: 1 DOIs
+  Coreness 1070: 2 DOIs
+  Coreness 1078: 1 DOIs
+  Coreness 1110: 1 DOIs
+  Coreness 1129: 1 DOIs
+  Coreness 1135: 1 DOIs
+  Coreness 1140: 1 DOIs
+  Coreness 1147: 1 DOIs
+  Coreness 1152: 1 DOIs
+  Coreness 1173: 1 DOIs
+  Coreness 1214: 1 DOIs
+  Coreness 1243: 1 DOIs
+  Coreness 1283: 1 DOIs
+  Coreness 1286: 1 DOIs
+  Coreness 1293: 1 DOIs
+  Coreness 1316: 1 DOIs
+  Coreness 1331: 1 DOIs
+  Coreness 1351: 1 DOIs
+  Coreness 1380: 1 DOIs
+  Coreness 1393: 1 DOIs
+  Coreness 1397: 1 DOIs
+  Coreness 1409: 1 DOIs
+  Coreness 1415: 1 DOIs
+  Coreness 1432: 1 DOIs
+  Coreness 1448: 1 DOIs
+  Coreness 1456: 2 DOIs
+  Coreness 1460: 1 DOIs
+  Coreness 1462: 1 DOIs
+  Coreness 1467: 1 DOIs
+  Coreness 1489: 1 DOIs
+  Coreness 1506: 2 DOIs
+  Coreness 1513: 1 DOIs
+  Coreness 1524: 1 DOIs
+  Coreness 1538: 1 DOIs
+  Coreness 1551: 1 DOIs
+  Coreness 1566: 1 DOIs
+  Coreness 1573: 1 DOIs
+  Coreness 1584: 1 DOIs
+  Coreness 1606: 1 DOIs
+  Coreness 1610: 1 DOIs
+  Coreness 1620: 1 DOIs
+  Coreness 1633: 1 DOIs
+  Coreness 1643: 1 DOIs
+  Coreness 1652: 1 DOIs
+  Coreness 1657: 1 DOIs
+  Coreness 1662: 1 DOIs
+  Coreness 1721: 1 DOIs
+  Coreness 1737: 1 DOIs
+  Coreness 1744: 1 DOIs
+  Coreness 1775: 1 DOIs
+  Coreness 1776: 1 DOIs
+  Coreness 1785: 1 DOIs
+  Coreness 1786: 1 DOIs
+  Coreness 1795: 1 DOIs
+  Coreness 1804: 2 DOIs
+  Coreness 1808: 1 DOIs
+  Coreness 1820: 1 DOIs
+  Coreness 1821: 1 DOIs
+  Coreness 1827: 1 DOIs
+  Coreness 1837: 1 DOIs
+  Coreness 1845: 1 DOIs
+  Coreness 1854: 2 DOIs
+  Coreness 1858: 1 DOIs
+  Coreness 1865: 1 DOIs
+  Coreness 1875: 1 DOIs
+  Coreness 1891: 1 DOIs
+  Coreness 1892: 1 DOIs
+  Coreness 1896: 1 DOIs
+  Coreness 1899: 1 DOIs
+  Coreness 1901: 1 DOIs
+  Coreness 1904: 1 DOIs
+  Coreness 1909: 1 DOIs
+  Coreness 1917: 1 DOIs
+  Coreness 1927: 2 DOIs
+  Coreness 1931: 1 DOIs
+  Coreness 1935: 3 DOIs
+  Coreness 1942: 1 DOIs
+  Coreness 1946: 2 DOIs
+  Coreness 1961: 1 DOIs
+  Coreness 1962: 1 DOIs
+  Coreness 1965: 2 DOIs
+  Coreness 1968: 1 DOIs
+  Coreness 1970: 1 DOIs
+  Coreness 1976: 1 DOIs
+  Coreness 1985: 1 DOIs
+  Coreness 1989: 1 DOIs
+  Coreness 1990: 1 DOIs
+  Coreness 1999: 2 DOIs
+  Coreness 2000: 1 DOIs
+  Coreness 2005: 1 DOIs
+  Coreness 2009: 1 DOIs
+  Coreness 2019: 1 DOIs
+  Coreness 2022: 1 DOIs
+  Coreness 2023: 1 DOIs
+  Coreness 2033: 2 DOIs
+  Coreness 2040: 1 DOIs
+  Coreness 2044: 1 DOIs
+  Coreness 2045: 1 DOIs
+  Coreness 2051: 1 DOIs
+  Coreness 2052: 1 DOIs
+  Coreness 2056: 1 DOIs
+  Coreness 2057: 1 DOIs
+  Coreness 2061: 1 DOIs
+  Coreness 2063: 1 DOIs
+  Coreness 2064: 1 DOIs
+  Coreness 2065: 1 DOIs
+  Coreness 2067: 1 DOIs
+  Coreness 2071: 1 DOIs
+  Coreness 2073: 1 DOIs
+  Coreness 2075: 2 DOIs
+  Coreness 2076: 1 DOIs
+  Coreness 2079: 1 DOIs
+  Coreness 2087: 1 DOIs
+  Coreness 2089: 1 DOIs
+  Coreness 2092: 1 DOIs
+  Coreness 2094: 1 DOIs
+  Coreness 2095: 2 DOIs
+  Coreness 2096: 1 DOIs
+  Coreness 2098: 1 DOIs
+  Coreness 2102: 1 DOIs
+  Coreness 2104: 1 DOIs
+  Coreness 2107: 2 DOIs
+  Coreness 2111: 1 DOIs
+  Coreness 2117: 2 DOIs
+  Coreness 2124: 2 DOIs
+  Coreness 2125: 2 DOIs
+  Coreness 2127: 1 DOIs
+  Coreness 2134: 1 DOIs
+  Coreness 2135: 2 DOIs
+  Coreness 2141: 1 DOIs
+  Coreness 2144: 2 DOIs
+  Coreness 2147: 3 DOIs
+  Coreness 2153: 1 DOIs
+  Coreness 2155: 1 DOIs
+  Coreness 2164: 1 DOIs
+  Coreness 2171: 1 DOIs
+  Coreness 2172: 1 DOIs
+  Coreness 2178: 1 DOIs
+  Coreness 2179: 2 DOIs
+  Coreness 2181: 2 DOIs
+  Coreness 2184: 2 DOIs
+  Coreness 2191: 3 DOIs
+  Coreness 2197: 1 DOIs
+  Coreness 2200: 1 DOIs
+  Coreness 2202: 1 DOIs
+  Coreness 2203: 2 DOIs
+  Coreness 2204: 1 DOIs
+  Coreness 2205: 2 DOIs
+  Coreness 2206: 1 DOIs
+  Coreness 2213: 2 DOIs
+  Coreness 2215: 1 DOIs
+  Coreness 2217: 2 DOIs
+  Coreness 2220: 1 DOIs
+  Coreness 2221: 1 DOIs
+  Coreness 2222: 1 DOIs
+  Coreness 2225: 1 DOIs
+  Coreness 2227: 1 DOIs
+  Coreness 2233: 3 DOIs
+  Coreness 2235: 1 DOIs
+  Coreness 2241: 1 DOIs
+  Coreness 2243: 1 DOIs
+  Coreness 2245: 1 DOIs
+  Coreness 2246: 4 DOIs
+  Coreness 2247: 2 DOIs
+  Coreness 2248: 2 DOIs
+  Coreness 2250: 1 DOIs
+  Coreness 2251: 2 DOIs
+  Coreness 2254: 1 DOIs
+  Coreness 2255: 2 DOIs
+  Coreness 2256: 1 DOIs
+  Coreness 2264: 2 DOIs
+  Coreness 2265: 2 DOIs
+  Coreness 2267: 2 DOIs
+  Coreness 2277: 1 DOIs
+  Coreness 2282: 1 DOIs
+  Coreness 2283: 1 DOIs
+  Coreness 2286: 1 DOIs
+  Coreness 2289: 2 DOIs
+  Coreness 2291: 2 DOIs
+  Coreness 2294: 4 DOIs
+  Coreness 2297: 1 DOIs
+  Coreness 2298: 4 DOIs
+  Coreness 2299: 1 DOIs
+  Coreness 2301: 3 DOIs
+  Coreness 2302: 1 DOIs
+  Coreness 2303: 2 DOIs
+  Coreness 2305: 1 DOIs
+  Coreness 2308: 4 DOIs
+  Coreness 2309: 2 DOIs
+  Coreness 2310: 1 DOIs
+  Coreness 2312: 1 DOIs
+  Coreness 2314: 1 DOIs
+  Coreness 2315: 2 DOIs
+  Coreness 2317: 1 DOIs
+  Coreness 2318: 4 DOIs
+  Coreness 2323: 2 DOIs
+  Coreness 2328: 5 DOIs
+  Coreness 2334: 1 DOIs
+  Coreness 2340: 3 DOIs
+  Coreness 2341: 1 DOIs
+  Coreness 2343: 2 DOIs
+  Coreness 2347: 1 DOIs
+  Coreness 2348: 1 DOIs
+  Coreness 2350: 1 DOIs
+  Coreness 2352: 1 DOIs
+  Coreness 2353: 1 DOIs
+  Coreness 2355: 1 DOIs
+  Coreness 2356: 2 DOIs
+  Coreness 2358: 2 DOIs
+  Coreness 2360: 1 DOIs
+  Coreness 2362: 1 DOIs
+  Coreness 2364: 5 DOIs
+  Coreness 2367: 2 DOIs
+  Coreness 2370: 2 DOIs
+  Coreness 2371: 1 DOIs
+  Coreness 2374: 1 DOIs
+  Coreness 2375: 1 DOIs
+  Coreness 2377: 4 DOIs
+  Coreness 2378: 4 DOIs
+  Coreness 2379: 13 DOIs
+  Coreness 2380: 1 DOIs
+  Coreness 2382: 5 DOIs
+  Coreness 2385: 1 DOIs
+  Coreness 2386: 7 DOIs
+  Coreness 2387: 5 DOIs
+  Coreness 2388: 4 DOIs
+  Coreness 2391: 9 DOIs
+  Coreness 2393: 9 DOIs
+  Coreness 2395: 10 DOIs
+  Coreness 2396: 1 DOIs
+  Coreness 2397: 1 DOIs
+  Coreness 2398: 1 DOIs
+  Coreness 2401: 3 DOIs
+  Coreness 2403: 33 DOIs
+  Coreness 2405: 1 DOIs
+  Coreness 2406: 4 DOIs
+  Coreness 2407: 1 DOIs
+  Coreness 2408: 22 DOIs
+  Coreness 2409: 13 DOIs
+  Coreness 2412: 1 DOIs
+  Coreness 2413: 2720 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260525_144232.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AF - DOIs_Communities_20260525_144401.csv
+  Plot saved → 'AF - Community_sizes_20260525_144401.png'
+  Plot saved → 'AF - Community_sizes_20260525_144401_dark.png'
+  Bump chart → 'AF - Community_bump_20260525_144402.png'
+  Bump chart → 'AF - Community_bump_20260525_144402_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260525_144403.png'
+  Bump chart → 'AG - Coreness_bump_20260525_144403_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.02.csv
+  ✓ 3189 DOIs loaded.
+  ✓ 12 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 12 DOIs to highlight
+  ✓ Coreness range: 224 – 2413
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260525_144622.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_144622_dark.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_144622.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_144622_dark.png
+  ✓ Community data: 3 communities
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622_dark.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622_dark.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622_dark.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_144622_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_144622.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_144622_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_144622.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_144622_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139
+  ⏱  Community detection completed in 6m 58s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AB - Pass_data_to_other_query_20260401_184519.csv
+  Clean CSV         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\combined_results_clean_20260525_142140.csv
+  Combined CSV      : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\clean_results_with_combined_title_abstract_20260525_142437.csv
+  TSC output        : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139
+  Community CSV     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AF - DOIs_Communities_20260525_144401.csv
+  Maximum TSC Spread: 3.5438
+  Selected λ        : 0.01
+  Selected τ        : 0.02
+  Log file          : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AA - Output_text_20260525_142045.txt
+
+  ⏱  Total time     : 28m 46s
+  ──────────────────────────────────────
+    User review (wait)    : 2m 58s
+    Data cleaning         : 0m 05s
+    Combine title+abstract: 187 ms
+    Similarity matrix     : 0m 10s
+    Coarse sweep & plots  : 6m 13s
+    Fine sweep & plots    : 10m 15s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+arithmetic_statistics_random_matrices_L__TF-IDF_20260525_142139\AE - Timing_summary_20260525_144931.txt'
+

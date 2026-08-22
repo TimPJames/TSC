@@ -1,0 +1,212 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260325_124636.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260325_124131\clean_results_with_combined_title_abstract_20260325_124636.csv
+  ℹ️   Terms extracted from folder: "bent boolean functions cryptography"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   QR terms from log file      : "bent boolean functions cryptography"
+  ✅  TSC outputs found and inputs match → Stage 3 will be reused
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260325_124131\AB - Pass_data_to_other_query_20260325_124636.csv
+  Records    : 150 rows in file
+  Prev folder: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260325_124131  → reusing ALL TSC outputs (skip Stage 3 compute)
+  Supp. CSV  : (none)
+  Skip dedup : Yes (uploaded file, no supplemental)
+  Terms      : bent boolean functions cryptography
+  QR terms   : bent boolean functions cryptography  (same as API query terms)
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838
+  Output     : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\combined_results_20260417_142838.csv
+────────────────────────────────────────────────────────────
+
+  [Stages 1, 2 & 2.5 reused from prev folder]
+  [Reused → copied] AB - Pass_data_to_other_query_20260325_124636.csv
+              →    combined_results_20260417_142839.csv
+  [Reused → copied] combined_results_clean_20260325_124251.csv
+              →    combined_results_clean_20260417_142839.csv
+  [Reused → copied] clean_results_with_combined_title_abstract_20260325_124636.csv
+              →    clean_results_with_combined_title_abstract_20260417_142839.csv
+  Combined CSV : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\clean_results_with_combined_title_abstract_20260417_142839.csv
+  [Log] Saving output to 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\AA - Output_text_20260417_142826.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\clean_results_with_combined_title_abstract_20260417_142839.csv
+  Output dir   : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838
+────────────────────────────────────────────────────────────
+
+  [Stage 3 skipped] Reusing TSC outputs from: 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260325_124131'
+
+  [Reuse] Copying data files from previous run …
+  [Reuse] 820 data files copied → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838'
+  [Reuse] Replotting coarse sweep …
+  [COARSE] grid: 10 tau x 11 lambda = 110 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\histogram_grid_COARSE.png'
+  [COARSE] image grid: 10x11 = 110 matched (0 missing, 0 dark PNGs found, 110 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\histogram_grid_COARSE_plain.png'
+  [top10 plot] Peak TSC spread at τ = 0.10  (spread = 1.2952)
+  [Ranking vs λ] 14 of 421 DOIs in the Top 10  (τ = 0.10, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 6 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 51 of 424 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\top10_all_pairs_COARSE.xlsx'
+  [Reuse] Replotting fine sweep …
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 6 dark PNGs found, 225 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\histogram_grid_FINE_plain.png'
+  [top10 plot] Peak TSC spread at τ = 0.05  (spread = 1.5643)
+  [Ranking vs λ] 13 of 424 DOIs in the Top 10  (τ = 0.05, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 7 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 24 of 424 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\top10_all_pairs_FINE.xlsx'
+  [TSC vs Year] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\TSC_vs_PublicationYear_tau_0.05_lambda_0.01.png'  (424 data points, R² = 0.029)
+  [Max TSC CSV] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\DOIs_with_max_TSC_values_20260417_143224.csv'  (424 DOIs)
+  [Reuse] All plots regenerated.
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.05
+  ⚠️  τ=0.05 matrix not found — using: 'tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260417_143224.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0500 applied: 45308 edge(s) zeroed out (134044 retained).
+✓ 424 DOIs loaded. Sparsity: 25.4%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=11917.0546 | row-sum max=6.02e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 2 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0661  (>0.3 indicates strong structure)
+
+  Community 1: 214 DOIs
+  Community 2: 210 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 37 – 248
+  Median coreness   : 248.0
+
+  Coreness 37: 1 DOIs
+  Coreness 43: 1 DOIs
+  Coreness 53: 1 DOIs
+  Coreness 54: 1 DOIs
+  Coreness 71: 1 DOIs
+  Coreness 75: 1 DOIs
+  Coreness 80: 1 DOIs
+  Coreness 86: 1 DOIs
+  Coreness 95: 1 DOIs
+  Coreness 104: 2 DOIs
+  Coreness 105: 2 DOIs
+  Coreness 114: 1 DOIs
+  Coreness 117: 1 DOIs
+  Coreness 120: 1 DOIs
+  Coreness 128: 1 DOIs
+  Coreness 130: 1 DOIs
+  Coreness 132: 1 DOIs
+  Coreness 134: 1 DOIs
+  Coreness 135: 1 DOIs
+  Coreness 139: 1 DOIs
+  Coreness 140: 1 DOIs
+  Coreness 141: 1 DOIs
+  Coreness 153: 1 DOIs
+  Coreness 158: 1 DOIs
+  Coreness 159: 1 DOIs
+  Coreness 160: 2 DOIs
+  Coreness 164: 1 DOIs
+  Coreness 167: 3 DOIs
+  Coreness 173: 2 DOIs
+  Coreness 174: 3 DOIs
+  Coreness 178: 1 DOIs
+  Coreness 183: 3 DOIs
+  Coreness 184: 1 DOIs
+  Coreness 185: 1 DOIs
+  Coreness 187: 1 DOIs
+  Coreness 188: 3 DOIs
+  Coreness 189: 2 DOIs
+  Coreness 200: 1 DOIs
+  Coreness 203: 1 DOIs
+  Coreness 205: 2 DOIs
+  Coreness 206: 1 DOIs
+  Coreness 209: 1 DOIs
+  Coreness 213: 1 DOIs
+  Coreness 214: 3 DOIs
+  Coreness 218: 1 DOIs
+  Coreness 219: 1 DOIs
+  Coreness 220: 5 DOIs
+  Coreness 224: 2 DOIs
+  Coreness 225: 1 DOIs
+  Coreness 227: 3 DOIs
+  Coreness 228: 1 DOIs
+  Coreness 230: 2 DOIs
+  Coreness 232: 1 DOIs
+  Coreness 233: 6 DOIs
+  Coreness 235: 1 DOIs
+  Coreness 237: 1 DOIs
+  Coreness 239: 2 DOIs
+  Coreness 241: 5 DOIs
+  Coreness 242: 5 DOIs
+  Coreness 244: 2 DOIs
+  Coreness 246: 5 DOIs
+  Coreness 247: 28 DOIs
+  Coreness 248: 292 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260417_143224.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\AF - DOIs_Communities_20260417_143225.csv
+  Plot saved → 'AF - Community_sizes_20260417_143225.png'
+  Plot saved → 'AF - Community_sizes_20260417_143225_dark.png'
+  Bump chart → 'AF - Community_bump_20260417_143225.png'
+  Bump chart → 'AF - Community_bump_20260417_143225_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260417_143226.png'
+  Bump chart → 'AG - Coreness_bump_20260417_143226_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ⚠️  τ matrix not found — using: tfidf_cosine_matrix_by_doi_tau_0.00.csv
+  ✓ 424 DOIs loaded.
+  ✓ 13 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 13 DOIs to highlight
+  ✓ Coreness range: 37 – 248
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260417_143228.png
+  ✓ Contour map saved → AH - Kcore_contour_20260417_143228_dark.png
+  ✓ Community data: 2 communities
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260417_143228.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260417_143228_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260417_143228.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260417_143228_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260417_143228.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260417_143228_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838
+  ⏱  Community detection completed in 0m 14s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\combined_results_20260417_142839.csv
+  Clean CSV         : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\combined_results_clean_20260417_142839.csv
+  Combined CSV      : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\clean_results_with_combined_title_abstract_20260417_142839.csv
+  TSC output        : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260325_124131
+  Maximum TSC Spread: 1.5643
+  Selected λ        : 0.01
+  Selected τ        : 0.05
+

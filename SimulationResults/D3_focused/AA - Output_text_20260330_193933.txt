@@ -1,0 +1,207 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : API query
+  Records    : 150 per source
+  Year range : 2000 – 2026
+  Supp. CSV  : (none)
+  Skip dedup : No
+  Terms      : "post-quantum cryptography"
+  QR terms   : "post-quantum cryptography"  (same as API query terms)
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948
+  Output     : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_193948.csv
+────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════
+  Stage 1 – API Query
+════════════════════════════════════════════════════════════
+  Records/API  : 150
+  Year range   : 2000 – 2026
+
+  Formatted queries that will be sent to each API:
+    crossref             "post-quantum cryptography"
+    openalex             "post-quantum cryptography"
+    arxiv                all:"post-quantum cryptography"  (arXiv default prefix: all)
+    zbmath               (ti:"post-quantum cryptography" OR ab:"post-quantum cryptography" OR ut:"post-quantum cryptography")
+    semanticscholar      "post-quantum cryptography"
+
+  CrossRef – 150 records collected
+  OpenAlex – 150 records collected
+  arXiv – 150 records collected
+  [zbMath] page 0: requested 100, received 100, rows so far 0
+  [zbMath] after appending: 100 rows, batch=100, len(items)=100, early_exit=False
+  [zbMath] advancing to page 1
+  [zbMath] page 1: requested 50, received 50, rows so far 100
+  [zbMath] after appending: 150 rows, batch=50, len(items)=50, early_exit=False
+  [zbMath] advancing to page 2
+  zbMath – 150 records collected
+  SemanticScholar – 150 records (100 query + 1000 bulk fetched, 950 bulk records removed (23 dup, 927 overage))
+  After DOI dedup       : 647  (103 duplicates removed, kept highest-quality record per DOI)
+  After year filter     : 647  (0 out-of-range rows removed, year range 2000–2026)
+  ✅  Raw CSV saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_194034.csv'
+  ⏱  API query completed in 0m 45s
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_194034.csv'
+  Log → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_194034_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 647 rows
+
+  [Step 0] Missing DOI      : 100 rows removed
+  [Step 0] Missing Abstract : 41 rows removed  (506 remaining)
+  [Step 1] Language filter  : 19 non-English rows removed (487 remaining)
+  [Step 2] Text cleaning    : 18 titles cleaned, 258 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 1] 12 record(s) removed — identical title + abstract (automatic).
+
+  [Step 3 – Pass 2] 11 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 8 record(s) removed.
+
+  [Step 3 – Pass 3] No abstract duplicates found.
+  [Step 3 – Pass 3] 0 record(s) removed.
+
+  [Step 3 – Pass 4] 2 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 20 duplicate rows removed (467 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────
+  Source                        API   No     No       Not      Dup         
+                       Fetched  Dup  DOI  Abstract  English  Content  Kept 
+  ───────────────────────────────────────────────────────────────────────────
+  CrossRef               150     -1                    -1       -7    141  
+  OpenAlex               150    -31   -4    -27                 -4     84  
+  arXiv                  150     -7                             -7    136  
+  zbMath                 150    -22  -87              -17              24  
+  SemanticScholar        150    -42   -9    -14        -1       -2     82  
+  ───────────────────────────────────────────────────────────────────────────
+  TOTAL                  750    -103 -100   -41       -19      -20    467  
+  ───────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AD - Summary_table_20260330_194214.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AC - Duplicate_user_choices_20260330_194034.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AB - Pass_data_to_other_query_20260330_194214.csv'  (467 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_clean_20260330_194034.csv'  (467 rows)
+  [Log] 180 dropped entries saved to 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_194034_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 1m 40s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\clean_results_with_combined_title_abstract_20260330_194214.csv'
+  [Log] Saving output to 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AA - Output_text_20260330_193933.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\clean_results_with_combined_title_abstract_20260330_194214.csv
+  Output dir   : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948
+────────────────────────────────────────────────────────────
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948
+  API query      : "post-quantum cryptography"
+  QR query       : "post-quantum cryptography"  (same as API query)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 01s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (467 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 0.9838
+  [tau auto-range] τ grid (10 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 467 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.10  (spread = 2.9818)
+  [Ranking vs λ] 14 of 466 DOIs in the Top 10  (τ = 0.10, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 6 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 52 of 467 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\top10_all_pairs_COARSE.xlsx'
+  [top10 freq] Saved → top10_doi_frequency_by_tau_coarse.png
+  [COARSE] grid: 10 tau x 11 lambda = 110 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\histogram_grid_COARSE.png'
+  [COARSE] image grid: 10x11 = 110 matched (0 missing, 0 dark PNGs found, 110 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 4m 45s
+
+  Coarse peak : TSC Spread = 2.9818 at λ = 0.0100, τ = 0.1000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (467 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 467 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.06  (spread = 3.4503)
+  [Ranking vs λ] 11 of 467 DOIs in the Top 10  (τ = 0.06, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 9 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 16 of 467 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\top10_all_pairs_FINE.xlsx'
+  [top10 freq] Saved → top10_doi_frequency_by_tau_fine.png
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\histogram_grid_FINE_plain.png'
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 10m 18s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 3.4503
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.06
+  [similarity matrix] Saved thresholded matrix (τ=0.06) → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\tfidf_cosine_matrix_by_doi_tau_0.06.csv'
+  [TSC vs Year] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\TSC_vs_PublicationYear_tau_0.06_lambda_0.01.png'  (467 data points, R² = 0.073)
+  [Max TSC CSV] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\DOIs_with_max_TSC_values_20260330_195734.csv'  (467 DOIs)
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_20260330_194034.csv
+  Clean CSV         : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\combined_results_clean_20260330_194034.csv
+  Combined CSV      : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\clean_results_with_combined_title_abstract_20260330_194214.csv
+  TSC output        : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948
+  Maximum TSC Spread: 3.4503
+  Selected λ        : 0.01
+  Selected τ        : 0.06
+  Log file          : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AA - Output_text_20260330_193933.txt
+
+  ⏱  Total time     : 18m 01s
+  ──────────────────────────────────────
+    API query             : 0m 45s
+    User review (wait)    : 1m 38s
+    Data cleaning         : 0m 04s
+    Combine title+abstract: 83 ms
+    Similarity matrix     : 0m 01s
+    Coarse sweep & plots  : 4m 45s
+    Fine sweep & plots    : 10m 18s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AE - Timing_summary_20260330_195734.txt'
+

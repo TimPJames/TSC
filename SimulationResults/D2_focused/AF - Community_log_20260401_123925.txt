@@ -1,0 +1,124 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_RSA_attack_complexity_TF-IDF_20260330_145145\AF - Community_log_20260401_123925.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0500
+  ✓ Search terms from folder name        : "RSA attack complexity"
+  ✓ Similarity method from folder name   : TF-IDF
+  ✓ QR terms from log file               : "RSA attack complexity"
+  ✓ Matrix file                          : tfidf_cosine_matrix_by_doi_tau_0.05.csv
+  ✓ TSC base file                        : DOIs_with_max_TSC_values_20260330_152042.csv
+
+── Loading matrix ────────────────────────────────
+✓ Matrix is symmetric.
+✓ τ=0.0500 applied: 0 edge(s) zeroed out (93874 retained).
+✓ 361 DOIs loaded. Sparsity: 28.0%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=8122.2629 | row-sum max=3.80e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 4 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0623
+  (Q > 0.3 indicates strong community structure)
+
+  Community 1: 108 DOIs
+  Community 2: 107 DOIs
+  Community 3: 83 DOIs
+  Community 4: 63 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 5 – 223
+  Median coreness   : 223.0
+
+  Coreness 5: 1 DOIs
+  Coreness 6: 1 DOIs
+  Coreness 7: 1 DOIs
+  Coreness 15: 1 DOIs
+  Coreness 17: 1 DOIs
+  Coreness 21: 1 DOIs
+  Coreness 22: 1 DOIs
+  Coreness 24: 1 DOIs
+  Coreness 30: 1 DOIs
+  Coreness 31: 1 DOIs
+  Coreness 51: 1 DOIs
+  Coreness 52: 1 DOIs
+  Coreness 54: 1 DOIs
+  Coreness 62: 1 DOIs
+  Coreness 65: 1 DOIs
+  Coreness 67: 1 DOIs
+  Coreness 69: 1 DOIs
+  Coreness 71: 1 DOIs
+  Coreness 72: 1 DOIs
+  Coreness 75: 1 DOIs
+  Coreness 76: 2 DOIs
+  Coreness 78: 1 DOIs
+  Coreness 84: 1 DOIs
+  Coreness 89: 1 DOIs
+  Coreness 92: 1 DOIs
+  Coreness 93: 1 DOIs
+  Coreness 104: 2 DOIs
+  Coreness 109: 1 DOIs
+  Coreness 111: 1 DOIs
+  Coreness 117: 2 DOIs
+  Coreness 118: 1 DOIs
+  Coreness 129: 1 DOIs
+  Coreness 130: 1 DOIs
+  Coreness 135: 1 DOIs
+  Coreness 137: 2 DOIs
+  Coreness 139: 1 DOIs
+  Coreness 141: 1 DOIs
+  Coreness 145: 2 DOIs
+  Coreness 149: 1 DOIs
+  Coreness 151: 1 DOIs
+  Coreness 152: 1 DOIs
+  Coreness 155: 1 DOIs
+  Coreness 157: 3 DOIs
+  Coreness 159: 1 DOIs
+  Coreness 168: 1 DOIs
+  Coreness 169: 1 DOIs
+  Coreness 170: 2 DOIs
+  Coreness 171: 1 DOIs
+  Coreness 173: 1 DOIs
+  Coreness 174: 1 DOIs
+  Coreness 178: 1 DOIs
+  Coreness 180: 1 DOIs
+  Coreness 181: 2 DOIs
+  Coreness 183: 1 DOIs
+  Coreness 184: 1 DOIs
+  Coreness 185: 1 DOIs
+  Coreness 186: 2 DOIs
+  Coreness 189: 1 DOIs
+  Coreness 195: 1 DOIs
+  Coreness 196: 1 DOIs
+  Coreness 197: 2 DOIs
+  Coreness 198: 1 DOIs
+  Coreness 201: 1 DOIs
+  Coreness 202: 1 DOIs
+  Coreness 203: 3 DOIs
+  Coreness 204: 1 DOIs
+  Coreness 207: 2 DOIs
+  Coreness 209: 2 DOIs
+  Coreness 213: 1 DOIs
+  Coreness 214: 4 DOIs
+  Coreness 215: 3 DOIs
+  Coreness 220: 7 DOIs
+  Coreness 221: 2 DOIs
+  Coreness 223: 261 DOIs
+
+── Saving outputs ────────────────────────────────
+
+  Base file: DOIs_with_max_TSC_values_20260330_152042.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_RSA_attack_complexity_TF-IDF_20260330_145145\AF - DOIs_Communities_20260401_123926.csv
+  Plot saved → 'AF - Community_sizes_20260401_123926.png'
+  Plot saved → 'AF - Community_sizes_20260401_123926_dark.png'
+  Bump chart → 'AF - Community_bump_20260401_123926.png'
+  Bump chart → 'AF - Community_bump_20260401_123926_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260401_123927.png'
+  Bump chart → 'AG - Coreness_bump_20260401_123927_dark.png'
+
+✓ Log saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_RSA_attack_complexity_TF-IDF_20260330_145145\AF - Community_log_20260401_123925.txt
+

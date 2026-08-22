@@ -1,0 +1,60 @@
+  Log: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\Assessment_20260715_010640\Assessment_log_20260715_010640.txt
+── Loading simulation artefacts ────────────────────────────
+  N = 3630 documents  |  τ = 0.040  |  λ = 0.010
+  Mean neighbourhood size: 2284.9  (max=3472  min=48)
+
+── Assessment 2: Algorithm 1 — Sampling Approximation ───────
+  Configs: [(0.05, 0.05), (0.1, 0.05), (0.05, 0.01)]
+  Draws per document: 1000
+  Sample size constant C: 0.5  (m = C·log(1/δ)/ε²)
+
+  (ε=0.05, δ=0.05): m=600 samples per neighbourhood
+    Empirical success rate: 0.516 (theoretical ≥ 0.950)  [3,630,000 (doc,draw) pairs]
+    ⚠  3520 documents fail bound in >5% of draws
+  (ε=0.1, δ=0.05): m=150 samples per neighbourhood
+    Empirical success rate: 0.450 (theoretical ≥ 0.950)  [3,630,000 (doc,draw) pairs]
+    ⚠  3616 documents fail bound in >5% of draws
+  (ε=0.05, δ=0.01): m=922 samples per neighbourhood
+    Empirical success rate: 0.669 (theoretical ≥ 0.990)  [3,630,000 (doc,draw) pairs]
+    ⚠  3400 documents fail bound in >1% of draws
+  B = 1.0 (theoretical upper bound on each summand)
+  Empirical max summand = 0.051607  (mean=0.000328, median=0.000000)
+
+  X̄(v): mean=0.000317  median=0.000312
+  Theorem 3.10.1 m* = ln(2/δ)/(2·ε²·X̄²)  [B=1]
+    ε=0.05, δ=0.05, X̄(mean)=0.000317
+    m* = 7,357,428,648
+
+  Sweeping m ∈ [100..10000] for ε=0.05, δ=0.05 …
+    m=   100  pass rate=0.191
+    m=   200  pass rate=0.274
+    m=   300  pass rate=0.346
+    m=   400  pass rate=0.407
+    m=   500  pass rate=0.467
+    m=   600  pass rate=0.516
+    m=   700  pass rate=0.566
+    m=   800  pass rate=0.616
+    m=   900  pass rate=0.660
+    m=  1000  pass rate=0.701
+    m=  1500  pass rate=0.872
+    m=  2000  pass rate=0.967
+    m=  2500  pass rate=0.997
+    m=  3000  pass rate=1.000
+    m=  3500  pass rate=1.000
+    m=  4000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  4500  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  5000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  5500  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  6000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  6500  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  7000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  7500  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  8000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  8500  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  9000  pass rate=1.000  (m ≥ N=3630, exact)
+    m=  9500  pass rate=1.000  (m ≥ N=3630, exact)
+    m= 10000  pass rate=1.000  (m ≥ N=3630, exact)
+  ✓ Sampling figures → Assessment2_*_20260715_010640*.png
+
+  ✓ All assessment outputs → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\Assessment_20260715_010640
+

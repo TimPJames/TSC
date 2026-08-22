@@ -1,0 +1,180 @@
+
+  [Step 3 – Pass 2] 6 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2508.15172
+       Published : 2025-08-21
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption \textsc{Ascon} against cube-like method. \textsc{Ascon} submitted by Dobraunig \emph{et~al.} is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur \emph{et~al.} to analyze Keccak keyed…
+
+  [2]
+       DOI       : 10.13154/tosc.v2017.i1.175-202
+       Published : 2017-03-08
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption Ascon against cube-like method. Ascon submitted by Dobraunig et al. is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur et al. to analyze Keccak keyed modes. At CT-RSA 2015, Dobrauni…
+
+  [3]
+       DOI       : 10.46586/tosc.v2017.i1.175-202
+       Published : 2017-03-08
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption Ascon against cube-like method. Ascon submitted by Dobraunig et al. is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur et al. to analyze Keccak keyed modes. At CT-RSA 2015, Dobrauni…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 6))  —  sorted by author:
+
+  [1]
+       DOI       : 10.48550/arxiv.2508.15172
+       Published : 2025-08-21
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption \textsc{Ascon} against cube-like method. \textsc{Ascon} submitted by Dobraunig \emph{et~al.} is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur \emph{et~al.} to analyze Keccak keyed…
+
+  [2]
+       DOI       : 10.13154/tosc.v2017.i1.175-202
+       Published : 2017-03-08
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption Ascon against cube-like method. Ascon submitted by Dobraunig et al. is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur et al. to analyze Keccak keyed modes. At CT-RSA 2015, Dobrauni…
+
+  [3]
+       DOI       : 10.46586/tosc.v2017.i1.175-202
+       Published : 2017-03-08
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Abstract  : This paper evaluates the secure level of authenticated encryption Ascon against cube-like method. Ascon submitted by Dobraunig et al. is one of 16 survivors of the 3rd round CAESAR competition. The cube-like method is first used by Dinur et al. to analyze Keccak keyed modes. At CT-RSA 2015, Dobrauni…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.48550/arxiv.2508.15172  |  Zheng Li; Xiaoyang Dong; Xiaoyun Wang  |  2025-08-21
+    [2]  10.13154/tosc.v2017.i1.175-202  |  Zheng Li; Xiaoyang Dong; Xiaoyun Wang  |  2017-03-08
+    [3]  10.46586/tosc.v2017.i1.175-202  |  Zheng Li; Xiaoyang Dong; Xiaoyun Wang  |  2017-03-08
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+
+
+  [1/3]
+       DOI       : 10.48550/arxiv.2508.15172
+       Published : 2025-08-21
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+  → Keeping [1]: 10.48550/arxiv.2508.15172
+
+  [2/3]
+       DOI       : 10.13154/tosc.v2017.i1.175-202
+       Published : 2017-03-08
+       Authors   : Zheng Li; Xiaoyang Dong; Xiaoyun Wang
+       Title     : Conditional Cube Attack on Round-Reduced ASCON
+  → Deleting [2] and all remaining
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2506.23438
+       Published : 2025-06-30
+       Title     : Some Mathematical Problems Behind Lattice-Based Cryptography
+       Authors   : Chuanming Zong
+       Abstract  : In 1994, P. Shor discovered quantum algorithms which can break both the RSA cryptosystem and the ElGamal cryptosystem. In 2007, D-Wave demonstrated the first quantum computer. These events and further developments have brought a crisis to secret communication. In 2016, the National Institute of Stan…
+
+  [2]
+       DOI       : 10.3390/cryptography10010010
+       Published : 2025-06-29
+       Title     : Some Mathematical Problems Behind Lattice-Based Cryptography
+       Authors   : Chuanming Zong
+       Abstract  : In 1994, P. Shor discovered quantum algorithms that can break both the RSA cryptosystem and the ElGamal cryptosystem. In 2007, D-Wave demonstrated the first quantum computer. These events and further developments have brought a crisis to secret communication. In 2016, the National Institute of Stand…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.48550/arxiv.2506.23438  |  Some Mathematical Problems Behind Lattice-Based Cryptography
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2311.14845
+       Published : 2023-11-24
+       Title     : Lightweight Public Key Encryption in Post-Quantum Computing Era
+       Authors   : Peter Hillmann
+       Abstract  : Confidentiality in our digital world is based on the security of cryptographic algorithms. These are usually executed transparently in the background, with people often relying on them without further knowledge. In the course of technological progress with quantum computers, the protective function …
+
+  [2]
+       DOI       : 10.5121/csit.2023.132101
+       Published : 2023-11-18
+       Title     : Lightweight Public Key Encryption in Post-Quantum Computing Era
+       Authors   : Peter Hillmann
+       Abstract  : Confidentiality in our digital world is based on the security of cryptographic algorithms. These are usually executed transparently in the background, with people often relying on them without further knowledge. In the course of technological progress with quantum computers, the protective function …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.48550/arxiv.2311.14845  |  Lightweight Public Key Encryption in Post-Quantum Computing 
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 6)):
+
+  [1]
+       DOI       : 10.1145/3446215
+       Published : 2021-01-07
+       Title     : Robust and Attack Resilient Logic Locking with a High Application-Level Impact
+       Authors   : Yuntao Liu; Michael Zuzak; Yang Xie; Abhishek Chakraborty; Ankur Srivastava
+       Abstract  : Logic locking is a hardware security technique aimed at protecting intellectual property against security threats in the IC supply chain, especially those posed by untrusted fabrication facilities. Such techniques incorporate additional locking circuitry within an integrated circuit (IC) that induce…
+
+  [2]
+       DOI       : 10.48550/arxiv.2101.02577
+       Published : 2021-01-07
+       Title     : Robust and Attack Resilient Logic Locking with a High Application-Level Impact
+       Authors   : Yuntao Liu; Michael Zuzak; Yang Xie; Abhishek Chakraborty; Ankur Srivastava
+       Abstract  : Logic locking is a hardware security technique to intellectual property (IP) against security threats in the IC supply chain, especially untrusted fabs. Such techniques incorporate additional locking circuitry within an IC that induces incorrect functionality when an incorrect key is provided. The a…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.1145/3446215  |  Robust and Attack Resilient Logic Locking with a High Applic
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 6)):
+
+  [1]
+       DOI       : 10.3233/978-1-60750-002-5-160
+       Published : 2009-01-01
+       Title     : LDPC Codes in the McEliece Cryptosystem: Attacks and Countermeasures
+       Authors   : Marco Baldi
+       Abstract  : The McEliece cryptosystem is a public-key cryptosystem based on coding theory that has successfully resisted cryptanalysis for thirty years. The original version, based on Goppa codes, is able to guarantee a high level of security, and is faster than competing solutions, like RSA. Despite this, it h…
+
+  [2]
+       DOI       : 10.48550/arxiv.0710.0142
+       Published : 2007-09-30
+       Title     : LDPC codes in the McEliece cryptosystem: attacks and countermeasures
+       Authors   : Marco Baldi
+       Abstract  : The McEliece cryptosystem is a public-key cryptosystem based on coding theory that has successfully resisted cryptanalysis for thirty years. The original version, based on Goppa codes, is able to guarantee a high level of security, and is faster than competing solutions, like RSA. Despite this, it h…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.3233/978-1-60750-002-5-160  |  LDPC Codes in the McEliece Cryptosystem: Attacks and Counter
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.0811.0063
+       Published : 2008-11-01
+       Title     : A variant of Wiener's attack on RSA
+       Authors   : Andrej Dujella
+       Abstract  : Wiener's attack is a well-known polynomial-time attack on a RSA cryptosystem with small secret decryption exponent d, which works if d<n^{0.25}, where n=pq is the modulus of the cryptosystem. Namely, in that case, d is the denominator of some convergent p_m/q_m of the continued fraction expansion of…
+
+  [2]
+       DOI       : 10.1007/s00607-009-0037-8
+       Published : 2008-11-01
+       Title     : A variant of Wiener's attack on RSA
+       Authors   : A. Dujella
+       Abstract  : Wiener's attack is a well-known polynomial-time attack on a RSA cryptosystem with small secret decryption exponent d, which works if d < n0.25, where n = pq is the modulus of the cryptosystem. Namely, in that case, d is the denominator of some convergent pm/qm of the continued fraction expansion of …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1007/s00607-009-0037-8  |  A variant of Wiener's attack on RSA
+
+  [Step 3 – Pass 4] 5 record(s) have blank authors — review required.
+

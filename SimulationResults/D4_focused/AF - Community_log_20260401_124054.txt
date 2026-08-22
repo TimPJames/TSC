@@ -1,0 +1,117 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555\AF - Community_log_20260401_124054.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0500
+  ✓ Search terms from folder name        : "zero knowledge proofs"
+  ✓ Similarity method from folder name   : TF-IDF
+  ✓ QR terms from log file               : ""zero-knowledge proofs""
+  ✓ Matrix file                          : tfidf_cosine_matrix_by_doi_tau_0.05.csv
+  ✓ TSC base file                        : DOIs_with_max_TSC_values_20260330_225410.csv
+
+── Loading matrix ────────────────────────────────
+✓ Matrix is symmetric.
+✓ τ=0.0500 applied: 0 edge(s) zeroed out (116730 retained).
+✓ 413 DOIs loaded. Sparsity: 31.6%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=9373.4938 | row-sum max=5.24e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 2 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0935
+  (Q > 0.3 indicates strong community structure)
+
+  Community 1: 214 DOIs
+  Community 2: 199 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 28 – 222
+  Median coreness   : 222.0
+
+  Coreness 28: 4 DOIs
+  Coreness 31: 1 DOIs
+  Coreness 37: 1 DOIs
+  Coreness 39: 1 DOIs
+  Coreness 44: 1 DOIs
+  Coreness 65: 1 DOIs
+  Coreness 71: 2 DOIs
+  Coreness 72: 2 DOIs
+  Coreness 74: 1 DOIs
+  Coreness 80: 1 DOIs
+  Coreness 81: 1 DOIs
+  Coreness 90: 1 DOIs
+  Coreness 99: 3 DOIs
+  Coreness 102: 1 DOIs
+  Coreness 106: 1 DOIs
+  Coreness 112: 2 DOIs
+  Coreness 122: 1 DOIs
+  Coreness 124: 1 DOIs
+  Coreness 131: 2 DOIs
+  Coreness 132: 3 DOIs
+  Coreness 135: 1 DOIs
+  Coreness 137: 1 DOIs
+  Coreness 142: 3 DOIs
+  Coreness 143: 1 DOIs
+  Coreness 149: 1 DOIs
+  Coreness 150: 1 DOIs
+  Coreness 151: 1 DOIs
+  Coreness 152: 1 DOIs
+  Coreness 154: 1 DOIs
+  Coreness 155: 1 DOIs
+  Coreness 156: 1 DOIs
+  Coreness 158: 1 DOIs
+  Coreness 159: 1 DOIs
+  Coreness 160: 3 DOIs
+  Coreness 161: 1 DOIs
+  Coreness 162: 3 DOIs
+  Coreness 164: 1 DOIs
+  Coreness 168: 1 DOIs
+  Coreness 170: 1 DOIs
+  Coreness 173: 1 DOIs
+  Coreness 175: 1 DOIs
+  Coreness 177: 1 DOIs
+  Coreness 179: 3 DOIs
+  Coreness 180: 3 DOIs
+  Coreness 184: 2 DOIs
+  Coreness 186: 2 DOIs
+  Coreness 188: 1 DOIs
+  Coreness 191: 3 DOIs
+  Coreness 194: 1 DOIs
+  Coreness 195: 1 DOIs
+  Coreness 196: 1 DOIs
+  Coreness 197: 2 DOIs
+  Coreness 198: 1 DOIs
+  Coreness 201: 2 DOIs
+  Coreness 203: 5 DOIs
+  Coreness 204: 2 DOIs
+  Coreness 205: 3 DOIs
+  Coreness 206: 1 DOIs
+  Coreness 207: 4 DOIs
+  Coreness 211: 6 DOIs
+  Coreness 212: 5 DOIs
+  Coreness 213: 2 DOIs
+  Coreness 215: 1 DOIs
+  Coreness 216: 1 DOIs
+  Coreness 217: 10 DOIs
+  Coreness 218: 2 DOIs
+  Coreness 219: 1 DOIs
+  Coreness 220: 3 DOIs
+  Coreness 222: 286 DOIs
+
+── Saving outputs ────────────────────────────────
+
+  Base file: DOIs_with_max_TSC_values_20260330_225410.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555\AF - DOIs_Communities_20260401_124055.csv
+  Plot saved → 'AF - Community_sizes_20260401_124055.png'
+  Plot saved → 'AF - Community_sizes_20260401_124055_dark.png'
+  Bump chart → 'AF - Community_bump_20260401_124055.png'
+  Bump chart → 'AF - Community_bump_20260401_124055_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260401_124056.png'
+  Bump chart → 'AG - Coreness_bump_20260401_124056_dark.png'
+
+✓ Log saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_zero_knowledge_proofs_TF-IDF_20260330_223555\AF - Community_log_20260401_124054.txt
+

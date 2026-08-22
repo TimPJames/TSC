@@ -1,0 +1,5 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AF - Community_log_20260410_134645.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0400
+

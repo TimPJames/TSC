@@ -1,0 +1,437 @@
+
+  [Step 3 – Pass 2] 18 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 18)):
+
+  [1]
+       DOI       : 10.1017/9781009602129
+       Published : 2025-02-28
+       Title     : Elliptic Curves
+       Authors   : Henry McKean; Victor Moll; Alex Kasman
+       Abstract  : The subject of elliptic curves is one of the jewels of nineteenth-century mathematics, originated by Abel, Gauss, Jacobi, and Legendre. This book, reissued with a new Foreword, presents an introductory account of the subject in the style of the original discoverers, with references to and comments a…
+
+  [2]
+       DOI       : 10.1093/oso/9780195367874.003.0008
+       Published : 2009-12-04
+       Title     : Elliptic Curves
+       Authors   : Norman R Reilly
+       Abstract  : Although elliptic curves have been studied for many decades and a wealth of information was gained about them, it is only relatively recently that they have gained a certain level of "notoriety". This has been the result of the application of the theory of elliptic curves to such things as Fermat's …
+
+  [3]
+       DOI       : 10.1093/oso/9780199219858.003.0025
+       Published : 2008-07-31
+       Title     : Elliptic Curves
+       Authors   : G H Hardy; E . M Wright
+       Abstract  : The congruent number problem. A congruent numberis a rational number qthat is the area of a right triangle, all of whose sides have rational length. We observe that if the triangle has sides a, b, and c, and if sis a rational number, then s2qis also a congruent number whose associated triangle has s…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 18))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1093/oso/9780199219858.003.0025
+       Published : 2008-07-31
+       Title     : Elliptic Curves
+       Authors   : G H Hardy; E . M Wright
+       Abstract  : The congruent number problem. A congruent numberis a rational number qthat is the area of a right triangle, all of whose sides have rational length. We observe that if the triangle has sides a, b, and c, and if sis a rational number, then s2qis also a congruent number whose associated triangle has s…
+
+  [2]
+       DOI       : 10.1017/9781009602129
+       Published : 2025-02-28
+       Title     : Elliptic Curves
+       Authors   : Henry McKean; Victor Moll; Alex Kasman
+       Abstract  : The subject of elliptic curves is one of the jewels of nineteenth-century mathematics, originated by Abel, Gauss, Jacobi, and Legendre. This book, reissued with a new Foreword, presents an introductory account of the subject in the style of the original discoverers, with references to and comments a…
+
+  [3]
+       DOI       : 10.1093/oso/9780195367874.003.0008
+       Published : 2009-12-04
+       Title     : Elliptic Curves
+       Authors   : Norman R Reilly
+       Abstract  : Although elliptic curves have been studied for many decades and a wealth of information was gained about them, it is only relatively recently that they have gained a certain level of "notoriety". This has been the result of the application of the theory of elliptic curves to such things as Fermat's …
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.1093/oso/9780199219858.003.0025  |  G H Hardy; E . M Wright  |  2008-07-31
+    [2]  10.1017/9781009602129  |  Henry McKean; Victor Moll; Alex Kasman  |  2025-02-28
+    [3]  10.1093/oso/9780195367874.003.0008  |  Norman R Reilly  |  2009-12-04
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+
+
+  [1/3]
+       DOI       : 10.1093/oso/9780199219858.003.0025
+       Published : 2008-07-31
+       Authors   : G H Hardy; E . M Wright
+       Title     : Elliptic Curves
+  → Keeping [1]: 10.1093/oso/9780199219858.003.0025
+  → Keeping [2]: 10.1017/9781009602129
+  → Keeping [3]: 10.1093/oso/9780195367874.003.0008
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 18)):
+
+  [1]
+       DOI       : 10.1017/fms.2024.127
+       Published : 2025-01-01
+       Title     : Average Analytic Ranks of Elliptic Curves over Number Fields
+       Authors   : Tristan Phillips
+       Abstract  : We give a conditional bound for the average analytic rank of elliptic curves over an arbitrary number field. In particular, under the assumptions that all elliptic curves over a number field K are modular and have L-functions which satisfy the Generalized Riemann Hypothesis, we show that the average…
+
+  [2]
+       DOI       : 10.48550/arxiv.2205.09527
+       Published : 2022-05-19
+       Title     : Average analytic ranks of elliptic curves over number fields
+       Authors   : Tristan Phillips
+       Abstract  : A conditional bound is given for the average analytic rank of elliptic curves over an arbitrary number field. In particular, under the assumptions that all elliptic curves over a number field are modular and have -functions which satisfy the Generalized Riemann Hypothesis, it is shown that the avera…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1017/fms.2024.127  |  Average Analytic Ranks of Elliptic Curves over Number Fields
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 18)):
+
+  [1]
+       DOI       : 10.3390/cryptography7030037
+       Published : 2023-07-19
+       Title     : A New RSA Variant Based on Elliptic Curves
+       Authors   : Maher Boudabra; Abderrahmane Nitaj
+       Abstract  : In this paper, we propose a new scheme based on ephemeral elliptic curves over a finite ring with an RSA modulus. The new scheme is a variant of both the RSA and the KMOV cryptosystems and can be used for both signature and encryption. We study the security of the new scheme and show that it is immu…
+
+  [2]
+       DOI       : 10.20944/preprints202306.0107.v1
+       Published : 2023-06-01
+       Title     : A New RSA Variant Based on Elliptic Curves
+       Authors   : Maher Boudabra; Abderrahmane Nitaj
+       Abstract  : We propose a new scheme based on ephemeral elliptic curves over the ring Z/nZ where n=pq is an RSA modulus with p=up^2+vp^2, q=uq^2+vq^2, upuq3(mod4). The new scheme is a variant of both the RSA and the KMOV cryptosystems. The scheme can be used for both signature and encryption. We study the securi…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.3390/cryptography7030037  |  A New RSA Variant Based on Elliptic Curves
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 18)):
+
+  [1]
+       DOI       : 10.1090/proc/16182
+       Published : 2023-01-24
+       Title     : Analytic ranks of elliptic curves over number fields
+       Authors   : Peter Cho
+       Abstract  : Let be an elliptic curve over . Then, we show that the average analytic rank of over cyclic extensions of degree over with a prime not equal to , is at most , where is the analytic rank of the elliptic curve over . This bound is independent of the degree . Using a recent result of Bhargava, Taniguch…
+
+  [2]
+       DOI       : 10.48550/arxiv.2005.07909
+       Published : 2020-05-16
+       Title     : Analytic ranks of elliptic curves over number fields
+       Authors   : Peter J. Cho
+       Abstract  : Let be an elliptic curve over . Then, we show that the average analytic rank of over cyclic extensions of degree over with a prime not equal to , is at most , where is the analytic rank of the elliptic curve over . This bound is independent of the degree Also, we also obtain some average analytic ra…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1090/proc/16182  |  Analytic ranks of elliptic curves over number fields
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 18)):
+
+  [1]
+       DOI       : 10.4171/dm/874
+       Published : 2022-01-01
+       Title     : Additive decompositions for rings of modular forms
+       Authors   : Lennart Meier
+       Abstract  : We study rings of integral modular forms for congruence subgroups as modules over the ring of integral modular forms for SL_2\mathbb{Z} . In many cases these modules are free or decompose at least into well-understood pieces. We apply this to characterize which rings of modular forms are Cohen-Macau…
+
+  [2]
+       DOI       : 10.48550/arxiv.1710.03461
+       Published : 2017-10-10
+       Title     : Additive decompositions for rings of modular forms
+       Authors   : Lennart Meier
+       Abstract  : We study rings of integral modular forms for congruence subgroups as modules over the ring of integral modular forms for the full modular group. In many cases these modules are free or decompose at least into well-understood pieces. We apply this to characterize which rings of modular forms are Cohe…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.4171/dm/874  |  Additive decompositions for rings of modular forms
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 18)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2001.04310
+       Published : 2020-01-13
+       Title     : On Shafarevich-Tate groups and analytic ranks in families of modular forms, I. Hida families
+       Authors   : Stefano Vigni
+       Abstract  : Let be a newform of weight , square-free level and trivial character, let be the abelian variety attached to and for every good ordinary prime for let be the -adic Hida family through . We prove that, for all but finitely many primes as above, if is an elliptic curve such that has rank and the -prim…
+
+  [2]
+       DOI       : 10.2422/2036-2145.202206_011
+       Published : 2020-01-13
+       Title     : On Shafarevich-Tate groups and analytic ranks in families of modular forms, I. Hida families
+       Authors   : S. Vigni
+       Abstract  : Let be a newform of weight , square-free level and trivial character, let be the abelian variety attached to and for every good ordinary prime for let be the -adic Hida family through . We prove that, for all but finitely many primes as above, if is an elliptic curve such that has rank and the -prim…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.2422/2036-2145.202206_011  |  On Shafarevich-Tate groups and analytic ranks in families of
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 18)):
+
+  [1]
+       DOI       : 10.5802/aif.3270
+       Published : 2019-06-03
+       Title     : Arithmetic properties of signed Selmer groups at non-ordinary primes
+       Authors   : Jeffrey Hatley; Antonio Lei
+       Abstract  : We extend many results on Selmer groups for elliptic curves and modular forms to the non-ordinary setting. More precisely, we study the signed Selmer groups defined using the machinery of Wach modules over -cyclotomic extensions. First, we provide a definition of residual and non-primitive Selmer gr…
+
+  [2]
+       DOI       : 10.48550/arxiv.1608.00257
+       Published : 2016-07-31
+       Title     : Arithmetic properties of signed Selmer groups at non-ordinary primes
+       Authors   : Jeffrey Hatley; Antonio Lei
+       Abstract  : We extend many results on Selmer groups for elliptic curves and modular forms to the non-ordinary setting. More precisely, we study the signed Selmer groups defined using the machinery of Wach modules over -cyclotomic extensions. First, we provide a definition of residual and non-primitive Selmer gr…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.5802/aif.3270  |  Arithmetic properties of signed Selmer groups at non-ordinar
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (8 of 18)):
+
+  [1]
+       DOI       : 10.4171/jems/893
+       Published : 2019-05-21
+       Title     : A heuristic for boundedness of ranks of elliptic curves
+       Authors   : Jennifer Park; Bjorn Poonen; John Voight; Melanie Matchett Wood
+       Abstract  : We present a heuristic that suggests that ranks of elliptic curves E over \mathbb Q are bounded. In fact, it suggests that there are only finitely many E of rank greater than 21. Our heuristic is based on modeling the ranks and Shafarevich-Tate groups of elliptic curves simultaneously, and relies on…
+
+  [2]
+       DOI       : 10.48550/arxiv.1602.01431
+       Published : 2016-02-03
+       Title     : A heuristic for boundedness of ranks of elliptic curves
+       Authors   : Jennifer Park; Bjorn Poonen; John Voight; Melanie Matchett Wood
+       Abstract  : We present a heuristic that suggests that ranks of elliptic curves over the rationals are bounded. In fact, it suggests that there are only finitely many elliptic curves of rank greater than 21. Our heuristic is based on modeling the ranks and Shafarevich-Tate groups of elliptic curves simultaneousl…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.4171/jems/893  |  A heuristic for boundedness of ranks of elliptic curves
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 18)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1801.07464
+       Published : 2018-01-23
+       Title     : String-theory Realization of Modular Forms for Elliptic Curves with Complex Multiplication
+       Authors   : Satoshi Kondo; Taizan Watari
+       Abstract  : It is known that the L-function of an elliptic curve defined over Q is given by the Mellin transform of a modular form of weight 2. Does that modular form have anything to do with string theory? In this article, we address a question along this line for elliptic curves that have complex multiplicati…
+
+  [2]
+       DOI       : 10.1007/s00220-019-03302-0
+       Published : 2018-01-23
+       Title     : String-Theory Realization of Modular Forms for Elliptic Curves with Complex Multiplication
+       Authors   : S. Kondo; T. Watari
+       Abstract  : It is known that the L-function of an elliptic curve defined over Q\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} is given by the Melli…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1007/s00220-019-03302-0  |  String-Theory Realization of Modular Forms for Elliptic Curv
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 18)):
+
+  [1]
+       DOI       : 10.1142/s1793042117501202
+       Published : 2017-09-20
+       Title     : On the ranks of elliptic curves with isogenies
+       Authors   : Harris B. Daniels; Hannah Goodwillie
+       Abstract  : In recent years, the question of whether the ranks of elliptic curves defined over [Formula: see text] are unbounded has garnered much attention. One can create refined versions of this question by restricting one's attention to elliptic curves over [Formula: see text] with a certain algebraic struc…
+
+  [2]
+       DOI       : 10.48550/arxiv.1611.01329
+       Published : 2016-11-04
+       Title     : On the ranks of elliptic curves with isogenies
+       Authors   : Harris B. Daniels; Hannah Goodwillie
+       Abstract  : In recent years, the question of whether the ranks of elliptic curves defined over are unbounded has garnered much attention. One can create refined versions of this question by restricting one's attention to elliptic curves over with a certain algebraic structure, e.g., with a rational point of a g…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1142/s1793042117501202  |  On the ranks of elliptic curves with isogenies
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (11 of 18)):
+
+  [1]
+       DOI       : 10.1090/tran/6744
+       Published : 2016-10-12
+       Title     : Selmer ranks of quadratic twists of elliptic curves with partial rational two-torsion
+       Authors   : Zev Klagsbrun
+       Abstract  : This paper investigates which integers can appear as 2-Selmer ranks within the quadratic twist family of an elliptic curve defined over a number field with . We show that if does not have a cyclic 4-isogeny defined over with kernel containing , then subject only to constant 2-Selmer parity, each non…
+
+  [2]
+       DOI       : 10.48550/arxiv.1201.5408
+       Published : 2012-01-25
+       Title     : Selmer Ranks of Quadratic Twists of Elliptic Curves with Partial Rational Two-Torsion
+       Authors   : Zev Klagsbrun
+       Abstract  : This paper investigates which integers can appear as 2-Selmer ranks within the quadratic twist family of an elliptic curve E defined over a number field K with E(K)[2] = Z/2Z. We show that if E does not have a cyclic 4-isogeny defined over K(E[2]), then subject only to constant 2-Selmer parity, each…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1090/tran/6744  |  Selmer ranks of quadratic twists of elliptic curves with par
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (12 of 18)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1602.01894
+       Published : 2016-02-05
+       Title     : Databases of elliptic curves ordered by height and distributions of Selmer groups and ranks
+       Authors   : Jennifer S. Balakrishnan; Wei Ho; Nathan Kaplan; Simon Spicer; William Stein; James Weigandt
+       Abstract  : Most systematic tables of data associated to ranks of elliptic curves order the curves by conductor. Recent developments, led by work of Bhargava-Shankar studying the average sizes of -Selmer groups, have given new upper bounds on the average algebraic rank in families of elliptic curves over ordere…
+
+  [2]
+       DOI       : 10.1112/s1461157016000152
+       Published : 2016-01-01
+       Title     : Databases of elliptic curves ordered by height and distributions of Selmer groups and ranks
+       Authors   : Jennifer S. Balakrishnan; Wei Ho; Nathan Kaplan; Simon Spicer; William Stein; James Weigandt
+       Abstract  : Most systematic tables of data associated to ranks of elliptic curves order the curves by conductor. Recent developments, led by work of Bhargava and Shankar studying the average sizes of -Selmer groups, have given new upper bounds on the average algebraic rank in families of elliptic curves over , …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.48550/arxiv.1602.01894  |  Databases of elliptic curves ordered by height and distribut
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (13 of 18)):
+
+  [1]
+       DOI       : 10.1007/s40993-015-0026-2
+       Published : 2015-12-01
+       Title     : Weierstrass mock modular forms and elliptic curves
+       Authors   : Claudia Alfes; Michael J. Griffin; K. Ono; Larry Rolen
+       Abstract  : Mock modular forms, which give the theoretical framework for Ramanujan's enigmatic mock theta functions, play many roles in mathematics. We study their role in the context of modular parameterizations of elliptic curves E/Q\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usep…
+
+  [2]
+       DOI       : 10.48550/arxiv.1406.0443
+       Published : 2014-06-02
+       Title     : Weierstrass mock modular forms and elliptic curves
+       Authors   : Claudia Alfes; Michael Griffin; Ken Ono; Larry Rolen
+       Abstract  : Mock modular forms, which give the theoretical framework for Ramanujan's enigmatic mock theta functions, play many roles in mathematics. We study their role in the context of modular parameterizations of elliptic curves . We show that mock modular forms which arise from Weierstrass -functions encode…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1007/s40993-015-0026-2  |  Weierstrass mock modular forms and elliptic curves
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (14 of 18)):
+
+  [1]
+       DOI       : 10.4007/annals.2015.181.2.4
+       Published : 2014-11-03
+       Title     : Ternary cubic forms having bounded invariants, and the existence of a positive proportion of elliptic curves having rank
+       Authors   : Manjul Bhargava; Arul Shankar
+       Abstract  : We prove an asymptotic formula for the number of SL3(Z)-equivalence classes of integral ternary cubic forms having bounded invariants. We use this result to show that the average size of the 3-Selmer group of all elliptic curves, when ordered by height, is equal to 4. This implies that the average r…
+
+  [2]
+       DOI       : 10.48550/arxiv.1007.0052
+       Published : 2010-07-01
+       Title     : Ternary cubic forms having bounded invariants, and the existence of a positive proportion of elliptic curves having rank
+       Authors   : Manjul Bhargava; Arul Shankar
+       Abstract  : We prove an asymptotic formula for the number of -equivalence classes of integral ternary cubic forms having bounded invariants. We use this result to show that the average size of the 3-Selmer group of all elliptic curves, when ordered by height, is 4. This implies that the average rank of all elli…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.4007/annals.2015.181.2.4  |  Ternary cubic forms having bounded invariants, and the exist
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (15 of 18)):
+
+  [1]
+       DOI       : 10.4007/annals.2013.178.1.5
+       Published : 2013-04-04
+       Title     : Disparity in Selmer ranks of quadratic twists of elliptic curves
+       Authors   : Zev Klagsbrun; Barry Mazur; Karl Rubin
+       Abstract  : We study the parity of 2-Selmer ranks in the family of quadratic twists of an arbitrary elliptic curve E over an arbitrary number field K. We prove that the fraction of twists (of a given elliptic curve over a fixed number field) having even 2-Selmer rank exists as a stable limit over the family of …
+
+  [2]
+       DOI       : 10.48550/arxiv.1111.2321
+       Published : 2011-11-09
+       Title     : Disparity in Selmer ranks of quadratic twists of elliptic curves
+       Authors   : Zev Klagsbrun; Barry Mazur; Karl Rubin
+       Abstract  : We study the parity of 2-Selmer ranks in the family of quadratic twists of an arbitrary elliptic curve E over an arbitrary number field K. We prove that the fraction of twists (of a given elliptic curve over a fixed number field) having even 2-Selmer rank exists as a stable limit over the family of …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.4007/annals.2013.178.1.5  |  Disparity in Selmer ranks of quadratic twists of elliptic cu
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (16 of 18)):
+
+  [1]
+       DOI       : 10.1093/imrn/rnt013
+       Published : 2013-02-15
+       Title     : Ranks of Elliptic Curves with Prescribed Torsion over Number Fields
+       Authors   : Johan Bosman; Peter Bruin; Andrej Dujella; Filip Najman
+       Abstract  : We study the structure of Mordell-Weil groups of elliptic curves over number fields of degrees 2, 3, and 4. We show that if T is a group, then either the class of all elliptic curves over quadratic fields with torsion subgroup T is empty or it contains curves of rank 0 as well as curves of positive …
+
+  [2]
+       DOI       : 10.48550/arxiv.1201.0252
+       Published : 2011-12-31
+       Title     : Ranks of elliptic curves with prescribed torsion over number fields
+       Authors   : Johan Bosman; Peter Bruin; Andrej Dujella; Filip Najman
+       Abstract  : We study the structure of the Mordell--Weil group of elliptic curves over number fields of degree 2, 3, and 4. We show that if is a group, then either the class of all elliptic curves over quadratic fields with torsion subgroup is empty, or it contains curves of rank~0 as well as curves of positive …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1093/imrn/rnt013  |  Ranks of Elliptic Curves with Prescribed Torsion over Number
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (17 of 18)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1208.4769
+       Published : 2012-08-23
+       Title     : Elliptic curves, modular forms, and sums of Hurwitz class numbers
+       Authors   : Brittany Brown; Neil J. Calkin; Timothy B. Flowers; Kevin James; Ethan Smith; Amy Stout
+       Abstract  : Let H(N) denote the Hurwitz class number. It is known that if is a prime, then {equation*} \sum_{|r|<2\sqrt p}H(4p-r^2) = 2p. {equation*} In this paper, we investigate the behavior of this sum with the additional condition . Three different methods will be explored for determining the values of such…
+
+  [2]
+       DOI       : 10.1016/j.jnt.2007.10.008
+       Published : 2008-06-01
+       Title     : Elliptic curves, modular forms, and sums of Hurwitz class numbers
+       Authors   : Brittany Brown; Neil J. Calkin; Timothy B. Flowers; K. James; Ethan Smith; A. Stout
+       Abstract  : Let H(N) denote the Hurwitz class number. It is known that if p is a prime, then |r|<2pH(4p-r2)=2p. In this paper, we investigate the behavior of this sum with the additional condition rc(modm). Three different methods will be explored for determining the values of such sums. First, we will count is…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.48550/arxiv.1208.4769  |  Elliptic curves, modular forms, and sums of Hurwitz class nu
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (18 of 18)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1007.0535
+       Published : 2010-07-04
+       Title     : The Ising model: from elliptic curves to modular forms and Calabi-Yau equations
+       Authors   : A. Bostan; S. Boukraa; S. Hassani; M. van Hoeij; J. -M. Maillard; J-A. Weil; N. Zenine
+       Abstract  : We show that almost all the linear differential operators factors obtained in the analysis of the n-particle contribution of the susceptibility of the Ising model for , are operators "associated with elliptic curves". Beyond the simplest factors which are homomorphic to symmetric powers of the secon…
+
+  [2]
+       DOI       : 10.1088/1751-8113/44/4/045204
+       Published : 2010-07-04
+       Title     : The Ising model: from elliptic curves to modular forms and Calabi-Yau equations
+       Authors   : Alin Bostan; S. Boukraa; S. Hassani; M. V. Hoeij; J. Maillard; Jacques-Arthur Weil; N. Zenine
+       Abstract  : We show that almost all the linear differential operators factors obtained in the analysis of the n-particle contributions 's of the susceptibility of the Ising model for n 6 are linear differential operators associated with elliptic curves. Beyond the simplest differential operators factors which a…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1088/1751-8113/44/4/045204  |  The Ising model: from elliptic curves to modular forms and C
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (1 of 1)):
+
+  [1]
+       DOI       : 10.5281/zenodo.18984166
+       Published : 2026-03-12
+       Title     : Birch-Swinnerton-Dyer as a Discrete-Continuous Oneness Jurisdiction Problem
+       Authors   : Dedong Zhan
+       Abstract  : Arithmetic-Spectral-Oneness treats the Birch-Swinnerton-Dyer conjecture not as a mere numerical coincidence between two quantities, but as a deeper problem of lawful identity between a discrete arithmetic whole and a continuous spectral readout. On the surface, BSD links rational points on an ellipt…
+
+  [2]
+       DOI       : 10.5281/zenodo.18987991
+       Published : 2023-03-12
+       Title     : M05 Birch-Swinnerton-Dyer as a Discrete-Continuous Oneness Jurisdiction Problem
+       Authors   : Dedong Zhan
+       Abstract  : Arithmetic-Spectral-Oneness treats the Birch-Swinnerton-Dyer conjecture not as a mere numerical coincidence between two quantities, but as a deeper problem of lawful identity between a discrete arithmetic whole and a continuous spectral readout. On the surface, BSD links rational points on an ellipt…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.5281/zenodo.18984166  |  Birch-Swinnerton-Dyer as a Discrete-Continuous Oneness Juris
+
+  [Step 3 – Pass 4] 2 record(s) have blank authors — review required.
+

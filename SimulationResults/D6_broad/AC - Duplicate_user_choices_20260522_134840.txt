@@ -1,0 +1,1066 @@
+════════════════════════════════════════════════════════════
+  Cleaning log: combined_results_clean_20260522_134840.csv
+  Started     : 20260522_134840
+════════════════════════════════════════════════════════════
+
+  [Step 3 – Pass 1] No identical title + abstract duplicates found.
+
+  [Step 3 – Pass 2] 17 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 17)):
+
+  [1]
+       DOI       : 10.4018/979-8-3373-3326-7.ch007
+       Published : 2025-08-29
+       Title     : Quantum Cryptography
+       Authors   : Nakul Pareek; Neha Saini
+       Abstract  : As cities adopt integrated IoT ecosystems and data-driven urban governance, traditional encryption faces the threat of obsolescence by quantum computing attacks. This chapter explores the application of quantum cryptography in protecting smart urban infrastructure, with a focus on quantum key distri…
+
+  [2]
+       DOI       : 10.4018/979-8-3693-1642-9.ch007
+       Published : 2024-03-04
+       Title     : Quantum Cryptography
+       Authors   : R. Thenmozhi; D. Vetriselvi; A. Arokiaraj Jovith
+       Abstract  : Cryptography is the process of encrypting data or transforming plain text to ciphertext so that it can be deciphered only by appropriate key. Quantum cryptography employs quantum physics principles to encrypt and transport data in an unpackable manner. Quantum key distribution (QKD) is a technique f…
+
+  [3]
+       DOI       : 10.4018/979-8-3693-1168-4.ch019
+       Published : 2024-01-31
+       Title     : Quantum Cryptography
+       Authors   : Sonam Chauhan; Shipra Srivastava; Ramveer Singh; Ajay Sharma; Deo Brat Ojha
+       Abstract  : The world in which we live is heavily reliant on digital communications. Traditional communication methodologies have been replaced with digital communications methods such as e-mail, instant messages, social media, and many more. Every day, terabytes of data are generated and shared around the worl…
+
+  [4]
+       DOI       : 10.4018/978-1-7998-6677-0.ch001
+       Published : 2021-01-01
+       Title     : Quantum Cryptography
+       Authors   : Satish Rupraoji Billewar; Gaurav Vishnu Londhe; Sunil Bahiru Ghane
+       Abstract  : History repeats itself. Quantum cryptography has started a revolution of quantum computing and has repeated the days of Einstein's research paper on "Theory of Relativity," which changed the world's perceptions of physics completely written based on Newton's laws. Quantum cryptography is going to ch…
+
+  [5]
+       DOI       : 10.4018/978-1-7998-6677-0.ch003
+       Published : 2021-01-01
+       Title     : Quantum Cryptography
+       Authors   : S. Venkata Lakshmi; Sujatha Krishnamoorthy; Mudassir Khan; Neeraj Kumar; Varsha Sahni
+       Abstract  : Cryptography is used for the secure communication in which two parties are involved. The most popular cryptographic issue is the transmission of confidential messages. The privacy is maintained using the cryptographic protocol. The security of quantum cryptography relies more on physics including qu…
+
+  [6]
+       DOI       : 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+       Published : 2020-11-24
+       Title     : Quantum Cryptography
+       Authors   : BENITAMARTINA S
+       Abstract  : Nowadays, information is exchanged among the computer network. These data and information are involved in the business, military, academic education, research and etc. which are shared around the world in both private and public networks. Since, many categories of data are required restriction on th…
+
+  [7]
+       DOI       : 10.1007/978-3-642-04117-4_8
+       Published : 2019-10-16
+       Title     : Quantum Cryptography
+       Authors   : Christian Monyk
+       Abstract  : The Internet can be thought of as a channel of information being sent from you to everyone else connected to the Internet. If you wanted to transmit your sensitive information (such as bank account numbers or military secrets) over the Internet, then you have to ensure that only the persons you inte…
+
+  [8]
+       DOI       : 10.4018/978-1-5225-5634-3.ch041
+       Published : 2018-01-01
+       Title     : Quantum Cryptography
+       Authors   : Ahmed Mahmoud Abbas
+       Abstract  : Quantum cryptography is known the most up-to-date in domain of realistic cryptography notably the menace of quantum cryptanalysis which threatens security firmness of public key cryptography. Quantum cryptography has a famous scheme known as Quantum Key Exchange (QKE), that administrates generation …
+
+  [9]
+       DOI       : 10.48550/arxiv.1108.1718
+       Published : 2011-08-08
+       Title     : Quantum cryptography
+       Authors   : Dag Roar Hjelme; Lars Lydersen; Vadim Makarov
+       Abstract  : This is a chapter on quantum cryptography for the book "A Multidisciplinary Introduction to Information Security" to be published by CRC Press in 2011/2012. The chapter aims to introduce the topic to undergraduate-level and continuing-education students specializing in information and communication …
+
+  [10]
+       DOI       : 10.1093/oso/9780198527626.003.0006
+       Published : 2009-05-28
+       Title     : Quantum cryptography
+       Authors   : Stephen Barnett
+       Abstract  : The practical implementation of quantum information technologies requires, for the most part, highly advanced and currently experimental procedures. One exception is quantum cryptography, or quantum key distribution, which has been successfully demonstrated in many laboratories and has reached an ad…
+
+  [11]
+       DOI       : 10.1145/1242471.1242474
+       Published : 2007-07-06
+       Title     : Quantum cryptography
+       Authors   : Dagmar Bruß; Gábor Erdélyi; Tim Meyer; Tobias Riege; Jörg Rothe
+       Abstract  : We survey some results in quantum cryptography. After a brief introduction to classical cryptography, we provide the quantum-mechanical background needed to present some fundamental protocols from quantum cryptography. In particular, we review quantum key distribution via the BB84 protocol and its s…
+
+  [12]
+       DOI       : 10.1093/oso/9780198566724.003.0012
+       Published : 2006-04-27
+       Title     : Quantum cryptography
+       Authors   : Mark Fox
+       Abstract  : The fundamental concepts of quantum cryptography were developed in the 1980s and the first experimental proof of principle was given in 1992. Since then, the subject has developed to the point where demonstration systems have been installed that run over long distances down standard telecommunicatio…
+
+  [13]
+       DOI       : 10.48550/arxiv.quant-ph/0601207
+       Published : 2006-01-31
+       Title     : Quantum Cryptography
+       Authors   : Miloslav Dusek; Norbert Lutkenhaus; Martin Hendrych
+       Abstract  : Elementary review article on quantum cryptography.
+
+  [14]
+       DOI       : 10.1109/msp.2004.54
+       Published : 2004-07-01
+       Title     : Quantum cryptography
+       Authors   : Chip Elliott
+       Abstract  : Though most people think they are science fiction, quantum cryptography systems are now operational, with prototypes protecting Internet traffic across metropolitan areas. These systems are so novel that we can consider quantum cryptography, or more properly, quantum key distribution (QKD), as the t…
+
+  [15]
+       DOI       : 10.1103/RevModPhys.74.145
+       Published : 2001-01-19
+       Title     : Quantum cryptography
+       Authors   : N. Gisin; Grégoire Ribordy; Wolfgang Tittel; H. Zbinden
+       Abstract  : Quantum cryptography could well be the first application of quantum mechanics at the individual quanta level. The very fast progress in both theory and experiments over the recent years are reviewed, with emphasis on open questions and technological issues.
+
+  [16]
+       DOI       : 10.1007/978-3-662-04209-0_2
+       Published : 2000-01-01
+       Title     : Quantum Cryptography
+       Authors   : Artur Ekert; Nicolas Gisin; B. Hüttner; Hitoshi Inamori; Harald Weinfurter
+       Abstract  : Human desire to communicate secretly is at least as old as writing itself and goes back to the beginnings of our civilisation. Methods of secret communication were developed by many ancient societies, including those of Mesopotamia, Egypt, India, and China, but details regarding the origins of crypt…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 17))  —  sorted by author:
+
+  [1]
+       DOI       : 10.4018/978-1-5225-5634-3.ch041
+       Published : 2018-01-01
+       Title     : Quantum Cryptography
+       Authors   : Ahmed Mahmoud Abbas
+       Abstract  : Quantum cryptography is known the most up-to-date in domain of realistic cryptography notably the menace of quantum cryptanalysis which threatens security firmness of public key cryptography. Quantum cryptography has a famous scheme known as Quantum Key Exchange (QKE), that administrates generation …
+
+  [2]
+       DOI       : 10.1007/978-3-662-04209-0_2
+       Published : 2000-01-01
+       Title     : Quantum Cryptography
+       Authors   : Artur Ekert; Nicolas Gisin; B. Hüttner; Hitoshi Inamori; Harald Weinfurter
+       Abstract  : Human desire to communicate secretly is at least as old as writing itself and goes back to the beginnings of our civilisation. Methods of secret communication were developed by many ancient societies, including those of Mesopotamia, Egypt, India, and China, but details regarding the origins of crypt…
+
+  [3]
+       DOI       : 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+       Published : 2020-11-24
+       Title     : Quantum Cryptography
+       Authors   : BENITAMARTINA S
+       Abstract  : Nowadays, information is exchanged among the computer network. These data and information are involved in the business, military, academic education, research and etc. which are shared around the world in both private and public networks. Since, many categories of data are required restriction on th…
+
+  [4]
+       DOI       : 10.1109/msp.2004.54
+       Published : 2004-07-01
+       Title     : Quantum cryptography
+       Authors   : Chip Elliott
+       Abstract  : Though most people think they are science fiction, quantum cryptography systems are now operational, with prototypes protecting Internet traffic across metropolitan areas. These systems are so novel that we can consider quantum cryptography, or more properly, quantum key distribution (QKD), as the t…
+
+  [5]
+       DOI       : 10.1007/978-3-642-04117-4_8
+       Published : 2019-10-16
+       Title     : Quantum Cryptography
+       Authors   : Christian Monyk
+       Abstract  : The Internet can be thought of as a channel of information being sent from you to everyone else connected to the Internet. If you wanted to transmit your sensitive information (such as bank account numbers or military secrets) over the Internet, then you have to ensure that only the persons you inte…
+
+  [6]
+       DOI       : 10.48550/arxiv.1108.1718
+       Published : 2011-08-08
+       Title     : Quantum cryptography
+       Authors   : Dag Roar Hjelme; Lars Lydersen; Vadim Makarov
+       Abstract  : This is a chapter on quantum cryptography for the book "A Multidisciplinary Introduction to Information Security" to be published by CRC Press in 2011/2012. The chapter aims to introduce the topic to undergraduate-level and continuing-education students specializing in information and communication …
+
+  [7]
+       DOI       : 10.1145/1242471.1242474
+       Published : 2007-07-06
+       Title     : Quantum cryptography
+       Authors   : Dagmar Bruß; Gábor Erdélyi; Tim Meyer; Tobias Riege; Jörg Rothe
+       Abstract  : We survey some results in quantum cryptography. After a brief introduction to classical cryptography, we provide the quantum-mechanical background needed to present some fundamental protocols from quantum cryptography. In particular, we review quantum key distribution via the BB84 protocol and its s…
+
+  [8]
+       DOI       : 10.1093/oso/9780198566724.003.0012
+       Published : 2006-04-27
+       Title     : Quantum cryptography
+       Authors   : Mark Fox
+       Abstract  : The fundamental concepts of quantum cryptography were developed in the 1980s and the first experimental proof of principle was given in 1992. Since then, the subject has developed to the point where demonstration systems have been installed that run over long distances down standard telecommunicatio…
+
+  [9]
+       DOI       : 10.48550/arxiv.quant-ph/0601207
+       Published : 2006-01-31
+       Title     : Quantum Cryptography
+       Authors   : Miloslav Dusek; Norbert Lutkenhaus; Martin Hendrych
+       Abstract  : Elementary review article on quantum cryptography.
+
+  [10]
+       DOI       : 10.1103/RevModPhys.74.145
+       Published : 2001-01-19
+       Title     : Quantum cryptography
+       Authors   : N. Gisin; Grégoire Ribordy; Wolfgang Tittel; H. Zbinden
+       Abstract  : Quantum cryptography could well be the first application of quantum mechanics at the individual quanta level. The very fast progress in both theory and experiments over the recent years are reviewed, with emphasis on open questions and technological issues.
+
+  [11]
+       DOI       : 10.4018/979-8-3373-3326-7.ch007
+       Published : 2025-08-29
+       Title     : Quantum Cryptography
+       Authors   : Nakul Pareek; Neha Saini
+       Abstract  : As cities adopt integrated IoT ecosystems and data-driven urban governance, traditional encryption faces the threat of obsolescence by quantum computing attacks. This chapter explores the application of quantum cryptography in protecting smart urban infrastructure, with a focus on quantum key distri…
+
+  [12]
+       DOI       : 10.4018/979-8-3693-1642-9.ch007
+       Published : 2024-03-04
+       Title     : Quantum Cryptography
+       Authors   : R. Thenmozhi; D. Vetriselvi; A. Arokiaraj Jovith
+       Abstract  : Cryptography is the process of encrypting data or transforming plain text to ciphertext so that it can be deciphered only by appropriate key. Quantum cryptography employs quantum physics principles to encrypt and transport data in an unpackable manner. Quantum key distribution (QKD) is a technique f…
+
+  [13]
+       DOI       : 10.4018/978-1-7998-6677-0.ch003
+       Published : 2021-01-01
+       Title     : Quantum Cryptography
+       Authors   : S. Venkata Lakshmi; Sujatha Krishnamoorthy; Mudassir Khan; Neeraj Kumar; Varsha Sahni
+       Abstract  : Cryptography is used for the secure communication in which two parties are involved. The most popular cryptographic issue is the transmission of confidential messages. The privacy is maintained using the cryptographic protocol. The security of quantum cryptography relies more on physics including qu…
+
+  [14]
+       DOI       : 10.4018/978-1-7998-6677-0.ch001
+       Published : 2021-01-01
+       Title     : Quantum Cryptography
+       Authors   : Satish Rupraoji Billewar; Gaurav Vishnu Londhe; Sunil Bahiru Ghane
+       Abstract  : History repeats itself. Quantum cryptography has started a revolution of quantum computing and has repeated the days of Einstein's research paper on "Theory of Relativity," which changed the world's perceptions of physics completely written based on Newton's laws. Quantum cryptography is going to ch…
+
+  [15]
+       DOI       : 10.4018/979-8-3693-1168-4.ch019
+       Published : 2024-01-31
+       Title     : Quantum Cryptography
+       Authors   : Sonam Chauhan; Shipra Srivastava; Ramveer Singh; Ajay Sharma; Deo Brat Ojha
+       Abstract  : The world in which we live is heavily reliant on digital communications. Traditional communication methodologies have been replaced with digital communications methods such as e-mail, instant messages, social media, and many more. Every day, terabytes of data are generated and shared around the worl…
+
+  [16]
+       DOI       : 10.1093/oso/9780198527626.003.0006
+       Published : 2009-05-28
+       Title     : Quantum cryptography
+       Authors   : Stephen Barnett
+       Abstract  : The practical implementation of quantum information technologies requires, for the most part, highly advanced and currently experimental procedures. One exception is quantum cryptography, or quantum key distribution, which has been successfully demonstrated in many laboratories and has reached an ad…
+
+  ────────────────────────────────────────────────────────────
+
+  16 records found — compact reference (sorted by author, then date):
+    [1]  10.4018/978-1-5225-5634-3.ch041  |  Ahmed Mahmoud Abbas  |  2018-01-01
+    [2]  10.1007/978-3-662-04209-0_2  |  Artur Ekert; Nicolas Gisin; B. Hüttner; Hitoshi In  |  2000-01-01
+    [3]  10.14293/s2199-1006.1.sor-.ppsdx4a.v1  |  BENITAMARTINA S  |  2020-11-24
+    [4]  10.1109/msp.2004.54  |  Chip Elliott  |  2004-07-01
+    [5]  10.1007/978-3-642-04117-4_8  |  Christian Monyk  |  2019-10-16
+    [6]  10.48550/arxiv.1108.1718  |  Dag Roar Hjelme; Lars Lydersen; Vadim Makarov  |  2011-08-08
+    [7]  10.1145/1242471.1242474  |  Dagmar Bruß; Gábor Erdélyi; Tim Meyer; Tobias Rieg  |  2007-07-06
+    [8]  10.1093/oso/9780198566724.003.0012  |  Mark Fox  |  2006-04-27
+    [9]  10.48550/arxiv.quant-ph/0601207  |  Miloslav Dusek; Norbert Lutkenhaus; Martin Hendryc  |  2006-01-31
+    [10]  10.1103/RevModPhys.74.145  |  N. Gisin; Grégoire Ribordy; Wolfgang Tittel; H. Zb  |  2001-01-19
+    [11]  10.4018/979-8-3373-3326-7.ch007  |  Nakul Pareek; Neha Saini  |  2025-08-29
+    [12]  10.4018/979-8-3693-1642-9.ch007  |  R. Thenmozhi; D. Vetriselvi; A. Arokiaraj Jovith  |  2024-03-04
+    [13]  10.4018/978-1-7998-6677-0.ch003  |  S. Venkata Lakshmi; Sujatha Krishnamoorthy; Mudass  |  2021-01-01
+    [14]  10.4018/978-1-7998-6677-0.ch001  |  Satish Rupraoji Billewar; Gaurav Vishnu Londhe; Su  |  2021-01-01
+    [15]  10.4018/979-8-3693-1168-4.ch019  |  Sonam Chauhan; Shipra Srivastava; Ramveer Singh; A  |  2024-01-31
+    [16]  10.1093/oso/9780198527626.003.0006  |  Stephen Barnett  |  2009-05-28
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/16]
+       DOI       : 10.4018/978-1-5225-5634-3.ch041
+       Published : 2018-01-01
+       Authors   : Ahmed Mahmoud Abbas
+       Title     : Quantum Cryptography
+  → Keeping [1]: 10.4018/978-1-5225-5634-3.ch041
+  → Keeping [2]: 10.1007/978-3-662-04209-0_2
+  → Keeping [3]: 10.14293/s2199-1006.1.sor-.ppsdx4a.v1
+  → Keeping [4]: 10.1109/msp.2004.54
+  → Keeping [5]: 10.1007/978-3-642-04117-4_8
+  → Keeping [6]: 10.48550/arxiv.1108.1718
+  → Keeping [7]: 10.1145/1242471.1242474
+  → Keeping [8]: 10.1093/oso/9780198566724.003.0012
+  → Keeping [9]: 10.48550/arxiv.quant-ph/0601207
+  → Keeping [10]: 10.1103/RevModPhys.74.145
+  → Keeping [11]: 10.4018/979-8-3373-3326-7.ch007
+  → Keeping [12]: 10.4018/979-8-3693-1642-9.ch007
+  → Keeping [13]: 10.4018/978-1-7998-6677-0.ch003
+  → Keeping [14]: 10.4018/978-1-7998-6677-0.ch001
+  → Keeping [15]: 10.4018/979-8-3693-1168-4.ch019
+  → Keeping [16]: 10.1093/oso/9780198527626.003.0006
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 17)):
+
+  [1]
+       DOI       : 10.1093/oso/9780198903277.003.0002
+       Published : 2025-06-30
+       Title     : Historical Cryptosystems
+       Authors   : Keith M. Martin
+       Abstract  : This chapter introduces a number of historical cryptosystems, including the Simple Substitution Cipher, Playfair Cipher, Vigenere Cipher and homophonic encoding, none of which are suitable for modern use. The main aim of doing so is to illustrate the basic concepts and terminology of cryptography in…
+
+  [2]
+       DOI       : 10.1093/actrade/9780192882233.003.0003
+       Published : 2025-02-27
+       Title     : Historical cryptosystems
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : Historical ciphers, including the Caesar Cipher and the Simple Substitution Cipher, are described. Properties of natural language relevant to these ciphers and natural language statistics are discussed. The number of keys of these historical ciphers is determined and their security against exhaustiv…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 17)):
+
+  [1]
+       DOI       : 10.1201/b11517-4
+       Published : 2025-05-05
+       Title     : Cryptography And Network Security
+       Authors   : Krisha Patel
+       Abstract  : Cryptography and network security are foundational domains in the field of information technology and cybersecurity. As digital communication continues to expand, protecting data from unauthorized access, tampering, and interception is paramount. This paper presents a detailed review of the core pri…
+
+  [2]
+       DOI       : 10.1201/9781003337768
+       Published : 2022-10-04
+       Title     : Cryptography and Network Security
+       Authors   : Marcelo Sampaio de Alencar
+       Abstract  : Starting with the historical evolution of computer and communications networks and their security, the book then arrives at the main definitions of cryptography and network security. Next, the basics of information theory, how to measure information, the information associated with a certain source …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 17)):
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/9780197520932.003.0010
+       Published : 2025-04-04
+       Title     : Conclusion
+       Authors   : Ashley S Deeks
+       Abstract  : The Conclusion revisits key lessons and themes of the book. It returns to the hypothetical scenario with which the book started, demonstrating how the solutions proposed in prior chapters would help address the double black box problem that manifests itself in the scenario. This chapter concludes th…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.5622/illinois/9780252044991.003.0007
+       Published : 2023-04-18
+       Title     : Conclusion
+       Authors   : ShinJoung Yeo
+       Abstract  : The political economy of search illustrates deeply transnationalized global capitalism that is interlinked to and interwoven with the internet. For the global power states, the question is not about building a global democratic information system; rather to what extent will the US, China and EU purs…
+
+  [3]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/oso/9780190674014.003.0009
+       Published : 2020-06-25
+       Title     : Conclusion
+       Authors   : Kelly Kessler
+       Abstract  : This final entry draws together some larger conclusions from the previous seven chapters, specifically addressing the complexity of the relationship between the various performance platforms and locales discussed in the book. As well, it poses some suggestions for future historical work regarding th…
+
+  ────────────────────────────────────────────────────────────
+  ℹ️  Record(s) [1, 2, 3] are from the focused query corpus and WILL BE KEPT regardless of your choice.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 17))  —  sorted by author:
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/9780197520932.003.0010
+       Published : 2025-04-04
+       Title     : Conclusion
+       Authors   : Ashley S Deeks
+       Abstract  : The Conclusion revisits key lessons and themes of the book. It returns to the hypothetical scenario with which the book started, demonstrating how the solutions proposed in prior chapters would help address the double black box problem that manifests itself in the scenario. This chapter concludes th…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/oso/9780190674014.003.0009
+       Published : 2020-06-25
+       Title     : Conclusion
+       Authors   : Kelly Kessler
+       Abstract  : This final entry draws together some larger conclusions from the previous seven chapters, specifically addressing the complexity of the relationship between the various performance platforms and locales discussed in the book. As well, it poses some suggestions for future historical work regarding th…
+
+  [3]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.5622/illinois/9780252044991.003.0007
+       Published : 2023-04-18
+       Title     : Conclusion
+       Authors   : ShinJoung Yeo
+       Abstract  : The political economy of search illustrates deeply transnationalized global capitalism that is interlinked to and interwoven with the internet. For the global power states, the question is not about building a global democratic information system; rather to what extent will the US, China and EU purs…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1] [FOCUSED — PROTECTED]  10.1093/9780197520932.003.0010  |  Ashley S Deeks  |  2025-04-04
+    [2] [FOCUSED — PROTECTED]  10.1093/oso/9780190674014.003.0009  |  Kelly Kessler  |  2020-06-25
+    [3] [FOCUSED — PROTECTED]  10.5622/illinois/9780252044991.003.0007  |  ShinJoung Yeo  |  2023-04-18
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.1093/9780197520932.003.0010
+
+  [2/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.1093/oso/9780190674014.003.0009
+
+  [3/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.5622/illinois/9780252044991.003.0007
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 17)):
+
+  [1]
+       DOI       : 10.1093/actrade/9780192882233.001.0001
+       Published : 2025-02-27
+       Title     : Cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : We are far removed from the historical situation in which cryptography was used only by militaries and governments. With vast quantities of sensitive information transferred online by individuals, companies, organizations, and nation-states, cryptography is increasingly important to everyone. Most o…
+
+  [2]
+       DOI       : 10.15864/jmscm.1207
+       Published : 2020-02-01
+       Title     : CRYPTOGRAPHY
+       Authors   : B. Ghosh; Rohit Aich; Arka Khag; Sattam Nayak; Prashant Kumar
+       Abstract  : The word cryptography was coined from two Greek words 'Krypto', meaning hidden and 'graphein' meaning writing. Thus, cryptography means hidden writing. Cryptography is the method of protecting important data and information from third parties called adversaries or the public. It is also known as enc…
+
+  [3]
+       DOI       : 10.1201/9781315282497
+       Published : 2018-08-14
+       Title     : Cryptography
+       Authors   : Douglas R. Stinson; Maura B. Paterson
+       Abstract  : Through three editions, Cryptography: Theory and Practice, has been embraced by instructors and students alike. It offers a comprehensive primer for the subject's fundamentals while presenting the most current advances in cryptography. The authors offer comprehensive, in-depth treatment of the metho…
+
+  [4]
+       DOI       : 10.4171/owr/2017/5
+       Published : 2018-01-02
+       Title     : Cryptography
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Abstract  : The Oberwolfach workshop Cryptography brought together scientists from cryptography with mathematicians specializing in the algorithmic problems underlying cryptographic security. The goal of the workshop was to stimulate interaction and collaboration that enables a holistic approach to designing cr…
+
+  [5]
+       DOI       : 10.4171/owr/2014/35
+       Published : 2015-05-15
+       Title     : Cryptography
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Abstract  : The Oberwolfach workshop Cryptography brought together scientists from cryptography with mathematicians specializing in the algorithmic problems underlying cryptographic security. The goal of the workshop was to stimulate interaction and collaboration that enables a holistic approach to designing cr…
+
+  [6]
+       DOI       : 10.4018/978-1-59904-937-3.ch231
+       Published : 2008-01-01
+       Title     : Cryptography
+       Authors   : Leslie Leong; Andrzej T. Jarmoszko
+       Abstract  : The emphasis and increased awareness of information security require an understanding and knowledge of the technology that supports it. As the risks and complexity of security keep growing along with the development of the Internet and e-commerce, securing information has become of utmost importance…
+
+  [7]
+       DOI       : 10.4018/978-1-59140-991-5.ch008
+       Published : 2007-01-01
+       Title     : Cryptography
+       Authors   : Kevin Curran; Niall Smyth; Bryan McGrory
+       Abstract  : One of the main methods of security is cryptography encrypting data so that only a person with the right key can decrypt it and make sense of the data. There are many forms of encryption, some more effective than others. Cryptography works by taking the original information and converting it with ci…
+
+  [8]
+       DOI       : 10.1201/9781420057133
+       Published : 2005-11-01
+       Title     : Cryptography
+       Authors   : Douglas R. Stinson
+       Abstract  : THE LEGACYFirst introduced in 1995, Cryptography: Theory and Practice garnered enormous praise and popularity, and soon became the standard textbook for cryptography courses around the world. The second edition was equally embraced, and enjoys status as a perennial bestseller. Now in its third editi…
+
+  [9]
+       DOI       : 10.1002/0471219282.eot129
+       Published : 2003-04-15
+       Title     : Cryptography
+       Authors   : Ian F. Blake
+       Abstract  : This article gives an overview of current cryptographic theory and practice. The notions of symmetric and asymmetric, or public key, cryptography are introduced. It is shown how public key systems depend on notions from computational number theory for their properties. The fundamental ideas of key e…
+
+  [10]
+       DOI       : 10.1093/actrade/9780192803153.001.0001
+       Published : 2002-08-29
+       Title     : Cryptography
+       Authors   : Fred Piper; Sean D. Murphy
+       Abstract  : Cryptography: A Very Short Introduction provides a clear and informative introduction to cryptography and data protection -- subjects of considerable social and political importance. It explains what algorithms do, how they are used, the risks associated with using them, and why governments should b…
+
+  [11]
+       DOI       : 10.1002/0471028959.sof070
+       Published : 2002-01-15
+       Title     : Cryptography
+       Authors   : Fred Piper
+       Abstract  : Cryptography is the study of the mathematical techniques related to aspects of information security such as confidentiality, data integrity, message authentication, and entity authentication. It is assuming an ever-increasing importance in their provision.The provision ofconfidentialitymeans keeping…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 17))  —  sorted by author:
+
+  [1]
+       DOI       : 10.15864/jmscm.1207
+       Published : 2020-02-01
+       Title     : CRYPTOGRAPHY
+       Authors   : B. Ghosh; Rohit Aich; Arka Khag; Sattam Nayak; Prashant Kumar
+       Abstract  : The word cryptography was coined from two Greek words 'Krypto', meaning hidden and 'graphein' meaning writing. Thus, cryptography means hidden writing. Cryptography is the method of protecting important data and information from third parties called adversaries or the public. It is also known as enc…
+
+  [2]
+       DOI       : 10.1201/9781420057133
+       Published : 2005-11-01
+       Title     : Cryptography
+       Authors   : Douglas R. Stinson
+       Abstract  : THE LEGACYFirst introduced in 1995, Cryptography: Theory and Practice garnered enormous praise and popularity, and soon became the standard textbook for cryptography courses around the world. The second edition was equally embraced, and enjoys status as a perennial bestseller. Now in its third editi…
+
+  [3]
+       DOI       : 10.1201/9781315282497
+       Published : 2018-08-14
+       Title     : Cryptography
+       Authors   : Douglas R. Stinson; Maura B. Paterson
+       Abstract  : Through three editions, Cryptography: Theory and Practice, has been embraced by instructors and students alike. It offers a comprehensive primer for the subject's fundamentals while presenting the most current advances in cryptography. The authors offer comprehensive, in-depth treatment of the metho…
+
+  [4]
+       DOI       : 10.1002/0471028959.sof070
+       Published : 2002-01-15
+       Title     : Cryptography
+       Authors   : Fred Piper
+       Abstract  : Cryptography is the study of the mathematical techniques related to aspects of information security such as confidentiality, data integrity, message authentication, and entity authentication. It is assuming an ever-increasing importance in their provision.The provision ofconfidentialitymeans keeping…
+
+  [5]
+       DOI       : 10.1093/actrade/9780192803153.001.0001
+       Published : 2002-08-29
+       Title     : Cryptography
+       Authors   : Fred Piper; Sean D. Murphy
+       Abstract  : Cryptography: A Very Short Introduction provides a clear and informative introduction to cryptography and data protection -- subjects of considerable social and political importance. It explains what algorithms do, how they are used, the risks associated with using them, and why governments should b…
+
+  [6]
+       DOI       : 10.1002/0471219282.eot129
+       Published : 2003-04-15
+       Title     : Cryptography
+       Authors   : Ian F. Blake
+       Abstract  : This article gives an overview of current cryptographic theory and practice. The notions of symmetric and asymmetric, or public key, cryptography are introduced. It is shown how public key systems depend on notions from computational number theory for their properties. The fundamental ideas of key e…
+
+  [7]
+       DOI       : 10.4171/owr/2017/5
+       Published : 2018-01-02
+       Title     : Cryptography
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Abstract  : The Oberwolfach workshop Cryptography brought together scientists from cryptography with mathematicians specializing in the algorithmic problems underlying cryptographic security. The goal of the workshop was to stimulate interaction and collaboration that enables a holistic approach to designing cr…
+
+  [8]
+       DOI       : 10.4171/owr/2014/35
+       Published : 2015-05-15
+       Title     : Cryptography
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Abstract  : The Oberwolfach workshop Cryptography brought together scientists from cryptography with mathematicians specializing in the algorithmic problems underlying cryptographic security. The goal of the workshop was to stimulate interaction and collaboration that enables a holistic approach to designing cr…
+
+  [9]
+       DOI       : 10.4018/978-1-59140-991-5.ch008
+       Published : 2007-01-01
+       Title     : Cryptography
+       Authors   : Kevin Curran; Niall Smyth; Bryan McGrory
+       Abstract  : One of the main methods of security is cryptography encrypting data so that only a person with the right key can decrypt it and make sense of the data. There are many forms of encryption, some more effective than others. Cryptography works by taking the original information and converting it with ci…
+
+  [10]
+       DOI       : 10.4018/978-1-59904-937-3.ch231
+       Published : 2008-01-01
+       Title     : Cryptography
+       Authors   : Leslie Leong; Andrzej T. Jarmoszko
+       Abstract  : The emphasis and increased awareness of information security require an understanding and knowledge of the technology that supports it. As the risks and complexity of security keep growing along with the development of the Internet and e-commerce, securing information has become of utmost importance…
+
+  [11]
+       DOI       : 10.1093/actrade/9780192882233.001.0001
+       Published : 2025-02-27
+       Title     : Cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : We are far removed from the historical situation in which cryptography was used only by militaries and governments. With vast quantities of sensitive information transferred online by individuals, companies, organizations, and nation-states, cryptography is increasingly important to everyone. Most o…
+
+  ────────────────────────────────────────────────────────────
+
+  11 records found — compact reference (sorted by author, then date):
+    [1]  10.15864/jmscm.1207  |  B. Ghosh; Rohit Aich; Arka Khag; Sattam Nayak; Pra  |  2020-02-01
+    [2]  10.1201/9781420057133  |  Douglas R. Stinson  |  2005-11-01
+    [3]  10.1201/9781315282497  |  Douglas R. Stinson; Maura B. Paterson  |  2018-08-14
+    [4]  10.1002/0471028959.sof070  |  Fred Piper  |  2002-01-15
+    [5]  10.1093/actrade/9780192803153.001.0001  |  Fred Piper; Sean D. Murphy  |  2002-08-29
+    [6]  10.1002/0471219282.eot129  |  Ian F. Blake  |  2003-04-15
+    [7]  10.4171/owr/2017/5  |  Johannes A. Buchmann; Shafi Goldwasser  |  2018-01-02
+    [8]  10.4171/owr/2014/35  |  Johannes A. Buchmann; Shafi Goldwasser  |  2015-05-15
+    [9]  10.4018/978-1-59140-991-5.ch008  |  Kevin Curran; Niall Smyth; Bryan McGrory  |  2007-01-01
+    [10]  10.4018/978-1-59904-937-3.ch231  |  Leslie Leong; Andrzej T. Jarmoszko  |  2008-01-01
+    [11]  10.1093/actrade/9780192882233.001.0001  |  Sean Murphy; Rachel Player  |  2025-02-27
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/11]
+       DOI       : 10.15864/jmscm.1207
+       Published : 2020-02-01
+       Authors   : B. Ghosh; Rohit Aich; Arka Khag; Sattam Nayak; Prashant Kuma
+       Title     : CRYPTOGRAPHY
+  → Keeping [1]: 10.15864/jmscm.1207
+
+  [2/11]
+       DOI       : 10.1201/9781420057133
+       Published : 2005-11-01
+       Authors   : Douglas R. Stinson
+       Title     : Cryptography
+  → Keeping [2]: 10.1201/9781420057133
+
+  [3/11]
+       DOI       : 10.1201/9781315282497
+       Published : 2018-08-14
+       Authors   : Douglas R. Stinson; Maura B. Paterson
+       Title     : Cryptography
+  → Deleting [3]: 10.1201/9781315282497
+
+  [4/11]
+       DOI       : 10.1002/0471028959.sof070
+       Published : 2002-01-15
+       Authors   : Fred Piper
+       Title     : Cryptography
+  → Keeping [4]: 10.1002/0471028959.sof070
+
+  [5/11]
+       DOI       : 10.1093/actrade/9780192803153.001.0001
+       Published : 2002-08-29
+       Authors   : Fred Piper; Sean D. Murphy
+       Title     : Cryptography
+  → Keeping [5]: 10.1093/actrade/9780192803153.001.0001
+
+  [6/11]
+       DOI       : 10.1002/0471219282.eot129
+       Published : 2003-04-15
+       Authors   : Ian F. Blake
+       Title     : Cryptography
+  → Keeping [6]: 10.1002/0471219282.eot129
+
+  [7/11]
+       DOI       : 10.4171/owr/2017/5
+       Published : 2018-01-02
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Title     : Cryptography
+  → Keeping [7]: 10.4171/owr/2017/5
+
+  [8/11]
+       DOI       : 10.4171/owr/2014/35
+       Published : 2015-05-15
+       Authors   : Johannes A. Buchmann; Shafi Goldwasser
+       Title     : Cryptography
+  → Deleting [8]: 10.4171/owr/2014/35
+
+  [9/11]
+       DOI       : 10.4018/978-1-59140-991-5.ch008
+       Published : 2007-01-01
+       Authors   : Kevin Curran; Niall Smyth; Bryan McGrory
+       Title     : Cryptography
+  → Keeping [9]: 10.4018/978-1-59140-991-5.ch008
+  → Keeping [10]: 10.4018/978-1-59904-937-3.ch231
+  → Keeping [11]: 10.1093/actrade/9780192882233.001.0001
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 17)):
+
+  [1]
+       DOI       : 10.1093/actrade/9780192882233.003.0007
+       Published : 2025-02-27
+       Title     : Post-quantum cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The need for developing post-quantum cryptography, that is to say cryptographic schemes that are believed to remain secure if large-scale quantum computers are developed, is demonstrated by a discussion of the classical and the quantum algorithms for solving the factorization problem. The ongoing pr…
+
+  [2]
+       DOI       : 10.48550/arxiv.2402.10576
+       Published : 2024-02-16
+       Title     : Post-Quantum Cryptography
+       Authors   : Pranjal; Atul Chaturvedi
+       Abstract  : In this survey we propose to cover the prose of post-quantum cryptography over classical cryptography. We talk about the various cryptographic methods that are being practiced to safeguard our information. The future of secure communication is expected to be the implementation of quantum-safe crypto…
+
+  [3]
+       DOI       : 10.1007/978-3-031-33386-6_10
+       Published : 2023-01-01
+       Title     : Post-quantum Cryptography
+       Authors   : Linus Gasser
+       Abstract  : Post-quantum Cryptography discusses the need for a new generation of cryptography to protect against future quantum computers. The underlying mathematical concept is a one-way function that makes it easy to encrypt but challenging to decrypt without a secret. However, future quantum computers will l…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 17))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1007/978-3-031-33386-6_10
+       Published : 2023-01-01
+       Title     : Post-quantum Cryptography
+       Authors   : Linus Gasser
+       Abstract  : Post-quantum Cryptography discusses the need for a new generation of cryptography to protect against future quantum computers. The underlying mathematical concept is a one-way function that makes it easy to encrypt but challenging to decrypt without a secret. However, future quantum computers will l…
+
+  [2]
+       DOI       : 10.48550/arxiv.2402.10576
+       Published : 2024-02-16
+       Title     : Post-Quantum Cryptography
+       Authors   : Pranjal; Atul Chaturvedi
+       Abstract  : In this survey we propose to cover the prose of post-quantum cryptography over classical cryptography. We talk about the various cryptographic methods that are being practiced to safeguard our information. The future of secure communication is expected to be the implementation of quantum-safe crypto…
+
+  [3]
+       DOI       : 10.1093/actrade/9780192882233.003.0007
+       Published : 2025-02-27
+       Title     : Post-quantum cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The need for developing post-quantum cryptography, that is to say cryptographic schemes that are believed to remain secure if large-scale quantum computers are developed, is demonstrated by a discussion of the classical and the quantum algorithms for solving the factorization problem. The ongoing pr…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.1007/978-3-031-33386-6_10  |  Linus Gasser  |  2023-01-01
+    [2]  10.48550/arxiv.2402.10576  |  Pranjal; Atul Chaturvedi  |  2024-02-16
+    [3]  10.1093/actrade/9780192882233.003.0007  |  Sean Murphy; Rachel Player  |  2025-02-27
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]
+       DOI       : 10.1007/978-3-031-33386-6_10
+       Published : 2023-01-01
+       Authors   : Linus Gasser
+       Title     : Post-quantum Cryptography
+  → Keeping [1]: 10.1007/978-3-031-33386-6_10
+  → Keeping [2]: 10.48550/arxiv.2402.10576
+  → Keeping [3]: 10.1093/actrade/9780192882233.003.0007
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 17)):
+
+  [1]
+       DOI       : 10.1093/actrade/9780192882233.003.0006
+       Published : 2025-02-27
+       Title     : Public-key cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The basic idea of public-key cryptography as a means for two untrusting parties to establish secure communication is outlined. The use of public-key cryptography to establish a key for a symmetric cryptosystem by using a protocol such as the Diffie-Hellman protocol or quantum key distribution (QKD) …
+
+  [2]
+       DOI       : 10.1201/9781420035087-10
+       Published : 2005-05-24
+       Title     : Public-Key Cryptography
+       Authors   : 
+       Abstract  : Cryptography, secret writing, is enjoying a scientific renaissance following the seminal discovery in 1977 of public-key cryptography and applications in computers and communications. book gives a broad overview of public-key cryptography - its essence and advantages, various public-key cryptosystem…
+
+  [3]
+       DOI       : 10.4018/978-1-59140-553-5.ch418
+       Published : 2005-01-01
+       Title     : Public-Key Cryptography
+       Authors   : Eberhard Stickel
+       Abstract  : Secure transmission of private information is a crucial issue in today's highly computerized world. Cryptographic algorithms are used to provide privacy of message transmission and to certify authenticity of sender and/or receiver of a message and message integrity as well as undeniability of transm…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 17))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1201/9781420035087-10
+       Published : 2005-05-24
+       Title     : Public-Key Cryptography
+       Authors   : 
+       Abstract  : Cryptography, secret writing, is enjoying a scientific renaissance following the seminal discovery in 1977 of public-key cryptography and applications in computers and communications. book gives a broad overview of public-key cryptography - its essence and advantages, various public-key cryptosystem…
+
+  [2]
+       DOI       : 10.4018/978-1-59140-553-5.ch418
+       Published : 2005-01-01
+       Title     : Public-Key Cryptography
+       Authors   : Eberhard Stickel
+       Abstract  : Secure transmission of private information is a crucial issue in today's highly computerized world. Cryptographic algorithms are used to provide privacy of message transmission and to certify authenticity of sender and/or receiver of a message and message integrity as well as undeniability of transm…
+
+  [3]
+       DOI       : 10.1093/actrade/9780192882233.003.0006
+       Published : 2025-02-27
+       Title     : Public-key cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : The basic idea of public-key cryptography as a means for two untrusting parties to establish secure communication is outlined. The use of public-key cryptography to establish a key for a symmetric cryptosystem by using a protocol such as the Diffie-Hellman protocol or quantum key distribution (QKD) …
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.1201/9781420035087-10  |    |  2005-05-24
+    [2]  10.4018/978-1-59140-553-5.ch418  |  Eberhard Stickel  |  2005-01-01
+    [3]  10.1093/actrade/9780192882233.003.0006  |  Sean Murphy; Rachel Player  |  2025-02-27
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]
+       DOI       : 10.1201/9781420035087-10
+       Published : 2005-05-24
+       Authors   : 
+       Title     : Public-Key Cryptography
+  → Keeping [1]: 10.1201/9781420035087-10
+  → Keeping [2]: 10.4018/978-1-59140-553-5.ch418
+  → Keeping [3]: 10.1093/actrade/9780192882233.003.0006
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (8 of 17)):
+
+  [1]
+       DOI       : 10.1093/actrade/9780192882233.003.0005
+       Published : 2025-02-27
+       Title     : Symmetric cryptography
+       Authors   : Sean Murphy; Rachel Player
+       Abstract  : Key topics within symmetric cryptography are outlined. These topics include primitives (or cryptographic building blocks) of stream ciphers, block ciphers, modes of operation for block ciphers, hash functions, and message authentication codes (MACs). Important standardized examples of these primitiv…
+
+  [2]
+       DOI       : 10.1007/978-3-031-33386-6_2
+       Published : 2023-01-01
+       Title     : Symmetric Cryptography
+       Authors   : François Weissbaum; Thomas Lugrin
+       Abstract  : Symmetric encryption is the most common method to guarantee the confidentiality of a message or information. Encryption is a cryptographic process that makes it impossible for anyone who needs the decryption key to gain knowledge of plaintext. It is called symmetric when it uses the same key for enc…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 17)):
+
+  [1]
+       DOI       : 10.4018/979-8-3693-5330-1.ch005
+       Published : 2024-08-14
+       Title     : Quantum-Resistant Cryptography
+       Authors   : Agung Mulyo Widodo; Princy Pappachan; Binastya Anggara Sekti; Nizirwan Anwar; Riya Widayanti; Mosiur
+       Abstract  : Quantum-resistant cryptography develops cryptographic protocols and algorithms that can withstand attacks from quantum computers. Quantum computers can solve certain mathematical problems much faster than classical computers, making current encryption techniques like RSA and ECC vulnerable to quantu…
+
+  [2]
+       DOI       : 10.48550/arxiv.2112.00399
+       Published : 2021-12-01
+       Title     : Quantum-Resistant Cryptography
+       Authors   : John Preuß Mattsson; Ben Smeets; Erik Thormarker
+       Abstract  : Quantum-resistant cryptography is cryptography that aims to deliver cryptographic functions and protocols that remain secure even if large-scale fault-tolerant quantum computers are built. NIST will soon announce the first selected public-key cryptography algorithms in its Post-Quantum Cryptography …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 17)):
+
+  [1]
+       DOI       : 10.55621/idpro.102
+       Published : 2024-03-15
+       Title     : An Introduction to Cryptography
+       Authors   : Mark Drummond
+       Abstract  : A non-technical introduction to cryptography, the foundation of security and privacy on the Internet.As an IAM practitioner, you understand the central role digital identity plays in information technology and security. The confidentiality, integrity, and availability of digital identity services de…
+
+  [2]
+       DOI       : 10.1201/9781420011241
+       Published : 2006-09-18
+       Title     : An Introduction to Cryptography
+       Authors   : R. A. Mollin
+       Abstract  : Continuing a bestselling tradition, An Introduction to Cryptography, Second Edition provides a solid foundation in cryptographic concepts that features all of the requisite background material on number theory and algorithmic complexity as well as a historical look at the field.With numerous additio…
+
+  [3]
+       DOI       : 10.1201/9780203325438.ch134
+       Published : 2000-10-20
+       Title     : An Introduction to Cryptography
+       Authors   : Javek Ikbal
+       Abstract  : This chapter presents some basic ideas behind cryptography. This is intended for an audience evaluators, recommenders, and end users of cryptographic algorithms and products rather than implementers. Hence, the mathematical background will be kept to a minimum. Only widely adopted algorithms are des…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 17))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1201/9780203325438.ch134
+       Published : 2000-10-20
+       Title     : An Introduction to Cryptography
+       Authors   : Javek Ikbal
+       Abstract  : This chapter presents some basic ideas behind cryptography. This is intended for an audience evaluators, recommenders, and end users of cryptographic algorithms and products rather than implementers. Hence, the mathematical background will be kept to a minimum. Only widely adopted algorithms are des…
+
+  [2]
+       DOI       : 10.55621/idpro.102
+       Published : 2024-03-15
+       Title     : An Introduction to Cryptography
+       Authors   : Mark Drummond
+       Abstract  : A non-technical introduction to cryptography, the foundation of security and privacy on the Internet.As an IAM practitioner, you understand the central role digital identity plays in information technology and security. The confidentiality, integrity, and availability of digital identity services de…
+
+  [3]
+       DOI       : 10.1201/9781420011241
+       Published : 2006-09-18
+       Title     : An Introduction to Cryptography
+       Authors   : R. A. Mollin
+       Abstract  : Continuing a bestselling tradition, An Introduction to Cryptography, Second Edition provides a solid foundation in cryptographic concepts that features all of the requisite background material on number theory and algorithmic complexity as well as a historical look at the field.With numerous additio…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.1201/9780203325438.ch134  |  Javek Ikbal  |  2000-10-20
+    [2]  10.55621/idpro.102  |  Mark Drummond  |  2024-03-15
+    [3]  10.1201/9781420011241  |  R. A. Mollin  |  2006-09-18
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]
+       DOI       : 10.1201/9780203325438.ch134
+       Published : 2000-10-20
+       Authors   : Javek Ikbal
+       Title     : An Introduction to Cryptography
+  → Keeping [1]: 10.1201/9780203325438.ch134
+  → Keeping [2]: 10.55621/idpro.102
+  → Keeping [3]: 10.1201/9781420011241
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (11 of 17)):
+
+  [1]
+       DOI       : 10.1017/9781009026208
+       Published : 2023-09-14
+       Title     : Introduction to Quantum Cryptography
+       Authors   : Thomas Vidick; Stephanie Wehner
+       Abstract  : This book offers an accessible and engaging introduction to quantum cryptography, assuming no prior knowledge in quantum computing. Essential background theory and mathematical techniques are introduced and applied in the analysis and design of quantum cryptographic protocols. The title explores sev…
+
+  [2]
+       DOI       : 10.48550/arxiv.physics/0511120
+       Published : 2005-11-14
+       Title     : Introduction to Quantum Cryptography
+       Authors   : Gustavo Rigolin; Andres A. Rieznik
+       Abstract  : We show in details the four quantum key distribution protocols which initiated the important field of quantum cryptography, using an accessible language for undergraduate students. We begin presenting the BB84 protocol, which uses polarization states of photons in order to transmit cryptographic key…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (12 of 17)):
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.5622/illinois/9780252044991.003.0001
+       Published : 2023-04-18
+       Title     : Introduction
+       Authors   : ShinJoung Yeo
+       Abstract  : This introductory chapter aims to set out the political economic framework that anchors this book. It situates search within the broader capitalist political economy in which global capitalism's developmental growth increasingly hinges on the growth pole of the Internet sector. The chapter contextua…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/oso/9780195148534.003.0002
+       Published : 2002-03-14
+       Title     : Introduction
+       Authors   : Henry Box Brown
+       Abstract  : While America is boasting of her freedom and making the world ring with her professions of equality, she holds millions of her inhabitants in bondage. This surely must be a wonder to all who seriously reflect on the subject of man holding property in man, in a land of republican institutions. That s…
+
+  ────────────────────────────────────────────────────────────
+  ℹ️  Record(s) [1, 2] are from the focused query corpus and WILL BE KEPT regardless of your choice.
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (13 of 17)):
+
+  [1]
+       DOI       : 10.1007/978-3-031-33386-6_12
+       Published : 2023-01-01
+       Title     : Identity-Based Cryptography
+       Authors   : Bernhard Tellenbach
+       Abstract  : Identity-based encryption systems are characterized by the fact that the public key is easy to remember, and the step of linking the public key to a specific identity is omitted; the identity (e.g., an e-mail address) is the public key. Applications of Identity-based encryption are still relatively …
+
+  [2]
+       DOI       : 10.1201/b13080-5
+       Published : 2012-09-27
+       Title     : Identity-Based Cryptography
+       Authors   : 
+       Abstract  : Posed as an open problem in 1984, but efficiently instantiated only in 2001, identity-based encryption hasn't left the forefront of cryptographic research since. Praised by fans as the economical alternative to public-key infrastructures, booed by critics for its inherent key escrow, identity-based …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (14 of 17)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1510.04256
+       Published : 2015-10-14
+       Title     : Cryptography in a Quantum World
+       Authors   : Gilles Brassard
+       Abstract  : Although practised as an art and science for ages, cryptography had to wait until the mid-twentieth century before Claude Shannon gave it a strong mathematical foundation. However, Shannon's approach was rooted is his own information theory, itself inspired by the classical physics of Newton and Ein…
+
+  [2]
+       DOI       : 10.48550/arxiv.0806.3483
+       Published : 2008-06-20
+       Title     : Cryptography in a Quantum World
+       Authors   : Stephanie Wehner
+       Abstract  : Quantum computing had a profound impact on cryptography. Shor's discovery of an efficient quantum algorithm for factoring large integers implies that many existing classical systems based on computational assumptions can be broken, once a quantum computer is built. It is therefore imperative to find…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (15 of 17)):
+
+  [1]
+       DOI       : 10.1017/cbo9780511852008
+       Published : 2011-05-16
+       Title     : Boolean Functions
+       Authors   : Yves Crama; Peter L. Hammer
+       Abstract  : Written by prominent experts in the field, this monograph provides the first comprehensive, unified presentation of the structural, algorithmic and applied aspects of the theory of Boolean functions. The book focuses on algebraic representations of Boolean functions, especially disjunctive and conju…
+
+  [2]
+       DOI       : 10.1002/047134608x.w1610.pub2
+       Published : 2007-06-15
+       Title     : Boolean Functions
+       Authors   : Carl D. Mc Crosky; Yuke Wang
+       Abstract  : Boolean functions and the underlying Boolean algebra are an essential mathematical foundation of digital technology. Nearly all technological applications that involve representation, manipulation, communication, or storage of information are built on this foundation. Examples include computers; tel…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (16 of 17)):
+
+  [1]
+       DOI       : 10.4018/978-1-59904-837-6.ch004
+       Published : 2008-01-01
+       Title     : Confidentiality
+       Authors   : Manuel Mogollon
+       Abstract  : In the world of communications, assurance is sought that (1) a message is not accidentally or deliberately modified in transit by replacement, insertion, or deletion; (2) the message is coming from the source from which it claims to come; (3) the message is protected against unauthorized individuals…
+
+  [2]
+       DOI       : 10.4018/978-1-59904-837-6.ch005
+       Published : 2008-01-01
+       Title     : Confidentiality
+       Authors   : Manuel Mogollon
+       Abstract  : Asymmetric encryption is a form of cryptography in which one key is used to encipher and the other to decipher. The two keys are mathematically related, and if it is possible to make one of the keys public and still maintain the algorithm security, then the system is called public-key. The most used…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (17 of 17)):
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/oso/9780195148534.001.0001
+       Published : 2002-03-14
+       Title     : Narrative of the Life of Henry Box Brown
+       Authors   : Henry Box Brown; Richard Newman; Henry Louis Gates
+       Abstract  : In 1849, Henry Brown escaped from slavery by shipping himself in a crate from Virginia to an anti-slavery office in Philadelphia. Twenty seven hours and three hundred and fifty miles later, Brown stepped out of his box to begin a new life. This is the memoir, originally published in 1851 in England,…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1093/oso/9780195148534.003.0003
+       Published : 2002-03-14
+       Title     : Narrative of the Life of Henry Box Brown
+       Authors   : Henry Box Brown; Richard Newman; Henry Louis Gates
+       Abstract  : I was born about forty-five miles from the city of Richmond, in Louisa County, in the year 1815. I entered the world a slave-- in the midst of a country whose most honoured writings declare that all men have a right to liberty-- but had imprinted upon my body no mark which could be made to signify t…
+
+  ────────────────────────────────────────────────────────────
+  ℹ️  Record(s) [1, 2] are from the focused query corpus and WILL BE KEPT regardless of your choice.
+  → Keeping all 2 records
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (1 of 1)):
+
+  [1]
+       DOI       : 10.6028/nist.ir.8309
+       Published : 2020-07-01
+       Title     : Status report on the second round of the NIST post-quantum cryptography standardization process
+       Authors   : Dustin Moody; Gorjan Alagic; Daniel Apon; David A. Cooper; Quynh H Dang; John Kelsey; Yi-Kai Liu; Ca
+       Abstract  : The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof o…
+
+  [2]
+       DOI       : 10.6028/nist.sp.800-131ar1
+       Published : 2015-11-01
+       Title     : Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths
+       Authors   : Elaine B. Barker; Allen Roginsky
+       Abstract  : The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation's measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof o…
+
+  ────────────────────────────────────────────────────────────
+  → Deleting all 2 records in this group
+
+  [Step 3 – Pass 4] 44 record(s) have blank authors — review required.
+

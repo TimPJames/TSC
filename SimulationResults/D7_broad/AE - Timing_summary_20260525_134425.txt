@@ -1,0 +1,11 @@
+
+  ⏱  Total time     : 21m 00s
+  ──────────────────────────────────────
+    User review (wait)    : 2m 59s
+    Data cleaning         : 0m 05s
+    Combine title+abstract: 169 ms
+    Similarity matrix     : 0m 11s
+    Coarse sweep & plots  : 5m 03s
+    Fine sweep & plots    : 6m 51s
+  ──────────────────────────────────────
+

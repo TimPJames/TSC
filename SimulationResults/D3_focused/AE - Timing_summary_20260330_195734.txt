@@ -1,0 +1,12 @@
+
+  ⏱  Total time     : 18m 01s
+  ──────────────────────────────────────
+    API query             : 0m 45s
+    User review (wait)    : 1m 38s
+    Data cleaning         : 0m 04s
+    Combine title+abstract: 83 ms
+    Similarity matrix     : 0m 01s
+    Coarse sweep & plots  : 4m 45s
+    Fine sweep & plots    : 10m 18s
+  ──────────────────────────────────────
+
