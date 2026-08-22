@@ -1,0 +1,175 @@
+
+  [Step 3 – Pass 2] 6 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 6)):
+
+  [1]
+       DOI       : 10.33774/coe-2024-92khz-v3
+       Published : 2025-06-01
+       Title     : Euler Perfect Box 2nd Way
+       Authors   : Taha Muhammad
+       Abstract  : Euler Perfect Box 2nd Way a, b, c, d, e, f, g N_+ Euler Perfect Box
+
+  [2]
+       DOI       : 10.33774/coe-2024-92khz-v2
+       Published : 2024-12-20
+       Title     : Euler Perfect Box 2nd Way
+       Authors   : Taha Muhammad
+       Abstract  : Euler Perfect Box 2nd Way a, b, c, d, e, f, g N_+ Euler Perfect Box Substitute any value of a, b, c into expressions a^2 + b^2+ c^2, & (a + b+ c)^2 in order to know, which one is a complete square! Example (a+b)^2 = a^2 + 2ab + b^2 (2+3)^2 = 25 & 2^2 +2(2)3 +3^2 = 25, then we know (a+b)^2 & (a^2 + 2…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.33774/coe-2024-92khz-v3  |  Euler Perfect Box 2nd Way
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 6)):
+
+  [1]
+       DOI       : 10.1093/9780197520932.003.0010
+       Published : 2025-04-04
+       Title     : Conclusion
+       Authors   : Ashley S Deeks
+       Abstract  : The Conclusion revisits key lessons and themes of the book. It returns to the hypothetical scenario with which the book started, demonstrating how the solutions proposed in prior chapters would help address the double black box problem that manifests itself in the scenario. This chapter concludes th…
+
+  [2]
+       DOI       : 10.5622/illinois/9780252044991.003.0007
+       Published : 2023-04-18
+       Title     : Conclusion
+       Authors   : ShinJoung Yeo
+       Abstract  : The political economy of search illustrates deeply transnationalized global capitalism that is interlinked to and interwoven with the internet. For the global power states, the question is not about building a global democratic information system; rather to what extent will the US, China and EU purs…
+
+  [3]
+       DOI       : 10.1093/oso/9780190674014.003.0009
+       Published : 2020-06-25
+       Title     : Conclusion
+       Authors   : Kelly Kessler
+       Abstract  : This final entry draws together some larger conclusions from the previous seven chapters, specifically addressing the complexity of the relationship between the various performance platforms and locales discussed in the book. As well, it poses some suggestions for future historical work regarding th…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 6))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1093/9780197520932.003.0010
+       Published : 2025-04-04
+       Title     : Conclusion
+       Authors   : Ashley S Deeks
+       Abstract  : The Conclusion revisits key lessons and themes of the book. It returns to the hypothetical scenario with which the book started, demonstrating how the solutions proposed in prior chapters would help address the double black box problem that manifests itself in the scenario. This chapter concludes th…
+
+  [2]
+       DOI       : 10.1093/oso/9780190674014.003.0009
+       Published : 2020-06-25
+       Title     : Conclusion
+       Authors   : Kelly Kessler
+       Abstract  : This final entry draws together some larger conclusions from the previous seven chapters, specifically addressing the complexity of the relationship between the various performance platforms and locales discussed in the book. As well, it poses some suggestions for future historical work regarding th…
+
+  [3]
+       DOI       : 10.5622/illinois/9780252044991.003.0007
+       Published : 2023-04-18
+       Title     : Conclusion
+       Authors   : ShinJoung Yeo
+       Abstract  : The political economy of search illustrates deeply transnationalized global capitalism that is interlinked to and interwoven with the internet. For the global power states, the question is not about building a global democratic information system; rather to what extent will the US, China and EU purs…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.1093/9780197520932.003.0010  |  Ashley S Deeks  |  2025-04-04
+    [2]  10.1093/oso/9780190674014.003.0009  |  Kelly Kessler  |  2020-06-25
+    [3]  10.5622/illinois/9780252044991.003.0007  |  ShinJoung Yeo  |  2023-04-18
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+
+
+  [1/3]
+       DOI       : 10.1093/9780197520932.003.0010
+       Published : 2025-04-04
+       Authors   : Ashley S Deeks
+       Title     : Conclusion
+  → Keeping [1]: 10.1093/9780197520932.003.0010
+  → Keeping [2]: 10.1093/oso/9780190674014.003.0009
+  → Keeping [3]: 10.5622/illinois/9780252044991.003.0007
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 6)):
+
+  [1]
+       DOI       : 10.5622/illinois/9780252044991.003.0001
+       Published : 2023-04-18
+       Title     : Introduction
+       Authors   : ShinJoung Yeo
+       Abstract  : This introductory chapter aims to set out the political economic framework that anchors this book. It situates search within the broader capitalist political economy in which global capitalism's developmental growth increasingly hinges on the growth pole of the Internet sector. The chapter contextua…
+
+  [2]
+       DOI       : 10.1093/oso/9780195148534.003.0002
+       Published : 2002-03-14
+       Title     : Introduction
+       Authors   : Henry Box Brown
+       Abstract  : While America is boasting of her freedom and making the world ring with her professions of equality, she holds millions of her inhabitants in bondage. This surely must be a wonder to all who seriously reflect on the subject of man holding property in man, in a land of republican institutions. That s…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.2206.14980
+       Published : 2022-06-30
+       Title     : On the image of an affine subspace under the inverse function within a finite field
+       Authors   : Nikolay Kolomeec; Denis Bykov
+       Abstract  : We consider the function that inverses a finite field element ( is prime, ) and affine -subspaces of such that their images are affine subspaces as well. It is proven that the image of an affine subspace , , is an affine subspace if and only if , where and . In other words, it is either a subfield o…
+
+  [2]
+       DOI       : 10.1007/s10623-023-01316-3
+       Published : 2022-06-30
+       Title     : On the image of an affine subspace under the inverse function within a finite field
+       Authors   : N. Kolomeec; D. Bykov
+       Abstract  : We consider the function x-1\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} that inverses a finite field element xFpn\documentclass[12pt…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1007/s10623-023-01316-3  |  On the image of an affine subspace under the inverse functio
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 6)):
+
+  [1]
+       DOI       : 10.48550/arxiv.1003.4919
+       Published : 2010-03-25
+       Title     : Doubly Perfect Nonlinear Boolean Permutations
+       Authors   : Laurent Poinsot
+       Abstract  : Due to implementation constraints the XOR operation is widely used in order to combine plaintext and key bit-strings in secret-key block ciphers. This choice directly induces the classical version of the differential attack by the use of XOR-kind differences. While very natural, there are many alter…
+
+  [2]
+       DOI       : 10.1080/09720529.2010.10698315
+       Published : 2010-03-25
+       Title     : Doubly perfect nonlinear boolean permutations
+       Authors   : L. Poinsot
+       Abstract  : Due to implementation constraints the XOR operation is widely used in order to combine plaintext and key bit-strings in secret-key block ciphers. This choice directly induces the classical version of the differential attack by the use of XOR-kind differences. While very natural, there are many alter…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [2]: 10.1080/09720529.2010.10698315  |  Doubly perfect nonlinear boolean permutations
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 6)):
+
+  [1]
+       DOI       : 10.1093/oso/9780195148534.001.0001
+       Published : 2002-03-14
+       Title     : Narrative of the Life of Henry Box Brown
+       Authors   : Henry Box Brown; Richard Newman; Henry Louis Gates
+       Abstract  : In 1849, Henry Brown escaped from slavery by shipping himself in a crate from Virginia to an anti-slavery office in Philadelphia. Twenty seven hours and three hundred and fifty miles later, Brown stepped out of his box to begin a new life. This is the memoir, originally published in 1851 in England,…
+
+  [2]
+       DOI       : 10.1093/oso/9780195148534.003.0003
+       Published : 2002-03-14
+       Title     : Narrative of the Life of Henry Box Brown
+       Authors   : Henry Box Brown; Richard Newman; Henry Louis Gates
+       Abstract  : I was born about forty-five miles from the city of Richmond, in Louisa County, in the year 1815. I entered the world a slave-- in the midst of a country whose most honoured writings declare that all men have a right to liberty-- but had imprinted upon my body no mark which could be made to signify t…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  [Step 3 – Pass 4] 3 record(s) have blank authors — review required.
+
