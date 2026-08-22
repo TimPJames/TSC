@@ -37,7 +37,7 @@ The repository is organized into two main components:
 
 Main
   - TSC Main Driver Notebook  
-    The single notebook containing the full AA–AH pipeline code.
+    The single notebook containing the full AA–AH pipeline code (TSC_Main_Driver(final).ipynb).
   - Results folder  
     Contains all run outputs, grouped by dataset and comparison type.
     Each folder contains the full AA–AH output inventory for that run (logs, CSVs, heatmaps, bump charts, community/coreness files, k‑core maps, etc.).
