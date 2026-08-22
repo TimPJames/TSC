@@ -1,0 +1,106 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_homomorphic_encryption_TF-IDF_20260331_135149\AF - Community_log_20260401_125052.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0500
+  ✓ Search terms from folder name        : "homomorphic encryption"
+  ✓ Similarity method from folder name   : TF-IDF
+  ✓ QR terms from log file               : ""homomorphic encryption""
+  ✓ Matrix file                          : tfidf_cosine_matrix_by_doi_tau_0.05.csv
+  ✓ TSC base file                        : DOIs_with_max_TSC_values_20260331_140109.csv
+
+── Loading matrix ────────────────────────────────
+✓ Matrix is symmetric.
+✓ τ=0.0500 applied: 0 edge(s) zeroed out (172356 retained).
+✓ 458 DOIs loaded. Sparsity: 17.8%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=14704.7343 | row-sum max=6.57e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0554
+  (Q > 0.3 indicates strong community structure)
+
+  Community 1: 216 DOIs
+  Community 2: 129 DOIs
+  Community 3: 113 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 23 – 306
+  Median coreness   : 306.0
+
+  Coreness 23: 1 DOIs
+  Coreness 46: 1 DOIs
+  Coreness 62: 1 DOIs
+  Coreness 81: 1 DOIs
+  Coreness 91: 1 DOIs
+  Coreness 103: 1 DOIs
+  Coreness 107: 2 DOIs
+  Coreness 123: 1 DOIs
+  Coreness 131: 1 DOIs
+  Coreness 141: 1 DOIs
+  Coreness 144: 2 DOIs
+  Coreness 157: 1 DOIs
+  Coreness 164: 1 DOIs
+  Coreness 174: 1 DOIs
+  Coreness 186: 1 DOIs
+  Coreness 195: 1 DOIs
+  Coreness 201: 1 DOIs
+  Coreness 205: 2 DOIs
+  Coreness 211: 1 DOIs
+  Coreness 220: 1 DOIs
+  Coreness 223: 1 DOIs
+  Coreness 227: 1 DOIs
+  Coreness 228: 1 DOIs
+  Coreness 229: 2 DOIs
+  Coreness 230: 2 DOIs
+  Coreness 234: 1 DOIs
+  Coreness 240: 1 DOIs
+  Coreness 245: 1 DOIs
+  Coreness 248: 1 DOIs
+  Coreness 249: 2 DOIs
+  Coreness 253: 1 DOIs
+  Coreness 254: 1 DOIs
+  Coreness 257: 1 DOIs
+  Coreness 258: 2 DOIs
+  Coreness 260: 1 DOIs
+  Coreness 264: 1 DOIs
+  Coreness 265: 1 DOIs
+  Coreness 270: 3 DOIs
+  Coreness 272: 1 DOIs
+  Coreness 273: 2 DOIs
+  Coreness 274: 1 DOIs
+  Coreness 276: 1 DOIs
+  Coreness 279: 1 DOIs
+  Coreness 281: 1 DOIs
+  Coreness 284: 1 DOIs
+  Coreness 287: 2 DOIs
+  Coreness 291: 1 DOIs
+  Coreness 293: 2 DOIs
+  Coreness 294: 6 DOIs
+  Coreness 295: 1 DOIs
+  Coreness 296: 1 DOIs
+  Coreness 298: 1 DOIs
+  Coreness 299: 12 DOIs
+  Coreness 300: 3 DOIs
+  Coreness 301: 1 DOIs
+  Coreness 304: 6 DOIs
+  Coreness 306: 367 DOIs
+
+── Saving outputs ────────────────────────────────
+
+  Base file: DOIs_with_max_TSC_values_20260331_140109.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_homomorphic_encryption_TF-IDF_20260331_135149\AF - DOIs_Communities_20260401_125053.csv
+  Plot saved → 'AF - Community_sizes_20260401_125053.png'
+  Plot saved → 'AF - Community_sizes_20260401_125053_dark.png'
+  Bump chart → 'AF - Community_bump_20260401_125053.png'
+  Bump chart → 'AF - Community_bump_20260401_125053_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260401_125054.png'
+  Bump chart → 'AG - Coreness_bump_20260401_125054_dark.png'
+
+✓ Log saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_homomorphic_encryption_TF-IDF_20260331_135149\AF - Community_log_20260401_125052.txt
+

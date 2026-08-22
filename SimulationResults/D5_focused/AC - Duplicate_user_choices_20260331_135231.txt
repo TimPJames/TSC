@@ -1,0 +1,347 @@
+
+  [Step 3 – Pass 2] 15 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 15)):
+
+  [1]
+       DOI       : 10.3390/jcp6010004
+       Published : 2025-12-25
+       Title     : Homomorphic Encryption for Confidential Statistical Computation: Feasibility and Challenges
+       Authors   : Yesem Kurt Peker; Rahul Raj
+       Abstract  : Statistical confidentiality focuses on protecting data to preserve its analytical value while preventing identity exposure, ensuring privacy and security in any system handling sensitive information. Homomorphic encryption allows computations on encrypted data without revealing it to anyone other th…
+
+  [2]
+       DOI       : 10.20944/preprints202508.1476.v1
+       Published : 2025-08-20
+       Title     : Homomorphic Encryption for Confidential Statistical Computation: Feasibility and Challenges
+       Authors   : Yesem Kurt Peker; Rahul Raj
+       Abstract  : Homomorphic encryption allows computations on encrypted data without revealing it to anyone other than an owner or an authorized collector. When combined with other tech-niques, homomorphic encryption offers an ideal solution for ensuring statistical confiden-tiality. TFHE (Fast Fully Homomorphic En…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.3390/jcp6010004  |  Homomorphic Encryption for Confidential Statistical Computat
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 15)):
+
+  [1]
+       DOI       : 10.12732/ijam.v38i10s.1024
+       Published : 2025-11-10
+       Title     : HOMOMORPHIC ENCRYPTION AND ALGEBRAIC GEOMETRY FOR PRIVACY-PRESERVING MACHINE LEARNING
+       Authors   : Mital Patel,
+       Abstract  : Homomorphic encryption combined with algebraic geometry is emerging as one of the most mathematically powerful strategies for enabling privacy-preserving machine learning in environments where data confidentiality cannot be compromised. Traditional cryptographic methods protect data only at rest or …
+
+  [2]
+       DOI       : 10.12732/ijam.v38i7s.462
+       Published : 2025-10-22
+       Title     : HOMOMORPHIC ENCRYPTION AND ALGEBRAIC GEOMETRY FOR PRIVACY-PRESERVING MACHINE LEARNING
+       Authors   : G. Mahalakshmi
+       Abstract  : The increasing acceptance of machine learning (ML) in sensitive applications such as health care, finance, and enforcement brings many serious privacy concerns requiring privacy-preserving techniques to be developed. Homomorphic encryption (HE) seems to be a good approach permitting various computat…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 15)):
+
+  [1]
+       DOI       : 10.21203/rs.3.rs-4565846/v1
+       Published : 2024-06-27
+       Title     : Homomorphic Encryption: An Application to Polygenic Risk Scores
+       Authors   : elizabeth knight; Jiaqi Li; Mathew Jensen; Israel Yolou; Can Kockan; Mark Gerstein
+       Abstract  : Background: Polygenic risk scores (PRS) have emerged as a powerful tool in precision medicine, enabling personalized risk assessments for complex diseases. However, using sensitive genomic data in PRS calculations raises concerns about privacy and security. Fully Homomorphic Encryption (FHE) offers …
+
+  [2]
+       DOI       : 10.1101/2024.05.26.595961
+       Published : 2024-05-28
+       Title     : Homomorphic Encryption: An Application to Polygenic Risk Scores
+       Authors   : Elizabeth Knight; Jiaqi Li; Matthew Jensen; Israel Yolou; Can Kockan; Mark Gerstein
+       Abstract  : 1 Abstract Background Polygenic risk scores (PRSs) have emerged as a powerful tool in precision medicine, enabling personalized risk assessments for complex diseases. However, the use of sensitive genomic data in PRS calculations raises concerns about privacy and security. Fully homomorphic encrypti…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.21203/rs.3.rs-4565846/v1  |  Homomorphic Encryption: An Application to Polygenic Risk Sco
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 15)):
+
+  [1]
+       DOI       : 10.1002/appl.202300098
+       Published : 2024-06-20
+       Title     : Similarity calculation based on homomorphic encryption
+       Authors   : Abel C. H. Chen
+       Abstract  : In recent years, some homomorphic encryption algorithms have been proposed to provide additive homomorphic encryption and multiplicative homomorphic encryption. However, similarity measures are required for searches and queries under homomorphic encrypted ciphertexts. Therefore, this study considers…
+
+  [2]
+       DOI       : 10.48550/arxiv.2302.07572
+       Published : 2023-02-15
+       Title     : Similarity Calculation Based on Homomorphic Encryption
+       Authors   : Abel C. H. Chen
+       Abstract  : In recent years, although some homomorphic encryption algorithms have been proposed to provide additive homomorphic encryption and multiplicative homomorphic encryption. However, similarity measures are required for searches and queries under homomorphic encrypted ciphertexts. Therefore, this study …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1002/appl.202300098  |  Similarity calculation based on homomorphic encryption
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 15)):
+
+  [1]
+       DOI       : 10.1609/aaai.v38i20.30200
+       Published : 2023-12-18
+       Title     : Blind-Touch: Homomorphic Encryption-Based Distributed Neural Network Inference for Privacy-Preserving Fingerprint Authen
+       Authors   : Hyunmin Choi; Simon S. Woo; Hyoungshick Kim
+       Abstract  : Fingerprint authentication is a popular security mechanism for smartphones and laptops. However, its adoption in web and cloud environments has been limited due to privacy concerns over storing and processing biometric data on servers. This paper introduces Blind-Touch, a novel machine learning-base…
+
+  [2]
+       DOI       : 10.48550/arxiv.2312.11575
+       Published : 2023-12-18
+       Title     : Blind-Touch: Homomorphic Encryption-Based Distributed Neural Network Inference for Privacy-Preserving Fingerprint Authen
+       Authors   : Hyunmin Choi; Simon Woo; Hyoungshick Kim
+       Abstract  : Fingerprint authentication is a popular security mechanism for smartphones and laptops. However, its adoption in web and cloud environments has been limited due to privacy concerns over storing and processing biometric data on servers. This paper introduces Blind-Touch, a novel machine learning-base…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.1609/aaai.v38i20.30200  |  Blind-Touch: Homomorphic Encryption-Based Distributed Neural
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 15)):
+
+  [1]
+       DOI       : 10.3390/math11132948
+       Published : 2023-06-26
+       Title     : Homomorphic Encryption: An Analysis of its Applications in Searchable Encryption
+       Authors   : Ivone Amorim; Iva Costa
+       Abstract  : The widespread adoption of cloud infrastructures has revolutionized data storage and access. However, it has also raised concerns regarding the privacy of sensitive data. To address these concerns, encryption techniques have been widely used. However, traditional encryption schemes limit the efficie…
+
+  [2]
+       DOI       : 10.48550/arxiv.2306.14407
+       Published : 2023-06-26
+       Title     : Homomorphic Encryption: An Analysis of its Applications in Searchable Encryption
+       Authors   : Ivone Amorim; Ivan Costa
+       Abstract  : The widespread adoption of cloud infrastructures has revolutionised data storage and access. However, it has also raised concerns regarding the privacy of sensitive data stored in the cloud. To address these concerns, encryption techniques have been widely used. However, traditional encryption schem…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.3390/math11132948  |  Homomorphic Encryption: An Analysis of its Applications in S
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 15)):
+
+  [1]
+       DOI       : 10.1007/s11227-023-05233-z
+       Published : 2023-04-14
+       Title     : A survey on implementations of homomorphic encryption schemes
+       Authors   : Thi Van Thao Doan; Mohamed-Lamine Messai; G. Gavin; J. Darmont
+       Abstract  : With the increased need for data confidentiality in various applications of our daily life, homomorphic encryption (HE) has emerged as a promising cryptographic topic. HE enables to perform computations directly on encrypted data (ciphertexts) without decryption in advance. Since the results of calc…
+
+  [2]
+       DOI       : 10.21203/rs.3.rs-2018739/v2
+       Published : 2022-11-19
+       Title     : A Survey on Implementations of Homomorphic Encryption Schemes
+       Authors   : Thi Van Thao DOAN; Mohamed-Lamine Messai; Gérald Gavin; Jérôme Darmont
+       Abstract  : With the increased need for data confidentiality in various applications of our daily life, homomorphic encryption (HE) has emerged as a promising cryptographic topic. HE enables to perform computations directly on encrypted data (ciphertexts) without decryption in advance. Since the results of calc…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1007/s11227-023-05233-z  |  A survey on implementations of homomorphic encryption scheme
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (8 of 15)):
+
+  [1]
+       DOI       : 10.36227/techrxiv.19315202
+       Published : 2023-01-10
+       Title     : Survey on Fully Homomorphic Encryption, Theory, and Applications
+       Authors   : Chiara Marcolla; Victor Sucasas; Marc Manzano; Riccardo Bassoli; Frank H.P. Fitzek; Najwa Aaraj
+       Abstract  : This paper comprehensively addresses homomorphic encryption from both theoretical and practical perspectives. The paper delves into the mathematical foundations required to understand fully homomorphic encryption FHE. It consequently covers design fundamentals and security properties of FHE, and des…
+
+  [2]
+       DOI       : 10.1109/jproc.2022.3205665
+       Published : 2022-10-01
+       Title     : Survey on Fully Homomorphic Encryption, Theory, and Applications
+       Authors   : Chiara Marcolla; Victor Sucasas; Marc Manzano; Riccardo Bassoli; Frank H. P. Fitzek; Najwa Aaraj
+       Abstract  : Data privacy concerns are increasing significantly in the context of the Internet of Things, cloud services, edge computing, artificial intelligence applications, and other applications enabled by next-generation networks. Homomorphic encryption addresses privacy challenges by enabling multiple oper…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.36227/techrxiv.19315202  |  Survey on Fully Homomorphic Encryption, Theory, and Applicat
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 15)):
+
+  [1]
+       DOI       : 10.1007/978-3-031-33386-6_8
+       Published : 2023-01-01
+       Title     : Homomorphic Encryption
+       Authors   : Jean-Pierre Hubaux
+       Abstract  : Homomorphic encryption is a technique in cryptography that allows for performing operations on encrypted data. The encrypted result can then be decrypted to obtain the operation result, making it possible to perform computations on sensitive data without revealing it. homomorphic encryption was firs…
+
+  [2]
+       DOI       : 10.1016/j.procs.2013.09.310
+       Published : 2013-01-01
+       Title     : Homomorphic Encryption
+       Authors   : Monique Ogburn; Claude Turner; Pushkar Dahal
+       Abstract  : The study of homomorphic encryption techniques has led to significant advancements in the computing domain, particularly in the sphere of cloud computing. Homomorphic encryption provides a means for securely transmitting and storing confidential information across and in a computer system. The aim o…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 15)):
+
+  [1]
+       DOI       : 10.46586/tches.v2023.i1.501-537
+       Published : 2022-11-29
+       Title     : FDFB: Full Domain Functional Bootstrapping Towards Practical Fully Homomorphic Encryption
+       Authors   : Kamil Kluczniak; Leonard Schild
+       Abstract  : Computation on ciphertexts of all known fully homomorphic encryption (FHE) schemes induces some noise, which, if too large, will destroy the plaintext. Therefore, the bootstrapping technique that re-encrypts a ciphertext and reduces the noise level remains the only known way of building FHE schemes …
+
+  [2]
+       DOI       : 10.48550/arxiv.2109.02731
+       Published : 2021-09-06
+       Title     : FDFB: Full Domain Functional Bootstrapping Towards Practical Fully Homomorphic Encryption
+       Authors   : Kamil Kluczniak; Leonard Schild
+       Abstract  : Computation on ciphertexts of all known fully homomorphic encryption (FHE) schemes induces some noise, which, if too large, will destroy the plaintext. Therefore, the bootstrapping technique that re-encrypts a ciphertext and reduces the noise level remains the only known way of building FHE schemes …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.46586/tches.v2023.i1.501-537  |  FDFB: Full Domain Functional Bootstrapping Towards Practical
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (11 of 15)):
+
+  [1]
+       DOI       : 10.1002/int.22818
+       Published : 2021-04-14
+       Title     : Privacy-preserving federated learning based on multi-key homomorphic encryption
+       Authors   : Jing Ma; Si-Ahmed Naas; S. Sigg; X. Lyu
+       Abstract  : With the advance of machine learning and the Internet of Things (IoT), security and privacy have become critical concerns in mobile services and networks. Transferring data to a central unit violates the privacy of sensitive data. Federated learning mitigates this need to transfer local data by shar…
+
+  [2]
+       DOI       : 10.48550/arxiv.2104.06824
+       Published : 2021-04-14
+       Title     : Privacy-preserving Federated Learning based on Multi-key Homomorphic Encryption
+       Authors   : Jing Ma; Si-Ahmed Naas; Stephan Sigg; Xixiang Lyu
+       Abstract  : With the advance of machine learning and the internet of things (IoT), security and privacy have become key concerns in mobile services and networks. Transferring data to a central unit violates privacy as well as protection of sensitive data while increasing bandwidth demands.Federated learning mit…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.1002/int.22818  |  Privacy-preserving federated learning based on multi-key hom
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (12 of 15)):
+
+  [1]
+       DOI       : 10.1145/3474366.3486926
+       Published : 2021-03-30
+       Title     : Intel HEXL: Accelerating Homomorphic Encryption with Intel AVX512-IFMA52
+       Authors   : Fabian Boemer; Sejun Kim; Gelila Seifu; F. Souza; V. Gopal
+       Abstract  : Modern implementations of homomorphic encryption (HE) rely heavily on polynomial arithmetic over a finite field. This is particularly true of the BGV, BFV, and CKKS HE schemes. Two of the biggest performance bottlenecks in HE primitives and applications are polynomial modular multiplication and the …
+
+  [2]
+       DOI       : 10.48550/arxiv.2103.16400
+       Published : 2021-03-30
+       Title     : Intel HEXL: Accelerating Homomorphic Encryption with Intel AVX512-IFMA52
+       Authors   : Fabian Boemer; Sejun Kim; Gelila Seifu; Fillipe D. M. de Souza; Vinodh Gopal
+       Abstract  : Modern implementations of homomorphic encryption (HE) rely heavily on polynomial arithmetic over a finite field. This is particularly true of the CKKS, BFV, and BGV HE schemes. Two of the biggest performance bottlenecks in HE primitives and applications are polynomial modular multiplication and the …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.1145/3474366.3486926  |  Intel HEXL: Accelerating Homomorphic Encryption with Intel A
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (13 of 15)):
+
+  [1]
+       DOI       : 10.1109/btas.2018.8698601
+       Published : 2018-10-01
+       Title     : Secure Face Matching Using Fully Homomorphic Encryption
+       Authors   : Vishnu Naresh Boddeti
+       Abstract  : Face recognition technology has demonstrated tremendous progress over the past few years, primarily due to advances in representation learning. As we witness the widespread adoption of these systems, it is imperative to consider the security of face representations. In this pa per, we explore the pr…
+
+  [2]
+       DOI       : 10.48550/arxiv.1805.00577
+       Published : 2018-05-01
+       Title     : Secure Face Matching Using Fully Homomorphic Encryption
+       Authors   : Vishnu Naresh Boddeti
+       Abstract  : Face recognition technology has demonstrated tremendous progress over the past few years, primarily due to advances in representation learning. As we witness the widespread adoption of these systems, it is imperative to consider the security of face representations. In this paper, we explore the pra…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1109/btas.2018.8698601  |  Secure Face Matching Using Fully Homomorphic Encryption
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (14 of 15)):
+
+  [1]
+       DOI       : 10.1145/2633600
+       Published : 2014-07-01
+       Title     : (Leveled) Fully Homomorphic Encryption without Bootstrapping
+       Authors   : Zvika Brakerski; Craig Gentry; Vinod Vaikuntanathan
+       Abstract  : We present a novel approach to fully homomorphic encryption (FHE) that dramatically improves performance and bases security on weaker assumptions. A central conceptual contribution in our work is a new way of constructing leveled, fully homomorphic encryption schemes (capable of evaluating arbitrary…
+
+  [2]
+       DOI       : 10.1145/2090236.2090262
+       Published : 2012-01-08
+       Title     : (Leveled) fully homomorphic encryption without bootstrapping
+       Authors   : Zvika Brakerski; Craig Gentry; Vinod Vaikuntanathan
+       Abstract  : We present a novel approach to fully homomorphic encryption (FHE) that dramatically improves performance and bases security on weaker assumptions. A central conceptual contribution in our work is a new way of constructing leveled fully homomorphic encryption schemes (capable of evaluating arbitrary …
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1145/2633600  |  (Leveled) Fully Homomorphic Encryption without Bootstrapping
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (15 of 15)):
+
+  [1]
+       DOI       : 10.1504/ijact.2008.017047
+       Published : 2008-01-01
+       Title     : Homomorphic encryption and secure comparison
+       Authors   : Damgård, Ivan Bjerre; Geisler, Martin; Krøigaard, Mikkel
+       Abstract  : We propose a protocol for secure comparison of integers based on homomorphicencryption.We also propose a homomorphic encryption scheme that can be used in our protocol,makes it more efficient than previous solutions, and can also be used as the basis of efficient andgeneral secure Multiparty Computa…
+
+  [2]
+       DOI       : 10.1504/ijact.2008.017048
+       Published : 2008-01-01
+       Title     : Homomorphic encryption and secure comparison
+       Authors   : Ivan Damgård; Martin Geisler; Mikkel Krøigård
+       Abstract  : We propose a protocol for secure comparison of integers based on homomorphic encryption.We also propose a homomorphic encryption scheme that can be used in our protocol, makes it more efficient than previous solutions, and can also be used as the basis of efficient and general secure Multiparty Comp…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.1504/ijact.2008.017047  |  Homomorphic encryption and secure comparison
+
+  [Step 3 – Pass 3] 2 abstract duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (1 of 2)):
+
+  [1]
+       DOI       : 10.54660/.ijfmr.2025.6.1.48-56
+       Published : 2025-01-01
+       Title     : A Novel Approach to Cloud Data Encryption using Homomorphic Encryption (2024)
+       Authors   : Joy Ezinwanneamaka Ike; Joseph Darko Kessie; Raphael Popoola; Muhammed Adewale Azeez; Tolulope Onibo
+       Abstract  : Cloud computing has revolutionized data storage and processing, offering scalability, flexibility, and cost efficiency. However, security and privacy concerns remain significant challenges, particularly when sensitive data is stored and processed by third-party cloud providers. Traditional encryptio…
+
+  [2]
+       DOI       : 10.54660/.ijfmr.2024.5.6.19-27
+       Published : 2024-01-01
+       Title     : A Novel Approach to Cloud Data Encryption using Homomorphic Encryption
+       Authors   : Joy Ezinwanneamaka Ike; Joseph Darko Kessie; Raphael Popoola; Muhammed Adewale Azeez; Tolulope Onibo
+       Abstract  : Cloud computing has revolutionized data storage and processing, offering scalability, flexibility, and cost efficiency. However, security and privacy concerns remain significant challenges, particularly when sensitive data is stored and processed by third-party cloud providers. Traditional encryptio…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.54660/.ijfmr.2025.6.1.48-56  |  A Novel Approach to Cloud Data Encryption using Homomorphic 
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (2 of 2)):
+
+  [1]
+       DOI       : 10.5772/56687
+       Published : 2013-07-17
+       Title     : Homomorphic Encryption -- Theory and Application
+       Authors   : Jaydip Sen
+       Abstract  : The goal of this chapter is to present a survey of homomorphic encryption techniques and their applications. After a detailed discussion on the introduction and motivation of the chapter, we present some basic concepts of cryptography. The fundamental theories of homomorphic encryption are then disc…
+
+  [2]
+       DOI       : 10.48550/arxiv.1305.5886
+       Published : 2013-05-25
+       Title     : Homomorphic Encryption: Theory & Applications
+       Authors   : Jaydip Sen
+       Abstract  : The goal of this chapter is to present a survey of homomorphic encryption techniques and their applications. After a detailed discussion on the introduction and motivation of the chapter, we present some basic concepts of cryptography. The fundamental theories of homomorphic encryption are then disc…
+
+  ────────────────────────────────────────────────────────────
+  → Default: keeping [1]: 10.5772/56687  |  Homomorphic Encryption -- Theory and Application
+
+  [Step 3 – Pass 4] 4 record(s) have blank authors — review required.
+
