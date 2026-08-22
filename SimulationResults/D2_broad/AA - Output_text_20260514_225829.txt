@@ -1,0 +1,948 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260325_131054.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729\clean_results_with_combined_title_abstract_20260325_131055.csv
+  ℹ️   API Query Terms from folder  : "cryptography"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   Query Relevance Terms from log: "bent boolean functions cryptography"
+  API Query Terms      : cryptography
+  Query Relevance Terms: RSA attack complexity
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729\AB - Pass_data_to_other_query_20260325_131054.csv
+  Records    : 1000 rows in file
+  Prev folder: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729  → reusing combined CSV (skip Stages 1, 2 & 2.5)
+  Supp. CSV  : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_RSA_attack_complexity_TF-IDF_20260330_145145\AB - Pass_data_to_other_query_20260330_150548.csv
+  Skip dedup : No
+  API Query Terms    : cryptography
+  Query Relevance Terms : RSA attack complexity
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923
+  Output     : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\combined_results_20260514_225923.csv
+────────────────────────────────────────────────────────────
+
+  [Stage 1 skipped] Using uploaded file: 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260325_131054.csv'
+  [Supplemental] Added 326 of 361 rows from 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_RSA_attack_complexity_TF-IDF_20260330_145145\AB - Pass_data_to_other_query_20260330_150548.csv'.
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260325_131054.csv'
+  Log → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260325_131054_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 3636 rows
+
+  [Step 0] Missing DOI      : 0 rows removed
+  [Step 0] Missing Abstract : 0 rows removed  (3636 remaining)
+  [Step 1] Language filter  : 1 non-English rows removed (3635 remaining)
+  [Step 2] Text cleaning    : 0 titles cleaned, 3 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 2] 18 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 3 record(s) removed.
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+  [Step 3 – Pass 3] 2 record(s) removed.
+
+  [Step 3 – Pass 4] 46 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 5 duplicate rows removed (3630 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  Source                        Added    Supp    API      No       No       Not      Dup           
+                       Fetched   Supp    Dup     Dup     DOI    Abstract  English  Content   Kept  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  arXiv                  1064     17      -2                                          -1     1078  
+  CrossRef               1000    100      -3                                                 1097  
+  OpenAlex               523      74      -3                                          -4     590   
+  SemanticScholar        423     146      -3                                 -1              565   
+  zbMath                 300      24     -24                                                 300   
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL                  3310    361     -35                                 -1       -5     3630  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AD - Summary_table_20260514_230242.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AC - Duplicate_user_choices_20260514_225926.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260514_230242.csv'  (3630 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\combined_results_clean_20260514_225926.csv'  (3630 rows)
+  [Log] 6 dropped + 0 rescued entries saved to 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260325_131054_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 3m 16s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\clean_results_with_combined_title_abstract_20260514_230243.csv'
+  [Log] Saving output to 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AA - Output_text_20260514_225829.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\clean_results_with_combined_title_abstract_20260514_230243.csv
+  Output dir   : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923
+────────────────────────────────────────────────────────────
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923
+  API Query Terms      : cryptography
+  Query Relevance Terms: RSA attack complexity  (custom)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 23s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (3630 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 0.9997
+  [tau auto-range] τ grid (10 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 3630 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.00  (spread = 1.5645)
+  [Ranking vs λ] 18 of 3630 DOIs in the Top 10  (τ = 0.00, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 2 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 60 of 3630 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\top10_all_pairs_COARSE.xlsx'
+  [COARSE] grid: 10 tau x 11 lambda = 110 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\histogram_grid_COARSE.png'
+  [COARSE] image grid: 10x11 = 110 matched (0 missing, 0 dark PNGs found, 110 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 7m 19s
+
+  Coarse peak : TSC Spread = 1.5645 at λ = 0.0100, τ = 0.0000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (3630 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 3630 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.04  (spread = 1.7205)
+  [Ranking vs λ] 13 of 3630 DOIs in the Top 10  (τ = 0.04, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 6 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 27 of 3630 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\top10_all_pairs_FINE.xlsx'
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\histogram_grid_FINE_plain.png'
+
+── Per-paper convexity check (TSC in λ) [FINE] ──────────
+  Loading TSC CSVs (21 τ values × 11 λ values) …
+  ✓ 3630 DOIs across all τ/λ combinations
+
+  Overall fraction of (τ, λ, DOI) triples that are convex: 100.0%
+
+  Per-τ mean fraction of documents convex:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document convexity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully convex (100%) : 3630 / 3630 documents
+
+  ✓ Per-paper results saved → AD - TSC_convexity_per_paper_FINE_20260514_232532.csv
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260514_232532_heatmap.png
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260514_232532_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260514_232532_hist.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260514_232532_hist_dark.png
+
+── Per-paper monotonicity check (TSC in λ) [FINE] ─────────
+  Loading TSC CSVs (21 τ × 11 λ) …
+  ✓ 3630 DOIs, 10 λ steps per τ
+
+  Overall fraction of (τ, λ-step, DOI) triples monotone: 100.0%
+
+  Per-τ mean fraction of documents monotone decreasing:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document monotonicity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully monotone (100%) : 3630 / 3630 documents
+
+  ✓ Per-paper results saved → AD - TSC_monotonicity_per_paper_FINE_20260514_232547.csv
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260514_232547_heatmap.png
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260514_232547_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260514_232547_hist.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260514_232547_hist_dark.png
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 15m 16s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 1.7205
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.04
+  [similarity matrix] Saved thresholded matrix (τ=0.04) → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\tfidf_cosine_matrix_by_doi_tau_0.04.csv'
+  [TSC vs Year] Breusch-Pagan: LM=7.8683, p=0.0050 -> heteroscedastic (alpha=0.05)
+  [TSC vs Year] BP results -> TSC_vs_Year_breusch_pagan_tau_0.04_lambda_0.01_20260514_232601.csv
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.04_lambda_0.01_20260514_232601.png
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.04_lambda_0.01_20260514_232601_dark.png
+  [TSC vs Year] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\TSC_vs_PublicationYear_tau_0.04_lambda_0.01.png'  (3630 data points, R² = 0.049)
+  [Max TSC CSV] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\DOIs_with_max_TSC_values_20260514_232709.csv'  (3630 DOIs)
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.04
+  Matrix : 'tfidf_cosine_matrix_by_doi_tau_0.04.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260514_232709.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0400 applied: 0 edge(s) zeroed out (8294358 retained).
+✓ 3630 DOIs loaded. Sparsity: 37.1%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=543138.0591 | row-sum max=1.02e-12 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0959  (>0.3 indicates strong structure)
+
+  Community 1: 1442 DOIs
+  Community 2: 1353 DOIs
+  Community 3: 835 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 48 – 1704
+  Median coreness   : 1704.0
+
+  Coreness 48: 1 DOIs
+  Coreness 60: 1 DOIs
+  Coreness 72: 1 DOIs
+  Coreness 74: 1 DOIs
+  Coreness 90: 1 DOIs
+  Coreness 116: 2 DOIs
+  Coreness 123: 2 DOIs
+  Coreness 124: 1 DOIs
+  Coreness 125: 1 DOIs
+  Coreness 134: 2 DOIs
+  Coreness 159: 1 DOIs
+  Coreness 162: 1 DOIs
+  Coreness 169: 2 DOIs
+  Coreness 171: 1 DOIs
+  Coreness 175: 1 DOIs
+  Coreness 179: 1 DOIs
+  Coreness 181: 1 DOIs
+  Coreness 183: 1 DOIs
+  Coreness 213: 1 DOIs
+  Coreness 219: 1 DOIs
+  Coreness 224: 1 DOIs
+  Coreness 234: 2 DOIs
+  Coreness 237: 1 DOIs
+  Coreness 239: 1 DOIs
+  Coreness 240: 2 DOIs
+  Coreness 244: 1 DOIs
+  Coreness 269: 1 DOIs
+  Coreness 272: 1 DOIs
+  Coreness 284: 1 DOIs
+  Coreness 286: 1 DOIs
+  Coreness 288: 1 DOIs
+  Coreness 301: 1 DOIs
+  Coreness 302: 1 DOIs
+  Coreness 309: 1 DOIs
+  Coreness 311: 1 DOIs
+  Coreness 314: 1 DOIs
+  Coreness 316: 1 DOIs
+  Coreness 319: 1 DOIs
+  Coreness 324: 1 DOIs
+  Coreness 331: 1 DOIs
+  Coreness 344: 1 DOIs
+  Coreness 347: 1 DOIs
+  Coreness 360: 1 DOIs
+  Coreness 386: 1 DOIs
+  Coreness 390: 2 DOIs
+  Coreness 404: 1 DOIs
+  Coreness 413: 1 DOIs
+  Coreness 416: 1 DOIs
+  Coreness 420: 1 DOIs
+  Coreness 430: 1 DOIs
+  Coreness 433: 1 DOIs
+  Coreness 442: 1 DOIs
+  Coreness 469: 1 DOIs
+  Coreness 485: 1 DOIs
+  Coreness 489: 2 DOIs
+  Coreness 490: 1 DOIs
+  Coreness 491: 2 DOIs
+  Coreness 496: 1 DOIs
+  Coreness 498: 1 DOIs
+  Coreness 507: 1 DOIs
+  Coreness 510: 1 DOIs
+  Coreness 511: 1 DOIs
+  Coreness 513: 1 DOIs
+  Coreness 517: 1 DOIs
+  Coreness 518: 1 DOIs
+  Coreness 530: 1 DOIs
+  Coreness 532: 1 DOIs
+  Coreness 538: 1 DOIs
+  Coreness 539: 1 DOIs
+  Coreness 543: 1 DOIs
+  Coreness 548: 1 DOIs
+  Coreness 549: 2 DOIs
+  Coreness 550: 1 DOIs
+  Coreness 553: 3 DOIs
+  Coreness 554: 1 DOIs
+  Coreness 555: 1 DOIs
+  Coreness 576: 1 DOIs
+  Coreness 583: 1 DOIs
+  Coreness 584: 1 DOIs
+  Coreness 586: 1 DOIs
+  Coreness 596: 1 DOIs
+  Coreness 599: 2 DOIs
+  Coreness 600: 1 DOIs
+  Coreness 601: 1 DOIs
+  Coreness 602: 1 DOIs
+  Coreness 604: 2 DOIs
+  Coreness 608: 1 DOIs
+  Coreness 614: 1 DOIs
+  Coreness 615: 1 DOIs
+  Coreness 616: 1 DOIs
+  Coreness 618: 1 DOIs
+  Coreness 624: 1 DOIs
+  Coreness 638: 1 DOIs
+  Coreness 648: 2 DOIs
+  Coreness 649: 1 DOIs
+  Coreness 652: 1 DOIs
+  Coreness 654: 1 DOIs
+  Coreness 661: 1 DOIs
+  Coreness 663: 1 DOIs
+  Coreness 673: 1 DOIs
+  Coreness 676: 2 DOIs
+  Coreness 677: 1 DOIs
+  Coreness 679: 1 DOIs
+  Coreness 680: 1 DOIs
+  Coreness 683: 1 DOIs
+  Coreness 690: 2 DOIs
+  Coreness 695: 1 DOIs
+  Coreness 696: 1 DOIs
+  Coreness 704: 1 DOIs
+  Coreness 707: 1 DOIs
+  Coreness 709: 1 DOIs
+  Coreness 716: 1 DOIs
+  Coreness 724: 1 DOIs
+  Coreness 725: 1 DOIs
+  Coreness 730: 1 DOIs
+  Coreness 732: 1 DOIs
+  Coreness 734: 2 DOIs
+  Coreness 736: 2 DOIs
+  Coreness 738: 1 DOIs
+  Coreness 740: 1 DOIs
+  Coreness 742: 2 DOIs
+  Coreness 749: 2 DOIs
+  Coreness 753: 1 DOIs
+  Coreness 755: 1 DOIs
+  Coreness 757: 1 DOIs
+  Coreness 758: 1 DOIs
+  Coreness 761: 1 DOIs
+  Coreness 763: 1 DOIs
+  Coreness 764: 2 DOIs
+  Coreness 765: 1 DOIs
+  Coreness 767: 2 DOIs
+  Coreness 775: 1 DOIs
+  Coreness 777: 1 DOIs
+  Coreness 783: 1 DOIs
+  Coreness 784: 2 DOIs
+  Coreness 785: 1 DOIs
+  Coreness 787: 2 DOIs
+  Coreness 788: 1 DOIs
+  Coreness 789: 2 DOIs
+  Coreness 794: 1 DOIs
+  Coreness 795: 1 DOIs
+  Coreness 799: 2 DOIs
+  Coreness 804: 2 DOIs
+  Coreness 810: 1 DOIs
+  Coreness 819: 1 DOIs
+  Coreness 825: 1 DOIs
+  Coreness 826: 1 DOIs
+  Coreness 829: 1 DOIs
+  Coreness 838: 1 DOIs
+  Coreness 840: 1 DOIs
+  Coreness 841: 1 DOIs
+  Coreness 844: 1 DOIs
+  Coreness 853: 2 DOIs
+  Coreness 860: 2 DOIs
+  Coreness 861: 1 DOIs
+  Coreness 866: 1 DOIs
+  Coreness 867: 1 DOIs
+  Coreness 868: 1 DOIs
+  Coreness 875: 1 DOIs
+  Coreness 877: 1 DOIs
+  Coreness 883: 1 DOIs
+  Coreness 884: 1 DOIs
+  Coreness 887: 2 DOIs
+  Coreness 890: 1 DOIs
+  Coreness 891: 3 DOIs
+  Coreness 895: 1 DOIs
+  Coreness 899: 1 DOIs
+  Coreness 911: 1 DOIs
+  Coreness 912: 1 DOIs
+  Coreness 919: 1 DOIs
+  Coreness 921: 2 DOIs
+  Coreness 922: 1 DOIs
+  Coreness 925: 1 DOIs
+  Coreness 932: 1 DOIs
+  Coreness 933: 1 DOIs
+  Coreness 938: 3 DOIs
+  Coreness 943: 1 DOIs
+  Coreness 945: 1 DOIs
+  Coreness 947: 1 DOIs
+  Coreness 952: 2 DOIs
+  Coreness 954: 1 DOIs
+  Coreness 956: 1 DOIs
+  Coreness 959: 1 DOIs
+  Coreness 961: 1 DOIs
+  Coreness 964: 1 DOIs
+  Coreness 966: 1 DOIs
+  Coreness 968: 2 DOIs
+  Coreness 969: 1 DOIs
+  Coreness 970: 1 DOIs
+  Coreness 971: 1 DOIs
+  Coreness 975: 1 DOIs
+  Coreness 977: 2 DOIs
+  Coreness 981: 1 DOIs
+  Coreness 983: 2 DOIs
+  Coreness 984: 4 DOIs
+  Coreness 985: 2 DOIs
+  Coreness 989: 1 DOIs
+  Coreness 990: 1 DOIs
+  Coreness 992: 2 DOIs
+  Coreness 993: 1 DOIs
+  Coreness 994: 1 DOIs
+  Coreness 996: 1 DOIs
+  Coreness 999: 2 DOIs
+  Coreness 1000: 1 DOIs
+  Coreness 1005: 2 DOIs
+  Coreness 1012: 4 DOIs
+  Coreness 1013: 1 DOIs
+  Coreness 1017: 2 DOIs
+  Coreness 1019: 1 DOIs
+  Coreness 1020: 1 DOIs
+  Coreness 1024: 2 DOIs
+  Coreness 1025: 1 DOIs
+  Coreness 1027: 1 DOIs
+  Coreness 1030: 1 DOIs
+  Coreness 1034: 1 DOIs
+  Coreness 1035: 2 DOIs
+  Coreness 1039: 1 DOIs
+  Coreness 1040: 1 DOIs
+  Coreness 1044: 1 DOIs
+  Coreness 1047: 1 DOIs
+  Coreness 1050: 1 DOIs
+  Coreness 1051: 1 DOIs
+  Coreness 1055: 1 DOIs
+  Coreness 1056: 1 DOIs
+  Coreness 1062: 2 DOIs
+  Coreness 1064: 1 DOIs
+  Coreness 1065: 2 DOIs
+  Coreness 1066: 1 DOIs
+  Coreness 1069: 1 DOIs
+  Coreness 1074: 1 DOIs
+  Coreness 1078: 7 DOIs
+  Coreness 1079: 1 DOIs
+  Coreness 1081: 3 DOIs
+  Coreness 1084: 2 DOIs
+  Coreness 1093: 1 DOIs
+  Coreness 1094: 2 DOIs
+  Coreness 1097: 1 DOIs
+  Coreness 1098: 3 DOIs
+  Coreness 1100: 1 DOIs
+  Coreness 1101: 1 DOIs
+  Coreness 1103: 2 DOIs
+  Coreness 1105: 2 DOIs
+  Coreness 1106: 1 DOIs
+  Coreness 1109: 1 DOIs
+  Coreness 1111: 2 DOIs
+  Coreness 1112: 1 DOIs
+  Coreness 1116: 1 DOIs
+  Coreness 1118: 1 DOIs
+  Coreness 1119: 1 DOIs
+  Coreness 1124: 3 DOIs
+  Coreness 1126: 6 DOIs
+  Coreness 1128: 2 DOIs
+  Coreness 1131: 2 DOIs
+  Coreness 1132: 1 DOIs
+  Coreness 1133: 3 DOIs
+  Coreness 1134: 2 DOIs
+  Coreness 1135: 3 DOIs
+  Coreness 1138: 1 DOIs
+  Coreness 1140: 1 DOIs
+  Coreness 1141: 1 DOIs
+  Coreness 1145: 4 DOIs
+  Coreness 1148: 2 DOIs
+  Coreness 1151: 1 DOIs
+  Coreness 1152: 1 DOIs
+  Coreness 1156: 1 DOIs
+  Coreness 1157: 1 DOIs
+  Coreness 1162: 5 DOIs
+  Coreness 1165: 1 DOIs
+  Coreness 1168: 1 DOIs
+  Coreness 1169: 1 DOIs
+  Coreness 1171: 1 DOIs
+  Coreness 1172: 1 DOIs
+  Coreness 1173: 3 DOIs
+  Coreness 1174: 1 DOIs
+  Coreness 1177: 1 DOIs
+  Coreness 1182: 2 DOIs
+  Coreness 1184: 1 DOIs
+  Coreness 1187: 2 DOIs
+  Coreness 1188: 1 DOIs
+  Coreness 1192: 1 DOIs
+  Coreness 1195: 1 DOIs
+  Coreness 1198: 2 DOIs
+  Coreness 1199: 1 DOIs
+  Coreness 1201: 1 DOIs
+  Coreness 1203: 1 DOIs
+  Coreness 1206: 1 DOIs
+  Coreness 1207: 1 DOIs
+  Coreness 1208: 1 DOIs
+  Coreness 1210: 1 DOIs
+  Coreness 1218: 4 DOIs
+  Coreness 1219: 1 DOIs
+  Coreness 1220: 2 DOIs
+  Coreness 1228: 1 DOIs
+  Coreness 1229: 1 DOIs
+  Coreness 1233: 4 DOIs
+  Coreness 1235: 2 DOIs
+  Coreness 1240: 1 DOIs
+  Coreness 1241: 1 DOIs
+  Coreness 1242: 1 DOIs
+  Coreness 1243: 2 DOIs
+  Coreness 1245: 1 DOIs
+  Coreness 1248: 1 DOIs
+  Coreness 1249: 2 DOIs
+  Coreness 1250: 1 DOIs
+  Coreness 1251: 1 DOIs
+  Coreness 1253: 1 DOIs
+  Coreness 1254: 3 DOIs
+  Coreness 1257: 1 DOIs
+  Coreness 1258: 1 DOIs
+  Coreness 1259: 1 DOIs
+  Coreness 1261: 1 DOIs
+  Coreness 1262: 1 DOIs
+  Coreness 1263: 4 DOIs
+  Coreness 1264: 2 DOIs
+  Coreness 1269: 1 DOIs
+  Coreness 1271: 2 DOIs
+  Coreness 1272: 1 DOIs
+  Coreness 1273: 2 DOIs
+  Coreness 1276: 2 DOIs
+  Coreness 1279: 2 DOIs
+  Coreness 1280: 1 DOIs
+  Coreness 1281: 3 DOIs
+  Coreness 1282: 3 DOIs
+  Coreness 1283: 3 DOIs
+  Coreness 1284: 1 DOIs
+  Coreness 1287: 3 DOIs
+  Coreness 1288: 1 DOIs
+  Coreness 1292: 2 DOIs
+  Coreness 1294: 1 DOIs
+  Coreness 1297: 2 DOIs
+  Coreness 1298: 3 DOIs
+  Coreness 1299: 1 DOIs
+  Coreness 1300: 1 DOIs
+  Coreness 1301: 1 DOIs
+  Coreness 1302: 1 DOIs
+  Coreness 1303: 3 DOIs
+  Coreness 1304: 1 DOIs
+  Coreness 1305: 4 DOIs
+  Coreness 1306: 2 DOIs
+  Coreness 1307: 1 DOIs
+  Coreness 1309: 1 DOIs
+  Coreness 1311: 2 DOIs
+  Coreness 1313: 2 DOIs
+  Coreness 1314: 1 DOIs
+  Coreness 1315: 2 DOIs
+  Coreness 1316: 2 DOIs
+  Coreness 1318: 1 DOIs
+  Coreness 1319: 2 DOIs
+  Coreness 1322: 1 DOIs
+  Coreness 1323: 1 DOIs
+  Coreness 1325: 1 DOIs
+  Coreness 1327: 2 DOIs
+  Coreness 1330: 2 DOIs
+  Coreness 1331: 6 DOIs
+  Coreness 1333: 1 DOIs
+  Coreness 1335: 1 DOIs
+  Coreness 1336: 2 DOIs
+  Coreness 1337: 1 DOIs
+  Coreness 1340: 1 DOIs
+  Coreness 1341: 2 DOIs
+  Coreness 1342: 1 DOIs
+  Coreness 1343: 1 DOIs
+  Coreness 1347: 2 DOIs
+  Coreness 1350: 2 DOIs
+  Coreness 1351: 1 DOIs
+  Coreness 1355: 2 DOIs
+  Coreness 1357: 3 DOIs
+  Coreness 1358: 6 DOIs
+  Coreness 1360: 1 DOIs
+  Coreness 1363: 3 DOIs
+  Coreness 1364: 1 DOIs
+  Coreness 1365: 2 DOIs
+  Coreness 1367: 4 DOIs
+  Coreness 1368: 1 DOIs
+  Coreness 1369: 1 DOIs
+  Coreness 1370: 2 DOIs
+  Coreness 1373: 1 DOIs
+  Coreness 1375: 2 DOIs
+  Coreness 1376: 1 DOIs
+  Coreness 1377: 1 DOIs
+  Coreness 1379: 3 DOIs
+  Coreness 1380: 1 DOIs
+  Coreness 1381: 1 DOIs
+  Coreness 1383: 2 DOIs
+  Coreness 1386: 1 DOIs
+  Coreness 1387: 2 DOIs
+  Coreness 1389: 2 DOIs
+  Coreness 1390: 5 DOIs
+  Coreness 1392: 4 DOIs
+  Coreness 1393: 3 DOIs
+  Coreness 1394: 1 DOIs
+  Coreness 1396: 1 DOIs
+  Coreness 1398: 1 DOIs
+  Coreness 1401: 1 DOIs
+  Coreness 1403: 1 DOIs
+  Coreness 1404: 1 DOIs
+  Coreness 1405: 1 DOIs
+  Coreness 1407: 3 DOIs
+  Coreness 1409: 2 DOIs
+  Coreness 1414: 4 DOIs
+  Coreness 1417: 2 DOIs
+  Coreness 1419: 1 DOIs
+  Coreness 1422: 2 DOIs
+  Coreness 1423: 5 DOIs
+  Coreness 1425: 1 DOIs
+  Coreness 1427: 1 DOIs
+  Coreness 1428: 2 DOIs
+  Coreness 1431: 2 DOIs
+  Coreness 1432: 1 DOIs
+  Coreness 1433: 3 DOIs
+  Coreness 1434: 1 DOIs
+  Coreness 1436: 1 DOIs
+  Coreness 1439: 4 DOIs
+  Coreness 1441: 4 DOIs
+  Coreness 1442: 2 DOIs
+  Coreness 1449: 2 DOIs
+  Coreness 1450: 2 DOIs
+  Coreness 1454: 3 DOIs
+  Coreness 1455: 1 DOIs
+  Coreness 1456: 1 DOIs
+  Coreness 1457: 1 DOIs
+  Coreness 1458: 1 DOIs
+  Coreness 1459: 1 DOIs
+  Coreness 1460: 1 DOIs
+  Coreness 1463: 1 DOIs
+  Coreness 1464: 1 DOIs
+  Coreness 1466: 1 DOIs
+  Coreness 1469: 3 DOIs
+  Coreness 1471: 1 DOIs
+  Coreness 1473: 1 DOIs
+  Coreness 1474: 1 DOIs
+  Coreness 1475: 2 DOIs
+  Coreness 1477: 3 DOIs
+  Coreness 1479: 1 DOIs
+  Coreness 1480: 2 DOIs
+  Coreness 1481: 3 DOIs
+  Coreness 1485: 1 DOIs
+  Coreness 1487: 4 DOIs
+  Coreness 1490: 1 DOIs
+  Coreness 1491: 2 DOIs
+  Coreness 1494: 3 DOIs
+  Coreness 1495: 1 DOIs
+  Coreness 1497: 2 DOIs
+  Coreness 1498: 2 DOIs
+  Coreness 1500: 2 DOIs
+  Coreness 1501: 3 DOIs
+  Coreness 1502: 1 DOIs
+  Coreness 1503: 3 DOIs
+  Coreness 1504: 2 DOIs
+  Coreness 1506: 1 DOIs
+  Coreness 1507: 1 DOIs
+  Coreness 1510: 3 DOIs
+  Coreness 1511: 1 DOIs
+  Coreness 1512: 2 DOIs
+  Coreness 1513: 2 DOIs
+  Coreness 1514: 2 DOIs
+  Coreness 1515: 5 DOIs
+  Coreness 1516: 4 DOIs
+  Coreness 1519: 1 DOIs
+  Coreness 1521: 1 DOIs
+  Coreness 1522: 1 DOIs
+  Coreness 1524: 1 DOIs
+  Coreness 1525: 2 DOIs
+  Coreness 1526: 1 DOIs
+  Coreness 1527: 2 DOIs
+  Coreness 1528: 4 DOIs
+  Coreness 1529: 2 DOIs
+  Coreness 1530: 3 DOIs
+  Coreness 1533: 4 DOIs
+  Coreness 1535: 2 DOIs
+  Coreness 1537: 2 DOIs
+  Coreness 1539: 2 DOIs
+  Coreness 1540: 6 DOIs
+  Coreness 1541: 2 DOIs
+  Coreness 1542: 3 DOIs
+  Coreness 1547: 5 DOIs
+  Coreness 1548: 4 DOIs
+  Coreness 1549: 9 DOIs
+  Coreness 1550: 1 DOIs
+  Coreness 1552: 3 DOIs
+  Coreness 1555: 2 DOIs
+  Coreness 1557: 4 DOIs
+  Coreness 1559: 2 DOIs
+  Coreness 1560: 2 DOIs
+  Coreness 1561: 4 DOIs
+  Coreness 1563: 1 DOIs
+  Coreness 1564: 3 DOIs
+  Coreness 1565: 1 DOIs
+  Coreness 1566: 4 DOIs
+  Coreness 1567: 2 DOIs
+  Coreness 1568: 3 DOIs
+  Coreness 1569: 1 DOIs
+  Coreness 1570: 4 DOIs
+  Coreness 1571: 9 DOIs
+  Coreness 1572: 1 DOIs
+  Coreness 1573: 3 DOIs
+  Coreness 1575: 1 DOIs
+  Coreness 1577: 1 DOIs
+  Coreness 1579: 1 DOIs
+  Coreness 1581: 2 DOIs
+  Coreness 1582: 2 DOIs
+  Coreness 1584: 2 DOIs
+  Coreness 1585: 2 DOIs
+  Coreness 1586: 6 DOIs
+  Coreness 1587: 1 DOIs
+  Coreness 1589: 5 DOIs
+  Coreness 1591: 3 DOIs
+  Coreness 1592: 1 DOIs
+  Coreness 1593: 3 DOIs
+  Coreness 1594: 5 DOIs
+  Coreness 1595: 4 DOIs
+  Coreness 1596: 4 DOIs
+  Coreness 1600: 3 DOIs
+  Coreness 1601: 2 DOIs
+  Coreness 1604: 4 DOIs
+  Coreness 1606: 1 DOIs
+  Coreness 1607: 4 DOIs
+  Coreness 1608: 4 DOIs
+  Coreness 1610: 3 DOIs
+  Coreness 1611: 2 DOIs
+  Coreness 1612: 9 DOIs
+  Coreness 1613: 1 DOIs
+  Coreness 1614: 4 DOIs
+  Coreness 1615: 6 DOIs
+  Coreness 1616: 2 DOIs
+  Coreness 1618: 1 DOIs
+  Coreness 1619: 1 DOIs
+  Coreness 1620: 7 DOIs
+  Coreness 1623: 10 DOIs
+  Coreness 1624: 3 DOIs
+  Coreness 1625: 1 DOIs
+  Coreness 1626: 4 DOIs
+  Coreness 1628: 6 DOIs
+  Coreness 1629: 3 DOIs
+  Coreness 1630: 2 DOIs
+  Coreness 1631: 3 DOIs
+  Coreness 1632: 6 DOIs
+  Coreness 1633: 3 DOIs
+  Coreness 1634: 2 DOIs
+  Coreness 1635: 12 DOIs
+  Coreness 1639: 4 DOIs
+  Coreness 1641: 1 DOIs
+  Coreness 1643: 5 DOIs
+  Coreness 1645: 1 DOIs
+  Coreness 1646: 2 DOIs
+  Coreness 1647: 2 DOIs
+  Coreness 1649: 2 DOIs
+  Coreness 1650: 1 DOIs
+  Coreness 1651: 1 DOIs
+  Coreness 1653: 1 DOIs
+  Coreness 1654: 4 DOIs
+  Coreness 1655: 5 DOIs
+  Coreness 1657: 5 DOIs
+  Coreness 1658: 1 DOIs
+  Coreness 1659: 3 DOIs
+  Coreness 1660: 2 DOIs
+  Coreness 1662: 2 DOIs
+  Coreness 1663: 1 DOIs
+  Coreness 1664: 8 DOIs
+  Coreness 1665: 1 DOIs
+  Coreness 1666: 2 DOIs
+  Coreness 1667: 2 DOIs
+  Coreness 1668: 3 DOIs
+  Coreness 1669: 1 DOIs
+  Coreness 1670: 1 DOIs
+  Coreness 1672: 1 DOIs
+  Coreness 1673: 4 DOIs
+  Coreness 1674: 14 DOIs
+  Coreness 1675: 1 DOIs
+  Coreness 1679: 1 DOIs
+  Coreness 1680: 5 DOIs
+  Coreness 1685: 2 DOIs
+  Coreness 1687: 3 DOIs
+  Coreness 1688: 3 DOIs
+  Coreness 1689: 14 DOIs
+  Coreness 1691: 1 DOIs
+  Coreness 1692: 3 DOIs
+  Coreness 1693: 64 DOIs
+  Coreness 1694: 17 DOIs
+  Coreness 1695: 1 DOIs
+  Coreness 1696: 3 DOIs
+  Coreness 1697: 2 DOIs
+  Coreness 1698: 1 DOIs
+  Coreness 1699: 1 DOIs
+  Coreness 1700: 14 DOIs
+  Coreness 1701: 11 DOIs
+  Coreness 1702: 14 DOIs
+  Coreness 1703: 5 DOIs
+  Coreness 1704: 2425 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260514_232709.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AF - DOIs_Communities_20260514_232914.csv
+  Plot saved → 'AF - Community_sizes_20260514_232914.png'
+  Plot saved → 'AF - Community_sizes_20260514_232914_dark.png'
+  Bump chart → 'AF - Community_bump_20260514_232915.png'
+  Bump chart → 'AF - Community_bump_20260514_232915_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260514_232927.png'
+  Bump chart → 'AG - Coreness_bump_20260514_232927_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.04.csv
+  ✓ 3630 DOIs loaded.
+  ✓ 13 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 13 DOIs to highlight
+  ✓ Coreness range: 48 – 1704
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260514_233344.png
+  ✓ Contour map saved → AH - Kcore_contour_20260514_233344_dark.png
+  ✓ Contour map saved → AH - Kcore_contour_20260514_233344.png
+  ✓ Contour map saved → AH - Kcore_contour_20260514_233344_dark.png
+  ✓ Community data: 3 communities
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344.png
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344_dark.png
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344.png
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344_dark.png
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344.png
+    Bar chart inset drawn (lower left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344_dark.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344_dark.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260514_233344_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260514_233344.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260514_233344_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260514_233344.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260514_233344_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260514_233344.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260514_233344_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260514_233344.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260514_233344_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923
+  ⏱  Community detection completed in 8m 31s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AB - Pass_data_to_other_query_20260325_131054.csv
+  Clean CSV         : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\combined_results_clean_20260514_225926.csv
+  Combined CSV      : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\clean_results_with_combined_title_abstract_20260514_230243.csv
+  TSC output        : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923
+  Community CSV     : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AF - DOIs_Communities_20260514_232914.csv
+  Maximum TSC Spread: 1.7205
+  Selected λ        : 0.01
+  Selected τ        : 0.04
+  Log file          : C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AA - Output_text_20260514_225829.txt
+
+  ⏱  Total time     : 37m 11s
+  ──────────────────────────────────────
+    User review (wait)    : 2m 49s
+    Data cleaning         : 0m 31s
+    Combine title+abstract: 608 ms
+    Similarity matrix     : 0m 23s
+    Coarse sweep & plots  : 7m 19s
+    Fine sweep & plots    : 15m 16s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+RSA_attack_complexity_TF-IDF_20260514_225923\AE - Timing_summary_20260514_233540.txt'
+
