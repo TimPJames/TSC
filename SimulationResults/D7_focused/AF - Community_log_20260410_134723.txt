@@ -1,0 +1,105 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AF - Community_log_20260410_134723.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0400
+  ✓ Search terms from folder name        : "prime gaps bounded gaps twin prime"
+  ✓ Similarity method from folder name   : TF-IDF
+  ✓ QR terms from log file               : ""prime gaps" "bounded gaps" "twin prime""
+  ✓ Matrix file                          : tfidf_cosine_matrix_by_doi_tau_0.04.csv
+  ✓ TSC base file                        : DOIs_with_max_TSC_values_20260403_114141.csv
+
+── Loading matrix ────────────────────────────────
+✓ Matrix is symmetric.
+✓ τ=0.0400 applied: 0 edge(s) zeroed out (88610 retained).
+✓ 337 DOIs loaded. Sparsity: 22.0%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=7269.7721 | row-sum max=3.46e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 4 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0535
+  (Q > 0.3 indicates strong community structure)
+
+  Community 1: 123 DOIs
+  Community 2: 93 DOIs
+  Community 3: 67 DOIs
+  Community 4: 54 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 3 – 214
+  Median coreness   : 214.0
+
+  Coreness 3: 1 DOIs
+  Coreness 7: 1 DOIs
+  Coreness 13: 1 DOIs
+  Coreness 27: 1 DOIs
+  Coreness 45: 1 DOIs
+  Coreness 48: 1 DOIs
+  Coreness 62: 1 DOIs
+  Coreness 72: 1 DOIs
+  Coreness 80: 1 DOIs
+  Coreness 85: 2 DOIs
+  Coreness 90: 1 DOIs
+  Coreness 97: 1 DOIs
+  Coreness 98: 1 DOIs
+  Coreness 100: 1 DOIs
+  Coreness 103: 1 DOIs
+  Coreness 109: 1 DOIs
+  Coreness 115: 1 DOIs
+  Coreness 118: 1 DOIs
+  Coreness 122: 1 DOIs
+  Coreness 124: 1 DOIs
+  Coreness 131: 1 DOIs
+  Coreness 135: 1 DOIs
+  Coreness 140: 1 DOIs
+  Coreness 146: 1 DOIs
+  Coreness 147: 1 DOIs
+  Coreness 155: 1 DOIs
+  Coreness 158: 1 DOIs
+  Coreness 161: 1 DOIs
+  Coreness 162: 1 DOIs
+  Coreness 166: 1 DOIs
+  Coreness 167: 1 DOIs
+  Coreness 170: 1 DOIs
+  Coreness 175: 1 DOIs
+  Coreness 176: 1 DOIs
+  Coreness 178: 3 DOIs
+  Coreness 179: 1 DOIs
+  Coreness 180: 4 DOIs
+  Coreness 182: 1 DOIs
+  Coreness 187: 1 DOIs
+  Coreness 188: 1 DOIs
+  Coreness 189: 1 DOIs
+  Coreness 193: 1 DOIs
+  Coreness 195: 1 DOIs
+  Coreness 197: 1 DOIs
+  Coreness 200: 4 DOIs
+  Coreness 201: 1 DOIs
+  Coreness 202: 1 DOIs
+  Coreness 203: 1 DOIs
+  Coreness 207: 4 DOIs
+  Coreness 208: 8 DOIs
+  Coreness 209: 2 DOIs
+  Coreness 210: 1 DOIs
+  Coreness 211: 4 DOIs
+  Coreness 213: 2 DOIs
+  Coreness 214: 259 DOIs
+
+── Saving outputs ────────────────────────────────
+
+  Base file: DOIs_with_max_TSC_values_20260403_114141.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AF - DOIs_Communities_20260410_134724.csv
+  Plot saved → 'AF - Community_sizes_20260410_134724.png'
+  Plot saved → 'AF - Community_sizes_20260410_134724_dark.png'
+  Bump chart → 'AF - Community_bump_20260410_134725.png'
+  Bump chart → 'AF - Community_bump_20260410_134725_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260410_134725.png'
+  Bump chart → 'AG - Coreness_bump_20260410_134725_dark.png'
+
+✓ Log saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AF - Community_log_20260410_134723.txt
+

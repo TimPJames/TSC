@@ -1,0 +1,818 @@
+════════════════════════════════════════════════════════════
+  Cleaning log: combined_results_clean_20260525_132415.csv
+  Started     : 20260525_132415
+════════════════════════════════════════════════════════════
+
+  [Step 3 – Pass 1] No identical title + abstract duplicates found.
+
+  [Step 3 – Pass 2] 14 title duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (1 of 14)):
+
+  [1]
+       DOI       : 10.1017/9781009760508
+       Published : 2026-03-27
+       Title     : Topics in Number Theory
+       Authors   : Jorge Morales
+       Abstract  : Spanning elementary, algebraic, and analytic approaches, this book provides an introductory overview of essential themes in number theory. Designed for mathematics students, it progresses from undergraduate-accessible material requiring only basic abstract algebra to graduate-level topics demanding …
+
+  [2]
+       DOI       : 10.1142/7036
+       Published : 2008-12-01
+       Title     : Topics in Number Theory
+       Authors   : Minking Eie
+       Abstract  : Theory of Modular Forms of One Variable: Group Action of the Modular Group The Gamma and Zeta Functions Zeta Functions of Modular Forms Dimension Formulae Bernoulli Identities and Applications Euler Sums and Recent Development Theory of Modular Forms of Several Variables: Theory of Modular Forms of …
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 14)):
+
+  [1]
+       DOI       : 10.1515/9783111395593
+       Published : 2024-10-15
+       Title     : Combinatorial Number Theory
+       Authors   : Integers Conference 2023 Athens; Landman, Bruce M. 1951-; Luca, Florian 1969-; Nathanson, Melvyn B. 
+       Abstract  : This volume consists of twenty articles stemming from presentations given at the 2023 Integers Conference . They represent a variety of active areas of research in combinatorial number theory, including additive number theory, multiplicative number theory, elementary number theory, the theory of par…
+
+  [2]
+       DOI       : 10.1515/9783110280616
+       Published : 2013-08-27
+       Title     : Combinatorial Number Theory
+       Authors   : Landman, Bruce; Andràs Sárközy; Integers Conference <2011.10.26-29, Carrollton, Ga.>
+       Abstract  : This volume contains selected refereed papers based on lectures presented at the "Integers Conference 2011", an international conference in combinatorial number theory that was held in Carrollton, Georgia, United States in October 2011. This was the fifth Integers Conference, held bi-annually since …
+
+  [3]
+       DOI       : 10.1515/9783110208504
+       Published : 2009-03-17
+       Title     : Combinatorial Number Theory
+       Authors   : Bruce Landman; Melvyn B. Nathanson
+       Abstract  : This volume contains selected refereed papers based on lectures presented at the 'Integers Conference 2007', an international conference in combinatorial number theory that was held in Carrollton, Georgia in October 2007. The proceedings include contributions from many distinguished speakers, includ…
+
+  [4]
+       DOI       : 10.1515/9783110925098
+       Published : 2007-12-31
+       Title     : Combinatorial Number Theory
+       Authors   : Integers Conference 2005 <2005 :Carrollton, Ga.>; Melvyn B. Nathanson; Bruce Landman; Richard J. Now
+       Abstract  : This carefully edited volume contains selected refereed papers based on lectures presented by many distinguished speakers at the "Integers Conference 2005", an international conference in combinatorial number theory. The conference was held in celebration of the 70th birthday of Ronald Graham, a lea…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (2 of 14))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1515/9783110208504
+       Published : 2009-03-17
+       Title     : Combinatorial Number Theory
+       Authors   : Bruce Landman; Melvyn B. Nathanson
+       Abstract  : This volume contains selected refereed papers based on lectures presented at the 'Integers Conference 2007', an international conference in combinatorial number theory that was held in Carrollton, Georgia in October 2007. The proceedings include contributions from many distinguished speakers, includ…
+
+  [2]
+       DOI       : 10.1515/9783110925098
+       Published : 2007-12-31
+       Title     : Combinatorial Number Theory
+       Authors   : Integers Conference 2005 <2005 :Carrollton, Ga.>; Melvyn B. Nathanson; Bruce Landman; Richard J. Now
+       Abstract  : This carefully edited volume contains selected refereed papers based on lectures presented by many distinguished speakers at the "Integers Conference 2005", an international conference in combinatorial number theory. The conference was held in celebration of the 70th birthday of Ronald Graham, a lea…
+
+  [3]
+       DOI       : 10.1515/9783111395593
+       Published : 2024-10-15
+       Title     : Combinatorial Number Theory
+       Authors   : Integers Conference 2023 Athens; Landman, Bruce M. 1951-; Luca, Florian 1969-; Nathanson, Melvyn B. 
+       Abstract  : This volume consists of twenty articles stemming from presentations given at the 2023 Integers Conference . They represent a variety of active areas of research in combinatorial number theory, including additive number theory, multiplicative number theory, elementary number theory, the theory of par…
+
+  [4]
+       DOI       : 10.1515/9783110280616
+       Published : 2013-08-27
+       Title     : Combinatorial Number Theory
+       Authors   : Landman, Bruce; Andràs Sárközy; Integers Conference <2011.10.26-29, Carrollton, Ga.>
+       Abstract  : This volume contains selected refereed papers based on lectures presented at the "Integers Conference 2011", an international conference in combinatorial number theory that was held in Carrollton, Georgia, United States in October 2011. This was the fifth Integers Conference, held bi-annually since …
+
+  ────────────────────────────────────────────────────────────
+
+  4 records found — compact reference (sorted by author, then date):
+    [1]  10.1515/9783110208504  |  Bruce Landman; Melvyn B. Nathanson  |  2009-03-17
+    [2]  10.1515/9783110925098  |  Integers Conference 2005 <2005 :Carrollton, Ga.>;   |  2007-12-31
+    [3]  10.1515/9783111395593  |  Integers Conference 2023 Athens; Landman, Bruce M.  |  2024-10-15
+    [4]  10.1515/9783110280616  |  Landman, Bruce; Andràs Sárközy; Integers Conferenc  |  2013-08-27
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/4]
+       DOI       : 10.1515/9783110208504
+       Published : 2009-03-17
+       Authors   : Bruce Landman; Melvyn B. Nathanson
+       Title     : Combinatorial Number Theory
+  → Keeping [1]: 10.1515/9783110208504
+  → Keeping [2]: 10.1515/9783110925098
+  → Keeping [3]: 10.1515/9783111395593
+  → Keeping [4]: 10.1515/9783110280616
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 14)):
+
+  [1]
+       DOI       : 10.1017/9781139017756.004
+       Published : 2023-08-17
+       Title     : Algebraic Number Theory
+       Authors   : В. П. Платонов; Andrei S. Rapinchuk; Igor A. Rapinchuk
+       Abstract  : This chapter reviews the major results on algebraic number theory, cohomology (both abelian and nonabelian), and central simple algebras over local and global fields that are needed in later chapters.
+
+  [2]
+       DOI       : 10.1201/9781003177036
+       Published : 2021-04-22
+       Title     : Algebraic Number Theory
+       Authors   : J. S. Chahal
+       Abstract  : This book offers the basics of algebraic number theory for students and others who need an introduction and do not have the time to wade through the voluminous textbooks available. It is suitable for an independent study or as a textbook for a first course on the topic. The author presents the topic…
+
+  [3]
+       DOI       : 10.1201/b10493
+       Published : 2011-01-05
+       Title     : Algebraic Number Theory
+       Authors   : R. A. Mollin
+       Abstract  : Bringing the material up to date to reflect modern applications, this second edition has been completely rewritten and reorganized to incorporate a new style, methodology, and presentation. It offers a more complete and involved treatment of Galois theory, a more comprehensive section on Pollard's c…
+
+  [4]
+       DOI       : 10.5860/choice.37-2827
+       Published : 2000-01-01
+       Title     : Algebraic number theory
+       Authors   : J. S. Milne
+       Abstract  : An algebraic number field is a finite extension of Q; an algebraic number is an element of an algebraic number field. Algebraic number theory studies the arithmetic of algebraic number fields -- the ring of integers in the number field, the ideals and units in the ring of integers, the extent to whi…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (3 of 14))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1201/9781003177036
+       Published : 2021-04-22
+       Title     : Algebraic Number Theory
+       Authors   : J. S. Chahal
+       Abstract  : This book offers the basics of algebraic number theory for students and others who need an introduction and do not have the time to wade through the voluminous textbooks available. It is suitable for an independent study or as a textbook for a first course on the topic. The author presents the topic…
+
+  [2]
+       DOI       : 10.5860/choice.37-2827
+       Published : 2000-01-01
+       Title     : Algebraic number theory
+       Authors   : J. S. Milne
+       Abstract  : An algebraic number field is a finite extension of Q; an algebraic number is an element of an algebraic number field. Algebraic number theory studies the arithmetic of algebraic number fields -- the ring of integers in the number field, the ideals and units in the ring of integers, the extent to whi…
+
+  [3]
+       DOI       : 10.1201/b10493
+       Published : 2011-01-05
+       Title     : Algebraic Number Theory
+       Authors   : R. A. Mollin
+       Abstract  : Bringing the material up to date to reflect modern applications, this second edition has been completely rewritten and reorganized to incorporate a new style, methodology, and presentation. It offers a more complete and involved treatment of Galois theory, a more comprehensive section on Pollard's c…
+
+  [4]
+       DOI       : 10.1017/9781139017756.004
+       Published : 2023-08-17
+       Title     : Algebraic Number Theory
+       Authors   : В. П. Платонов; Andrei S. Rapinchuk; Igor A. Rapinchuk
+       Abstract  : This chapter reviews the major results on algebraic number theory, cohomology (both abelian and nonabelian), and central simple algebras over local and global fields that are needed in later chapters.
+
+  ────────────────────────────────────────────────────────────
+
+  4 records found — compact reference (sorted by author, then date):
+    [1]  10.1201/9781003177036  |  J. S. Chahal  |  2021-04-22
+    [2]  10.5860/choice.37-2827  |  J. S. Milne  |  2000-01-01
+    [3]  10.1201/b10493  |  R. A. Mollin  |  2011-01-05
+    [4]  10.1017/9781139017756.004  |  В. П. Платонов; Andrei S. Rapinchuk; Igor A. Rapin  |  2023-08-17
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/4]
+       DOI       : 10.1201/9781003177036
+       Published : 2021-04-22
+       Authors   : J. S. Chahal
+       Title     : Algebraic Number Theory
+  → Keeping [1]: 10.1201/9781003177036
+  → Keeping [2]: 10.5860/choice.37-2827
+  → Keeping [3]: 10.1201/b10493
+  → Keeping [4]: 10.1017/9781139017756.004
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 14)):
+
+  [1]
+       DOI       : 10.1201/9781003318712
+       Published : 2023-03-08
+       Title     : Introduction to Number Theory
+       Authors   : Mark Hunacek
+       Abstract  : Introduction to Number Theory covers the essential content of an introductory number theory course including divisibility and prime factorization, congruences, and quadratic reciprocity. The instructor may also choose from a collection of additional topics. Aligning with the trend toward smaller, es…
+
+  [2]
+       DOI       : 10.1090/chel/384.h
+       Published : 2018-09-26
+       Title     : Introduction to Number Theory
+       Authors   : Daniel E. Flath
+       Abstract  : Prime numbers and unique factorization sums of two squares quadratic reciprocity indefinite forms the class group and genera.
+
+  [3]
+       DOI       : 10.5860/choice.46-6857
+       Published : 2009-08-01
+       Title     : Introduction to number theory
+       Authors   : 
+       Abstract  : 1. The Factorization of Integers.- 1.1 Divisibility.- 1.2 Prime Numbers and Composite Numbers.- 1.3 Prime Numbers.- 1.4 Integral Modulus.- 1.5 The Fundamental Theorem of Arithmetic.- 1.6 The Greatest Common Factor and the Least Common Multiple.- 1.7 The Inclusion-Exclusion Principle.- 1.8 Linear Ind…
+
+  [4]
+       DOI       : 10.1201/9781584889380
+       Published : 2007-10-30
+       Title     : Introduction to Number Theory
+       Authors   : Anthony Vazzana
+       Abstract  : One of the oldest branches of mathematics, number theory is a vast field devoted to studying the properties of whole numbers. Offering a flexible format for a one- or two-semester course, Introduction to Number Theory uses worked examples, numerous exercises, and two popular software packages to des…
+
+  [5]
+       DOI       : 10.1002/9781118031575.ch4
+       Published : 2006-06-29
+       Title     : Introduction to Number Theory
+       Authors   : 
+       Abstract  : This chapter contains sections titled: Binary Operators Commonly Used Number Systems Elementary Number Theory
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (4 of 14))  —  sorted by author:
+
+  [1]
+       DOI       : 10.5860/choice.46-6857
+       Published : 2009-08-01
+       Title     : Introduction to number theory
+       Authors   : 
+       Abstract  : 1. The Factorization of Integers.- 1.1 Divisibility.- 1.2 Prime Numbers and Composite Numbers.- 1.3 Prime Numbers.- 1.4 Integral Modulus.- 1.5 The Fundamental Theorem of Arithmetic.- 1.6 The Greatest Common Factor and the Least Common Multiple.- 1.7 The Inclusion-Exclusion Principle.- 1.8 Linear Ind…
+
+  [2]
+       DOI       : 10.1002/9781118031575.ch4
+       Published : 2006-06-29
+       Title     : Introduction to Number Theory
+       Authors   : 
+       Abstract  : This chapter contains sections titled: Binary Operators Commonly Used Number Systems Elementary Number Theory
+
+  [3]
+       DOI       : 10.1201/9781584889380
+       Published : 2007-10-30
+       Title     : Introduction to Number Theory
+       Authors   : Anthony Vazzana
+       Abstract  : One of the oldest branches of mathematics, number theory is a vast field devoted to studying the properties of whole numbers. Offering a flexible format for a one- or two-semester course, Introduction to Number Theory uses worked examples, numerous exercises, and two popular software packages to des…
+
+  [4]
+       DOI       : 10.1090/chel/384.h
+       Published : 2018-09-26
+       Title     : Introduction to Number Theory
+       Authors   : Daniel E. Flath
+       Abstract  : Prime numbers and unique factorization sums of two squares quadratic reciprocity indefinite forms the class group and genera.
+
+  [5]
+       DOI       : 10.1201/9781003318712
+       Published : 2023-03-08
+       Title     : Introduction to Number Theory
+       Authors   : Mark Hunacek
+       Abstract  : Introduction to Number Theory covers the essential content of an introductory number theory course including divisibility and prime factorization, congruences, and quadratic reciprocity. The instructor may also choose from a collection of additional topics. Aligning with the trend toward smaller, es…
+
+  ────────────────────────────────────────────────────────────
+
+  5 records found — compact reference (sorted by author, then date):
+    [1]  10.5860/choice.46-6857  |    |  2009-08-01
+    [2]  10.1002/9781118031575.ch4  |    |  2006-06-29
+    [3]  10.1201/9781584889380  |  Anthony Vazzana  |  2007-10-30
+    [4]  10.1090/chel/384.h  |  Daniel E. Flath  |  2018-09-26
+    [5]  10.1201/9781003318712  |  Mark Hunacek  |  2023-03-08
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/5]
+       DOI       : 10.5860/choice.46-6857
+       Published : 2009-08-01
+       Authors   : 
+       Title     : Introduction to number theory
+  → Keeping [1]: 10.5860/choice.46-6857
+  → Keeping [2]: 10.1002/9781118031575.ch4
+  → Keeping [3]: 10.1201/9781584889380
+  → Keeping [4]: 10.1090/chel/384.h
+  → Keeping [5]: 10.1201/9781003318712
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 14)):
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1017/mag.2023.39
+       Published : 2023-02-16
+       Title     : Bounded gaps between primes
+       Authors   : P. Shiu
+       Abstract  : order 4 and graph B does not. However, what if there is no such egregious distinction? The author suggests examining the adjacency matrices, which might look different, but then you might be able to relabel the vertices and they turn out to be the same. There were several places in this chapter wher…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1017/9781108872201
+       Published : 2021-02-25
+       Title     : Bounded Gaps Between Primes
+       Authors   : Kevin Broughan
+       Abstract  : Searching for small gaps between consecutive primes is one way to approach the twin primes conjecture, one of the most celebrated unsolved problems in number theory. This book documents the remarkable developments of recent decades, whereby an upper bound on the known gap length between infinite num…
+
+  [3]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.48550/arxiv.1402.4849
+       Published : 2014-02-19
+       Title     : Bounded gaps between primes
+       Authors   : Ben Green
+       Abstract  : These are notes on Zhang's work and subsequent developments produced in preparation for 5 hours of talks for a general mathematical audience given in Cambridge, Edinburgh and Auckland over the last year. Being for colloquium-style talks, these notes are at a much lower level than other accounts in t…
+
+  ────────────────────────────────────────────────────────────
+  ℹ️  Record(s) [1, 2, 3] are from the focused query corpus and WILL BE KEPT regardless of your choice.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (5 of 14))  —  sorted by author:
+
+  [1]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.48550/arxiv.1402.4849
+       Published : 2014-02-19
+       Title     : Bounded gaps between primes
+       Authors   : Ben Green
+       Abstract  : These are notes on Zhang's work and subsequent developments produced in preparation for 5 hours of talks for a general mathematical audience given in Cambridge, Edinburgh and Auckland over the last year. Being for colloquium-style talks, these notes are at a much lower level than other accounts in t…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1017/9781108872201
+       Published : 2021-02-25
+       Title     : Bounded Gaps Between Primes
+       Authors   : Kevin Broughan
+       Abstract  : Searching for small gaps between consecutive primes is one way to approach the twin primes conjecture, one of the most celebrated unsolved problems in number theory. This book documents the remarkable developments of recent decades, whereby an upper bound on the known gap length between infinite num…
+
+  [3]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : 10.1017/mag.2023.39
+       Published : 2023-02-16
+       Title     : Bounded gaps between primes
+       Authors   : P. Shiu
+       Abstract  : order 4 and graph B does not. However, what if there is no such egregious distinction? The author suggests examining the adjacency matrices, which might look different, but then you might be able to relabel the vertices and they turn out to be the same. There were several places in this chapter wher…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1] [FOCUSED — PROTECTED]  10.48550/arxiv.1402.4849  |  Ben Green  |  2014-02-19
+    [2] [FOCUSED — PROTECTED]  10.1017/9781108872201  |  Kevin Broughan  |  2021-02-25
+    [3] [FOCUSED — PROTECTED]  10.1017/mag.2023.39  |  P. Shiu  |  2023-02-16
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.48550/arxiv.1402.4849
+
+  [2/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.1017/9781108872201
+
+  [3/3]  *** FOCUSED QUERY DOCUMENT — KEEPING AUTOMATICALLY ***
+       DOI       : 10.1017/mag.2023.39
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (6 of 14)):
+
+  [1]
+       DOI       : 10.15760/pdxopen-37
+       Published : 2022-03-01
+       Title     : An Introduction to Number Theory
+       Authors   : J.J.P. Veerman
+       Abstract  : These notes are intended for a graduate course in Number Theory. No prior familiarity with number theory is assumed. Chapters 1-14 represent almost 3 trimesters of the course. Eventually we intend to publish a full year (3 trimesters) course on number theory. The current content represents courses t…
+
+  [2]
+       DOI       : 10.5860/choice.43-3432
+       Published : 2006-02-01
+       Title     : An introduction to number theory
+       Authors   : 
+       Abstract  : In this study, historical remarks trace the evolution of number theory through the works of famous mathematicians.
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (7 of 14)):
+
+  [1]
+       DOI       : 10.1201/9781003275947
+       Published : 2021-11-24
+       Title     : Number Theory and its Applications
+       Authors   : Satyabrota Kundu; Sypriyo Mazumder
+       Abstract  : Number Theory and its Applications is a textbook for students pursuing mathematics as major in undergraduate and postgraduate courses. Please note: Taylor & Francis does not sell or distribute the print book in India, Pakistan, Nepal, Bhutan, Bangladesh and Sri Lanka.
+
+  [2]
+       DOI       : 10.5772/intechopen.78090
+       Published : 2020-04-30
+       Title     : Number Theory and Its Applications
+       Authors   : C. S. Ryoo
+       Abstract  : Number theory and its applications are well known for their proven properties and excellent applicability in interdisciplinary fields of science. Until now, research on number theory and its applications has been done in mathematics, applied mathematics, and the sciences. In particular, number theor…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (8 of 14)):
+
+  [1]
+       DOI       : 10.1201/9781003193111
+       Published : 2021-07-14
+       Title     : Elementary Number Theory
+       Authors   : Gove Effinger; Gary L. Mullen
+       Abstract  : Elementary Number Theory, Gove Effinger, Gary L. Mullen This text is intended to be used as an undergraduate introduction to the theory of numbers. The authors have been immersed in this area of mathematics for many years and hope that this text will inspire students (and instructors) to study, unde…
+
+  [2]
+       DOI       : 10.1201/b17760
+       Published : 2014-11-24
+       Title     : Elementary Number Theory
+       Authors   : James S. Kraft
+       Abstract  : Elementary Number Theory takes an accessible approach to teaching students about the role of number theory in pure mathematics and its important applications to cryptography and other areas. The first chapter of the book explains how to do proofs and includes a brief discussion of lemmas, propositio…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 14)):
+
+  [1]
+       DOI       : 10.4171/owr/2019/50
+       Published : 2020-11-18
+       Title     : Analytic Number Theory
+       Authors   : Jörg Brüdern; Kaisa Matomäki; R. C. Vaughan; Trevor D. Wooley
+       Abstract  : Analytic number theory is a subject which is central to modern mathematics. There are many important unsolved problems which have stimulated a large amount of activity by many talented researchers. At least two of the Millennium Problems can be considered to be in this area. Moreover in recent years…
+
+  [2]
+       DOI       : 10.4171/owr/2013/51
+       Published : 2014-09-03
+       Title     : Analytic Number Theory
+       Authors   : Jörg Brüdern; Hugh L. Montgomery; R. C. Vaughan; Trevor D. Wooley
+       Abstract  : Analytic number theory has florished over the past few years, and this workshop brought together world leaders and young talent to discuss developments in various branches of the subject.
+
+  [3]
+       DOI       : 10.1201/9781420003208.ch8
+       Published : 2006-01-13
+       Title     : analytic number theory
+       Authors   : 
+       Abstract  : analytic number theory is available in our digital library an online access to it is set as public so you can download it instantly. Our book servers hosts in multiple locations, allowing you to get the most less latency time to download any of our books like this one. Merely said, the abstract anal…
+
+  [4]
+       DOI       : 10.1090/coll/053
+       Published : 2004-06-08
+       Title     : Analytic Number Theory
+       Authors   : Henryk Iwaniec; Emmanuel Kowalski
+       Abstract  : Analytic Number Theory distinguishes itself by the variety of tools it uses to establish results, many of which belong to the mainstream of arithmetic. One of the main attractions of analytic number theory is the vast diversity of concepts and methods it includes. The main goal of the book is to sho…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (9 of 14))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1201/9781420003208.ch8
+       Published : 2006-01-13
+       Title     : analytic number theory
+       Authors   : 
+       Abstract  : analytic number theory is available in our digital library an online access to it is set as public so you can download it instantly. Our book servers hosts in multiple locations, allowing you to get the most less latency time to download any of our books like this one. Merely said, the abstract anal…
+
+  [2]
+       DOI       : 10.1090/coll/053
+       Published : 2004-06-08
+       Title     : Analytic Number Theory
+       Authors   : Henryk Iwaniec; Emmanuel Kowalski
+       Abstract  : Analytic Number Theory distinguishes itself by the variety of tools it uses to establish results, many of which belong to the mainstream of arithmetic. One of the main attractions of analytic number theory is the vast diversity of concepts and methods it includes. The main goal of the book is to sho…
+
+  [3]
+       DOI       : 10.4171/owr/2013/51
+       Published : 2014-09-03
+       Title     : Analytic Number Theory
+       Authors   : Jörg Brüdern; Hugh L. Montgomery; R. C. Vaughan; Trevor D. Wooley
+       Abstract  : Analytic number theory has florished over the past few years, and this workshop brought together world leaders and young talent to discuss developments in various branches of the subject.
+
+  [4]
+       DOI       : 10.4171/owr/2019/50
+       Published : 2020-11-18
+       Title     : Analytic Number Theory
+       Authors   : Jörg Brüdern; Kaisa Matomäki; R. C. Vaughan; Trevor D. Wooley
+       Abstract  : Analytic number theory is a subject which is central to modern mathematics. There are many important unsolved problems which have stimulated a large amount of activity by many talented researchers. At least two of the Millennium Problems can be considered to be in this area. Moreover in recent years…
+
+  ────────────────────────────────────────────────────────────
+
+  4 records found — compact reference (sorted by author, then date):
+    [1]  10.1201/9781420003208.ch8  |    |  2006-01-13
+    [2]  10.1090/coll/053  |  Henryk Iwaniec; Emmanuel Kowalski  |  2004-06-08
+    [3]  10.4171/owr/2013/51  |  Jörg Brüdern; Hugh L. Montgomery; R. C. Vaughan; T  |  2014-09-03
+    [4]  10.4171/owr/2019/50  |  Jörg Brüdern; Kaisa Matomäki; R. C. Vaughan; Trevo  |  2020-11-18
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/4]
+       DOI       : 10.1201/9781420003208.ch8
+       Published : 2006-01-13
+       Authors   : 
+       Title     : analytic number theory
+  → Keeping [1]: 10.1201/9781420003208.ch8
+
+  [2/4]
+       DOI       : 10.1090/coll/053
+       Published : 2004-06-08
+       Authors   : Henryk Iwaniec; Emmanuel Kowalski
+       Title     : Analytic Number Theory
+  → Keeping [2]: 10.1090/coll/053
+
+  [3/4]
+       DOI       : 10.4171/owr/2013/51
+       Published : 2014-09-03
+       Authors   : Jörg Brüdern; Hugh L. Montgomery; R. C. Vaughan; Trevor D. W
+       Title     : Analytic Number Theory
+  → Deleting [3]: 10.4171/owr/2013/51
+
+  [4/4]
+       DOI       : 10.4171/owr/2019/50
+       Published : 2020-11-18
+       Authors   : Jörg Brüdern; Kaisa Matomäki; R. C. Vaughan; Trevor D. Woole
+       Title     : Analytic Number Theory
+  → Keeping [4]: 10.4171/owr/2019/50
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 14)):
+
+  [1]
+       DOI       : 10.1201/9781003067535
+       Published : 2020-09-29
+       Title     : Number Theory
+       Authors   : Don Redmond
+       Abstract  : This text provides a detailed introduction to number theory, demonstrating how other areas of mathematics enter into the study of the properties of natural numbers. It contains problem sets within each section and at the end of each chapter to reinforce essential concepts, and includes up-to-date in…
+
+  [2]
+       DOI       : 10.1093/oxfordhb/9780198744191.013.24
+       Published : 2015-09-17
+       Title     : Number theory
+       Authors   : Jon Keating; Nina Snaith
+       Abstract  : This article examines some of the connections between random matrix theory (RMT) and number theory, including the modelling of the value distributions of the Riemann zeta function and other L-functions as well as the statistical distribution of their zeros. Number theory has been used in RMT to addr…
+
+  [3]
+       DOI       : 10.1007/b11856
+       Published : 2009-01-01
+       Title     : Number Theory
+       Authors   : Dorin Andrica; Titu Andreescu
+       Abstract  : Number theory, an ongoing rich area of mathematical exploration, is noted for its theoretical depth, with connections and applications to other fields from representation theory, to physics, cryptogra
+
+  [4]
+       DOI       : 10.1515/9783110870923
+       Published : 2001-12-31
+       Title     : Number Theory
+       Authors   : Matti Jutila; Tauno Metsänkylä
+       Abstract  : These Proceedings contain 22 refereed research and survey articles based on lectures given at the Turku Symposium on Number Theory in Memory of Kustaa Inkeri, held in Turku, Finland, from May 31 to June 4, 1999. The subject of the symposium was number theory in a broad sense with an emphasis on rece…
+
+  [5]
+       DOI       : 10.1007/978-0-8176-4571-7
+       Published : 2001-01-01
+       Title     : Number Theory
+       Authors   : André Weil
+       Abstract  : Number Theory or arithmetic, as some prefer to call it, is the oldest, purest, liveliest, most elementary yet sophisticated field of mathematics. It is no coincidence that the fundamental science of n
+
+  [6]
+       DOI       : 10.1090/gsm/024
+       Published : 2000-06-06
+       Title     : Number Theory
+       Authors   : Helmut Koch
+       Abstract  : Introduction The geometry of numbers Dedekind's theory of ideals Valuations Algebraic functions of one variable Normal extensions -series Applications to Hecke -series Quadratic number fields What next? Divisibility theory Trace, norm, different, and discriminant Harmonic analysis on locally compact…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (10 of 14))  —  sorted by author:
+
+  [1]
+       DOI       : 10.1007/978-0-8176-4571-7
+       Published : 2001-01-01
+       Title     : Number Theory
+       Authors   : André Weil
+       Abstract  : Number Theory or arithmetic, as some prefer to call it, is the oldest, purest, liveliest, most elementary yet sophisticated field of mathematics. It is no coincidence that the fundamental science of n
+
+  [2]
+       DOI       : 10.1201/9781003067535
+       Published : 2020-09-29
+       Title     : Number Theory
+       Authors   : Don Redmond
+       Abstract  : This text provides a detailed introduction to number theory, demonstrating how other areas of mathematics enter into the study of the properties of natural numbers. It contains problem sets within each section and at the end of each chapter to reinforce essential concepts, and includes up-to-date in…
+
+  [3]
+       DOI       : 10.1007/b11856
+       Published : 2009-01-01
+       Title     : Number Theory
+       Authors   : Dorin Andrica; Titu Andreescu
+       Abstract  : Number theory, an ongoing rich area of mathematical exploration, is noted for its theoretical depth, with connections and applications to other fields from representation theory, to physics, cryptogra
+
+  [4]
+       DOI       : 10.1090/gsm/024
+       Published : 2000-06-06
+       Title     : Number Theory
+       Authors   : Helmut Koch
+       Abstract  : Introduction The geometry of numbers Dedekind's theory of ideals Valuations Algebraic functions of one variable Normal extensions -series Applications to Hecke -series Quadratic number fields What next? Divisibility theory Trace, norm, different, and discriminant Harmonic analysis on locally compact…
+
+  [5]
+       DOI       : 10.1093/oxfordhb/9780198744191.013.24
+       Published : 2015-09-17
+       Title     : Number theory
+       Authors   : Jon Keating; Nina Snaith
+       Abstract  : This article examines some of the connections between random matrix theory (RMT) and number theory, including the modelling of the value distributions of the Riemann zeta function and other L-functions as well as the statistical distribution of their zeros. Number theory has been used in RMT to addr…
+
+  [6]
+       DOI       : 10.1515/9783110870923
+       Published : 2001-12-31
+       Title     : Number Theory
+       Authors   : Matti Jutila; Tauno Metsänkylä
+       Abstract  : These Proceedings contain 22 refereed research and survey articles based on lectures given at the Turku Symposium on Number Theory in Memory of Kustaa Inkeri, held in Turku, Finland, from May 31 to June 4, 1999. The subject of the symposium was number theory in a broad sense with an emphasis on rece…
+
+  ────────────────────────────────────────────────────────────
+
+  6 records found — compact reference (sorted by author, then date):
+    [1]  10.1007/978-0-8176-4571-7  |  André Weil  |  2001-01-01
+    [2]  10.1201/9781003067535  |  Don Redmond  |  2020-09-29
+    [3]  10.1007/b11856  |  Dorin Andrica; Titu Andreescu  |  2009-01-01
+    [4]  10.1090/gsm/024  |  Helmut Koch  |  2000-06-06
+    [5]  10.1093/oxfordhb/9780198744191.013.24  |  Jon Keating; Nina Snaith  |  2015-09-17
+    [6]  10.1515/9783110870923  |  Matti Jutila; Tauno Metsänkylä  |  2001-12-31
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/6]
+       DOI       : 10.1007/978-0-8176-4571-7
+       Published : 2001-01-01
+       Authors   : André Weil
+       Title     : Number Theory
+  → Keeping [1]: 10.1007/978-0-8176-4571-7
+  → Keeping [2]: 10.1201/9781003067535
+  → Keeping [3]: 10.1007/b11856
+  → Keeping [4]: 10.1090/gsm/024
+  → Keeping [5]: 10.1093/oxfordhb/9780198744191.013.24
+  → Keeping [6]: 10.1515/9783110870923
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (11 of 14)):
+
+  [1]
+       DOI       : 10.1201/b14045
+       Published : 2016-04-19
+       Title     : Computational Number Theory
+       Authors   : Abhijit Das
+       Abstract  : Developed from the author's popular graduate-level course, Computational Number Theory presents a complete treatment of number-theoretic algorithms. Avoiding advanced algebra, this self-contained text is designed for advanced undergraduate and beginning graduate students in engineering. It is also s…
+
+  [2]
+       DOI       : 10.1002/9781118188606.part2
+       Published : 2012-11-27
+       Title     : Computational Number Theory
+       Authors   : Song Y. Yan
+       Abstract  : No Abstract.
+
+  ────────────────────────────────────────────────────────────
+  → Keeping [1]: 10.1201/b14045  |  Computational Number Theory
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (12 of 14)):
+
+  [1]
+       DOI       : 10.4171/owr/2011/35
+       Published : 2012-04-11
+       Title     : Explicit Methods in Number Theory
+       Authors   : Karim Belabas; H. W. Lenstra; Don Zagier
+       Abstract  : These notes contain extended abstracts on the topic of explicit methods in number theory. The range of topics includes the Sato-Tate conjecure, Langlands programme, function fields, L-functions and many other topics.
+
+  [2]
+       DOI       : 10.4171/owr/2007/34
+       Published : 2008-06-30
+       Title     : Explicit Methods in Number Theory
+       Authors   : Henri Cohen; Hendrik W. Lenstra; Don Zagier
+       Abstract  : The workshop Explicit Methods in Number Theory was organised by Henri Cohen (Talence), Hendrik W. Lenstra (Leiden), and Don B. Zagier (Bonn), with the assistance of Karim Belabas (Talence), and it took place July 15-21, 2007. Four previous workshops on the topic had been held in 1999, 2001, 2003, an…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (13 of 14)):
+
+  [1]
+       DOI       : 10.5860/choice.39-6476
+       Published : 2002-07-01
+       Title     : Asymptotics and Mellin-Barnes integrals
+       Authors   : 
+       Abstract  : Asymptotics and Mellin-Barnes Integrals provides an account of the use and properties of a type of complex integral representation that arises frequently in the study of special functions typically of interest in classical analysis and mathematical physics. After developing the properties of these i…
+
+  [2]
+       DOI       : 10.1017/cbo9780511546662
+       Published : 2001-09-24
+       Title     : Asymptotics and Mellin-Barnes Integrals
+       Authors   : R. B. Paris; D. Kaminski
+       Abstract  : Asymptotics and Mellin-Barnes Integrals, first published in 2001, provides an account of the use and properties of a type of complex integral representation that arises frequently in the study of special functions typically of interest in classical analysis and mathematical physics. After developing…
+
+  ────────────────────────────────────────────────────────────
+  → Keeping all 2 records
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical title, different abstracts  (14 of 14)):
+
+  [1]
+       DOI       : 10.1017/cbo9781107326019
+       Published : 2002-04-18
+       Title     : Algebraic Combinatorics on Words
+       Authors   : M. Lothaire
+       Abstract  : Combinatorics on words has arisen independently within several branches of mathematics, for instance number theory, group theory and probability, and appears frequently in problems related to theoretical computer science. The first unified treatment of the area was given in Lothaire's book Combinato…
+
+  [2]  *** FOCUSED QUERY DOCUMENT — CANNOT BE DELETED ***
+       DOI       : A120614
+       Published : 2002-01-01
+       Title     : Algebraic combinatorics on words
+       Authors   : Lothaire, M.
+       Abstract  : This book is a continuation of Lothaire's first book entitled ``Combinatorics on words'' (1983; Zbl 0514.20045), but it is independent. Compared to the previous one, this book both gives new topics and goes deeper into topics already present before. The first chapter serves as an introduction. The s…
+
+  ────────────────────────────────────────────────────────────
+  ℹ️  Record(s) [2] are from the focused query corpus and WILL BE KEPT regardless of your choice.
+  → Default: keeping [1]: 10.1017/cbo9781107326019  |  Algebraic Combinatorics on Words
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (1 of 1)):
+
+  [1]
+       DOI       : 10.5089/9798229014137.069.ch05
+       Published : 2025-06-01
+       Title     : 5. The Economic Approach to Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  [2]
+       DOI       : 10.5089/9798229014137.069.ch04
+       Published : 2025-06-01
+       Title     : 4. Stochastic Approaches to Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  [3]
+       DOI       : 10.5089/9798229014137.069.ch02
+       Published : 2025-06-01
+       Title     : 2. Basic Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  ────────────────────────────────────────────────────────────
+
+  ────────────────────────────────────────────────────────────
+  ⚠️  Duplicate found (identical abstract, different titles  (1 of 1))  —  sorted by author:
+
+  [1]
+       DOI       : 10.5089/9798229014137.069.ch05
+       Published : 2025-06-01
+       Title     : 5. The Economic Approach to Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  [2]
+       DOI       : 10.5089/9798229014137.069.ch04
+       Published : 2025-06-01
+       Title     : 4. Stochastic Approaches to Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  [3]
+       DOI       : 10.5089/9798229014137.069.ch02
+       Published : 2025-06-01
+       Title     : 2. Basic Index Number Theory*
+       Authors   : 
+       Abstract  : The Theory publication and the companion on the practice of compiling consumer price indices (CPIs) is jointly published by the member agencies of the Inter-Secretariat Working Group on Price Statistics (IWGPS): the Statistical Office of the European Union (Eurostat), the International Labour Organi…
+
+  ────────────────────────────────────────────────────────────
+
+  3 records found — compact reference (sorted by author, then date):
+    [1]  10.5089/9798229014137.069.ch05  |    |  2025-06-01
+    [2]  10.5089/9798229014137.069.ch04  |    |  2025-06-01
+    [3]  10.5089/9798229014137.069.ch02  |    |  2025-06-01
+
+  Reviewing paper by paper.
+  For each: [K]eep  [D]elete  [A]ll remaining  [X] Delete all remaining
+  (Focused query documents will be kept automatically)
+
+
+  [1/3]
+       DOI       : 10.5089/9798229014137.069.ch05
+       Published : 2025-06-01
+       Authors   : 
+       Title     : 5. The Economic Approach to Index Number Theory*
+  → Keeping [1]: 10.5089/9798229014137.069.ch05
+  → Keeping [2]: 10.5089/9798229014137.069.ch04
+  → Keeping [3]: 10.5089/9798229014137.069.ch02
+
+  [Step 3 – Pass 4] 43 record(s) have blank authors — review required.
+

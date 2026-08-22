@@ -1,0 +1,781 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260401_184519.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\clean_results_with_combined_title_abstract_20260401_184519.csv
+  ℹ️   API Query Terms from folder  : "Number Theory"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   Query Relevance Terms from log: ""Number Theory""
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "prime gaps" "bounded gaps" "twin prime"
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837\AB - Pass_data_to_other_query_20260401_184519.csv
+  Records    : 1000 rows in file
+  Prev folder: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory_TF-IDF_20260401_182837  → reusing combined CSV (skip Stages 1, 2 & 2.5)
+  Supp. CSV  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AB - Pass_data_to_other_query_20260403_113733.csv
+  Skip dedup : No
+  API Query Terms    : Number Theory
+  Query Relevance Terms : "prime gaps" "bounded gaps" "twin prime"
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414
+  Output     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\combined_results_20260525_132414.csv
+────────────────────────────────────────────────────────────
+
+  [Stage 1 skipped] Using uploaded file: 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260401_184519.csv'
+  [Supplemental] Added 312 of 337 rows from 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260403_113421\AB - Pass_data_to_other_query_20260403_113733.csv'.
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260401_184519.csv'
+  Log → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 3154 rows
+
+  [Step 0] Missing DOI      : 0 rows removed
+  [Step 0] Missing Abstract : 0 rows removed  (3154 remaining)
+  [Step 1] Language filter  : 0 non-English rows removed (3154 remaining)
+  [Step 2] Text cleaning    : 0 titles cleaned, 20 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 2] 14 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 2 record(s) removed.
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+  [Step 3 – Pass 3] 0 record(s) removed.
+
+  [Step 3 – Pass 4] 43 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 2 duplicate rows removed (3152 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  Source                        Added    Supp    API      No       No       Not      Dup           
+                       Fetched   Supp    Dup     Dup     DOI    Abstract  English  Content   Kept  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  CrossRef               974     114                                                         1088  
+  arXiv                  899     136      -1                                                 1034  
+  OpenAlex               433      46                                                  -2     477   
+  zbMath                 299      24     -23                                                 300   
+  SemanticScholar        237      17      -1                                                 253   
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL                  2842    337     -25                                          -2     3152  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AD - Summary_table_20260525_132639.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AC - Duplicate_user_choices_20260525_132415.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260525_132639.csv'  (3152 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\combined_results_clean_20260525_132415.csv'  (3152 rows)
+  [Log] 2 dropped + 0 rescued entries saved to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260401_184519_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 2m 23s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\clean_results_with_combined_title_abstract_20260525_132639.csv'
+  [Log] Saving output to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AA - Output_text_20260525_132324.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\clean_results_with_combined_title_abstract_20260525_132639.csv
+  Output dir   : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414
+────────────────────────────────────────────────────────────
+  [TSC reuse] Could not read optimization_summary.csv: [Errno 2] No such file or directory: 'optimization_summary.csv'
+  [TSC reuse] Failed — running Stage 3 from scratch.
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414
+  API Query Terms      : Number Theory
+  Query Relevance Terms: "prime gaps" "bounded gaps" "twin prime"  (custom)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 11s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (3152 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 1.0000
+  [tau auto-range] τ grid (11 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000, 1.0000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 3152 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.00  (spread = 3.8943)
+  [Ranking vs λ] 15 of 3152 DOIs in the Top 10  (τ = 0.00, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 4 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 67 of 3152 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\top10_all_pairs_COARSE.xlsx'
+  [COARSE] grid: 11 tau x 11 lambda = 121 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\histogram_grid_COARSE.png'
+  [COARSE] image grid: 11x11 = 121 matched (0 missing, 0 dark PNGs found, 121 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 5m 03s
+
+  Coarse peak : TSC Spread = 3.8943 at λ = 0.0100, τ = 0.0000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (3152 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 3152 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.03  (spread = 4.0406)
+  [Ranking vs λ] 11 of 3152 DOIs in the Top 10  (τ = 0.03, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 9 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 19 of 3152 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\top10_all_pairs_FINE.xlsx'
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\histogram_grid_FINE_plain.png'
+
+── Per-paper convexity check (TSC in λ) [FINE] ──────────
+  Loading TSC CSVs (21 τ values × 11 λ values) …
+  ✓ 3152 DOIs across all τ/λ combinations
+
+  Overall fraction of (τ, λ, DOI) triples that are convex: 100.0%
+
+  Per-τ mean fraction of documents convex:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document convexity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully convex (100%) : 3152 / 3152 documents
+
+  ✓ Per-paper results saved → AD - TSC_convexity_per_paper_FINE_20260525_133917.csv
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_133917_heatmap.png
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260525_133917_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_133917_hist.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260525_133917_hist_dark.png
+
+── Per-paper monotonicity check (TSC in λ) [FINE] ─────────
+  Loading TSC CSVs (21 τ × 11 λ) …
+  ✓ 3152 DOIs, 10 λ steps per τ
+
+  Overall fraction of (τ, λ-step, DOI) triples monotone: 100.0%
+
+  Per-τ mean fraction of documents monotone decreasing:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document monotonicity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully monotone (100%) : 3152 / 3152 documents
+
+  ✓ Per-paper results saved → AD - TSC_monotonicity_per_paper_FINE_20260525_133926.csv
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_133926_heatmap.png
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260525_133926_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_133926_hist.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260525_133926_hist_dark.png
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 6m 51s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 4.0406
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.03
+  [similarity matrix] Saved thresholded matrix (τ=0.03) → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\tfidf_cosine_matrix_by_doi_tau_0.03.csv'
+  [TSC vs Year] Breusch-Pagan: LM=42.8465, p=0.0000 -> heteroscedastic (alpha=0.05)
+  [TSC vs Year] BP results -> TSC_vs_Year_breusch_pagan_tau_0.03_lambda_0.01_20260525_133936.csv
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.03_lambda_0.01_20260525_133936.png
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.03_lambda_0.01_20260525_133936_dark.png
+  [TSC vs Year] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\TSC_vs_PublicationYear_tau_0.03_lambda_0.01.png'  (3152 data points, R² = 0.057)
+  [Max TSC CSV] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\DOIs_with_max_TSC_values_20260525_134008.csv'  (3152 DOIs)
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.03
+  Matrix : 'tfidf_cosine_matrix_by_doi_tau_0.03.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260525_134008.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0300 applied: 0 edge(s) zeroed out (7243848 retained).
+✓ 3152 DOIs loaded. Sparsity: 27.1%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=435352.1786 | row-sum max=1.28e-12 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 4 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0973  (>0.3 indicates strong structure)
+
+  Community 1: 1018 DOIs
+  Community 2: 915 DOIs
+  Community 3: 809 DOIs
+  Community 4: 410 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 51 – 1741
+  Median coreness   : 1741.0
+
+  Coreness 51: 1 DOIs
+  Coreness 77: 1 DOIs
+  Coreness 127: 1 DOIs
+  Coreness 171: 1 DOIs
+  Coreness 203: 1 DOIs
+  Coreness 212: 1 DOIs
+  Coreness 232: 1 DOIs
+  Coreness 275: 1 DOIs
+  Coreness 282: 1 DOIs
+  Coreness 295: 1 DOIs
+  Coreness 318: 1 DOIs
+  Coreness 345: 1 DOIs
+  Coreness 350: 1 DOIs
+  Coreness 356: 1 DOIs
+  Coreness 398: 1 DOIs
+  Coreness 408: 1 DOIs
+  Coreness 410: 1 DOIs
+  Coreness 414: 1 DOIs
+  Coreness 422: 1 DOIs
+  Coreness 440: 1 DOIs
+  Coreness 445: 1 DOIs
+  Coreness 460: 1 DOIs
+  Coreness 472: 1 DOIs
+  Coreness 485: 1 DOIs
+  Coreness 495: 1 DOIs
+  Coreness 503: 1 DOIs
+  Coreness 510: 1 DOIs
+  Coreness 512: 1 DOIs
+  Coreness 514: 1 DOIs
+  Coreness 523: 1 DOIs
+  Coreness 527: 1 DOIs
+  Coreness 534: 1 DOIs
+  Coreness 536: 1 DOIs
+  Coreness 541: 3 DOIs
+  Coreness 546: 1 DOIs
+  Coreness 572: 1 DOIs
+  Coreness 575: 1 DOIs
+  Coreness 582: 1 DOIs
+  Coreness 601: 1 DOIs
+  Coreness 606: 1 DOIs
+  Coreness 613: 1 DOIs
+  Coreness 619: 1 DOIs
+  Coreness 639: 1 DOIs
+  Coreness 649: 1 DOIs
+  Coreness 657: 1 DOIs
+  Coreness 667: 1 DOIs
+  Coreness 679: 1 DOIs
+  Coreness 694: 2 DOIs
+  Coreness 703: 1 DOIs
+  Coreness 706: 1 DOIs
+  Coreness 707: 1 DOIs
+  Coreness 727: 1 DOIs
+  Coreness 730: 1 DOIs
+  Coreness 740: 1 DOIs
+  Coreness 743: 1 DOIs
+  Coreness 748: 1 DOIs
+  Coreness 754: 2 DOIs
+  Coreness 756: 1 DOIs
+  Coreness 759: 1 DOIs
+  Coreness 762: 1 DOIs
+  Coreness 767: 2 DOIs
+  Coreness 775: 1 DOIs
+  Coreness 778: 1 DOIs
+  Coreness 779: 1 DOIs
+  Coreness 781: 1 DOIs
+  Coreness 785: 1 DOIs
+  Coreness 786: 1 DOIs
+  Coreness 788: 1 DOIs
+  Coreness 806: 1 DOIs
+  Coreness 808: 1 DOIs
+  Coreness 813: 1 DOIs
+  Coreness 822: 1 DOIs
+  Coreness 824: 1 DOIs
+  Coreness 834: 1 DOIs
+  Coreness 837: 1 DOIs
+  Coreness 843: 2 DOIs
+  Coreness 849: 1 DOIs
+  Coreness 862: 1 DOIs
+  Coreness 864: 1 DOIs
+  Coreness 866: 1 DOIs
+  Coreness 868: 1 DOIs
+  Coreness 870: 1 DOIs
+  Coreness 873: 1 DOIs
+  Coreness 874: 1 DOIs
+  Coreness 876: 2 DOIs
+  Coreness 879: 2 DOIs
+  Coreness 881: 2 DOIs
+  Coreness 892: 1 DOIs
+  Coreness 893: 1 DOIs
+  Coreness 894: 1 DOIs
+  Coreness 897: 1 DOIs
+  Coreness 904: 1 DOIs
+  Coreness 914: 1 DOIs
+  Coreness 931: 1 DOIs
+  Coreness 934: 1 DOIs
+  Coreness 937: 1 DOIs
+  Coreness 945: 1 DOIs
+  Coreness 947: 1 DOIs
+  Coreness 948: 2 DOIs
+  Coreness 960: 2 DOIs
+  Coreness 977: 1 DOIs
+  Coreness 979: 2 DOIs
+  Coreness 989: 1 DOIs
+  Coreness 991: 1 DOIs
+  Coreness 992: 1 DOIs
+  Coreness 1003: 1 DOIs
+  Coreness 1006: 1 DOIs
+  Coreness 1007: 1 DOIs
+  Coreness 1008: 1 DOIs
+  Coreness 1013: 1 DOIs
+  Coreness 1014: 1 DOIs
+  Coreness 1024: 1 DOIs
+  Coreness 1025: 1 DOIs
+  Coreness 1026: 1 DOIs
+  Coreness 1028: 1 DOIs
+  Coreness 1041: 1 DOIs
+  Coreness 1047: 1 DOIs
+  Coreness 1049: 1 DOIs
+  Coreness 1056: 1 DOIs
+  Coreness 1062: 3 DOIs
+  Coreness 1065: 1 DOIs
+  Coreness 1070: 3 DOIs
+  Coreness 1075: 1 DOIs
+  Coreness 1084: 1 DOIs
+  Coreness 1085: 1 DOIs
+  Coreness 1088: 1 DOIs
+  Coreness 1091: 1 DOIs
+  Coreness 1092: 1 DOIs
+  Coreness 1093: 1 DOIs
+  Coreness 1094: 1 DOIs
+  Coreness 1100: 1 DOIs
+  Coreness 1101: 1 DOIs
+  Coreness 1114: 1 DOIs
+  Coreness 1132: 1 DOIs
+  Coreness 1133: 2 DOIs
+  Coreness 1137: 1 DOIs
+  Coreness 1143: 1 DOIs
+  Coreness 1145: 1 DOIs
+  Coreness 1146: 2 DOIs
+  Coreness 1149: 2 DOIs
+  Coreness 1152: 1 DOIs
+  Coreness 1156: 1 DOIs
+  Coreness 1160: 1 DOIs
+  Coreness 1161: 1 DOIs
+  Coreness 1162: 1 DOIs
+  Coreness 1169: 2 DOIs
+  Coreness 1171: 1 DOIs
+  Coreness 1173: 1 DOIs
+  Coreness 1176: 1 DOIs
+  Coreness 1177: 1 DOIs
+  Coreness 1178: 1 DOIs
+  Coreness 1181: 1 DOIs
+  Coreness 1184: 1 DOIs
+  Coreness 1186: 2 DOIs
+  Coreness 1189: 1 DOIs
+  Coreness 1190: 1 DOIs
+  Coreness 1191: 3 DOIs
+  Coreness 1196: 1 DOIs
+  Coreness 1199: 1 DOIs
+  Coreness 1208: 1 DOIs
+  Coreness 1213: 1 DOIs
+  Coreness 1214: 1 DOIs
+  Coreness 1215: 1 DOIs
+  Coreness 1219: 1 DOIs
+  Coreness 1221: 1 DOIs
+  Coreness 1222: 1 DOIs
+  Coreness 1226: 3 DOIs
+  Coreness 1227: 1 DOIs
+  Coreness 1231: 2 DOIs
+  Coreness 1233: 1 DOIs
+  Coreness 1240: 1 DOIs
+  Coreness 1242: 1 DOIs
+  Coreness 1243: 1 DOIs
+  Coreness 1244: 1 DOIs
+  Coreness 1246: 2 DOIs
+  Coreness 1247: 1 DOIs
+  Coreness 1250: 1 DOIs
+  Coreness 1256: 1 DOIs
+  Coreness 1257: 1 DOIs
+  Coreness 1262: 1 DOIs
+  Coreness 1263: 1 DOIs
+  Coreness 1266: 1 DOIs
+  Coreness 1268: 1 DOIs
+  Coreness 1270: 2 DOIs
+  Coreness 1273: 1 DOIs
+  Coreness 1274: 1 DOIs
+  Coreness 1276: 1 DOIs
+  Coreness 1278: 1 DOIs
+  Coreness 1280: 1 DOIs
+  Coreness 1282: 1 DOIs
+  Coreness 1283: 1 DOIs
+  Coreness 1288: 1 DOIs
+  Coreness 1290: 1 DOIs
+  Coreness 1292: 1 DOIs
+  Coreness 1295: 1 DOIs
+  Coreness 1296: 1 DOIs
+  Coreness 1297: 2 DOIs
+  Coreness 1300: 1 DOIs
+  Coreness 1302: 1 DOIs
+  Coreness 1304: 1 DOIs
+  Coreness 1305: 1 DOIs
+  Coreness 1308: 1 DOIs
+  Coreness 1311: 1 DOIs
+  Coreness 1313: 1 DOIs
+  Coreness 1316: 1 DOIs
+  Coreness 1318: 2 DOIs
+  Coreness 1319: 1 DOIs
+  Coreness 1320: 3 DOIs
+  Coreness 1324: 3 DOIs
+  Coreness 1325: 1 DOIs
+  Coreness 1330: 2 DOIs
+  Coreness 1334: 1 DOIs
+  Coreness 1338: 1 DOIs
+  Coreness 1339: 1 DOIs
+  Coreness 1346: 1 DOIs
+  Coreness 1347: 1 DOIs
+  Coreness 1351: 3 DOIs
+  Coreness 1353: 1 DOIs
+  Coreness 1355: 1 DOIs
+  Coreness 1356: 2 DOIs
+  Coreness 1358: 1 DOIs
+  Coreness 1360: 1 DOIs
+  Coreness 1364: 2 DOIs
+  Coreness 1365: 1 DOIs
+  Coreness 1376: 2 DOIs
+  Coreness 1377: 1 DOIs
+  Coreness 1378: 2 DOIs
+  Coreness 1382: 1 DOIs
+  Coreness 1383: 1 DOIs
+  Coreness 1384: 2 DOIs
+  Coreness 1385: 1 DOIs
+  Coreness 1386: 1 DOIs
+  Coreness 1387: 4 DOIs
+  Coreness 1388: 1 DOIs
+  Coreness 1395: 1 DOIs
+  Coreness 1397: 1 DOIs
+  Coreness 1398: 1 DOIs
+  Coreness 1399: 1 DOIs
+  Coreness 1401: 1 DOIs
+  Coreness 1402: 1 DOIs
+  Coreness 1405: 1 DOIs
+  Coreness 1407: 4 DOIs
+  Coreness 1419: 3 DOIs
+  Coreness 1420: 2 DOIs
+  Coreness 1421: 1 DOIs
+  Coreness 1423: 1 DOIs
+  Coreness 1428: 2 DOIs
+  Coreness 1429: 2 DOIs
+  Coreness 1430: 1 DOIs
+  Coreness 1431: 1 DOIs
+  Coreness 1434: 2 DOIs
+  Coreness 1437: 1 DOIs
+  Coreness 1441: 3 DOIs
+  Coreness 1442: 1 DOIs
+  Coreness 1443: 1 DOIs
+  Coreness 1445: 6 DOIs
+  Coreness 1446: 1 DOIs
+  Coreness 1447: 3 DOIs
+  Coreness 1448: 3 DOIs
+  Coreness 1450: 1 DOIs
+  Coreness 1451: 1 DOIs
+  Coreness 1453: 1 DOIs
+  Coreness 1454: 3 DOIs
+  Coreness 1456: 2 DOIs
+  Coreness 1460: 2 DOIs
+  Coreness 1464: 1 DOIs
+  Coreness 1468: 2 DOIs
+  Coreness 1470: 1 DOIs
+  Coreness 1473: 2 DOIs
+  Coreness 1474: 2 DOIs
+  Coreness 1477: 4 DOIs
+  Coreness 1480: 1 DOIs
+  Coreness 1481: 1 DOIs
+  Coreness 1482: 4 DOIs
+  Coreness 1485: 1 DOIs
+  Coreness 1486: 2 DOIs
+  Coreness 1489: 2 DOIs
+  Coreness 1491: 1 DOIs
+  Coreness 1493: 2 DOIs
+  Coreness 1494: 1 DOIs
+  Coreness 1495: 1 DOIs
+  Coreness 1496: 2 DOIs
+  Coreness 1501: 1 DOIs
+  Coreness 1502: 2 DOIs
+  Coreness 1503: 3 DOIs
+  Coreness 1505: 1 DOIs
+  Coreness 1509: 1 DOIs
+  Coreness 1510: 1 DOIs
+  Coreness 1511: 1 DOIs
+  Coreness 1512: 2 DOIs
+  Coreness 1514: 1 DOIs
+  Coreness 1517: 1 DOIs
+  Coreness 1519: 3 DOIs
+  Coreness 1521: 1 DOIs
+  Coreness 1523: 3 DOIs
+  Coreness 1529: 1 DOIs
+  Coreness 1533: 1 DOIs
+  Coreness 1535: 2 DOIs
+  Coreness 1537: 1 DOIs
+  Coreness 1538: 1 DOIs
+  Coreness 1539: 1 DOIs
+  Coreness 1540: 1 DOIs
+  Coreness 1541: 1 DOIs
+  Coreness 1542: 1 DOIs
+  Coreness 1545: 1 DOIs
+  Coreness 1546: 4 DOIs
+  Coreness 1548: 1 DOIs
+  Coreness 1549: 2 DOIs
+  Coreness 1550: 1 DOIs
+  Coreness 1552: 1 DOIs
+  Coreness 1555: 1 DOIs
+  Coreness 1556: 2 DOIs
+  Coreness 1557: 4 DOIs
+  Coreness 1558: 1 DOIs
+  Coreness 1559: 2 DOIs
+  Coreness 1561: 2 DOIs
+  Coreness 1564: 1 DOIs
+  Coreness 1565: 2 DOIs
+  Coreness 1566: 2 DOIs
+  Coreness 1568: 2 DOIs
+  Coreness 1569: 1 DOIs
+  Coreness 1570: 3 DOIs
+  Coreness 1573: 3 DOIs
+  Coreness 1576: 3 DOIs
+  Coreness 1577: 1 DOIs
+  Coreness 1578: 6 DOIs
+  Coreness 1579: 1 DOIs
+  Coreness 1580: 2 DOIs
+  Coreness 1582: 1 DOIs
+  Coreness 1583: 2 DOIs
+  Coreness 1586: 3 DOIs
+  Coreness 1588: 2 DOIs
+  Coreness 1589: 4 DOIs
+  Coreness 1590: 1 DOIs
+  Coreness 1594: 2 DOIs
+  Coreness 1595: 3 DOIs
+  Coreness 1596: 1 DOIs
+  Coreness 1597: 2 DOIs
+  Coreness 1600: 1 DOIs
+  Coreness 1604: 3 DOIs
+  Coreness 1606: 5 DOIs
+  Coreness 1607: 4 DOIs
+  Coreness 1610: 3 DOIs
+  Coreness 1612: 2 DOIs
+  Coreness 1613: 2 DOIs
+  Coreness 1616: 6 DOIs
+  Coreness 1618: 3 DOIs
+  Coreness 1619: 2 DOIs
+  Coreness 1621: 1 DOIs
+  Coreness 1623: 3 DOIs
+  Coreness 1625: 1 DOIs
+  Coreness 1627: 1 DOIs
+  Coreness 1628: 2 DOIs
+  Coreness 1629: 2 DOIs
+  Coreness 1630: 1 DOIs
+  Coreness 1631: 2 DOIs
+  Coreness 1632: 2 DOIs
+  Coreness 1634: 2 DOIs
+  Coreness 1637: 1 DOIs
+  Coreness 1638: 5 DOIs
+  Coreness 1641: 1 DOIs
+  Coreness 1642: 2 DOIs
+  Coreness 1643: 4 DOIs
+  Coreness 1645: 3 DOIs
+  Coreness 1650: 4 DOIs
+  Coreness 1651: 1 DOIs
+  Coreness 1653: 1 DOIs
+  Coreness 1654: 2 DOIs
+  Coreness 1657: 2 DOIs
+  Coreness 1658: 4 DOIs
+  Coreness 1659: 3 DOIs
+  Coreness 1660: 7 DOIs
+  Coreness 1664: 8 DOIs
+  Coreness 1665: 1 DOIs
+  Coreness 1666: 8 DOIs
+  Coreness 1667: 3 DOIs
+  Coreness 1669: 1 DOIs
+  Coreness 1671: 2 DOIs
+  Coreness 1673: 3 DOIs
+  Coreness 1675: 1 DOIs
+  Coreness 1680: 3 DOIs
+  Coreness 1681: 2 DOIs
+  Coreness 1682: 5 DOIs
+  Coreness 1684: 1 DOIs
+  Coreness 1685: 2 DOIs
+  Coreness 1686: 2 DOIs
+  Coreness 1688: 2 DOIs
+  Coreness 1689: 1 DOIs
+  Coreness 1691: 1 DOIs
+  Coreness 1692: 1 DOIs
+  Coreness 1693: 8 DOIs
+  Coreness 1694: 1 DOIs
+  Coreness 1695: 4 DOIs
+  Coreness 1696: 1 DOIs
+  Coreness 1699: 2 DOIs
+  Coreness 1700: 3 DOIs
+  Coreness 1702: 2 DOIs
+  Coreness 1703: 2 DOIs
+  Coreness 1704: 12 DOIs
+  Coreness 1705: 3 DOIs
+  Coreness 1706: 8 DOIs
+  Coreness 1707: 1 DOIs
+  Coreness 1710: 1 DOIs
+  Coreness 1711: 13 DOIs
+  Coreness 1712: 4 DOIs
+  Coreness 1715: 4 DOIs
+  Coreness 1716: 3 DOIs
+  Coreness 1717: 13 DOIs
+  Coreness 1718: 4 DOIs
+  Coreness 1721: 3 DOIs
+  Coreness 1722: 2 DOIs
+  Coreness 1723: 1 DOIs
+  Coreness 1724: 1 DOIs
+  Coreness 1725: 1 DOIs
+  Coreness 1726: 2 DOIs
+  Coreness 1727: 8 DOIs
+  Coreness 1728: 2 DOIs
+  Coreness 1729: 1 DOIs
+  Coreness 1731: 15 DOIs
+  Coreness 1732: 2 DOIs
+  Coreness 1734: 1 DOIs
+  Coreness 1736: 2 DOIs
+  Coreness 1737: 15 DOIs
+  Coreness 1738: 10 DOIs
+  Coreness 1739: 5 DOIs
+  Coreness 1740: 7 DOIs
+  Coreness 1741: 2385 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260525_134008.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AF - DOIs_Communities_20260525_134118.csv
+  Plot saved → 'AF - Community_sizes_20260525_134118.png'
+  Plot saved → 'AF - Community_sizes_20260525_134118_dark.png'
+  Bump chart → 'AF - Community_bump_20260525_134118.png'
+  Bump chart → 'AF - Community_bump_20260525_134118_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260525_134118.png'
+  Bump chart → 'AG - Coreness_bump_20260525_134118_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.03.csv
+  ✓ 3152 DOIs loaded.
+  ✓ 11 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 11 DOIs to highlight
+  ✓ Coreness range: 51 – 1741
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260525_134242.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_134242_dark.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_134242.png
+  ✓ Contour map saved → AH - Kcore_contour_20260525_134242_dark.png
+  ✓ Community data: 4 communities
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242_dark.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242_dark.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242_dark.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242.png
+    Bar chart inset drawn (lower right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260525_134242_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_134242.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260525_134242_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_134242.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260525_134242_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414
+  ⏱  Community detection completed in 4m 17s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AB - Pass_data_to_other_query_20260401_184519.csv
+  Clean CSV         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\combined_results_clean_20260525_132415.csv
+  Combined CSV      : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\clean_results_with_combined_title_abstract_20260525_132639.csv
+  TSC output        : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414
+  Community CSV     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AF - DOIs_Communities_20260525_134118.csv
+  Maximum TSC Spread: 4.0406
+  Selected λ        : 0.01
+  Selected τ        : 0.03
+  Log file          : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AA - Output_text_20260525_132324.txt
+
+  ⏱  Total time     : 21m 00s
+  ──────────────────────────────────────
+    User review (wait)    : 2m 59s
+    Data cleaning         : 0m 05s
+    Combine title+abstract: 169 ms
+    Similarity matrix     : 0m 11s
+    Coarse sweep & plots  : 5m 03s
+    Fine sweep & plots    : 6m 51s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_Number_Theory+prime_gaps_bounded_gaps_twin_prime_TF-IDF_20260525_132414\AE - Timing_summary_20260525_134425.txt'
+

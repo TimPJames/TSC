@@ -1,0 +1,151 @@
+════════════════════════════════════════════════════════
+  Validation Report
+════════════════════════════════════════════════════════
+
+Check 1 — Synthetic sanity (known ground-truth)
+────────────────────────────────────────────────────────
+  ✅ PASS  Identical lists → overlap = TOP_N  — 20 == 20
+  ✅ PASS  Identical lists → τ = 1.0  — 1.000000
+  ✅ PASS  Reversed lists → overlap = TOP_N (same DOIs)  — 20
+  ✅ PASS  Reversed lists → τ < 0  — -1.0000
+  ✅ PASS  Reversed lists → τ = -1.0 (perfect anti-correlation)  — -1.000000
+  ✅ PASS  Disjoint lists → overlap = 0  — 0
+
+Check 2 — Overlap cross-check against merged DataFrame
+────────────────────────────────────────────────────────
+  ✅ PASS  Overlap TSC∩BM25  — 2
+  ✅ PASS  Overlap TSC∩Dense E5  — 4
+  ✅ PASS  Overlap TSC∩RRF  — 3
+  ✅ PASS  Overlap TSC∩Degree  — 16
+  ✅ PASS  Overlap TSC∩Eigenvector  — 17
+  ✅ PASS  Overlap TSC∩Betweenness  — 0
+  ✅ PASS  Overlap TSC∩Closeness  — 0
+  ✅ PASS  Overlap BM25∩Dense E5  — 6
+  ✅ PASS  Overlap BM25∩RRF  — 13
+  ✅ PASS  Overlap BM25∩Degree  — 2
+  ✅ PASS  Overlap BM25∩Eigenvector  — 0
+  ✅ PASS  Overlap BM25∩Betweenness  — 0
+  ✅ PASS  Overlap BM25∩Closeness  — 0
+  ✅ PASS  Overlap Dense E5∩RRF  — 12
+  ✅ PASS  Overlap Dense E5∩Degree  — 4
+  ✅ PASS  Overlap Dense E5∩Eigenvector  — 2
+  ✅ PASS  Overlap Dense E5∩Betweenness  — 0
+  ✅ PASS  Overlap Dense E5∩Closeness  — 0
+  ✅ PASS  Overlap RRF∩Degree  — 4
+  ✅ PASS  Overlap RRF∩Eigenvector  — 2
+  ✅ PASS  Overlap RRF∩Betweenness  — 0
+  ✅ PASS  Overlap RRF∩Closeness  — 0
+  ✅ PASS  Overlap Degree∩Eigenvector  — 17
+  ✅ PASS  Overlap Degree∩Betweenness  — 0
+  ✅ PASS  Overlap Degree∩Closeness  — 0
+  ✅ PASS  Overlap Eigenvector∩Betweenness  — 0
+  ✅ PASS  Overlap Eigenvector∩Closeness  — 0
+  ✅ PASS  Overlap Betweenness∩Closeness  — 5
+  ✅ PASS  All overlap values match recomputed values
+
+Check 3 — Kendall τ cross-check via scipy on raw rank vectors
+────────────────────────────────────────────────────────
+  ✅ PASS  Kendall TSC/BM25 stored matches recomputed  — stored=-0.4623 recomputed=-0.4623
+  ✅ PASS  Kendall TSC/BM25 matches direct scipy  — -0.4623
+  ✅ PASS  Kendall TSC/Dense E5 stored matches recomputed  — stored=-0.5175 recomputed=-0.5175
+  ✅ PASS  Kendall TSC/Dense E5 matches direct scipy  — -0.5175
+  ✅ PASS  Kendall TSC/RRF stored matches recomputed  — stored=-0.4925 recomputed=-0.4925
+  ✅ PASS  Kendall TSC/RRF matches direct scipy  — -0.4925
+  ✅ PASS  Kendall TSC/Degree stored matches recomputed  — stored=0.3768 recomputed=0.3768
+  ✅ PASS  Kendall TSC/Degree matches direct scipy  — 0.3768
+  ✅ PASS  Kendall TSC/Eigenvector stored matches recomputed  — stored=0.4704 recomputed=0.4704
+  ✅ PASS  Kendall TSC/Eigenvector matches direct scipy  — 0.4704
+  ✅ PASS  Kendall TSC/Betweenness stored matches recomputed  — stored=-0.5615 recomputed=-0.5615
+  ✅ PASS  Kendall TSC/Betweenness matches direct scipy  — -0.5615
+  ✅ PASS  Kendall TSC/Closeness stored matches recomputed  — stored=-0.4231 recomputed=-0.4231
+  ✅ PASS  Kendall TSC/Closeness matches direct scipy  — -0.4231
+  ✅ PASS  Kendall BM25/Dense E5 stored matches recomputed  — stored=-0.2335 recomputed=-0.2335
+  ✅ PASS  Kendall BM25/Dense E5 matches direct scipy  — -0.2335
+  ✅ PASS  Kendall BM25/RRF stored matches recomputed  — stored=0.2536 recomputed=0.2536
+  ✅ PASS  Kendall BM25/RRF matches direct scipy  — 0.2536
+  ✅ PASS  Kendall BM25/Degree stored matches recomputed  — stored=-0.5306 recomputed=-0.5306
+  ✅ PASS  Kendall BM25/Degree matches direct scipy  — -0.5306
+  ✅ PASS  Kendall BM25/Eigenvector stored matches recomputed  — stored=-0.5462 recomputed=-0.5462
+  ✅ PASS  Kendall BM25/Eigenvector matches direct scipy  — -0.5462
+  ✅ PASS  Kendall BM25/Betweenness stored matches recomputed  — stored=-0.5051 recomputed=-0.5051
+  ✅ PASS  Kendall BM25/Betweenness matches direct scipy  — -0.5051
+  ✅ PASS  Kendall BM25/Closeness stored matches recomputed  — stored=-0.5154 recomputed=-0.5154
+  ✅ PASS  Kendall BM25/Closeness matches direct scipy  — -0.5154
+  ✅ PASS  Kendall Dense E5/RRF stored matches recomputed  — stored=0.0899 recomputed=0.0899
+  ✅ PASS  Kendall Dense E5/RRF matches direct scipy  — 0.0899
+  ✅ PASS  Kendall Dense E5/Degree stored matches recomputed  — stored=-0.5556 recomputed=-0.5556
+  ✅ PASS  Kendall Dense E5/Degree matches direct scipy  — -0.5556
+  ✅ PASS  Kendall Dense E5/Eigenvector stored matches recomputed  — stored=-0.6131 recomputed=-0.6131
+  ✅ PASS  Kendall Dense E5/Eigenvector matches direct scipy  — -0.6131
+  ✅ PASS  Kendall Dense E5/Betweenness stored matches recomputed  — stored=-0.5282 recomputed=-0.5282
+  ✅ PASS  Kendall Dense E5/Betweenness matches direct scipy  — -0.5282
+  ✅ PASS  Kendall Dense E5/Closeness stored matches recomputed  — stored=-0.4462 recomputed=-0.4462
+  ✅ PASS  Kendall Dense E5/Closeness matches direct scipy  — -0.4462
+  ✅ PASS  Kendall RRF/Degree stored matches recomputed  — stored=-0.5524 recomputed=-0.5524
+  ✅ PASS  Kendall RRF/Degree matches direct scipy  — -0.5524
+  ✅ PASS  Kendall RRF/Eigenvector stored matches recomputed  — stored=-0.5846 recomputed=-0.5846
+  ✅ PASS  Kendall RRF/Eigenvector matches direct scipy  — -0.5846
+  ✅ PASS  Kendall RRF/Betweenness stored matches recomputed  — stored=-0.4744 recomputed=-0.4744
+  ✅ PASS  Kendall RRF/Betweenness matches direct scipy  — -0.4744
+  ✅ PASS  Kendall RRF/Closeness stored matches recomputed  — stored=-0.4923 recomputed=-0.4923
+  ✅ PASS  Kendall RRF/Closeness matches direct scipy  — -0.4923
+  ✅ PASS  Kendall Degree/Eigenvector stored matches recomputed  — stored=0.7549 recomputed=0.7549
+  ✅ PASS  Kendall Degree/Eigenvector matches direct scipy  — 0.7549
+  ✅ PASS  Kendall Degree/Betweenness stored matches recomputed  — stored=-0.6308 recomputed=-0.6308
+  ✅ PASS  Kendall Degree/Betweenness matches direct scipy  — -0.6308
+  ✅ PASS  Kendall Degree/Closeness stored matches recomputed  — stored=-0.4590 recomputed=-0.4590
+  ✅ PASS  Kendall Degree/Closeness matches direct scipy  — -0.4590
+  ✅ PASS  Kendall Eigenvector/Betweenness stored matches recomputed  — stored=-0.6103 recomputed=-0.6103
+  ✅ PASS  Kendall Eigenvector/Betweenness matches direct scipy  — -0.6103
+  ✅ PASS  Kendall Eigenvector/Closeness stored matches recomputed  — stored=-0.4846 recomputed=-0.4846
+  ✅ PASS  Kendall Eigenvector/Closeness matches direct scipy  — -0.4846
+  ✅ PASS  Kendall Betweenness/Closeness stored matches recomputed  — stored=-0.2941 recomputed=-0.2941
+  ✅ PASS  Kendall Betweenness/Closeness matches direct scipy  — -0.2941
+
+Check 4 — Centrality scores vs NetworkX (spot-check top-3 per measure)
+────────────────────────────────────────────────────────
+  ✅ PASS  Degree top-3 scores match NetworkX directly
+  ✅ PASS  Eigenvector top-3 scores match NetworkX directly
+  ⚠️  WARN  PageRank not in merged — skipping
+
+Check 5 — BM25 / Dense top-1 spot-check
+────────────────────────────────────────────────────────
+  ✅ PASS  BM25 top-1 matches independent recompute  — DOI=10.48550/arxiv.1306.0511  score=9.4467
+  ✅ PASS  Dense top-1 score matches independent recompute  — DOI=10.5281/zenodo.18678047  score=0.8958
+
+Check 6 — Kendall τ penalty sensitivity (k+1 vs actual full rank)
+────────────────────────────────────────────────────────
+  ✅ PASS  Kendall TSC/BM25 — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/Dense E5 — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/RRF — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/Degree — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/Eigenvector — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall TSC/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/Dense E5 — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/RRF — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/Degree — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/Eigenvector — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall BM25/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Dense E5/RRF — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Dense E5/Degree — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Dense E5/Eigenvector — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Dense E5/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Dense E5/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall RRF/Degree — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall RRF/Eigenvector — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall RRF/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall RRF/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Degree/Eigenvector — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Degree/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Degree/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Eigenvector/Betweenness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Eigenvector/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Kendall Betweenness/Closeness — all union DOIs ranked in both methods, penalty irrelevant — skipping Check 6 for this pair
+  ✅ PASS  Check 6 skipped — all union DOIs are ranked in both methods for every pair (penalty fallback never triggered)
+
+════════════════════════════════════════════════════════
+  Results: 124 passed  |  1 warnings  |  0 failed
+════════════════════════════════════════════════════════
+
