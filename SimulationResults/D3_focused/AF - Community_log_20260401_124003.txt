@@ -1,0 +1,128 @@
+Logging output to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AF - Community_log_20260401_124003.txt
+
+── Reading run folder ────────────────────────────
+  ✓ Peak τ from optimization_summary.csv : 0.0600
+  ✓ Search terms from folder name        : "post quantum cryptography"
+  ✓ Similarity method from folder name   : TF-IDF
+  ✓ QR terms from log file               : ""post-quantum cryptography""
+  ✓ Matrix file                          : tfidf_cosine_matrix_by_doi_tau_0.06.csv
+  ✓ TSC base file                        : DOIs_with_max_TSC_values_20260330_195734.csv
+
+── Loading matrix ────────────────────────────────
+✓ Matrix is symmetric.
+✓ τ=0.0600 applied: 0 edge(s) zeroed out (148194 retained).
+✓ 467 DOIs loaded. Sparsity: 32.0%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=14234.8177 | row-sum max=5.97e-14 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0690
+  (Q > 0.3 indicates strong community structure)
+
+  Community 1: 238 DOIs
+  Community 2: 122 DOIs
+  Community 3: 107 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 14 – 246
+  Median coreness   : 246.0
+
+  Coreness 14: 1 DOIs
+  Coreness 27: 1 DOIs
+  Coreness 35: 1 DOIs
+  Coreness 36: 2 DOIs
+  Coreness 47: 1 DOIs
+  Coreness 48: 1 DOIs
+  Coreness 49: 1 DOIs
+  Coreness 50: 1 DOIs
+  Coreness 67: 2 DOIs
+  Coreness 73: 1 DOIs
+  Coreness 78: 1 DOIs
+  Coreness 79: 1 DOIs
+  Coreness 80: 1 DOIs
+  Coreness 83: 1 DOIs
+  Coreness 84: 1 DOIs
+  Coreness 88: 1 DOIs
+  Coreness 89: 1 DOIs
+  Coreness 90: 1 DOIs
+  Coreness 95: 1 DOIs
+  Coreness 96: 1 DOIs
+  Coreness 106: 1 DOIs
+  Coreness 111: 1 DOIs
+  Coreness 121: 1 DOIs
+  Coreness 122: 1 DOIs
+  Coreness 124: 1 DOIs
+  Coreness 126: 2 DOIs
+  Coreness 132: 1 DOIs
+  Coreness 133: 2 DOIs
+  Coreness 135: 1 DOIs
+  Coreness 138: 1 DOIs
+  Coreness 141: 2 DOIs
+  Coreness 143: 1 DOIs
+  Coreness 150: 2 DOIs
+  Coreness 153: 3 DOIs
+  Coreness 157: 1 DOIs
+  Coreness 159: 3 DOIs
+  Coreness 164: 1 DOIs
+  Coreness 166: 2 DOIs
+  Coreness 169: 1 DOIs
+  Coreness 170: 1 DOIs
+  Coreness 173: 5 DOIs
+  Coreness 179: 1 DOIs
+  Coreness 181: 2 DOIs
+  Coreness 182: 1 DOIs
+  Coreness 185: 1 DOIs
+  Coreness 186: 1 DOIs
+  Coreness 188: 2 DOIs
+  Coreness 194: 1 DOIs
+  Coreness 195: 1 DOIs
+  Coreness 201: 1 DOIs
+  Coreness 203: 1 DOIs
+  Coreness 205: 2 DOIs
+  Coreness 206: 3 DOIs
+  Coreness 207: 1 DOIs
+  Coreness 208: 1 DOIs
+  Coreness 210: 2 DOIs
+  Coreness 212: 3 DOIs
+  Coreness 214: 4 DOIs
+  Coreness 215: 7 DOIs
+  Coreness 217: 2 DOIs
+  Coreness 219: 1 DOIs
+  Coreness 220: 2 DOIs
+  Coreness 222: 1 DOIs
+  Coreness 223: 1 DOIs
+  Coreness 225: 1 DOIs
+  Coreness 228: 2 DOIs
+  Coreness 229: 2 DOIs
+  Coreness 230: 1 DOIs
+  Coreness 231: 2 DOIs
+  Coreness 232: 3 DOIs
+  Coreness 233: 5 DOIs
+  Coreness 234: 1 DOIs
+  Coreness 235: 3 DOIs
+  Coreness 239: 4 DOIs
+  Coreness 241: 10 DOIs
+  Coreness 242: 1 DOIs
+  Coreness 243: 1 DOIs
+  Coreness 245: 8 DOIs
+  Coreness 246: 325 DOIs
+
+── Saving outputs ────────────────────────────────
+
+  Base file: DOIs_with_max_TSC_values_20260330_195734.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AF - DOIs_Communities_20260401_124004.csv
+  Plot saved → 'AF - Community_sizes_20260401_124004.png'
+  Plot saved → 'AF - Community_sizes_20260401_124004_dark.png'
+  Bump chart → 'AF - Community_bump_20260401_124004.png'
+  Bump chart → 'AF - Community_bump_20260401_124004_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260401_124005.png'
+  Bump chart → 'AG - Coreness_bump_20260401_124005_dark.png'
+
+✓ Log saved to: C:\Users\timja\DESKTOP-63SQITG\Documents\Navy\Monterey\Dissertation\GraphTheory\Training\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AF - Community_log_20260401_124003.txt
+

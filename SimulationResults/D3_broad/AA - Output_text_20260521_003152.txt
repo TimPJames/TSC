@@ -1,0 +1,905 @@
+════════════════════════════════════════════════════════════
+  TSC Master Pipeline
+════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════
+  TSC Literature Search – Query Builder
+════════════════════════════════════════════════════════════
+  ✅  Found results file → AB - Pass_data_to_other_query_20260325_131054.csv
+  ✅  Found combined CSV  → will skip Stages 1, 2 & 2.5
+       C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729\clean_results_with_combined_title_abstract_20260325_131055.csv
+  ℹ️   API Query Terms from folder  : "cryptography"
+  ℹ️   Similarity method default   : TF-IDF
+  ℹ️   Query Relevance Terms from log: "bent boolean functions cryptography"
+  API Query Terms      : cryptography
+  Query Relevance Terms: "post-quantum cryptography"
+
+────────────────────────────────────────────────────────────
+  Search Summary
+────────────────────────────────────────────────────────────
+  Source     : Uploaded file
+  File       : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729\AB - Pass_data_to_other_query_20260325_131054.csv
+  Records    : 1000 rows in file
+  Prev folder: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography_TF-IDF_20260325_125729  → reusing combined CSV (skip Stages 1, 2 & 2.5)
+  Supp. CSV  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AB - Pass_data_to_other_query_20260330_194214.csv
+  Skip dedup : No
+  API Query Terms    : cryptography
+  Query Relevance Terms : "post-quantum cryptography"
+  Similarity : TF-IDF
+  Run dir    : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250
+  Output     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\combined_results_20260521_003250.csv
+────────────────────────────────────────────────────────────
+
+  [Stage 1 skipped] Using uploaded file: 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260325_131054.csv'
+  [Supplemental] Added 244 of 467 rows from 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_post_quantum_cryptography_TF-IDF_20260330_193948\AB - Pass_data_to_other_query_20260330_194214.csv'.
+
+════════════════════════════════════════════════════════════
+  Stage 2 – Data Cleaning
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+  TSC Cleaner – processing 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260325_131054.csv'
+  Log → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260325_131054_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  Loaded 3554 rows
+
+  [Step 0] Missing DOI      : 0 rows removed
+  [Step 0] Missing Abstract : 0 rows removed  (3554 remaining)
+  [Step 1] Language filter  : 1 non-English rows removed (3553 remaining)
+  [Step 2] Text cleaning    : 0 titles cleaned, 3 abstracts cleaned, 0 rows removed
+
+  [Step 3 – Pass 2] 21 title duplicate group(s) require review.
+  [Step 3 – Pass 2] 5 record(s) removed.
+
+  [Step 3 – Pass 3] 1 abstract duplicate group(s) require review.
+  [Step 3 – Pass 3] 1 record(s) removed.
+
+  [Step 3 – Pass 4] 43 record(s) have blank authors — review required.
+  [Step 3 – Pass 4] 0 record(s) removed.
+
+  [Step 3] Content dedup    : 6 duplicate rows removed (3547 remaining)
+
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  Source                        Added    Supp    API      No       No       Not      Dup           
+                       Fetched   Supp    Dup     Dup     DOI    Abstract  English  Content   Kept  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  arXiv                  1064    136     -103                                         -3     1094  
+  CrossRef               1000    141     -58                                                 1083  
+  OpenAlex               523      84     -13                                          -3     591   
+  SemanticScholar        423      82     -25                                 -1              479   
+  zbMath                 300      24     -24                                                 300   
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  TOTAL                  3310    467     -223                                -1       -6     3547  
+  ───────────────────────────────────────────────────────────────────────────────────────────────────
+  [Summary table] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AD - Summary_table_20260521_003819.txt'
+  [Dedup log] Duplicate review saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AC - Duplicate_user_choices_20260521_003252.txt'
+
+  ✅  Pass-data file saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260521_003819.csv'  (3547 rows, Source column retained)
+  ✅  Cleaned file saved  → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\combined_results_clean_20260521_003252.csv'  (3547 rows)
+  [Log] 7 dropped + 0 rescued entries saved to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260325_131054_dropped_DOIs.csv'
+════════════════════════════════════════════════════════════
+
+  ⏱  Stage 2 cleaning completed in 5m 26s
+
+════════════════════════════════════════════════════════════
+  Stage 2.5 – Combine Title + Abstract
+════════════════════════════════════════════════════════════
+  [combine_title_abstract] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\clean_results_with_combined_title_abstract_20260521_003819.csv'
+  [Log] Saving output to 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AA - Output_text_20260521_003152.txt'
+
+────────────────────────────────────────────────────────────
+  Data preparation complete.
+  Combined CSV : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\clean_results_with_combined_title_abstract_20260521_003819.csv
+  Output dir   : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250
+────────────────────────────────────────────────────────────
+  Press Enter to begin similarity matrix computation …
+
+
+════════════════════════════════════════════════════════════
+  Stage 3 – TSC Analysis
+════════════════════════════════════════════════════════════
+  Output folder  : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250
+  API Query Terms      : cryptography
+  Query Relevance Terms: "post-quantum cryptography"  (custom)
+  Building similarity matrix — using TF-IDF (computed once, shared across all sweeps) …
+  [build_similarity_matrices] Saved full similarity matrix → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\tfidf_cosine_matrix_by_doi_tau_0.00.csv'
+  ⏱  Similarity matrix built in 0m 15s
+============================================================
+  PHASE 1: Coarse sweep
+============================================================
+  [similarity matrix] Reusing pre-built matrix (3547 DOIs)
+  [tau auto-range] Maximum pairwise similarity = 1.0000
+  [tau auto-range] τ grid (11 steps): 0.0000, 0.1000, 0.2000, 0.3000, 0.4000, 0.5000, 0.6000, 0.7000, 0.8000, 0.9000, 1.0000
+  [COARSE] Computing query relevance (once, reusing document representations) …
+  [COARSE] Query relevance cached for 3547 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.00  (spread = 10.1204)
+  [Ranking vs λ] 15 of 3547 DOIs in the Top 10  (τ = 0.00, max TSC spread)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\top10_ranking_by_lambda_COARSE.xlsx'
+  [Ranking vs λ – stable] 6 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_COARSE_stable.png'
+  [Ranking all pairs] 53 of 3547 DOIs in the Top 10  (across all τ,λ pairs)  [COARSE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\top10_all_pairs_COARSE.xlsx'
+  [COARSE] grid: 11 tau x 11 lambda = 121 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\histogram_grid_COARSE.png'
+  [COARSE] image grid: 11x11 = 121 matched (0 missing, 0 dark PNGs found, 121 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\histogram_grid_COARSE_plain.png'
+  ⏱  [COARSE] Heatmaps, histograms, and ranking plots completed in 4m 52s
+
+  Coarse peak : TSC Spread = 10.1204 at λ = 0.0100, τ = 0.0000
+  Zoom region : λ ∈ [0.0100, 0.1100], τ ∈ [0.0000, 0.2000]
+
+============================================================
+  PHASE 2: Fine sweep (zoomed)
+============================================================
+  Fine τ ∈ [0.0000, 0.2000], step = 0.01
+  Fine λ ∈ [0.0100, 0.1100], step = 0.01
+  [tau fixed-step] τ grid (21 steps, step=0.01): 0.0000, 0.0100, 0.0200, 0.0300, 0.0400, 0.0500, 0.0600, 0.0700, 0.0800, 0.0900, 0.1000, 0.1100, 0.1200, 0.1300, 0.1400, 0.1500, 0.1600, 0.1700, 0.1800, 0.1900, 0.2000
+  [similarity matrix] Reusing pre-built matrix (3547 DOIs)
+  [FINE] Computing query relevance (once, reusing document representations) …
+  [FINE] Query relevance cached for 3547 DOIs
+  [top10 plot] Peak TSC spread at τ = 0.04  (spread = 10.9828)
+  [Ranking vs λ] 12 of 3547 DOIs in the Top 10  (τ = 0.04, max TSC spread)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\top10_ranking_by_lambda_FINE.xlsx'
+  [Ranking vs λ – stable] 8 DOIs in top 10 for all λ values → 'top10_ranking_by_lambda_FINE_stable.png'
+  [Ranking all pairs] 18 of 3547 DOIs in the Top 10  (across all τ,λ pairs)  [FINE]
+  [Excel] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\top10_all_pairs_FINE.xlsx'
+  [FINE] grid: 21 tau x 11 lambda = 231 cells
+  [histogram grid colour] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\histogram_grid_FINE.png'
+  [FINE] image grid: 21x11 = 231 matched (0 missing, 0 dark PNGs found, 231 dark PNGs to build)
+  [histogram grid images] Saved -> 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\histogram_grid_FINE_plain.png'
+
+── Per-paper convexity check (TSC in λ) [FINE] ──────────
+  Loading TSC CSVs (21 τ values × 11 λ values) …
+  ✓ 3547 DOIs across all τ/λ combinations
+
+  Overall fraction of (τ, λ, DOI) triples that are convex: 100.0%
+
+  Per-τ mean fraction of documents convex:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document convexity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully convex (100%) : 3547 / 3547 documents
+
+  ✓ Per-paper results saved → AD - TSC_convexity_per_paper_FINE_20260521_005028.csv
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260521_005028_heatmap.png
+  ✓ Heatmap saved → AD - TSC_convexity_per_paper_FINE_20260521_005028_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260521_005028_hist.png
+  ✓ Histogram saved → AD - TSC_convexity_per_paper_FINE_20260521_005028_hist_dark.png
+
+── Per-paper monotonicity check (TSC in λ) [FINE] ─────────
+  Loading TSC CSVs (21 τ × 11 λ) …
+  ✓ 3547 DOIs, 10 λ steps per τ
+
+  Overall fraction of (τ, λ-step, DOI) triples monotone: 100.0%
+
+  Per-τ mean fraction of documents monotone decreasing:
+    τ=0.000  100.0%  ████████████████████
+    τ=0.010  100.0%  ████████████████████
+    τ=0.020  100.0%  ████████████████████
+    τ=0.030  100.0%  ████████████████████
+    τ=0.040  100.0%  ████████████████████
+    τ=0.050  100.0%  ████████████████████
+    τ=0.060  100.0%  ████████████████████
+    τ=0.070  100.0%  ████████████████████
+    τ=0.080  100.0%  ████████████████████
+    τ=0.090  100.0%  ████████████████████
+    τ=0.100  100.0%  ████████████████████
+    τ=0.110  100.0%  ████████████████████
+    τ=0.120  100.0%  ████████████████████
+    τ=0.130  100.0%  ████████████████████
+    τ=0.140  100.0%  ████████████████████
+    τ=0.150  100.0%  ████████████████████
+    τ=0.160  100.0%  ████████████████████
+    τ=0.170  100.0%  ████████████████████
+    τ=0.180  100.0%  ████████████████████
+    τ=0.190  100.0%  ████████████████████
+    τ=0.200  100.0%  ████████████████████
+
+  Per-document monotonicity fraction:
+    Mean   : 1.000
+    Median : 1.000
+    Min    : 1.000
+    Max    : 1.000
+    Fully monotone (100%) : 3547 / 3547 documents
+
+  ✓ Per-paper results saved → AD - TSC_monotonicity_per_paper_FINE_20260521_005040.csv
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260521_005040_heatmap.png
+  ✓ Heatmap saved → AD - TSC_monotonicity_per_paper_FINE_20260521_005040_heatmap_dark.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260521_005040_hist.png
+  ✓ Histogram saved → AD - TSC_monotonicity_per_paper_FINE_20260521_005040_hist_dark.png
+  ⏱  [FINE] Heatmaps, histograms, and ranking plots completed in 7m 11s
+
+============================================================
+  RESULT
+============================================================
+  Maximum TSC Spread    : 10.9828
+  Corresponding λ       : 0.01
+  Corresponding τ       : 0.04
+  [similarity matrix] Saved thresholded matrix (τ=0.04) → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\tfidf_cosine_matrix_by_doi_tau_0.04.csv'
+  [TSC vs Year] Breusch-Pagan: LM=26.6195, p=0.0000 -> heteroscedastic (alpha=0.05)
+  [TSC vs Year] BP results -> TSC_vs_Year_breusch_pagan_tau_0.04_lambda_0.01_20260521_005052.csv
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.04_lambda_0.01_20260521_005052.png
+  [TSC vs Year] Residual plot -> TSC_vs_Year_residuals_tau_0.04_lambda_0.01_20260521_005052_dark.png
+  [TSC vs Year] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\TSC_vs_PublicationYear_tau_0.04_lambda_0.01.png'  (3547 data points, R² = 0.082)
+  [Max TSC CSV] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\DOIs_with_max_TSC_values_20260521_005130.csv'  (3547 DOIs)
+
+════════════════════════════════════════════════════════════
+  Community Detection  [Newman (2006): Recursive Spectral Bisection]
+════════════════════════════════════════════════════════════
+  Using chosen τ = 0.04
+  Matrix : 'tfidf_cosine_matrix_by_doi_tau_0.04.csv'
+  TSC base: 'DOIs_with_max_TSC_values_20260521_005130.csv'
+✓ Matrix is symmetric.
+✓ τ=0.0400 applied: 0 edge(s) zeroed out (7939018 retained).
+✓ 3547 DOIs loaded. Sparsity: 36.9%.
+
+── Building modularity matrix ────────────────────
+✓ Modularity matrix built. 2m=521824.1419 | row-sum max=9.20e-13 (should be ≈0)
+
+── Running recursive spectral bisection ──────────
+✓ 3 communities found.
+
+── Results ───────────────────────────────────────
+✓ Modularity score Q = 0.0991  (>0.3 indicates strong structure)
+
+  Community 1: 1391 DOIs
+  Community 2: 1224 DOIs
+  Community 3: 932 DOIs
+
+── Computing coreness (k-core decomposition) ─────
+
+  Coreness range    : 57 – 1656
+  Median coreness   : 1656.0
+
+  Coreness 57: 1 DOIs
+  Coreness 74: 1 DOIs
+  Coreness 89: 1 DOIs
+  Coreness 110: 1 DOIs
+  Coreness 123: 2 DOIs
+  Coreness 127: 2 DOIs
+  Coreness 129: 1 DOIs
+  Coreness 133: 1 DOIs
+  Coreness 155: 1 DOIs
+  Coreness 160: 1 DOIs
+  Coreness 165: 1 DOIs
+  Coreness 171: 1 DOIs
+  Coreness 173: 1 DOIs
+  Coreness 174: 1 DOIs
+  Coreness 176: 1 DOIs
+  Coreness 197: 1 DOIs
+  Coreness 212: 1 DOIs
+  Coreness 215: 1 DOIs
+  Coreness 217: 1 DOIs
+  Coreness 220: 2 DOIs
+  Coreness 222: 1 DOIs
+  Coreness 227: 1 DOIs
+  Coreness 252: 1 DOIs
+  Coreness 272: 1 DOIs
+  Coreness 274: 1 DOIs
+  Coreness 277: 1 DOIs
+  Coreness 288: 1 DOIs
+  Coreness 291: 1 DOIs
+  Coreness 305: 1 DOIs
+  Coreness 306: 1 DOIs
+  Coreness 309: 1 DOIs
+  Coreness 310: 1 DOIs
+  Coreness 313: 1 DOIs
+  Coreness 317: 1 DOIs
+  Coreness 327: 1 DOIs
+  Coreness 332: 1 DOIs
+  Coreness 355: 1 DOIs
+  Coreness 384: 1 DOIs
+  Coreness 394: 1 DOIs
+  Coreness 396: 1 DOIs
+  Coreness 401: 1 DOIs
+  Coreness 405: 1 DOIs
+  Coreness 411: 1 DOIs
+  Coreness 413: 1 DOIs
+  Coreness 417: 1 DOIs
+  Coreness 426: 1 DOIs
+  Coreness 443: 1 DOIs
+  Coreness 457: 1 DOIs
+  Coreness 461: 1 DOIs
+  Coreness 466: 1 DOIs
+  Coreness 477: 1 DOIs
+  Coreness 480: 1 DOIs
+  Coreness 481: 1 DOIs
+  Coreness 487: 2 DOIs
+  Coreness 490: 1 DOIs
+  Coreness 492: 1 DOIs
+  Coreness 507: 1 DOIs
+  Coreness 508: 1 DOIs
+  Coreness 511: 1 DOIs
+  Coreness 512: 1 DOIs
+  Coreness 521: 1 DOIs
+  Coreness 525: 1 DOIs
+  Coreness 527: 1 DOIs
+  Coreness 529: 2 DOIs
+  Coreness 531: 1 DOIs
+  Coreness 533: 1 DOIs
+  Coreness 535: 1 DOIs
+  Coreness 541: 1 DOIs
+  Coreness 545: 1 DOIs
+  Coreness 549: 2 DOIs
+  Coreness 554: 1 DOIs
+  Coreness 555: 1 DOIs
+  Coreness 556: 1 DOIs
+  Coreness 571: 1 DOIs
+  Coreness 576: 1 DOIs
+  Coreness 578: 2 DOIs
+  Coreness 580: 1 DOIs
+  Coreness 587: 1 DOIs
+  Coreness 591: 1 DOIs
+  Coreness 593: 1 DOIs
+  Coreness 596: 1 DOIs
+  Coreness 597: 1 DOIs
+  Coreness 598: 1 DOIs
+  Coreness 600: 1 DOIs
+  Coreness 603: 2 DOIs
+  Coreness 611: 1 DOIs
+  Coreness 628: 1 DOIs
+  Coreness 630: 1 DOIs
+  Coreness 631: 1 DOIs
+  Coreness 632: 1 DOIs
+  Coreness 642: 2 DOIs
+  Coreness 651: 2 DOIs
+  Coreness 655: 1 DOIs
+  Coreness 660: 1 DOIs
+  Coreness 670: 1 DOIs
+  Coreness 675: 1 DOIs
+  Coreness 676: 1 DOIs
+  Coreness 678: 2 DOIs
+  Coreness 684: 1 DOIs
+  Coreness 691: 2 DOIs
+  Coreness 696: 2 DOIs
+  Coreness 698: 1 DOIs
+  Coreness 710: 2 DOIs
+  Coreness 711: 2 DOIs
+  Coreness 712: 2 DOIs
+  Coreness 727: 1 DOIs
+  Coreness 730: 1 DOIs
+  Coreness 731: 1 DOIs
+  Coreness 733: 1 DOIs
+  Coreness 736: 2 DOIs
+  Coreness 741: 2 DOIs
+  Coreness 742: 1 DOIs
+  Coreness 744: 1 DOIs
+  Coreness 745: 1 DOIs
+  Coreness 750: 1 DOIs
+  Coreness 753: 2 DOIs
+  Coreness 755: 1 DOIs
+  Coreness 761: 1 DOIs
+  Coreness 763: 1 DOIs
+  Coreness 764: 1 DOIs
+  Coreness 768: 1 DOIs
+  Coreness 771: 1 DOIs
+  Coreness 774: 1 DOIs
+  Coreness 776: 1 DOIs
+  Coreness 779: 1 DOIs
+  Coreness 782: 3 DOIs
+  Coreness 783: 1 DOIs
+  Coreness 786: 1 DOIs
+  Coreness 788: 1 DOIs
+  Coreness 789: 1 DOIs
+  Coreness 792: 1 DOIs
+  Coreness 796: 1 DOIs
+  Coreness 797: 1 DOIs
+  Coreness 800: 1 DOIs
+  Coreness 801: 1 DOIs
+  Coreness 804: 1 DOIs
+  Coreness 808: 1 DOIs
+  Coreness 811: 1 DOIs
+  Coreness 816: 1 DOIs
+  Coreness 819: 1 DOIs
+  Coreness 832: 1 DOIs
+  Coreness 833: 1 DOIs
+  Coreness 838: 1 DOIs
+  Coreness 841: 1 DOIs
+  Coreness 842: 3 DOIs
+  Coreness 843: 1 DOIs
+  Coreness 845: 1 DOIs
+  Coreness 849: 1 DOIs
+  Coreness 853: 1 DOIs
+  Coreness 860: 1 DOIs
+  Coreness 869: 1 DOIs
+  Coreness 874: 2 DOIs
+  Coreness 877: 1 DOIs
+  Coreness 881: 1 DOIs
+  Coreness 892: 1 DOIs
+  Coreness 899: 1 DOIs
+  Coreness 901: 1 DOIs
+  Coreness 902: 1 DOIs
+  Coreness 904: 1 DOIs
+  Coreness 905: 1 DOIs
+  Coreness 906: 1 DOIs
+  Coreness 909: 3 DOIs
+  Coreness 910: 1 DOIs
+  Coreness 913: 1 DOIs
+  Coreness 918: 1 DOIs
+  Coreness 924: 1 DOIs
+  Coreness 927: 1 DOIs
+  Coreness 928: 4 DOIs
+  Coreness 929: 1 DOIs
+  Coreness 933: 1 DOIs
+  Coreness 936: 1 DOIs
+  Coreness 937: 1 DOIs
+  Coreness 939: 2 DOIs
+  Coreness 944: 1 DOIs
+  Coreness 945: 2 DOIs
+  Coreness 947: 1 DOIs
+  Coreness 951: 1 DOIs
+  Coreness 952: 1 DOIs
+  Coreness 954: 1 DOIs
+  Coreness 956: 1 DOIs
+  Coreness 958: 1 DOIs
+  Coreness 965: 3 DOIs
+  Coreness 969: 2 DOIs
+  Coreness 970: 1 DOIs
+  Coreness 971: 1 DOIs
+  Coreness 973: 2 DOIs
+  Coreness 976: 1 DOIs
+  Coreness 978: 2 DOIs
+  Coreness 980: 1 DOIs
+  Coreness 985: 1 DOIs
+  Coreness 987: 1 DOIs
+  Coreness 996: 1 DOIs
+  Coreness 999: 3 DOIs
+  Coreness 1004: 1 DOIs
+  Coreness 1012: 1 DOIs
+  Coreness 1013: 2 DOIs
+  Coreness 1016: 1 DOIs
+  Coreness 1017: 3 DOIs
+  Coreness 1018: 2 DOIs
+  Coreness 1019: 1 DOIs
+  Coreness 1021: 1 DOIs
+  Coreness 1023: 1 DOIs
+  Coreness 1025: 1 DOIs
+  Coreness 1026: 1 DOIs
+  Coreness 1028: 1 DOIs
+  Coreness 1032: 1 DOIs
+  Coreness 1034: 2 DOIs
+  Coreness 1038: 1 DOIs
+  Coreness 1039: 4 DOIs
+  Coreness 1040: 2 DOIs
+  Coreness 1041: 3 DOIs
+  Coreness 1045: 1 DOIs
+  Coreness 1051: 1 DOIs
+  Coreness 1053: 1 DOIs
+  Coreness 1056: 1 DOIs
+  Coreness 1059: 1 DOIs
+  Coreness 1060: 1 DOIs
+  Coreness 1064: 2 DOIs
+  Coreness 1065: 1 DOIs
+  Coreness 1070: 1 DOIs
+  Coreness 1073: 1 DOIs
+  Coreness 1079: 1 DOIs
+  Coreness 1080: 5 DOIs
+  Coreness 1081: 3 DOIs
+  Coreness 1082: 1 DOIs
+  Coreness 1084: 2 DOIs
+  Coreness 1091: 1 DOIs
+  Coreness 1093: 1 DOIs
+  Coreness 1095: 3 DOIs
+  Coreness 1096: 1 DOIs
+  Coreness 1097: 5 DOIs
+  Coreness 1098: 1 DOIs
+  Coreness 1099: 1 DOIs
+  Coreness 1100: 2 DOIs
+  Coreness 1101: 1 DOIs
+  Coreness 1102: 1 DOIs
+  Coreness 1103: 1 DOIs
+  Coreness 1105: 1 DOIs
+  Coreness 1106: 1 DOIs
+  Coreness 1107: 1 DOIs
+  Coreness 1108: 3 DOIs
+  Coreness 1109: 1 DOIs
+  Coreness 1110: 2 DOIs
+  Coreness 1111: 1 DOIs
+  Coreness 1114: 1 DOIs
+  Coreness 1115: 2 DOIs
+  Coreness 1117: 2 DOIs
+  Coreness 1118: 1 DOIs
+  Coreness 1119: 1 DOIs
+  Coreness 1121: 4 DOIs
+  Coreness 1122: 2 DOIs
+  Coreness 1129: 1 DOIs
+  Coreness 1130: 2 DOIs
+  Coreness 1131: 2 DOIs
+  Coreness 1132: 2 DOIs
+  Coreness 1136: 1 DOIs
+  Coreness 1137: 1 DOIs
+  Coreness 1143: 1 DOIs
+  Coreness 1147: 4 DOIs
+  Coreness 1152: 1 DOIs
+  Coreness 1156: 1 DOIs
+  Coreness 1159: 1 DOIs
+  Coreness 1161: 2 DOIs
+  Coreness 1162: 1 DOIs
+  Coreness 1163: 1 DOIs
+  Coreness 1165: 1 DOIs
+  Coreness 1167: 1 DOIs
+  Coreness 1168: 1 DOIs
+  Coreness 1169: 3 DOIs
+  Coreness 1171: 2 DOIs
+  Coreness 1173: 1 DOIs
+  Coreness 1176: 1 DOIs
+  Coreness 1178: 2 DOIs
+  Coreness 1180: 1 DOIs
+  Coreness 1181: 2 DOIs
+  Coreness 1182: 2 DOIs
+  Coreness 1183: 1 DOIs
+  Coreness 1188: 2 DOIs
+  Coreness 1192: 1 DOIs
+  Coreness 1193: 1 DOIs
+  Coreness 1195: 4 DOIs
+  Coreness 1201: 1 DOIs
+  Coreness 1203: 2 DOIs
+  Coreness 1204: 2 DOIs
+  Coreness 1211: 1 DOIs
+  Coreness 1213: 1 DOIs
+  Coreness 1216: 3 DOIs
+  Coreness 1217: 1 DOIs
+  Coreness 1218: 2 DOIs
+  Coreness 1219: 1 DOIs
+  Coreness 1220: 2 DOIs
+  Coreness 1224: 2 DOIs
+  Coreness 1225: 2 DOIs
+  Coreness 1226: 2 DOIs
+  Coreness 1230: 1 DOIs
+  Coreness 1231: 2 DOIs
+  Coreness 1232: 1 DOIs
+  Coreness 1233: 1 DOIs
+  Coreness 1235: 1 DOIs
+  Coreness 1236: 2 DOIs
+  Coreness 1237: 3 DOIs
+  Coreness 1238: 3 DOIs
+  Coreness 1239: 3 DOIs
+  Coreness 1240: 1 DOIs
+  Coreness 1241: 3 DOIs
+  Coreness 1242: 1 DOIs
+  Coreness 1244: 1 DOIs
+  Coreness 1245: 1 DOIs
+  Coreness 1247: 2 DOIs
+  Coreness 1250: 2 DOIs
+  Coreness 1255: 1 DOIs
+  Coreness 1258: 4 DOIs
+  Coreness 1259: 3 DOIs
+  Coreness 1261: 3 DOIs
+  Coreness 1262: 3 DOIs
+  Coreness 1263: 2 DOIs
+  Coreness 1264: 3 DOIs
+  Coreness 1265: 2 DOIs
+  Coreness 1266: 2 DOIs
+  Coreness 1268: 1 DOIs
+  Coreness 1271: 2 DOIs
+  Coreness 1275: 2 DOIs
+  Coreness 1276: 1 DOIs
+  Coreness 1277: 2 DOIs
+  Coreness 1278: 1 DOIs
+  Coreness 1280: 3 DOIs
+  Coreness 1281: 1 DOIs
+  Coreness 1282: 3 DOIs
+  Coreness 1283: 3 DOIs
+  Coreness 1285: 1 DOIs
+  Coreness 1286: 1 DOIs
+  Coreness 1289: 3 DOIs
+  Coreness 1292: 1 DOIs
+  Coreness 1293: 1 DOIs
+  Coreness 1294: 1 DOIs
+  Coreness 1296: 2 DOIs
+  Coreness 1298: 2 DOIs
+  Coreness 1299: 1 DOIs
+  Coreness 1300: 2 DOIs
+  Coreness 1302: 2 DOIs
+  Coreness 1303: 1 DOIs
+  Coreness 1305: 1 DOIs
+  Coreness 1308: 3 DOIs
+  Coreness 1309: 1 DOIs
+  Coreness 1311: 1 DOIs
+  Coreness 1312: 2 DOIs
+  Coreness 1313: 1 DOIs
+  Coreness 1314: 4 DOIs
+  Coreness 1315: 1 DOIs
+  Coreness 1316: 1 DOIs
+  Coreness 1318: 1 DOIs
+  Coreness 1319: 1 DOIs
+  Coreness 1320: 3 DOIs
+  Coreness 1321: 2 DOIs
+  Coreness 1322: 2 DOIs
+  Coreness 1323: 2 DOIs
+  Coreness 1324: 2 DOIs
+  Coreness 1328: 1 DOIs
+  Coreness 1331: 1 DOIs
+  Coreness 1332: 6 DOIs
+  Coreness 1333: 4 DOIs
+  Coreness 1334: 1 DOIs
+  Coreness 1336: 1 DOIs
+  Coreness 1338: 1 DOIs
+  Coreness 1339: 1 DOIs
+  Coreness 1340: 5 DOIs
+  Coreness 1343: 1 DOIs
+  Coreness 1350: 1 DOIs
+  Coreness 1351: 1 DOIs
+  Coreness 1353: 1 DOIs
+  Coreness 1355: 5 DOIs
+  Coreness 1356: 4 DOIs
+  Coreness 1361: 3 DOIs
+  Coreness 1363: 1 DOIs
+  Coreness 1364: 3 DOIs
+  Coreness 1366: 3 DOIs
+  Coreness 1369: 1 DOIs
+  Coreness 1371: 2 DOIs
+  Coreness 1372: 3 DOIs
+  Coreness 1377: 1 DOIs
+  Coreness 1378: 1 DOIs
+  Coreness 1380: 1 DOIs
+  Coreness 1382: 1 DOIs
+  Coreness 1384: 2 DOIs
+  Coreness 1385: 3 DOIs
+  Coreness 1388: 1 DOIs
+  Coreness 1389: 1 DOIs
+  Coreness 1390: 1 DOIs
+  Coreness 1391: 3 DOIs
+  Coreness 1392: 5 DOIs
+  Coreness 1394: 1 DOIs
+  Coreness 1395: 8 DOIs
+  Coreness 1399: 1 DOIs
+  Coreness 1402: 1 DOIs
+  Coreness 1403: 1 DOIs
+  Coreness 1404: 1 DOIs
+  Coreness 1405: 1 DOIs
+  Coreness 1408: 4 DOIs
+  Coreness 1409: 4 DOIs
+  Coreness 1414: 1 DOIs
+  Coreness 1416: 1 DOIs
+  Coreness 1420: 1 DOIs
+  Coreness 1424: 1 DOIs
+  Coreness 1426: 2 DOIs
+  Coreness 1428: 1 DOIs
+  Coreness 1430: 6 DOIs
+  Coreness 1431: 1 DOIs
+  Coreness 1432: 2 DOIs
+  Coreness 1434: 4 DOIs
+  Coreness 1436: 1 DOIs
+  Coreness 1439: 2 DOIs
+  Coreness 1440: 4 DOIs
+  Coreness 1441: 1 DOIs
+  Coreness 1442: 3 DOIs
+  Coreness 1444: 3 DOIs
+  Coreness 1445: 2 DOIs
+  Coreness 1446: 1 DOIs
+  Coreness 1450: 1 DOIs
+  Coreness 1451: 1 DOIs
+  Coreness 1452: 2 DOIs
+  Coreness 1453: 1 DOIs
+  Coreness 1456: 1 DOIs
+  Coreness 1457: 1 DOIs
+  Coreness 1459: 4 DOIs
+  Coreness 1460: 3 DOIs
+  Coreness 1465: 1 DOIs
+  Coreness 1466: 1 DOIs
+  Coreness 1469: 1 DOIs
+  Coreness 1471: 1 DOIs
+  Coreness 1473: 2 DOIs
+  Coreness 1474: 4 DOIs
+  Coreness 1476: 5 DOIs
+  Coreness 1477: 2 DOIs
+  Coreness 1481: 1 DOIs
+  Coreness 1482: 1 DOIs
+  Coreness 1484: 4 DOIs
+  Coreness 1486: 2 DOIs
+  Coreness 1487: 2 DOIs
+  Coreness 1488: 11 DOIs
+  Coreness 1491: 2 DOIs
+  Coreness 1492: 1 DOIs
+  Coreness 1494: 6 DOIs
+  Coreness 1495: 2 DOIs
+  Coreness 1496: 1 DOIs
+  Coreness 1498: 2 DOIs
+  Coreness 1499: 1 DOIs
+  Coreness 1500: 3 DOIs
+  Coreness 1501: 4 DOIs
+  Coreness 1502: 1 DOIs
+  Coreness 1503: 1 DOIs
+  Coreness 1504: 2 DOIs
+  Coreness 1505: 2 DOIs
+  Coreness 1508: 1 DOIs
+  Coreness 1509: 6 DOIs
+  Coreness 1511: 1 DOIs
+  Coreness 1512: 1 DOIs
+  Coreness 1513: 8 DOIs
+  Coreness 1515: 3 DOIs
+  Coreness 1521: 1 DOIs
+  Coreness 1522: 4 DOIs
+  Coreness 1523: 1 DOIs
+  Coreness 1524: 2 DOIs
+  Coreness 1525: 3 DOIs
+  Coreness 1526: 1 DOIs
+  Coreness 1528: 1 DOIs
+  Coreness 1530: 3 DOIs
+  Coreness 1531: 3 DOIs
+  Coreness 1532: 5 DOIs
+  Coreness 1533: 8 DOIs
+  Coreness 1534: 2 DOIs
+  Coreness 1535: 4 DOIs
+  Coreness 1536: 6 DOIs
+  Coreness 1537: 3 DOIs
+  Coreness 1538: 1 DOIs
+  Coreness 1539: 1 DOIs
+  Coreness 1540: 4 DOIs
+  Coreness 1541: 8 DOIs
+  Coreness 1543: 1 DOIs
+  Coreness 1544: 1 DOIs
+  Coreness 1545: 6 DOIs
+  Coreness 1546: 1 DOIs
+  Coreness 1547: 1 DOIs
+  Coreness 1548: 3 DOIs
+  Coreness 1549: 1 DOIs
+  Coreness 1550: 3 DOIs
+  Coreness 1551: 4 DOIs
+  Coreness 1554: 4 DOIs
+  Coreness 1556: 5 DOIs
+  Coreness 1557: 2 DOIs
+  Coreness 1559: 2 DOIs
+  Coreness 1560: 3 DOIs
+  Coreness 1561: 2 DOIs
+  Coreness 1563: 10 DOIs
+  Coreness 1565: 4 DOIs
+  Coreness 1566: 7 DOIs
+  Coreness 1567: 2 DOIs
+  Coreness 1568: 2 DOIs
+  Coreness 1569: 1 DOIs
+  Coreness 1570: 1 DOIs
+  Coreness 1574: 1 DOIs
+  Coreness 1575: 1 DOIs
+  Coreness 1576: 2 DOIs
+  Coreness 1577: 1 DOIs
+  Coreness 1578: 3 DOIs
+  Coreness 1581: 8 DOIs
+  Coreness 1582: 2 DOIs
+  Coreness 1583: 1 DOIs
+  Coreness 1584: 2 DOIs
+  Coreness 1585: 20 DOIs
+  Coreness 1586: 7 DOIs
+  Coreness 1587: 6 DOIs
+  Coreness 1588: 1 DOIs
+  Coreness 1589: 1 DOIs
+  Coreness 1590: 2 DOIs
+  Coreness 1593: 1 DOIs
+  Coreness 1594: 1 DOIs
+  Coreness 1595: 5 DOIs
+  Coreness 1597: 2 DOIs
+  Coreness 1598: 3 DOIs
+  Coreness 1601: 1 DOIs
+  Coreness 1602: 7 DOIs
+  Coreness 1603: 1 DOIs
+  Coreness 1604: 7 DOIs
+  Coreness 1605: 11 DOIs
+  Coreness 1607: 1 DOIs
+  Coreness 1609: 1 DOIs
+  Coreness 1613: 2 DOIs
+  Coreness 1615: 3 DOIs
+  Coreness 1616: 1 DOIs
+  Coreness 1617: 1 DOIs
+  Coreness 1618: 3 DOIs
+  Coreness 1619: 1 DOIs
+  Coreness 1620: 6 DOIs
+  Coreness 1623: 4 DOIs
+  Coreness 1624: 1 DOIs
+  Coreness 1625: 4 DOIs
+  Coreness 1626: 13 DOIs
+  Coreness 1631: 1 DOIs
+  Coreness 1632: 1 DOIs
+  Coreness 1634: 1 DOIs
+  Coreness 1637: 1 DOIs
+  Coreness 1638: 1 DOIs
+  Coreness 1640: 1 DOIs
+  Coreness 1641: 6 DOIs
+  Coreness 1642: 9 DOIs
+  Coreness 1643: 3 DOIs
+  Coreness 1644: 1 DOIs
+  Coreness 1646: 2 DOIs
+  Coreness 1648: 22 DOIs
+  Coreness 1649: 9 DOIs
+  Coreness 1650: 6 DOIs
+  Coreness 1652: 3 DOIs
+  Coreness 1653: 1 DOIs
+  Coreness 1655: 18 DOIs
+  Coreness 1656: 2458 DOIs
+
+── Saving outputs ────────────────────────────────
+  Base file: DOIs_with_max_TSC_values_20260521_005130.csv
+✓ Community + Coreness appended to TSC base → saved to:
+  C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AF - DOIs_Communities_20260521_005233.csv
+  Plot saved → 'AF - Community_sizes_20260521_005233.png'
+  Plot saved → 'AF - Community_sizes_20260521_005233_dark.png'
+  Bump chart → 'AF - Community_bump_20260521_005234.png'
+  Bump chart → 'AF - Community_bump_20260521_005234_dark.png'
+  Bump chart → 'AG - Coreness_bump_20260521_005235.png'
+  Bump chart → 'AG - Coreness_bump_20260521_005235_dark.png'
+
+────────────────────────────────────────────────────────────
+  AH – K-Core Topographic Maps
+────────────────────────────────────────────────────────────
+  ✓ Matrix: tfidf_cosine_matrix_by_doi_tau_0.04.csv
+  ✓ 3547 DOIs loaded.
+  ✓ 12 DOIs from top10_ranking_by_lambda_FINE.xlsx
+  ✓ 12 DOIs to highlight
+  ✓ Coreness range: 57 – 1656
+  Computing spring layout …
+  ✓ Contour map saved → AH - Kcore_contour_20260521_005421.png
+  ✓ Contour map saved → AH - Kcore_contour_20260521_005421_dark.png
+  ✓ Community data: 3 communities
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421_dark.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421.png
+    Bar chart inset drawn (upper left, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421_dark.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421.png
+    Bar chart inset drawn (upper right, matching community colours).
+  ✓ Community map saved → AH - Kcore_political_20260521_005421_dark.png
+  Already in that position.
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260521_005421.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260521_005421_dark.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260521_005421.png
+  ✓ Sphere surface saved → AH - Kcore_surface_spheres_20260521_005421_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260521_005421.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260521_005421_dark.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260521_005421.png
+  ✓ Circle marker surface saved → AH - Kcore_surface_circles_20260521_005421_dark.png
+  ✓ All AH plots saved to: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250
+  ⏱  Community detection completed in 4m 06s
+
+════════════════════════════════════════════════════════════
+  Pipeline Complete
+════════════════════════════════════════════════════════════
+  Raw CSV           : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AB - Pass_data_to_other_query_20260325_131054.csv
+  Clean CSV         : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\combined_results_clean_20260521_003252.csv
+  Combined CSV      : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\clean_results_with_combined_title_abstract_20260521_003819.csv
+  TSC output        : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250
+  Community CSV     : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AF - DOIs_Communities_20260521_005233.csv
+  Maximum TSC Spread: 10.9828
+  Selected λ        : 0.01
+  Selected τ        : 0.04
+  Log file          : C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AA - Output_text_20260521_003152.txt
+
+  ⏱  Total time     : 23m 43s
+  ──────────────────────────────────────
+    User review (wait)    : 5m 21s
+    Data cleaning         : 0m 07s
+    Combine title+abstract: 261 ms
+    Similarity matrix     : 0m 15s
+    Coarse sweep & plots  : 4m 52s
+    Fine sweep & plots    : 7m 11s
+  ──────────────────────────────────────
+════════════════════════════════════════════════════════════
+
+  [Timing summary] Saved → 'C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_1000_cryptography+post_quantum_cryptography_TF-IDF_20260521_003250\AE - Timing_summary_20260521_005536.txt'
+
