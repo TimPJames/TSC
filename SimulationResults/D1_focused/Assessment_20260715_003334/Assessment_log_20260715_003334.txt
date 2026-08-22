@@ -1,0 +1,159 @@
+  Log: C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\Assessment_20260715_003334\Assessment_log_20260715_003334.txt
+── Loading simulation artefacts ────────────────────────────
+  N = 424 documents  |  τ = 0.050  |  λ = 0.010
+  Ref year: 2026  |  Mean pub year: 2016.4
+  Mean neighbourhood size: 316.1  (max=405  min=37)
+
+  Original query:  'bent boolean functions cryptography'
+  Perturbed query: 'nonlinear Boolean functions cryptography'
+
+── Assessment 1: Definition 3.6.1 — Lipschitz Continuity ───
+  ε values: [0.01, 0.02, 0.05]   draws per ε: 50
+
+  Assessment 1 — max-ratio breakdown (actual / bound):
+    ε=0.01:  overall max ratio = actual/bound = 2.832e-03 / 4.000e-02 = 0.0708
+           mean max ratio   = 0.0357  (mean over 50 draws of each draw's max actual/bound)
+    ε=0.02:  overall max ratio = actual/bound = 5.609e-03 / 9.252e-02 = 0.0606
+           mean max ratio   = 0.0388  (mean over 50 draws of each draw's max actual/bound)
+    ε=0.05:  overall max ratio = actual/bound = 1.793e-02 / 2.000e-01 = 0.0896
+           mean max ratio   = 0.0501  (mean over 50 draws of each draw's max actual/bound)
+  ✓ Lipschitz scatter + ratio → Assessment1_Lipschitz_*_20260715_003334*.png
+
+── Assessment 2: Algorithm 1 — Sampling Approximation ───────
+  Configs: [(0.05, 0.05), (0.1, 0.05), (0.05, 0.01)]
+  Draws per document: 1000
+  Sample size constant C: 0.5  (m = C·log(1/δ)/ε²)
+
+  (ε=0.05, δ=0.05): m=600 samples per neighbourhood
+    Empirical success rate: 1.000 (theoretical ≥ 0.950)  [424,000 (doc,draw) pairs]
+  (ε=0.1, δ=0.05): m=150 samples per neighbourhood
+    Empirical success rate: 0.956 (theoretical ≥ 0.950)  [424,000 (doc,draw) pairs]
+    ⚠  158 documents fail bound in >5% of draws
+  (ε=0.05, δ=0.01): m=922 samples per neighbourhood
+    Empirical success rate: 1.000 (theoretical ≥ 0.990)  [424,000 (doc,draw) pairs]
+  B = 1.0 (theoretical upper bound on each summand)
+  Empirical max summand = 0.067577  (mean=0.002932, median=0.002264)
+
+  X̄(v): mean=0.002847  median=0.002870
+  Theorem 3.10.1 m* = ln(2/δ)/(2·ε²·X̄²)  [B=1]
+    ε=0.05, δ=0.05, X̄(mean)=0.002847
+    m* = 91,038,728
+
+  Sweeping m ∈ [100..10000] for ε=0.05, δ=0.05 …
+    m=   100  pass rate=0.557
+    m=   200  pass rate=0.843
+    m=   300  pass rate=0.987
+    m=   400  pass rate=1.000
+    m=   500  pass rate=1.000  (m ≥ N=424, exact)
+    m=   600  pass rate=1.000  (m ≥ N=424, exact)
+    m=   700  pass rate=1.000  (m ≥ N=424, exact)
+    m=   800  pass rate=1.000  (m ≥ N=424, exact)
+    m=   900  pass rate=1.000  (m ≥ N=424, exact)
+    m=  1000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  1500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  2000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  2500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  3000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  3500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  4000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  4500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  5000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  5500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  6000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  6500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  7000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  7500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  8000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  8500  pass rate=1.000  (m ≥ N=424, exact)
+    m=  9000  pass rate=1.000  (m ≥ N=424, exact)
+    m=  9500  pass rate=1.000  (m ≥ N=424, exact)
+    m= 10000  pass rate=1.000  (m ≥ N=424, exact)
+  ✓ Sampling figures → Assessment2_*_20260715_003334*.png
+
+── Assessment 3: Corollary 3.2.3 — Relative Derivative ─────
+  Corollary 3.2.3: mean(LHS−RHS) = -3.34e-06  max(LHS−RHS) = -1.69e-06  min(LHS−RHS) = -5.25e-06  (n=424 docs)
+  ✓ Corollary 3.2.3  → Assessment3_Corollary323_20260715_003334*.png
+
+── Assessment 4: Theorem 3.3.1 / Corollary 3.3.2 — Exponential Decay ─
+
+  Theorem 3.3.1/Corollary 3.3.2 — exponential decay ratios:
+    Δt=1yr: exp(−λΔt)=0.990050  mean ratio=0.990050  max|ratio−pred|=1.44e-15
+    Δt=2yr: exp(−λΔt)=0.980199  mean ratio=0.980199  max|ratio−pred|=1.22e-15
+    Δt=5yr: exp(−λΔt)=0.951229  mean ratio=0.951229  max|ratio−pred|=1.33e-15
+  ✓ Theorem 3.3.1    → Assessment4_Theorem331_20260715_003334*.png
+
+── Assessment 5: Theorem 3.5.4 — Sensitivity Matrix ────────
+
+  Theorem 3.5.4:
+    P1 (∂²TSC/∂λ² ≥ 0):   100.0% of docs satisfy convexity
+    P2 (∂²TSC/∂t² = λ²·TSC): max err = 1.33e-11  mean = 7.63e-12
+    P3 (mixed partial):    max err = 9.84e-05  mean = 5.51e-05
+  ✓ Theorem 3.5.4    → Assessment5_Theorem354_20260715_003334*.png
+
+── Assessment 6: Theorem 3.8.6 / Corollary 3.8.4 — Eigenvalues ─
+
+  Eigenvalue computation (top 20 eigenvalues, 4 time points)...
+  Corollary 3.8.4 — eigenvalue decay ratios (should equal exp(−λ·Δt)):
+    Δt=1yr: exp(−λΔt)=0.9900  mean ratio=0.9900  max|ratio−pred|=4.88e-15
+    Δt=2yr: exp(−λΔt)=0.9802  mean ratio=0.9802  max|ratio−pred|=9.66e-15
+    Δt=5yr: exp(−λΔt)=0.9512  mean ratio=0.9512  max|ratio−pred|=8.88e-15
+  Theorem 3.8.6 — eigenvalue ratios λ_i/λ_1 (should be constant):
+    λ_1/λ_1: ['1.0000', '1.0000', '1.0000', '1.0000']  spread=0.00e+00
+    λ_2/λ_1: ['0.1675', '0.1675', '0.1675', '0.1675']  spread=3.05e-16
+    λ_3/λ_1: ['0.1168', '0.1168', '0.1168', '0.1168']  spread=3.61e-16
+    λ_4/λ_1: ['0.1062', '0.1062', '0.1062', '0.1062']  spread=4.44e-16
+    λ_5/λ_1: ['0.0810', '0.0810', '0.0810', '0.0810']  spread=7.91e-16
+
+  Corollary 3.8.4 — relative errors vs predicted decay (Panel A values):
+    Δt=1yr: max=4.94e-15  mean=2.37e-15
+      per-eigenvalue: λ1:1.24e-16  λ2:1.11e-15  λ3:3.06e-15  λ4:3.07e-15  λ5:4.60e-15  λ6:1.90e-15  λ7:2.84e-15  λ8:2.28e-15  λ9:2.89e-15  λ10:2.29e-15  λ11:9.38e-16  λ12:4.40e-15  λ13:2.46e-15  λ14:1.52e-15  λ15:1.56e-15  λ16:0.00e+00  λ17:4.94e-15  λ18:4.12e-15  λ19:1.22e-15  λ20:2.16e-15
+    Δt=2yr: max=9.87e-15  mean=2.73e-15
+      per-eigenvalue: λ1:1.25e-16  λ2:1.87e-16  λ3:4.03e-16  λ4:4.43e-15  λ5:9.87e-15  λ6:3.63e-15  λ7:8.84e-16  λ8:1.50e-15  λ9:2.92e-15  λ10:5.39e-15  λ11:1.89e-15  λ12:3.30e-15  λ13:1.90e-15  λ14:3.06e-15  λ15:2.53e-15  λ16:1.93e-15  λ17:1.45e-15  λ18:1.66e-16  λ19:4.06e-15  λ20:4.91e-15
+    Δt=5yr: max=9.34e-15  mean=2.32e-15
+      per-eigenvalue: λ1:5.17e-16  λ2:9.64e-16  λ3:1.52e-15  λ4:4.56e-16  λ5:6.18e-15  λ6:0.00e+00  λ7:9.34e-15  λ8:7.13e-16  λ9:1.96e-15  λ10:3.84e-15  λ11:1.53e-15  λ12:8.86e-16  λ13:6.02e-16  λ14:1.26e-15  λ15:2.93e-15  λ16:1.49e-15  λ17:2.99e-15  λ18:1.54e-15  λ19:3.64e-15  λ20:4.12e-15
+
+  Theorem 3.8.6 — ratio relative errors (Panel B values):
+    Δt=1yr: max=4.85e-15  mean=2.33e-15
+      per-eigenvalue: λ1:0.00e+00  λ2:9.94e-16  λ3:3.09e-15  λ4:3.01e-15  λ5:4.46e-15  λ6:2.08e-15  λ7:2.74e-15  λ8:2.25e-15  λ9:2.70e-15  λ10:2.39e-15  λ11:8.39e-16  λ12:4.32e-15  λ13:2.46e-15  λ14:1.49e-15  λ15:1.68e-15  λ16:1.42e-16  λ17:4.85e-15  λ18:3.98e-15  λ19:1.25e-15  λ20:1.93e-15
+    Δt=2yr: max=9.77e-15  mean=2.73e-15
+      per-eigenvalue: λ1:0.00e+00  λ2:1.66e-16  λ3:4.75e-16  λ4:4.18e-15  λ5:9.77e-15  λ6:3.40e-15  λ7:9.79e-16  λ8:1.63e-15  λ9:3.15e-15  λ10:5.69e-15  λ11:2.16e-15  λ12:3.17e-15  λ13:2.07e-15  λ14:2.99e-15  λ15:2.66e-15  λ16:2.14e-15  λ17:1.28e-15  λ18:0.00e+00  λ19:4.06e-15  λ20:4.67e-15
+    Δt=5yr: max=8.81e-15  mean=2.39e-15
+      per-eigenvalue: λ1:0.00e+00  λ2:1.66e-15  λ3:8.32e-16  λ4:1.05e-15  λ5:6.68e-15  λ6:5.67e-16  λ7:8.81e-15  λ8:2.04e-16  λ9:1.35e-15  λ10:3.30e-15  λ11:1.08e-15  λ12:1.52e-15  λ13:1.17e-15  λ14:1.90e-15  λ15:2.38e-15  λ16:1.99e-15  λ17:3.57e-15  λ18:2.21e-15  λ19:2.97e-15  λ20:4.51e-15
+  ✓ Eigenvalue figures → Assessment6_*_20260715_003334*.png
+
+── Proposition 3.8.7 — Spectral Confirmation of Exponential Decay ─
+  Predicted e^(−λ·1yr) = 0.990050  (λ=0.0100)
+  A4 mean TSC(t+1)/TSC(t)         = 0.990050    err = 0.00e+00
+  A6 mean |λᵢ(t+1)|/|λᵢ(t)|     = 0.990050    err = 7.77e-16
+  TSC vs eigenvalue decay agreement = 7.77e-16
+  → Proposition 3.8.7: microscopic (TSC) and macroscopic (spectral) decay rates consistent
+
+── Assessment 7: Theorem 3.4.2 — Query-Perturbation Sensitivity ─
+  Theorem 3.4.2: original query  = 'bent boolean functions cryptography'
+                 perturbed query = 'nonlinear Boolean functions cryptography'
+  δ = query (1 direction(s)):
+    ε=1.0e-01   max|LHS−RHS|=8.020e-02   mean|LHS−RHS|=4.644e-02
+    ε=3.0e-02   max|LHS−RHS|=2.407e-02   mean|LHS−RHS|=1.393e-02
+    ε=1.0e-02   max|LHS−RHS|=8.013e-03   mean|LHS−RHS|=4.638e-03
+    ε=3.0e-03   max|LHS−RHS|=2.402e-03   mean|LHS−RHS|=1.391e-03
+    ε=1.0e-03   max|LHS−RHS|=8.007e-04   mean|LHS−RHS|=4.635e-04
+    ε=3.0e-04   max|LHS−RHS|=2.402e-04   mean|LHS−RHS|=1.390e-04
+    ε=1.0e-04   max|LHS−RHS|=8.006e-05   mean|LHS−RHS|=4.634e-05
+    ε=3.0e-05   max|LHS−RHS|=2.402e-05   mean|LHS−RHS|=1.390e-05
+    ε=1.0e-05   max|LHS−RHS|=8.006e-06   mean|LHS−RHS|=4.634e-06
+    fitted log-log slope = 1.000  (Theorem 3.4.2 predicts ≈ 1)
+  δ = random (10 direction(s)):
+    ε=1.0e-01   max|LHS−RHS|=7.945e-02   mean|LHS−RHS|=4.599e-02
+    ε=3.0e-02   max|LHS−RHS|=2.400e-02   mean|LHS−RHS|=1.389e-02
+    ε=1.0e-02   max|LHS−RHS|=8.005e-03   mean|LHS−RHS|=4.634e-03
+    ε=3.0e-03   max|LHS−RHS|=2.402e-03   mean|LHS−RHS|=1.390e-03
+    ε=1.0e-03   max|LHS−RHS|=8.006e-04   mean|LHS−RHS|=4.634e-04
+    ε=3.0e-04   max|LHS−RHS|=2.402e-04   mean|LHS−RHS|=1.390e-04
+    ε=1.0e-04   max|LHS−RHS|=8.006e-05   mean|LHS−RHS|=4.634e-05
+    ε=3.0e-05   max|LHS−RHS|=2.402e-05   mean|LHS−RHS|=1.390e-05
+    ε=1.0e-05   max|LHS−RHS|=8.006e-06   mean|LHS−RHS|=4.634e-06
+    fitted log-log slope = 1.000  (Theorem 3.4.2 predicts ≈ 1)
+  ✓ Theorem 3.4.2    → Assessment7_Theorem342_*_20260715_003334*.png
+
+  ✓ All assessment outputs → C:\Users\timja\OneDrive\Navy\Monterey\Dissertation\TSC\TSC_150_bent_boolean_functions_cryptography_TF-IDF_20260417_142838\Assessment_20260715_003334
+
